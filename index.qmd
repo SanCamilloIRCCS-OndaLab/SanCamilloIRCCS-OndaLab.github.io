@@ -1,7 +1,7 @@
 ---
 title: "Quarto Academic, PhD"
 description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
-image: "files/images/placeholder4.JPG"
+image: "files/images/ONDA_logo_v12.png"
 page-navigation: false
 toc: false
 #sidebar: false
