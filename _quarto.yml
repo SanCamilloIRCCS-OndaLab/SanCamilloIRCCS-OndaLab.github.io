@@ -1,7 +1,3 @@
-# GIORGIO: added to fix
-jupyter:
-  python: /opt/anaconda3/bin/python
-
 project:
   type: website
   output-dir: docs
