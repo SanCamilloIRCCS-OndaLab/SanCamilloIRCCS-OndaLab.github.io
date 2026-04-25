@@ -116,21 +116,14 @@
     "href": "index.html",
     "title": "Onda Lab website",
     "section": "",
-    "text": "Lab\n  \n\n  \n  \nI’m a Quarto Academeic Website Template adapted by Dr. Gang He.\nI’m a template that you can fork to build your own website with easy adaptation and deployment.\nI can automatically generate a neat publication list from an Excel file and enabling categories and filters.\nCheck README.md for more detailed instructions.\n\n\n\nResearcher, Univerisity\n\n\n\n\n\nPhD, Univerisity"
+    "text": "Lab\n  \n\n  \n  \nThis is the website of the ONDA Lab (Open methodologies in Neurorehabilitation and Data Analysis)\nThe Lab is located at IRCCS San Camillo in Venice and include a core group of researchers and several collaborators.\nThe lab research focuses on Neurorehabilitation and in particular on:\n\nNeurophysiology\nNeuropsychology\nNeuroscience\n\n\n\nThe Lab philosophy is focused on rigour and Open Science principles."
   },
   {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
+    "objectID": "index.html#lab-philosophy",
+    "href": "index.html#lab-philosophy",
     "title": "Onda Lab website",
     "section": "",
-    "text": "Researcher, Univerisity"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Onda Lab website",
-    "section": "",
-    "text": "PhD, Univerisity"
+    "text": "The Lab philosophy is focused on rigour and Open Science principles."
   },
   {
     "objectID": "index.html#recent-posts",
