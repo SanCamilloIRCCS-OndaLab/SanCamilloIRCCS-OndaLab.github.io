@@ -45,7 +45,7 @@ about:
     #  target: _blank
 #   # - text: "{{< ai researchgate >}} Research Gate"
 #   #   href: https://www.researchgate.net
-#      target: _blank
+#   #   target: _blank
 
 listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
   - id: recent-posts
@@ -66,7 +66,23 @@ listing:   # Comment the listing section and delete corresponding lines in the i
 ---
 
 :::{#hero-heading}
+This is the website of the **ONDA** Lab (**O**pen methodologies in **N**eurorehabilitation and **D**ata **A**nalysis)
 
+The Lab is located at [IRCCS San Camillo in Venice](hsancamillo.it) and include a core group of researchers and several collaborators.
+
+The lab research focuses on Neurorehabilitation and in particular on:
+
+- Neurophysiology
+- Neuropsychology
+- Neuroscience
+
+## Lab philosophy
+
+The Lab philosophy is focused on rigour and Open Science principles.
+
+
+
+<!--
 I'm a [Quarto Academeic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io).
 
 I'm a template that you can fork to build your own website with easy adaptation and deployment.
@@ -75,6 +91,8 @@ I can automatically generate a neat publication list from an Excel file and enab
 
 Check [README.md](https://github.com/drganghe/quarto-academic-website-template/blob/main/README.md) for more detailed instructions.
 
+-->
+<!--
 ## Experience
 
 - Researcher, Univerisity
@@ -82,7 +100,7 @@ Check [README.md](https://github.com/drganghe/quarto-academic-website-template/b
 ## Education
 
 - PhD, Univerisity
-
+-->
 :::
 
 
