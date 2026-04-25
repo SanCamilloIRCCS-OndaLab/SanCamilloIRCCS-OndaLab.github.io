@@ -70,9 +70,9 @@ website:
       - icon: github
         href: https://github.com/drganghe/quarto-academic-website-template
         target: _blank
-      - text: "{{< fa brands bluesky >}}" 
-        href: https://bsky.app
-        target: _blank
+      #- text: "{{< fa brands bluesky >}}" 
+      #  href: https://bsky.app
+      #  target: _blank
       - icon: rss
         href: posts.xml
         target: _blank  
