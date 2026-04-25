@@ -9,9 +9,9 @@ description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
 author-meta: "Dr. Gang He"
 
 website:
-  title: "Quarto Academic"
+  title: "Onda Lab"
   image: "https://quarto.org/quarto.png"
-  description: "Quarto Academic Website Template adapted by Dr. Gang He"
+  description: "Open methodologies in Neurorehabilitation and Data Analysis"
  
   navbar:
     background: light  # You can change the background color here
