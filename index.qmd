@@ -68,7 +68,7 @@ listing:   # Comment the listing section and delete corresponding lines in the i
 :::{#hero-heading}
 This is the website of the **ONDA** Lab (**O**pen methodologies in **N**eurorehabilitation and **D**ata **A**nalysis)
 
-The Lab is located at [IRCCS San Camillo in Venice](hsancamillo.it) and include a core group of researchers and several collaborators.
+The Lab is located at [IRCCS San Camillo in Venice](https://hsancamillo.it) and include a core group of researchers and several collaborators.
 
 The lab research focuses on Neurorehabilitation and in particular on:
 
