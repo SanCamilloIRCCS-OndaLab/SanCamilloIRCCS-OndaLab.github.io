@@ -10,7 +10,7 @@ page-layout: full
 about:
   id: hero-heading
   template: trestles
-  image-width: 70%
+  image-width: 90%
   links:
     - icon: github
       text: Lab
@@ -65,7 +65,7 @@ listing:   # Comment the listing section and delete corresponding lines in the i
       - "title asc"
 ---
 
-:::{#hero-heading}
+:::{#hero-heading style="font-size: 1.1em;"}
 This is the website of the **ONDA** Lab (**O**pen methodologies in **N**eurorehabilitation and **D**ata **A**nalysis)
 
 The Lab is located at [IRCCS San Camillo in Venice](https://hsancamillo.it) and include a core group of researchers and several collaborators.
