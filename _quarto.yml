@@ -37,24 +37,26 @@ website:
             href: posts.qmd#category=paper
           - text: Grants
             href: projects.qmd                                
-      - text: Teaching # Comment the Teaching part out to remove the Teaching page
-        href: teaching.qmd
+      - text: Resources # added by Giorgio
+        href: resources.qmd
       - text: Outreach
         menu:        
         - text: Presentations
-          href: posts.qmd#category=presentation                   
+          href: posts.qmd#category=presentation
+      - text: Teaching # Comment the Teaching part out to remove the Teaching page
+        href: teaching.qmd
       - text: Group   # Comment the Group part out to remove the Group page
         href: people.qmd
 
     right: 
-      - text: CV
-        href: files/nsf-biosketch.pdf
+      #- text: CV
+      #  href: files/nsf-biosketch.pdf
       - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
+        href: https://sancamilloirccs-ondalab.github.io/
         target: _blank
-      - text: "{{< fa brands bluesky >}}"
-        href: https://bsky.app
-        target: _blank      
+      #- text: "{{< fa brands bluesky >}}"
+      #  href: https://bsky.app
+      #  target: _blank      
       - icon: rss
         href: posts.xml
         target: _blank
