@@ -68,7 +68,7 @@ listing:   # Comment the listing section and delete corresponding lines in the i
 :::{#hero-heading style="font-size: 1.1em;"}
 Welcome to the website of the **ONDA** Lab (**O**pen methodologies in **N**eurorehabilitation and **D**ata **A**nalysis)
 
-The Lab is located at IRCCS San Camillo in Venice its research focuses on 
+The Lab is located at [IRCCS San Camillo in Venice](https://hsancamillo.it) its research focuses on 
 <span style="color:#1b4f72; font-weight:bold;">N</span>eurorehabilitation and in particular on: 
 <span style="color:#8fc2d7; font-weight:bold;">N</span>europhysiology, 
 <span style="color:#98cae6; font-weight:bold;">N</span>europsychology, and 
