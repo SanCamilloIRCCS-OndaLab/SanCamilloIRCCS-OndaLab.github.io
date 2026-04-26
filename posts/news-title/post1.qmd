@@ -2,7 +2,7 @@
 title: "ONDA Lab website is online!"
 description: "About new item"
 author: "News"
-date: "2026-04-25"
+date: "2026-04-26"
 categories: [news]
 image: "/files/images/ONDA_logo_v12_small.png"
 #css: /custom.css
