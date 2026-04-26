@@ -1,6 +1,6 @@
 ---
 title: "ONDA Lab website is online!"
-description: "About new item"
+description: "Presentation of ONDA Lab new website"
 author: "News"
 date: "2026-04-26"
 categories: [news]
