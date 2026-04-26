@@ -66,17 +66,24 @@ listing:   # Comment the listing section and delete corresponding lines in the i
 ---
 
 :::{#hero-heading style="font-size: 1.1em;"}
-This is the website of the **ONDA** Lab (**O**pen methodologies in **N**eurorehabilitation and **D**ata **A**nalysis)
+Welcome to the website of the **ONDA** Lab (**O**pen methodologies in **N**eurorehabilitation and **D**ata **A**nalysis)
 
-The Lab is located at [IRCCS San Camillo in Venice](https://hsancamillo.it) and includes a core team of researchers and and a group of closely involved collaborators.
-
-The lab research focuses on Neurorehabilitation and in particular on: Neurophysiology, Neuropsychology, and Neuroscience.
+The Lab is located at IRCCS San Camillo in Venice its research focuses on 
+<span style="color:#1b4f72; font-weight:bold;">N</span>eurorehabilitation and in particular on: 
+<span style="color:#8fc2d7; font-weight:bold;">N</span>europhysiology, 
+<span style="color:#98cae6; font-weight:bold;">N</span>europsychology, and 
+<span style="color:#acd6ec; font-weight:bold;">N</span>euroscience.
 
 ## Lab philosophy
 
-The Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research.
+The Lab philosophy is focused on rigour and **Open Science** principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research.
 
+## What we do
 
+- We develop open tools for neuropsychological assessment and rehabilitation
+- We study brain functions and biomarkers using MEEG
+- We create open-source pipelines for neural data analysis
+- We develop/optimize methods for behavioural and brain data analysis
 
 <!--
 I'm a [Quarto Academeic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io).
