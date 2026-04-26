@@ -1,0 +1,20 @@
+---
+title: "ONDA Lab website is online!"
+description: "About new item"
+author: "News"
+date: "2026-04-25"
+categories: [news]
+image: "/files/images/ONDA_logo_v12_small.png"
+#css: /custom.css
+#draft: true
+---
+
+
+## Summary
+
+ONDA Lab website is online!
+Thanks to the [Academic website template](https://github.com/drganghe/quarto-academic-website-template), shared by [Dr. Gang He](https://drganghe.github.io/) on github, we are able now to share our activities and projects. **Stay tuned!**
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

@@ -1,4 +1,3 @@
-
     - path: https://drganghe.github.io/quarto-academic-site-examples.html
       image: "/files/images/placeholder1.jpg"
       title: "Quarto Academic Website Examples and Tips"
@@ -6,4 +5,3 @@
       description: "Examples and tips for Quarto Academic Website"
       date: "2024-10-15"
       categories: [news] 
-
