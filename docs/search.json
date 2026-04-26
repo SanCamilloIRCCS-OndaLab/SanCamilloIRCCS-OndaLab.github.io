@@ -53,7 +53,7 @@
     "href": "index.html",
     "title": "ONDA Lab website",
     "section": "",
-    "text": "Lab\n  \n\n  \n  \nThis is the website of the ONDA Lab (Open methodologies in Neurorehabilitation and Data Analysis)\nThe Lab is located at IRCCS San Camillo in Venice and includes a core team of researchers and and a group of closely involved collaborators.\nThe lab research focuses on Neurorehabilitation and in particular on: Neurophysiology, Neuropsychology, and Neuroscience.\n\n\nThe Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research."
+    "text": "Lab\n  \n\n  \n  \nWelcome to the website of the ONDA Lab (Open methodologies in Neurorehabilitation and Data Analysis)\nThe Lab is located at IRCCS San Camillo in Venice its research focuses on Neurorehabilitation and in particular on: Neurophysiology, Neuropsychology, and Neuroscience.\n\n\nThe Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research.\n\n\n\n\nWe develop open tools for neuropsychological assessment and rehabilitation\nWe study brain functions and biomarkers using MEEG\nWe create open-source pipelines for neural data analysis\nWe develop/optimize methods for behavioural and brain data analysis"
   },
   {
     "objectID": "index.html#lab-philosophy",
@@ -61,6 +61,13 @@
     "title": "ONDA Lab website",
     "section": "",
     "text": "The Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research."
+  },
+  {
+    "objectID": "index.html#what-we-do",
+    "href": "index.html#what-we-do",
+    "title": "ONDA Lab website",
+    "section": "",
+    "text": "We develop open tools for neuropsychological assessment and rehabilitation\nWe study brain functions and biomarkers using MEEG\nWe create open-source pipelines for neural data analysis\nWe develop/optimize methods for behavioural and brain data analysis"
   },
   {
     "objectID": "index.html#recent-posts",
@@ -165,6 +172,6 @@
     "href": "posts.html",
     "title": "What’s New & Updated",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nONDA Lab website is online!\n\n\n\nnews\n\n\n\nAbout new item\n\n\n\n\n\nApr 26, 2026\n\n\nNews\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nONDA Lab website is online!\n\n\n\nnews\n\n\n\nPresentation of ONDA Lab new website\n\n\n\n\n\nApr 26, 2026\n\n\nNews\n\n\n\n\n\nNo matching items"
   }
 ]
