@@ -4,28 +4,21 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Fall 2024,   Fall 2023\nClass 1 introduction."
+    "text": "Mainteiner(s) Alessandro Tonin,   Ettore Napoli\nGondola is a Matlab Toolbox to facilitate brain network analysis.\nDevelopment stage: final stages"
   },
   {
-    "objectID": "resources.html#class-1",
-    "href": "resources.html#class-1",
+    "objectID": "resources.html#gondola",
+    "href": "resources.html#gondola",
     "title": "Resources",
     "section": "",
-    "text": "Fall 2024,   Fall 2023\nClass 1 introduction."
+    "text": "Mainteiner(s) Alessandro Tonin,   Ettore Napoli\nGondola is a Matlab Toolbox to facilitate brain network analysis.\nDevelopment stage: final stages"
   },
   {
-    "objectID": "resources.html#class-2",
-    "href": "resources.html#class-2",
+    "objectID": "resources.html#herbert",
+    "href": "resources.html#herbert",
     "title": "Resources",
-    "section": "Class 2",
-    "text": "Class 2\n\n\n\n\n\nSpring 2025,   Fall 2023\nClass 2 introduction."
-  },
-  {
-    "objectID": "resources.html#class-3",
-    "href": "resources.html#class-3",
-    "title": "Resources",
-    "section": "Class 3",
-    "text": "Class 3\n\n\n\n\n\nSpring 2025,   Spring 2024\nClass 3 introduction."
+    "section": "Herbert",
+    "text": "Herbert\n\n\n\n\n\nMainteiner(s) Alessandro Tonin,   Ettore Napoli\nHerbert is a Matlab Toolbox for Multiverse analysis.\nDevelopment stage: unit testing"
   },
   {
     "objectID": "people.html",
@@ -81,7 +74,7 @@
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
+    "text": "Please feel free to contact the Lab’s Principal Investigator at giorgio.arcara [at] unipd.it"
   },
   {
     "objectID": "pub-listing.html",
