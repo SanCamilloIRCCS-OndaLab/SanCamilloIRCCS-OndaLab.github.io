@@ -6,19 +6,6 @@ title-block-banner: false
 
 <center>
 
-**Quarto Academic**
-
-School
-
-College
-
-University
-
-Address: 
-
-Phone: 
-
-E-mail: 
-
+Please feel free to contact the Lab's Principal Investigator at giorgio.arcara [at] unipd.it
 
 </center>
