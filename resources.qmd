@@ -4,27 +4,55 @@ subtitle: "resources developed by the Lab"
 title-block-banner: false
 ---
 
+<!-- START POST CODE: copy paste the code till the next comment to create a new entry. If you want to add an image, it should be placed in files/images/GondolaLogo.png -->
 
-## Class 1
+## Gondola
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-2}
-![](files/images/placeholder1.jpg)
+[![](files/images/GondolaLogo.png)](https://github.com/giorgioarcara/Gondola)
 
 :::
 
 ::: {.g-col-12 .g-col-md-10}
+**Mainteiner(s)** [Alessandro Tonin](https://github.com/Lychfindel), &nbsp; [Ettore Napoli](https://github.com/anemos96)
 
-[Fall 2024](https://www.google.com), &nbsp; [Fall 2023](https://www.google.com)
+[Gondola](https://github.com/giorgioarcara/Gondola) is a Matlab Toolbox to facilitate brain network analysis.
 
-Class 1 introduction.
+_Development stage:_ final stages
+
+:::
+
+:::
+
+<!-- END POST CODE: copy above the code chunck above till the next comment to create a new post) -->
+
+
+
+## Herbert
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+[![](files/images/ONDA_waves.png)](https://github.com/SanCamilloIRCCS-OndaLab/Herbert)
+
+:::
+
+::: {.g-col-12 .g-col-md-10}
+**Mainteiner(s)** [Alessandro Tonin](https://github.com/Lychfindel), &nbsp; [Ettore Napoli](https://github.com/anemos96)
+
+[Herbert](https://github.com/SanCamilloIRCCS-OndaLab/Herbert) is a Matlab Toolbox for Multiverse analysis.
+
+_Development stage:_ unit testing
+
 
 :::
 
 :::
 
 
+<!--
 ## Class 2
 
 ::: {.grid}
@@ -63,5 +91,5 @@ Class 3 introduction.
 :::
 
 :::
-
+-->
 
