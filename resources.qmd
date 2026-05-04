@@ -16,7 +16,7 @@ title-block-banner: false
 :::
 
 ::: {.g-col-12 .g-col-md-10}
-**Mainteiner(s)** [Alessandro Tonin](https://github.com/Lychfindel), &nbsp; [Ettore Napoli](https://github.com/anemos96)
+**Maintainer(s)** [Alessandro Tonin](https://github.com/Lychfindel), &nbsp; [Ettore Napoli](https://github.com/anemos96)
 
 [Gondola](https://github.com/giorgioarcara/Gondola) is a Matlab Toolbox to facilitate brain network analysis.
 
@@ -40,7 +40,7 @@ _Development stage:_ final stages
 :::
 
 ::: {.g-col-12 .g-col-md-10}
-**Mainteiner(s)** [Alessandro Tonin](https://github.com/Lychfindel), &nbsp; [Ettore Napoli](https://github.com/anemos96)
+**Maintainer(s)** [Alessandro Tonin](https://github.com/Lychfindel), &nbsp; [Ettore Napoli](https://github.com/anemos96)
 
 [Herbert](https://github.com/SanCamilloIRCCS-OndaLab/Herbert) is a Matlab Toolbox for Multiverse analysis.
 
