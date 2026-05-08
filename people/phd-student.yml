@@ -1,10 +1,10 @@
-    - path: https://drganghe.github.io/quarto-academic-website-template
-      image: "/files/profiles/profile1.JPG"
-      title: "Student A"
-      lastname: "A"
+    - path: https://www.linkedin.com/in/giovanni-lazzaro-32b295175/
+      image: "/files/profiles/giovanni_lazzaro_crop.png"
+      title: "Giovanni Lazzaro"
+      #lastname: "website"
 #      author: 
-      subtitle: "PhD Student"
+      subtitle: "NPT - PhD Student"
 #      date: "2024-03-12"
       categories: [PhD Student] 
-      started: "2024"
-      ended: "2025"
+      started: "2025"
+      ended: "ongoing"
