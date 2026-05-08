@@ -1,7 +1,7 @@
     - path: https://giorgioarcara.github.io
       image: "/files/profiles/giorgio_profile.jpg"
       title: "Giorgio Arcara"
-      lastname: "Website"
+      #lastname: "Website"
 #      author: 
       subtitle: "PI"
 #      date: "2024-03-12"
