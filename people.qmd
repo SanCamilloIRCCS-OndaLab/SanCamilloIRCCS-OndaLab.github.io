@@ -39,8 +39,8 @@ listing:  #an example of listing external links
 #  categories: true
 #  sort-ui: true
 #  filter-ui: true
-#  contents:  # UNCOMMENT HERE TO ADD ALUMNI
-   # - /people/phd-alumni.yml
+  contents:  # UNCOMMENT HERE TO ADD ALUMNI
+    - /people/phd-alumni.yml
    # - /people/masters-alumni.yml
    # - /people/undergraduate-alumni.yml
 
@@ -66,4 +66,3 @@ format:
 
 :::{#lab-alumni}
 :::
-
