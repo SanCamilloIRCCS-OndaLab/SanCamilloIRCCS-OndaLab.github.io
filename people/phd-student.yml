@@ -8,3 +8,14 @@
       categories: [PhD Student] 
       started: "2025"
       ended: "ongoing"
+
+    - path: https://dariaalexiaardelean.github.io/daria_ardelean/
+      image: "/files/profiles/Daria_Ardelean.jpg"
+      title: "Daria Ardelean"
+      #lastname: "website"
+#      author: 
+      subtitle: "PhD Student"
+#      date: "2024-03-12"
+      categories: [PhD Student] 
+      started: "2025"
+      ended: "ongoing"
