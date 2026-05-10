@@ -1,7 +1,18 @@
 [
   {
     "listing": "/people.html",
-    "items": []
+    "items": [
+      "/pub-listing.html",
+      "/teaching.html",
+      "/contact.html",
+      "/posts/news-title/post1.html",
+      "/404.html",
+      "/projects.html",
+      "/index.html",
+      "/publications.html",
+      "/posts.html",
+      "/resources.html"
+    ]
   },
   {
     "listing": "/index.html",

@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-image","listing-title","listing-subtitle","listing-categories","listing-started","listing-ended","listing-lastname"],
+      searchColumns: ["listing-image","listing-title","listing-subtitle","listing-categories","listing-started","listing-ended"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -108,9 +108,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle','listing-started','listing-ended',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-started','listing-ended',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-image","listing-title","listing-lastname","listing-subtitle","listing-categories","listing-started","listing-ended"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -190,11 +190,11 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="People – Onda Lab">
 <meta property="og:description" content="Who we are">
-<meta property="og:image" content="https://drganghe.github.io/quarto-academic-website-template/files/profiles/profile3.JPG">
+<meta property="og:image" content="https://drganghe.github.io/quarto-academic-website-template/files/profiles/giorgio_profile.jpg">
 <meta property="og:site_name" content="Onda Lab">
 <meta name="twitter:title" content="People – Onda Lab">
 <meta name="twitter:description" content="Who we are">
-<meta name="twitter:image" content="https://drganghe.github.io/quarto-academic-website-template/files/profiles/profile3.JPG">
+<meta name="twitter:image" content="https://drganghe.github.io/quarto-academic-website-template/files/profiles/giorgio_profile.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -305,7 +305,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="RGlyZWN0b3I=">Director <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFzdGVycyUyMFN0dWRlbnQ=">Masters Student <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UGhEJTIwU3R1ZGVudA==">PhD Student <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VW5kZXJncmFkdWF0ZSUyMFN0dWRlbnQ=">Undergraduate Student <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="RGlyZWN0b3I=">Director <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGhEJTIwU3R1ZGVudA==">PhD Student <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -333,39 +333,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="team">Team</h2>
 <div id="listing-lab-member" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-categories="TWFzdGVycyUyMFN0dWRlbnQ=">
-<a href="https://drganghe.github.io/quarto-academic-website-template" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./files/profiles/profile3.JPG" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Student B
-</h5>
-<div class="card-subtitle listing-subtitle">
-Masters Student
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="VW5kZXJncmFkdWF0ZSUyMFN0dWRlbnQ=">
-<a href="https://drganghe.github.io/quarto-academic-website-template" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./files/profiles/profile5.JPG" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Student C
-</h5>
-<div class="card-subtitle listing-subtitle">
-Undergraduate Student
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="RGlyZWN0b3I=">
+<div class="g-col-1" data-index="0" data-categories="RGlyZWN0b3I=">
 <a href="https://giorgioarcara.github.io" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -381,7 +349,7 @@ PI
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="UGhEJTIwU3R1ZGVudA==">
+<div class="g-col-1" data-index="1" data-categories="UGhEJTIwU3R1ZGVudA==">
 <a href="https://www.linkedin.com/in/giovanni-lazzaro-32b295175/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -393,6 +361,22 @@ Giovanni Lazzaro
 </h5>
 <div class="card-subtitle listing-subtitle">
 NPT - PhD Student
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UGhEJTIwU3R1ZGVudA==">
+<a href="https://dariaalexiaardelean.github.io/daria_ardelean/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./files/profiles/Daria_Ardelean.jpg" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Daria Ardelean
+</h5>
+<div class="card-subtitle listing-subtitle">
+PhD Student
 </div>
 </div>
 </div></a>
@@ -410,19 +394,8 @@ NPT - PhD Student
     <select id="listing-lab-alumni-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-lab-alumni'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-image" data-direction="asc">
-      </option>
       <option value="listing-title-sort" data-direction="asc">
         Name
-      </option>
-      <option value="listing-subtitle" data-direction="asc">
-        Role
-      </option>
-      <option value="listing-started" data-direction="asc">
-        Started
-      </option>
-      <option value="listing-ended" data-direction="asc">
-        Ended
       </option>
     </select>
   </div>
@@ -436,7 +409,7 @@ NPT - PhD Student
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-image" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;"> </a>
+ 
 </th>
 
 <th>
@@ -444,74 +417,207 @@ NPT - PhD Student
 </th>
 
 <th>
-<a class="sort" data-sort="listing-subtitle" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Role</a>
+Role
 </th>
 
 <th>
-<a class="sort" data-sort="listing-started" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Started</a>
+Started
 </th>
 
 <th>
-<a class="sort" data-sort="listing-ended" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Ended</a>
+Ended
 </th>
 
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="UGhEJTIwU3R1ZGVudA==" data-listing-title-sort="Alumni A">
+<tr data-index="0" data-listing-file-modified-sort="1777120529088" data-listing-reading-time-sort="1" data-listing-word-count-sort="40" data-listing-title-sort="Publications" data-listing-filename-sort="pub-listing.qmd">
 <td>
-<span class="listing-image"><img loading="lazy" src="./files/profiles/profile2.JPG" style="height: 25px;"></span>
+<span class="listing-image"><div class="listing-item-img-placeholder card-img-top" style="height: 25px;">&nbsp;</div></span>
 </td>
 <td>
-<a href="https://drganghe.github.io/quarto-academic-website-template" class="title listing-title">Alumni A</a>
+<a href="./pub-listing.html" class="title listing-title">Publications</a>
 </td>
 <td>
-<span class="listing-subtitle">PhD Alumni</span>
+<span class="listing-subtitle">&nbsp;</span>
 </td>
 <td>
-<span class="listing-started">2022-01</span>
+<span class="listing-started">&nbsp;</span>
 </td>
 <td>
-<span class="listing-ended">2026-01</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="TWFzdGVycyUyMFN0dWRlbnQ=" data-listing-title-sort="Alumni B">
-<td>
-<span class="listing-image"><img loading="lazy" src="./files/profiles/profile4.JPG" style="height: 25px;"></span>
-</td>
-<td>
-<a href="https://drganghe.github.io/quarto-academic-website-template" class="title listing-title">Alumni B</a>
-</td>
-<td>
-<span class="listing-subtitle">Masters Alumni</span>
-</td>
-<td>
-<span class="listing-started">2024-01</span>
-</td>
-<td>
-<span class="listing-ended">2025-01</span>
+<span class="listing-ended">&nbsp;</span>
 </td>
 
 </tr>
 
-<tr data-index="2" data-categories="VW5kZXJncmFkdWF0ZSUyMFN0dWRlbnQ=" data-listing-title-sort="Alumni C">
+<tr data-index="1" data-listing-file-modified-sort="1777120529089" data-listing-reading-time-sort="1" data-listing-word-count-sort="39" data-listing-title-sort="Teaching" data-listing-filename-sort="teaching.qmd">
 <td>
-<span class="listing-image"><img loading="lazy" src="./files/profiles/profile6.JPG" style="height: 25px;"></span>
+<span class="listing-image"><p class="card-img-top"><img src="files/images/placeholder1.jpg" style="height: 25px;"  class="thumbnail-image card-img"/></p></span>
 </td>
 <td>
-<a href="https://drganghe.github.io/quarto-academic-website-template" class="title listing-title">Alumni C</a>
+<a href="./teaching.html" class="title listing-title">Teaching</a>
 </td>
 <td>
-<span class="listing-subtitle">Undergraduate Alumni</span>
+<span class="listing-subtitle">I teach.</span>
 </td>
 <td>
-<span class="listing-started">2023-01</span>
+<span class="listing-started">&nbsp;</span>
 </td>
 <td>
-<span class="listing-ended">2024-01</span>
+<span class="listing-ended">&nbsp;</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-file-modified-sort="1777885452466" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Contact" data-listing-filename-sort="contact.qmd">
+<td>
+<span class="listing-image"><div class="listing-item-img-placeholder card-img-top" style="height: 25px;">&nbsp;</div></span>
+</td>
+<td>
+<a href="./contact.html" class="title listing-title">Contact</a>
+</td>
+<td>
+<span class="listing-subtitle">&nbsp;</span>
+</td>
+<td>
+<span class="listing-started">&nbsp;</span>
+</td>
+<td>
+<span class="listing-ended">&nbsp;</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-categories="bmV3cw==" data-listing-date-sort="1777154400000" data-listing-file-modified-sort="1777182090739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35" data-listing-title-sort="ONDA Lab website is online!" data-listing-filename-sort="post1.qmd">
+<td>
+<span class="listing-image"><img loading="lazy" src="./files/images/ONDA_logo_v12_small.png" style="height: 25px;"></span>
+</td>
+<td>
+<a href="./posts/news-title/post1.html" class="title listing-title">ONDA Lab website is online!</a>
+</td>
+<td>
+<span class="listing-subtitle">&nbsp;</span>
+</td>
+<td>
+<span class="listing-started">&nbsp;</span>
+</td>
+<td>
+<span class="listing-ended">&nbsp;</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-file-modified-sort="1777120529028" data-listing-reading-time-sort="1" data-listing-word-count-sort="22" data-listing-title-sort="Page Unplugged" data-listing-filename-sort="404.qmd">
+<td>
+<span class="listing-image"><div class="listing-item-img-placeholder card-img-top" style="height: 25px;">&nbsp;</div></span>
+</td>
+<td>
+<a href="./404.html" class="title listing-title">Page Unplugged</a>
+</td>
+<td>
+<span class="listing-subtitle">&nbsp;</span>
+</td>
+<td>
+<span class="listing-started">&nbsp;</span>
+</td>
+<td>
+<span class="listing-ended">&nbsp;</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-file-modified-sort="1777120529088" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="Projects" data-listing-filename-sort="projects.qmd">
+<td>
+<span class="listing-image"><p class="card-img-top"><img src="https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/2023-10/NSF_Official_logo_Med_Res_600ppi_rectangle.png" style="height: 25px;"  class="thumbnail-image card-img"/></p></span>
+</td>
+<td>
+<a href="./projects.html" class="title listing-title">Projects</a>
+</td>
+<td>
+<span class="listing-subtitle">Funded projects</span>
+</td>
+<td>
+<span class="listing-started">&nbsp;</span>
+</td>
+<td>
+<span class="listing-ended">&nbsp;</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-file-modified-sort="1777182968749" data-listing-reading-time-sort="2" data-listing-word-count-sort="208" data-listing-title-sort="ONDA Lab website" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-image"><img loading="lazy" src="./files/images/ONDA_logo_v12.png" style="height: 25px;"></span>
+</td>
+<td>
+<a href="./index.html" class="title listing-title">ONDA Lab website</a>
+</td>
+<td>
+<span class="listing-subtitle">&nbsp;</span>
+</td>
+<td>
+<span class="listing-started">&nbsp;</span>
+</td>
+<td>
+<span class="listing-ended">&nbsp;</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-listing-file-modified-sort="1777120529088" data-listing-reading-time-sort="1" data-listing-word-count-sort="161" data-listing-title-sort="Publications" data-listing-filename-sort="publications.qmd">
+<td>
+<span class="listing-image"><div class="listing-item-img-placeholder card-img-top" style="height: 25px;">&nbsp;</div></span>
+</td>
+<td>
+<a href="./publications.html" class="title listing-title">Publications</a>
+</td>
+<td>
+<span class="listing-subtitle">&nbsp;</span>
+</td>
+<td>
+<span class="listing-started">&nbsp;</span>
+</td>
+<td>
+<span class="listing-ended">&nbsp;</span>
+</td>
+
+</tr>
+
+<tr data-index="8" data-listing-file-modified-sort="1777120529083" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="What’s New &amp; Updated" data-listing-filename-sort="posts.qmd">
+<td>
+<span class="listing-image"><p class="card-img-top"><img src="files/images/ONDA_logo_v12_small.png" style="height: 25px;"  class="thumbnail-image card-img"/></p></span>
+</td>
+<td>
+<a href="./posts.html" class="title listing-title">What’s New &amp; Updated</a>
+</td>
+<td>
+<span class="listing-subtitle">Posts about papers, events, news, and more</span>
+</td>
+<td>
+<span class="listing-started">&nbsp;</span>
+</td>
+<td>
+<span class="listing-ended">&nbsp;</span>
+</td>
+
+</tr>
+
+<tr data-index="9" data-listing-file-modified-sort="1777894319405" data-listing-reading-time-sort="1" data-listing-word-count-sort="120" data-listing-title-sort="Resources" data-listing-filename-sort="resources.qmd">
+<td>
+<span class="listing-image"><p class="card-img-top"><img src="files/images/GondolaLogo.png" style="height: 25px;"  class="thumbnail-image card-img"/></p></span>
+</td>
+<td>
+<a href="./resources.html" class="title listing-title">Resources</a>
+</td>
+<td>
+<span class="listing-subtitle">resources developed by the Lab</span>
+</td>
+<td>
+<span class="listing-started">&nbsp;</span>
+</td>
+<td>
+<span class="listing-ended">&nbsp;</span>
 </td>
 
 </tr>
