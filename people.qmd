@@ -40,7 +40,7 @@ listing:  #an example of listing external links
 #  sort-ui: true
 #  filter-ui: true
   contents:  # UNCOMMENT HERE TO ADD ALUMNI
-    - /people/phd-alumni.yml
+     - /people/phd-alumni.yml
    # - /people/masters-alumni.yml
    # - /people/undergraduate-alumni.yml
 
