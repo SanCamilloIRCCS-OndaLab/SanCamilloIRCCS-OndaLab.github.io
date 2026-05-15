@@ -1,10 +1,10 @@
-#     - path: https://drganghe.github.io/quarto-academic-website-template
-#       image: "/files/profiles/profile3.JPG"
-#       title: "Student B"
-#       lastname: "B"
-# #      author: 
-#       subtitle: "Masters Student"
-# #      date: "2024-03-12"
-#       categories: [Masters Student] 
-#       started: "2024"
-#       ended: "2025"
+#    - path: https://www.linkedin.com/in/castana-dassi%C3%A8-1374661aa/
+#      image: "/files/profiles/Castana_Dassie.png"
+#      title: "Castana Dassiè"
+#      lastname: "Dassiè"
+#      author: 
+#      subtitle: "Masters Student"
+#      date: "2024-03-12"
+#      categories: [Masters Student] 
+#      started: "2026"
+#      ended: "ongoing"
