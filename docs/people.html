@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-image","listing-title","listing-subtitle","listing-categories","listing-started","listing-ended"],
+      searchColumns: ["listing-image","listing-title","listing-subtitle","listing-categories","listing-started","listing-ended","listing-lastname","listing-author","listing-date"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -190,11 +190,15 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="People – Onda Lab">
 <meta property="og:description" content="Who we are">
-<meta property="og:image" content="https://drganghe.github.io/quarto-academic-website-template/files/profiles/giorgio_profile.jpg">
+<meta property="og:image" content="https://drganghe.github.io/quarto-academic-website-template/files/profiles/Castana_Dassie.png">
 <meta property="og:site_name" content="Onda Lab">
+<meta property="og:image:height" content="800">
+<meta property="og:image:width" content="800">
 <meta name="twitter:title" content="People – Onda Lab">
 <meta name="twitter:description" content="Who we are">
-<meta name="twitter:image" content="https://drganghe.github.io/quarto-academic-website-template/files/profiles/giorgio_profile.jpg">
+<meta name="twitter:image" content="https://drganghe.github.io/quarto-academic-website-template/files/profiles/Castana_Dassie.png">
+<meta name="twitter:image-height" content="800">
+<meta name="twitter:image-width" content="800">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -305,7 +309,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="RGlyZWN0b3I=">Director <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGhEJTIwU3R1ZGVudA==">PhD Student <span class="quarto-category-count">(3)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="RGlyZWN0b3I=">Director <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGhEJTIwU3R1ZGVudA==">PhD Student <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UmVzZWFyY2glMjBBc3Npc3RhbnQ=">Research Assistant <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -333,7 +337,23 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="team">Team</h2>
 <div id="listing-lab-member" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-categories="RGlyZWN0b3I=">
+<div class="g-col-1" data-index="0" data-categories="UmVzZWFyY2glMjBBc3Npc3RhbnQ=" data-listing-date-sort="1710198000000">
+<a href="https://www.linkedin.com/in/castana-dassi%C3%A8-1374661aa/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./files/profiles/Castana_Dassie.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Castana Dassiè
+</h5>
+<div class="card-subtitle listing-subtitle">
+Research Assistant
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="RGlyZWN0b3I=">
 <a href="https://giorgioarcara.github.io" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -349,7 +369,7 @@ PI
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UGhEJTIwU3R1ZGVudA==">
+<div class="g-col-1" data-index="2" data-categories="UGhEJTIwU3R1ZGVudA==">
 <a href="https://www.linkedin.com/in/giovanni-lazzaro-32b295175/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -365,7 +385,7 @@ NPT - PhD Student
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UGhEJTIwU3R1ZGVudA==">
+<div class="g-col-1" data-index="3" data-categories="UGhEJTIwU3R1ZGVudA==">
 <a href="https://dariaalexiaardelean.github.io/daria_ardelean/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
