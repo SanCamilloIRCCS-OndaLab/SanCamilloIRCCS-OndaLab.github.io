@@ -1,0 +1,8 @@
+---
+title: "Lab manual"
+description-meta: "Lab manual"
+title-block-banner: false
+---
+
+Here you can download the [Lab Manual](files/documents/ONDA_Lab_Manual.pdf), which explains some organizational aspects and the philosphy of the Lab.
+
