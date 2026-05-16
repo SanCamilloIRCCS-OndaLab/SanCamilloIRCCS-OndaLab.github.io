@@ -1,0 +1,21 @@
+   - path: https://www.linkedin.com/in/castana-dassi%C3%A8-1374661aa/
+     image: "/files/profiles/Castana_Dassie.png"
+     title: "Castana Dassiè"
+     lastname: "Dassiè"
+     author: 
+     subtitle: "Research Assistant"
+     date: "2024-03-12"
+     categories: [Research Assistant] 
+     started: "2025"
+     ended: "ongoing"
+     
+   - path: https://dariaalexiaardelean.github.io/daria_ardelean/
+     image: "/files/profiles/Daria_Ardelean.jpg"
+     title: "Daria Ardelean"
+      #lastname: "website"
+#     author: 
+     subtitle: "PhD Student"
+#      date: "2024-03-12"
+     categories: [PhD Student] 
+     started: "2025"
+     ended: "ongoing"
