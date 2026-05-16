@@ -19,9 +19,22 @@ listing:  #an example of listing external links
   contents: 
     - /people/pi.yml  # Use individual files here as you may use each person at different occasions such as events, news.
     - /people/phd-student.yml
-    - /people/research-assistant.yml
+    # - /people/research-assistant.yml
     #- /people/masters-student.yml
     #- /people/undergraduate-student.yml
+
+- id: lab-collaborator
+  sort: "lastname asc"
+  type: grid
+  fields: [image, title, subtitle]
+  grid-item-align: center
+  grid-columns: 4
+  image-height: 200px
+  categories: true
+#  sort-ui: true
+#  filter-ui: true
+  contents:
+    - /people/collaborator.yml
 
 - id: lab-alumni
   sort: 
@@ -58,8 +71,16 @@ format:
 
 
 ## Team
+This section includes the core members of ONDA Lab, formally at IRCCS San Camillo.
 
 :::{#lab-member}
+:::
+
+
+## Collaborators
+This section includes the active collaborators of ONDA Lab, participating to the main activities and Lab meetings.
+
+:::{#lab-collaborator}
 :::
 
 
