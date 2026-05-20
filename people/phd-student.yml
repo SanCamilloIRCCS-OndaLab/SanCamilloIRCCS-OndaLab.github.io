@@ -9,3 +9,13 @@
       started: "2025"
       ended: "ongoing"
 
+    - path: https://www.linkedin.com/in/sara-zago1993-pd/
+      image: "/files/profiles/Sara-Zago.jpg"
+      title: "Sara Zago"
+      #lastname: "website"
+#      author: 
+      subtitle: "NPT - PhD Student"
+#      date: "2024-03-12"
+      categories: [PhD Student] 
+      started: "2023"
+      ended: "almost finished"

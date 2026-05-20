@@ -1,0 +1,10 @@
+   - path: https://dariaalexiaardelean.github.io/daria_ardelean/
+     image: "/files/profiles/Sara-Lago.jpg"
+     title: "Sara Lago"
+      #lastname: "website"
+#     author: 
+     subtitle: "Researcher"
+#      date: "2024-03-12"
+     categories: [Researcher] 
+     started: "2024"
+     ended: "ongoing"
