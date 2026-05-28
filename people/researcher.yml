@@ -1,10 +1,22 @@
-   - path: https://dariaalexiaardelean.github.io/daria_ardelean/
+   - path: https://www.linkedin.com/in/sara-lago-b458021b0/
      image: "/files/profiles/Sara-Lago.jpg"
      title: "Sara Lago"
       #lastname: "website"
 #     author: 
-     subtitle: "Researcher"
+     subtitle: "Researcher - PhD"
 #      date: "2024-03-12"
-     categories: [Researcher] 
+     categories: [Researcher - PhD] 
      started: "2024"
+     ended: "ongoing"
+
+
+   - path: https://www.linkedin.com/in/sara-zago1993-pd/
+     image: "/files/profiles/Sara-Zago.jpg"
+     title: "Sara Zago"
+     #lastname: "website"
+#     author: 
+     subtitle: "Researcher - PhD"
+#      date: "2024-03-12"
+     categories: [Researcher - PhD] 
+     started: "2023"
      ended: "ongoing"
