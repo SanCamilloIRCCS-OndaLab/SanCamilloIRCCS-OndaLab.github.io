@@ -14,8 +14,41 @@
      title: "Daria Ardelean"
       #lastname: "website"
 #     author: 
-     subtitle: "PhD Student"
+     subtitle: "Psychologist - PhD Student"
 #      date: "2024-03-12"
      categories: [PhD Student] 
      started: "2025"
+     ended: "ongoing"
+
+   - path: https://lychfindel.github.io
+     image: "/files/profiles/Ale_Tonin.png"
+     title: "Alessandro Tonin"
+      #lastname: "website"
+#     author: 
+     subtitle: "Engineer - Researcher - PhD"
+#      date: "2024-03-12"
+     categories: [Researcher - PhD] 
+     started: "2024"
+     ended: "ongoing"
+
+   - path: 
+     image: "/files/profiles/Ettore_Napoli.jpg"
+     title: "Ettore Napoli"
+      #lastname: "website"
+#     author: 
+     subtitle: "Psychologist - PhD student"
+#      date: "2024-03-12"
+     categories: [PhD Student] 
+     started: "2024"
+     ended: "ongoing"
+
+   - path: 
+     image: "/files/profiles/Giulia_Oliva.png"
+     title: "Giulia Oliva"
+      #lastname: "website"
+#     author: 
+     subtitle: "Psychologist - PhD student"
+#      date: "2024-03-12"
+     categories: [PhD Student] 
+     started: "2023"
      ended: "ongoing"
