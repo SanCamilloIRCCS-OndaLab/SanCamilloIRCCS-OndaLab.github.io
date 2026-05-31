@@ -9,7 +9,7 @@
 <meta name="author" content="Dr.&nbsp;Gang He">
 <meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
 
-<title>Teaching – Onda Lab</title>
+<title>claude – Onda Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -100,13 +135,13 @@ https://badge.dimensions.ai/
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Teaching – Onda Lab">
-<meta property="og:description" content="I teach.">
-<meta property="og:image" content="https://drganghe.github.io/quarto-academic-website-template/files/images/placeholder1.jpg">
+<meta property="og:title" content="Onda Lab">
+<meta property="og:description" content="Open methodologies in Neurorehabilitation and Data Analysis">
+<meta property="og:image" content="https://quarto.org/quarto.png">
 <meta property="og:site_name" content="Onda Lab">
-<meta name="twitter:title" content="Teaching – Onda Lab">
-<meta name="twitter:description" content="I teach.">
-<meta name="twitter:image" content="https://drganghe.github.io/quarto-academic-website-template/files/images/placeholder1.jpg">
+<meta name="twitter:title" content="Onda Lab">
+<meta name="twitter:description" content="Open methodologies in Neurorehabilitation and Data Analysis">
+<meta name="twitter:image" content="https://quarto.org/quarto.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -213,72 +248,128 @@ https://badge.dimensions.ai/
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#class-1" id="toc-class-1" class="nav-link active" data-scroll-target="#class-1">Class 1</a></li>
-  <li><a href="#class-2" id="toc-class-2" class="nav-link" data-scroll-target="#class-2">Class 2</a></li>
-  <li><a href="#class-3" id="toc-class-3" class="nav-link" data-scroll-target="#class-3">Class 3</a></li>
+  <li><a href="#claude.md" id="toc-claude.md" class="nav-link active" data-scroll-target="#claude.md">CLAUDE.md</a>
+  <ul class="collapse">
+  <li><a href="#commands" id="toc-commands" class="nav-link" data-scroll-target="#commands">Commands</a></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">Architecture</a>
+  <ul class="collapse">
+  <li><a href="#key-files" id="toc-key-files" class="nav-link" data-scroll-target="#key-files">Key files</a></li>
+  <li><a href="#content-data-model" id="toc-content-data-model" class="nav-link" data-scroll-target="#content-data-model">Content data model</a></li>
+  <li><a href="#people-yaml-format" id="toc-people-yaml-format" class="nav-link" data-scroll-target="#people-yaml-format">People YAML format</a></li>
+  <li><a href="#publications-workflow" id="toc-publications-workflow" class="nav-link" data-scroll-target="#publications-workflow">Publications workflow</a></li>
+  <li><a href="#showinghiding-pages" id="toc-showinghiding-pages" class="nav-link" data-scroll-target="#showinghiding-pages">Showing/hiding pages</a></li>
+  <li><a href="#posts" id="toc-posts" class="nav-link" data-scroll-target="#posts">Posts</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Teaching</h1>
-<p class="subtitle lead">I teach.</p>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="class-1" class="level2">
-<h2 class="anchored" data-anchor-id="class-1">Class 1</h2>
-<div class="grid">
-<div class="g-col-12 g-col-md-2">
-<p><img src="files/images/placeholder1.jpg" class="img-fluid"></p>
-</div>
-<div class="g-col-12 g-col-md-10">
-<p><a href="https://www.google.com">Fall 2024</a>, &nbsp; <a href="https://www.google.com">Fall 2023</a></p>
-<p>Class 1 introduction.</p>
-</div>
-</div>
+<section id="claude.md" class="level1">
+<h1>CLAUDE.md</h1>
+<p>This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.</p>
+<section id="commands" class="level2">
+<h2 class="anchored" data-anchor-id="commands">Commands</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview site locally</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Build site (output goes to docs/)</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert publications.xlsx to publications.yml (runs automatically on render)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> xlsx_to_yml.py</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Install Python dependency for xlsx conversion (one-time)</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install openpyxl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The built site lives in <code>docs/</code> — GitHub Pages is configured to serve from that directory.</p>
 </section>
-<section id="class-2" class="level2">
-<h2 class="anchored" data-anchor-id="class-2">Class 2</h2>
-<div class="grid">
-<div class="g-col-12 g-col-md-2">
-<p><img src="files/images/placeholder2.JPG" class="img-fluid"></p>
-</div>
-<div class="g-col-12 g-col-md-10">
-<p><a href="https://www.google.com">Spring 2025</a>, &nbsp; <a href="https://www.google.com">Fall 2023</a></p>
-<p>Class 2 introduction.</p>
-</div>
-</div>
+<section id="architecture" class="level2">
+<h2 class="anchored" data-anchor-id="architecture">Architecture</h2>
+<p>This is a <a href="https://quarto.org/">Quarto</a> academic website. The source <code>.qmd</code> files render to static HTML in <code>docs/</code>. Navigation and global settings are controlled entirely by <code>_quarto.yml</code>.</p>
+<section id="key-files" class="level3">
+<h3 class="anchored" data-anchor-id="key-files">Key files</h3>
+<ul>
+<li><code>_quarto.yml</code> — site-wide config: navbar, footer, theme, analytics. <strong>Comment/uncomment entries here to show/hide pages.</strong></li>
+<li><code>index.qmd</code> — homepage</li>
+<li><code>people.qmd</code> — team page; pulls data from YAML files in <code>people/</code></li>
+<li><code>pub-listing.qmd</code> — auto-generated publications page; reads <code>publications.yml</code> via the <code>pub-listing.ejs</code> template and <code>pub-listing.css</code></li>
+<li><code>publications.qmd</code> — manually curated publications page</li>
+<li><code>projects.qmd</code> — grants/projects page (currently commented out of the navbar)</li>
+<li><code>posts.qmd</code> — listing page for all posts (filtered by <code>#category=news</code>, <code>#category=paper</code>, etc.)</li>
+<li><code>remove-stray-divfence.lua</code> — Lua filter that strips stray <code>:::</code> artifacts produced by the EJS listing template</li>
+</ul>
 </section>
-<section id="class-3" class="level2">
-<h2 class="anchored" data-anchor-id="class-3">Class 3</h2>
-<div class="grid">
-<div class="g-col-12 g-col-md-2">
-<p><img src="files/images/placeholder3.JPG" class="img-fluid"></p>
-</div>
-<div class="g-col-12 g-col-md-10">
-<p><a href="https://www.google.com">Spring 2025</a>, &nbsp; <a href="https://www.google.com">Spring 2024</a></p>
-<p>Class 3 introduction.</p>
-</div>
-</div>
+<section id="content-data-model" class="level3">
+<h3 class="anchored" data-anchor-id="content-data-model">Content data model</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Content type</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Team members</td>
+<td><code>people/*.yml</code> (one file per role: <code>pi.yml</code>, <code>researcher.yml</code>, <code>phd-student.yml</code>, etc.)</td>
+</tr>
+<tr class="even">
+<td>Publications</td>
+<td><code>publications.xlsx</code> → auto-converted to <code>publications.yml</code> via <code>xlsx_to_yml.py</code></td>
+</tr>
+<tr class="odd">
+<td>Grants/projects</td>
+<td><code>projects.yml</code></td>
+</tr>
+<tr class="even">
+<td>Posts (news, papers, events, presentations)</td>
+<td><code>posts/&lt;post-folder&gt;/index.qmd</code> with YAML frontmatter <code>categories: [news|paper|event|presentation]</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="people-yaml-format" class="level3">
+<h3 class="anchored" data-anchor-id="people-yaml-format">People YAML format</h3>
+<p>Each person entry follows this pattern (indented under a list, no top-level key):</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="at">   </span><span class="kw">-</span><span class="at"> </span><span class="fu">path</span><span class="kw">:</span><span class="at"> https://personal-website-or-linkedin.com</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">     </span><span class="fu">image</span><span class="kw">:</span><span class="at"> </span><span class="st">"/files/profiles/photo.jpg"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">     </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Full Name"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">     </span><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"Role"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">     </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">Role Category</span><span class="kw">]</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">     </span><span class="fu">started</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">     </span><span class="fu">ended</span><span class="kw">:</span><span class="at"> </span><span class="st">"ongoing"</span><span class="co">   # use "ongoing" for current members</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Profile images go in <code>files/profiles/</code>. The <code>people.qmd</code> listing controls which role files are included and whether alumni appear.</p>
+</section>
+<section id="publications-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="publications-workflow">Publications workflow</h3>
+<ol type="1">
+<li>Edit <code>publications.xlsx</code> (columns: <code>Section</code>, <code>Authors</code>, <code>Year</code>, <code>Date</code>, <code>Title</code>, <code>Paper Link</code>, <code>Journal</code>, <code>Volume</code>, <code>Issue</code>, <code>Pages</code>, <code>DOI</code> + optional <code>PDF</code>, <code>GitHub</code>, <code>Code</code>, <code>Data</code>, <code>Categories</code>, etc.)</li>
+<li><code>python xlsx_to_yml.py</code> converts it to <code>publications.yml</code> (runs automatically before <code>quarto render</code>)</li>
+<li>Use <code>Section: Selected Work</code> or <code>Section: Peer-reviewed Journal Paper</code> to place entries in the correct section of <code>pub-listing.qmd</code></li>
+</ol>
+</section>
+<section id="showinghiding-pages" class="level3">
+<h3 class="anchored" data-anchor-id="showinghiding-pages">Showing/hiding pages</h3>
+<p>To temporarily remove a page from the navbar, comment out its entry in <code>_quarto.yml</code> under <code>website.navbar.left</code>. Example pattern already used in the file:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># - text: Grants</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#   href: projects.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="posts" class="level3">
+<h3 class="anchored" data-anchor-id="posts">Posts</h3>
+<p>New posts go in <code>posts/&lt;post-slug&gt;/index.qmd</code>. Set <code>categories</code> in frontmatter to route the post to the correct navbar filter (<code>news</code>, <code>paper</code>, <code>event</code>, <code>presentation</code>). The <code>draft: true</code> frontmatter key hides a post; <code>draft-mode: unlinked</code> (set in <code>posts/_metadata.yml</code>) means drafts are built but not linked from listings.</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

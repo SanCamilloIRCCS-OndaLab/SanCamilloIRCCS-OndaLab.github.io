@@ -73,34 +73,6 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-selected-work .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: [],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-selected-work'] = new List('listing-selected-work', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-peer-reviewed .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -248,18 +220,6 @@ window.Quarto = {
     <a class="dropdown-item" href="./pub-listing.html">
  <span class="dropdown-text">Publications Listing</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./publications.html">
- <span class="dropdown-text">Publications</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./posts.html#category=paper">
- <span class="dropdown-text">Selected Papers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./projects.html">
- <span class="dropdown-text">Grants</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -314,8 +274,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#selected-work" id="toc-selected-work" class="nav-link active" data-scroll-target="#selected-work">Selected Work</a></li>
-  <li><a href="#peer-reviewed-journal-papers" id="toc-peer-reviewed-journal-papers" class="nav-link" data-scroll-target="#peer-reviewed-journal-papers">Peer-reviewed Journal Papers</a></li>
+  <li><a href="#peer-reviewed-journal-papers" id="toc-peer-reviewed-journal-papers" class="nav-link active" data-scroll-target="#peer-reviewed-journal-papers">Peer-reviewed Journal Papers</a></li>
   </ul>
 </nav>
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(11)</span></div></div></div>
@@ -355,15 +314,10 @@ https://badge.dimensions.ai/
 <script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 <p>Note: * corresponding author; <img src="https://drganghe.github.io/files/images/highly-cited-paper-badge.png" title="ESI Highly Cited Paper" class="img-fluid" alt="Highly cited paper" width="20"> ESI <a href="https://webofscience.help.clarivate.com/en-us/Content/esi-highly-cited-papers.html">Highly Cited Paper</a> (top 1%); <img src="https://drganghe.github.io/files/images/hot-paper-badge.png" title="ESI Hot Paper" class="img-fluid" alt="Hot paper" width="20"> ESI <a href="https://webofscience.help.clarivate.com/en-us/Content/esi-hot-papers.html">Hot Paper</a> (top 0.1%)</p>
-<section id="selected-work" class="level2">
-<h2 class="anchored" data-anchor-id="selected-work">Selected Work</h2>
-<div id="listing-selected-work" class="quarto-listing quarto-listing-container-custom">
-<div class="pub-listing list">
-
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
+<!-- [RESTORE Selected Work 2/2] Uncomment this section AND also restore the listing block in the YAML frontmatter above (search: RESTORE Selected Work 1/2) -->
+<!-- ## Selected Work -->
+<!-- ::: {#selected-work} -->
+<!-- ::: -->
 <section id="peer-reviewed-journal-papers" class="level2">
 <h2 class="anchored" data-anchor-id="peer-reviewed-journal-papers">Peer-reviewed Journal Papers</h2>
 <div id="listing-peer-reviewed" class="quarto-listing quarto-listing-container-custom">
