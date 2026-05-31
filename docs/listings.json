@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/presentations/arcara-fair.html",
       "/posts/news-title/post1.html"
     ]
   },
@@ -12,6 +13,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/presentations/arcara-fair.html",
       "/posts/news-title/post1.html"
     ]
   },
