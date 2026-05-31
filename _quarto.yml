@@ -37,8 +37,8 @@ website:
             href: publications.qmd            
           - text: Selected Papers
             href: posts.qmd#category=paper
-          - text: Grants
-            href: projects.qmd                                
+          # - text: Grants
+          #   href: projects.qmd
       - text: Resources # added by Giorgio
         href: resources.qmd
       - text: Outreach
