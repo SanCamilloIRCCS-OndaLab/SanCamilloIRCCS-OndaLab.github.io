@@ -33,10 +33,11 @@ website:
         menu:
           - text: Publications Listing  # Automatically generated from publications.xlsx
             href: pub-listing.qmd
-          - text: Publications  # Manually curated list of publications
-            href: publications.qmd            
-          - text: Selected Papers
-            href: posts.qmd#category=paper
+          # [RESTORE Publications] This is the only location to change — uncomment to restore the Publications navbar entry (links to publications.qmd)
+          # - text: Publications  # Manually curated list of publications
+          #   href: publications.qmd
+          # - text: Selected Papers  # Uncomment to restore the Selected Papers navbar entry
+          #   href: posts.qmd#category=paper
           # - text: Grants
           #   href: projects.qmd
       - text: Resources # added by Giorgio

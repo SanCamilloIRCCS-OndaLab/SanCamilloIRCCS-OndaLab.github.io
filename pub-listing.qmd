@@ -5,14 +5,15 @@ title: "Publications"
 description-meta: "Information, PDFs, and social metrics of papers"
 title-block-banner: false
 listing:
-  - id: selected-work
-    contents: publications.yml
-    type: custom
-    page-size: 100
-    categories: numbered
-    template: pub-listing.ejs
-    include:
-      section: "Selected Work"
+  # [RESTORE Selected Work 1/2] Uncomment this listing block AND also restore the section in the body below (search: RESTORE Selected Work 2/2)
+  # - id: selected-work
+  #   contents: publications.yml
+  #   type: custom
+  #   page-size: 100
+  #   categories: numbered
+  #   template: pub-listing.ejs
+  #   include:
+  #     section: "Selected Work"
   - id: peer-reviewed
     contents: publications.yml
     type: custom
@@ -31,10 +32,10 @@ Note: \* corresponding author; ![](https://drganghe.github.io/files/images/highl
 
 
 
-## Selected Work
-
-::: {#selected-work}
-:::
+<!-- [RESTORE Selected Work 2/2] Uncomment this section AND also restore the listing block in the YAML frontmatter above (search: RESTORE Selected Work 1/2) -->
+<!-- ## Selected Work -->
+<!-- ::: {#selected-work} -->
+<!-- ::: -->
 
 ## Peer-reviewed Journal Papers
 
