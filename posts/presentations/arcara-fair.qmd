@@ -1,0 +1,17 @@
+---
+title: "La mia esperienza con i dati FAIR"
+description: "Presentazione in italiano sull'esperienza con i dati FAIR (come utilizzatore e curatore)."
+author: "Giorgio Arcara"
+date: "2026-05-21"
+categories: [presentation]
+#image: ""
+#draft: true
+---
+
+*Presentazione in italiano.*
+
+[Scarica le slide (PDF)](/files/documents/Arcara-FAIR.pdf)
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
