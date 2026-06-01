@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Consolas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Lato:wght@700&display=swap');
 
 /* --- Fonts --- */
 .reveal {
@@ -11,7 +11,7 @@
 .reveal h1,
 .reveal h2,
 .reveal h3 {
-  font-family: 'Consolas', cursive;
+  font-family: 'Consolas', 'Courier Prime', monospace;
   font-weight: 700;
   color: #b34700; /* loud orange */
   /*text-shadow: 2px 2px #00000033; /* tacky shadow */
