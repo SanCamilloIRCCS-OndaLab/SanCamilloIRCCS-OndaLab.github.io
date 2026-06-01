@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=IBM+Plex+Mono&display=swap');
+
+/* --- Fonts --- */
+.reveal {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #222;
+  font-size: 34px;
+  line-height: 1.6;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  color: #ff6f00; /* loud orange */
+  text-shadow: 2px 2px #00000033; /* tacky shadow */
+  letter-spacing: 1px;
+}
+
+/* --- Slide Backgrounds --- */
+.reveal section {
+  background: linear-gradient(135deg, #ffeb3b, #ffcc80); /* bright & clashing */
+}
+
+/* --- background
+
+.reveal section[data-background="alt"] {
+  background: #000000; /* hacker-vibes dark mode */
+  color: #39ff14; /* neon green text */
+}
+
+--- */ 
+
+/* --- Code blocks --- */
+.reveal pre code {
+  background-color: #000;
+  color: #39ff14; /* matrix green */
+  border-radius: 0;
+  padding: 0.8em;
+  font-size: 0.9em;
+  font-family: 'Courier Prime', monospace;
+}
+
+
+
+/* --- Links & highlights --- */
+.reveal a {
+  color: #d500f9; /* neon purple */
+  text-decoration: underline;
+}
+
+.reveal strong {
+  color: #ff1744; /* screaming red */
+  text-shadow: 1px 1px #fff;
+}
