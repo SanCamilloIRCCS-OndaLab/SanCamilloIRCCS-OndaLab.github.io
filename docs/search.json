@@ -21,221 +21,11 @@
     "text": "This is a Quarto academic website. The source .qmd files render to static HTML in docs/. Navigation and global settings are controlled entirely by _quarto.yml.\n\n\n\n_quarto.yml — site-wide config: navbar, footer, theme, analytics. Comment/uncomment entries here to show/hide pages.\nindex.qmd — homepage\npeople.qmd — team page; pulls data from YAML files in people/\npub-listing.qmd — auto-generated publications page; reads publications.yml via the pub-listing.ejs template and pub-listing.css\npublications.qmd — manually curated publications page\nprojects.qmd — grants/projects page (currently commented out of the navbar)\nposts.qmd — listing page for all posts (filtered by #category=news, #category=paper, etc.)\nremove-stray-divfence.lua — Lua filter that strips stray ::: artifacts produced by the EJS listing template\n\n\n\n\n\n\n\n\n\n\n\nContent type\nSource\n\n\n\n\nTeam members\npeople/*.yml (one file per role: pi.yml, researcher.yml, phd-student.yml, etc.)\n\n\nPublications\npublications.xlsx → auto-converted to publications.yml via xlsx_to_yml.py\n\n\nGrants/projects\nprojects.yml\n\n\nPosts (news, papers, events, presentations)\nposts/&lt;post-folder&gt;/index.qmd with YAML frontmatter categories: [news|paper|event|presentation]\n\n\n\n\n\n\nEach person entry follows this pattern (indented under a list, no top-level key):\n   - path: https://personal-website-or-linkedin.com\n     image: \"/files/profiles/photo.jpg\"\n     title: \"Full Name\"\n     subtitle: \"Role\"\n     categories: [Role Category]\n     started: \"2023\"\n     ended: \"ongoing\"   # use \"ongoing\" for current members\nProfile images go in files/profiles/. The people.qmd listing controls which role files are included and whether alumni appear.\n\n\n\n\nEdit publications.xlsx (columns: Section, Authors, Year, Date, Title, Paper Link, Journal, Volume, Issue, Pages, DOI + optional PDF, GitHub, Code, Data, Categories, etc.)\npython xlsx_to_yml.py converts it to publications.yml (runs automatically before quarto render)\nUse Section: Selected Work or Section: Peer-reviewed Journal Paper to place entries in the correct section of pub-listing.qmd\n\n\n\n\nTo temporarily remove a page from the navbar, comment out its entry in _quarto.yml under website.navbar.left. Example pattern already used in the file:\n# - text: Grants\n#   href: projects.qmd\n\n\n\nNew posts go in posts/&lt;post-slug&gt;/index.qmd. Set categories in frontmatter to route the post to the correct navbar filter (news, paper, event, presentation). The draft: true frontmatter key hides a post; draft-mode: unlinked (set in posts/_metadata.yml) means drafts are built but not linked from listings."
   },
   {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#introduction-12",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#introduction-12",
-    "title": "How to Write Terrible Code",
-    "section": "Introduction (1/2)",
-    "text": "Introduction (1/2)\nThis guide, written by the Coding Group of the ONDA Lab, is a humorous collection of bad programming habits. While many guides explain how to write good code, we realized that another way to learn is by looking at what not to do."
-  },
-  {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#introduction-22",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#introduction-22",
-    "title": "How to Write Terrible Code",
-    "section": "Introduction (2/2)",
-    "text": "Introduction (2/2)\nAfter all, most of us (certainly we, at least) are naturally prone to becoming bad programmers. So instead of only focusing on the “right” way, this guide highlights the habits you really shouldn’t have (but probably already do).\n\nEnjoy!\n\nP.S. If you think we’re writing this because we’re excellent programmers, you couldn’t be more wrong. But we’re trying to unlearn these bad habits!\n\n\n P.P.S. Click here to   download the PDF version 📄"
-  },
-  {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#write-your-code-as-a-single-long-script",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#write-your-code-as-a-single-long-script",
-    "title": "How to Write Terrible Code",
-    "section": "1. Write your code as a single long script",
-    "text": "1. Write your code as a single long script\n\nThe truth: unless you have a very short task, a very long script is often difficult to work on, to reuse, to mantain, and to share.\n\nWhen you write long script you tend to think in a less modular way and you don’t break down you problem."
-  },
-  {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#create-numerous-versions-of-your-code-using-v1-v2-v3-etc.",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#create-numerous-versions-of-your-code-using-v1-v2-v3-etc.",
-    "title": "How to Write Terrible Code",
-    "section": "2. Create numerous versions of your code using v1, v2, v3, etc.",
-    "text": "2. Create numerous versions of your code using v1, v2, v3, etc.\n\nThe truth: manually versioning files leads to chaos. You end up with analysis_v1.R, analysis_v2_final.R, analysis_v2_final_REAL.R, and no idea which one is actually current — or what changed between them.\n\nUse version control (e.g. Git) instead. Every change is tracked, timestamped, and reversible — without a graveyard of files cluttering your folder."
-  },
-  {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#dont-think-before-codingjust-jump-in-and-write-lines-of-code-based-on-instinct.",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#dont-think-before-codingjust-jump-in-and-write-lines-of-code-based-on-instinct.",
-    "title": "How to Write Terrible Code",
-    "section": "3. Don’t think before coding—just jump in and write lines of code based on instinct.",
-    "text": "3. Don’t think before coding—just jump in and write lines of code based on instinct.\n\nThe truth: coding without a plan often means solving the wrong problem, or building something that needs to be completely rewritten once the real structure becomes clear.\n\nA few minutes spent thinking about inputs, outputs, and the steps in between saves hours of untangling spaghetti code later."
-  },
-  {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#spend-days-and-days-in-designing-how-you-would-code-before-actually-coding.",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#spend-days-and-days-in-designing-how-you-would-code-before-actually-coding.",
-    "title": "How to Write Terrible Code",
-    "section": "4. Spend days and days in designing how you would code, before actually coding.",
-    "text": "4. Spend days and days in designing how you would code, before actually coding.\n\nThe truth: over-planning is just procrastination in disguise. You can’t anticipate every problem until you start writing real code, and a perfect design on paper rarely survives contact with reality.\n\nDesign just enough to start, then iterate. The code itself will show you what you didn’t think of."
-  },
-  {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#if-you-need-to-reuse-code-throughout-your-analysis-copy-and-paste-as-much-as-possible.",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#if-you-need-to-reuse-code-throughout-your-analysis-copy-and-paste-as-much-as-possible.",
-    "title": "How to Write Terrible Code",
-    "section": "5. If you need to reuse code throughout your analysis, copy and paste as much as possible.",
-    "text": "5. If you need to reuse code throughout your analysis, copy and paste as much as possible.\n\nThe truth: copy-pasted code means that when you find a bug — and you will — you have to hunt it down in every single copy. You will always miss at least one.\n\nWrite a function instead. Fix the logic once, and every caller benefits automatically. Your future self will thank you."
-  },
-  {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#do-not-waste-time-on-writing-comments-in-your-code.",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#do-not-waste-time-on-writing-comments-in-your-code.",
-    "title": "How to Write Terrible Code",
-    "section": "6. Do not waste time on writing comments in your code.",
-    "text": "6. Do not waste time on writing comments in your code.\n\nThe truth: code you wrote six months ago might as well have been written by a stranger. Without any comments, you’ll spend more time re-understanding your own work than writing new code.\n\nBut don’t explain what the code does — explain why. A good comment captures intent and hidden constraints, not mechanics that the code already shows."
-  },
-  {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#use-the-shortest-possible-names-for-your-objects-and-functions.",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#use-the-shortest-possible-names-for-your-objects-and-functions.",
-    "title": "How to Write Terrible Code",
-    "section": "7. Use the shortest possible names for your objects and functions.",
-    "text": "7. Use the shortest possible names for your objects and functions.\n\nThe truth: x, tmp, df2, f — these names say absolutely nothing. The next time you open the file (or someone else does), you’ll have no idea what any of it means.\n\nNames are free documentation. patient_age_at_baseline is always better than pab. If the name needs a comment to explain it, the name is wrong."
-  },
-  {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#always-write-functions-that-are-absolutely-generalizable.",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#always-write-functions-that-are-absolutely-generalizable.",
-    "title": "How to Write Terrible Code",
-    "section": "8. Always write functions that are absolutely generalizable.",
-    "text": "8. Always write functions that are absolutely generalizable.\n\nThe truth: building a perfectly general-purpose function for a one-off task is over-engineering. It takes longer to write, harder to test, and more often than not, it never gets reused.\n\nWrite for the problem in front of you. You can generalize later, if and when you actually need to. “You Aren’t Gonna Need It” is a principle, not an excuse to be lazy."
-  },
-  {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#when-using-comments-comment-in-detail-every-single-step.",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#when-using-comments-comment-in-detail-every-single-step.",
-    "title": "How to Write Terrible Code",
-    "section": "9. When using comments, comment in detail every single step.",
-    "text": "9. When using comments, comment in detail every single step.\n\nThe truth: over-commenting clutters the code and makes it harder to read. A comment that just restates what the code obviously does adds noise, not signal.\n\n# add 1 to i above i &lt;- i + 1 is not a comment — it’s pollution. Save your comments for the non-obvious parts: the edge case, the workaround, the invariant that isn’t obvious from the code alone."
-  },
-  {
-    "objectID": "files/presentations/how-to-write-terrible-code/slides.html#dont-use-ai-but-solve-every-problem-by-hand",
-    "href": "files/presentations/how-to-write-terrible-code/slides.html#dont-use-ai-but-solve-every-problem-by-hand",
-    "title": "How to Write Terrible Code",
-    "section": "10. Don’t use AI, but solve every problem by hand",
-    "text": "10. Don’t use AI, but solve every problem by hand\n\nThe truth: refusing to use AI tools when they’re available is like refusing to use a calculator. It slows you down on routine tasks and leaves less mental energy for the parts that actually require thinking.\n\nBut don’t outsource your thinking entirely either. If you can’t read, understand, and explain the code AI wrote for you, you don’t own it — and you won’t be able to fix it when it breaks."
-  },
-  {
-    "objectID": "lab-manual.html",
-    "href": "lab-manual.html",
-    "title": "Lab manual",
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "What’s New & Updated",
     "section": "",
-    "text": "Here you can download the Lab Manual, which explains some organizational aspects and the philosphy of the Lab."
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Notes: * corresponding author; GS graduate student advisee; VS visiting scholar;  ESI Highly Cited Paper (top 1%);  ESI Hot Paper (top 0.1%)\nTotal citations as of January 2025:"
-  },
-  {
-    "objectID": "publications.html#selected-work",
-    "href": "publications.html#selected-work",
-    "title": "Publications",
-    "section": "Selected Work",
-    "text": "Selected Work\nEinstein, A., Podolsky, B., & Rosen, N. (1935). Can quantum-mechanical description of physical reality be considered complete?. Physical review, 47(10), 777. [pdf] [code and data]   \n\n\n\n\n\n\nEinstein, A. (1965). Concerning an heuristic point of view toward the emission and transformation of light. American Journal of Physics, 33(5), 367. [pdf]"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Order By\n      Default\n      \n      \n      \n        Title\n      \n      \n        Team\n      \n      \n        Funder\n      \n      \n        Description\n      \n      \n        Start\n      \n      \n        End\n      \n      \n        Funding\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nTitle\n\n\n\nTeam\n\n\n\nFunder\n\n\n\nDescription\n\n\n\nFunding\n\n\n\nStart\n\n\n\nEnd\n\n\n\n\n\n\n\n\n\n\n\nExploring \n\n\nAcademic Website\n\n\nFunder\n\n\nThe goal of this project is to investigate .\n\n\n$0\n\n\n2024\n\n\n2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/news-title/post1.html",
-    "href": "posts/news-title/post1.html",
-    "title": "ONDA Lab website is online!",
-    "section": "",
-    "text": "ONDA Lab website is online! Thanks to the Academic website template, shared by Dr. Gang He on github, we are able now to share our activities and projects. Stay tuned!"
-  },
-  {
-    "objectID": "posts/news-title/post1.html#summary",
-    "href": "posts/news-title/post1.html#summary",
-    "title": "ONDA Lab website is online!",
-    "section": "",
-    "text": "ONDA Lab website is online! Thanks to the Academic website template, shared by Dr. Gang He on github, we are able now to share our activities and projects. Stay tuned!"
-  },
-  {
-    "objectID": "posts/presentations/how-to-write-terrible-code.html",
-    "href": "posts/presentations/how-to-write-terrible-code.html",
-    "title": "How to Write Terrible Code",
-    "section": "",
-    "text": "Open the presentation"
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Fall 2024,   Fall 2023\nClass 1 introduction."
-  },
-  {
-    "objectID": "teaching.html#class-1",
-    "href": "teaching.html#class-1",
-    "title": "Teaching",
-    "section": "",
-    "text": "Fall 2024,   Fall 2023\nClass 1 introduction."
-  },
-  {
-    "objectID": "teaching.html#class-2",
-    "href": "teaching.html#class-2",
-    "title": "Teaching",
-    "section": "Class 2",
-    "text": "Class 2\n\n\n\n\n\nSpring 2025,   Fall 2023\nClass 2 introduction."
-  },
-  {
-    "objectID": "teaching.html#class-3",
-    "href": "teaching.html#class-3",
-    "title": "Teaching",
-    "section": "Class 3",
-    "text": "Class 3\n\n\n\n\n\nSpring 2025,   Spring 2024\nClass 3 introduction."
-  },
-  {
-    "objectID": "pub-listing.html",
-    "href": "pub-listing.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Note: * corresponding author;  ESI Highly Cited Paper (top 1%);  ESI Hot Paper (top 0.1%)"
-  },
-  {
-    "objectID": "pub-listing.html#peer-reviewed-journal-papers",
-    "href": "pub-listing.html#peer-reviewed-journal-papers",
-    "title": "Publications",
-    "section": "Peer-reviewed Journal Papers",
-    "text": "Peer-reviewed Journal Papers\n\n\n\nDecoding the neural dynamics of everyday prospective remembering: a hidden Markov model approach Vicentin S,Reschini DB,Santacesaria P,Toffoli L,Zago S,Arcara G,Cona G 2026-01-01\n\n\n\n\nVicentin S,Reschini DB,Santacesaria P,Toffoli L,Zago S,Arcara G,Cona G. 2026. Decoding the neural dynamics of everyday prospective remembering: a hidden Markov model approach. Frontiers in Human Neuroscience 19: 1686657.\n\n\n\n\nEducation shapes the link between EEG aperiodic components and cognitive aging Lago S,Zago S,Montemurro S,Calabrò RS,Maggio MG,Dattola S,Casetta I,Arcara G 2026-01-01\n\n\n\n\nLago S,Zago S,Montemurro S,Calabrò RS,Maggio MG,Dattola S,Casetta I,Arcara G. 2026. Education shapes the link between EEG aperiodic components and cognitive aging. Plos one 21(3): e0328318.\n\n\n\n\nResting-state brain dynamics: insights from oscillatory activity in brain networks Samogin J,Zago S,Tonin A,Seynaeve M,De Beukelaar T,Porcaro C,Marinazzo D,Arcara G,Mantini D 2026-01-01\n\n\n\n\nSamogin J,Zago S,Tonin A,Seynaeve M,De Beukelaar T,Porcaro C,Marinazzo D,Arcara G,Mantini D. 2026. Resting-state brain dynamics: insights from oscillatory activity in brain networks. Reviews in the Neurosciences 37(3): 217-230.\n\n\n\n\nGamma transcranial alternating current stimulation increases segregation in the sensorimotor network Cataneo A,Marino M,Manzo N,Scarpazza C,Arcara G,Mapelli D,Masina F 2026-01-01\n\n\n\n\nCataneo A,Marino M,Manzo N,Scarpazza C,Arcara G,Mapelli D,Masina F. 2026. Gamma transcranial alternating current stimulation increases segregation in the sensorimotor network. Frontiers in Psychology 17: 1746459.\n\n\n\n\nEvidence for Enhanced Backward Connectivity in the Third Visual Pathway Following Cortico-Cortical Paired Associative Stimulation Gabriele P,Antonio C,Silvana P,Marra A,Arcara G,Simone B,Mauro U,Alessio A 2026-01-01\n\n\n\n\nGabriele P,Antonio C,Silvana P,Marra A,Arcara G,Simone B,Mauro U,Alessio A. 2026. Evidence for Enhanced Backward Connectivity in the Third Visual Pathway Following Cortico-Cortical Paired Associative Stimulation. NeuroImage : 121759.\n\n\n\n\nAssessing whole-cortex excitability from electromagnetic brain signals Pellegrino G,Duma GM,Schuler AL,Daub M,Marinazzo D,Arcara G,Soddu A,Rasero J 2026-01-01\n\n\n\n\nPellegrino G,Duma GM,Schuler AL,Daub M,Marinazzo D,Arcara G,Soddu A,Rasero J. 2026. Assessing whole-cortex excitability from electromagnetic brain signals. bioRxiv : 2026-2001.\n\n\n\n\nPredictors of unplanned 30-day hospital readmission: a retrospective cohort study in north-east Italy Sartor G,Fusco M,Milana M,Marcon E,Battagello J,Zardetto A,Ruggieri MG,Grotto G,Rigon L,Arcara G,Others 2026-01-01\n\n\n\n\nSartor G,Fusco M,Milana M,Marcon E,Battagello J,Zardetto A,Ruggieri MG,Grotto G,Rigon L,Arcara G,Others. 2026. Predictors of unplanned 30-day hospital readmission: a retrospective cohort study in north-east Italy. BMJ open 16(2): e103595.\n\n\n\n\nConvolutional Neural Networks and Neuroscience: A Tutorial Introduction for The Rest of Us De Matola M,Arcara G 2026-01-01\n\n\n\n\nDe Matola M,Arcara G. 2026. Convolutional Neural Networks and Neuroscience: A Tutorial Introduction for The Rest of Us. bioRxiv : 2026-2003.\n\n\n\n\nThyroglobulin as a proxy for iodine status in pregnancy Censi S,Messina G,Arcara G,Ruggeri E,Clausi C,Piva I,Manso J,Basso D,Merante-Boschin I,Bertazza L,Others 2026-01-01\n\n\n\n\nCensi S,Messina G,Arcara G,Ruggeri E,Clausi C,Piva I,Manso J,Basso D,Merante-Boschin I,Bertazza L,Others. 2026. Thyroglobulin as a proxy for iodine status in pregnancy. British Journal of Nutrition : 1-27.\n\n\n\n\nRapid rTPJ-driven cortical interactions encode malicious intentions during implicit moral evaluation: a TMS-EEG study Cenka K,Spaccasassi C,Petkovic S,Pezzetta R,Vicario CM,Arcara G,Avenanti A 2026-01-01\n\n\n\n\nCenka K,Spaccasassi C,Petkovic S,Pezzetta R,Vicario CM,Arcara G,Avenanti A. 2026. Rapid rTPJ-driven cortical interactions encode malicious intentions during implicit moral evaluation: a TMS-EEG study. NeuroImage : 121885.\n\n\n\n\nCortico-cortical paired associative stimulation highlights the functional role of the cortical pathway from the right inferior frontal gyrus to the primary motor cortex in motor inhibition Bevacqua N,Turrini S,Cataneo A,Zago S,Arcara G,Candidi M,Mirabella G,Avenanti A 2026-01-01\n\n\n\n\nBevacqua N,Turrini S,Cataneo A,Zago S,Arcara G,Candidi M,Mirabella G,Avenanti A. 2026. Cortico-cortical paired associative stimulation highlights the functional role of the cortical pathway from the right inferior frontal gyrus to the primary motor cortex in motor inhibition. NeuroImage : 121933.\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Please feel free to contact the Lab’s Principal Investigator at giorgio.arcara [at] unipd.it"
-  },
-  {
-    "objectID": "posts/presentations/arcara-fair.html",
-    "href": "posts/presentations/arcara-fair.html",
-    "title": "La mia esperienza con i dati FAIR",
-    "section": "",
-    "text": "Presentazione in italiano.\nScarica le slide (PDF)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "ONDA Lab website",
-    "section": "",
-    "text": "Lab\n  \n\n  \n  \nWelcome to the website of the ONDA Lab (Open methodologies in Neurorehabilitation and Data Analysis)\nThe Lab is located at IRCCS San Camillo in Venice its research focuses on Neurorehabilitation and in particular on: Neurophysiology, Neuropsychology, and Neuroscience.\n\n\nThe Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research.\n\n\n\n\nWe develop open tools for neuropsychological assessment and rehabilitation\nWe study brain functions and biomarkers using MEEG\nWe create open-source pipelines for neural data analysis\nWe develop/optimize methods for behavioural and brain data analysis"
-  },
-  {
-    "objectID": "index.html#lab-philosophy",
-    "href": "index.html#lab-philosophy",
-    "title": "ONDA Lab website",
-    "section": "",
-    "text": "The Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research."
-  },
-  {
-    "objectID": "index.html#what-we-do",
-    "href": "index.html#what-we-do",
-    "title": "ONDA Lab website",
-    "section": "",
-    "text": "We develop open tools for neuropsychological assessment and rehabilitation\nWe study brain functions and biomarkers using MEEG\nWe create open-source pipelines for neural data analysis\nWe develop/optimize methods for behavioural and brain data analysis"
-  },
-  {
-    "objectID": "index.html#recent-posts",
-    "href": "index.html#recent-posts",
-    "title": "ONDA Lab website",
-    "section": "Recent Posts",
-    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nHow to Write Terrible Code\n\n\n\nJun 1, 2026\n\n\n\n\n\n\n\n\n\n\n\nLa mia esperienza con i dati FAIR\n\n\n\nMay 21, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nONDA Lab website is online!\n\n\n\nApr 26, 2026\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHow to Write Terrible Code\n\n\n\npresentation\n\n\n\nA short and humorous guide on good principles of coding, by ONDA Lab and friends.\n\n\n\n\n\nJun 1, 2026\n\n\nGiorgio Arcara\n\n\n\n\n\n\n\n\n\n\n\n\nLa mia esperienza con i dati FAIR\n\n\n\npresentation\n\n\n\nPresentazione in italiano sull’esperienza con i dati FAIR (come utilizzatore e curatore).\n\n\n\n\n\nMay 21, 2026\n\n\nGiorgio Arcara\n\n\n\n\n\n\n\n\n\n\n\n\nONDA Lab website is online!\n\n\n\nnews\n\n\n\nPresentation of ONDA Lab new website\n\n\n\n\n\nApr 26, 2026\n\n\nNews\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "people.html",
@@ -266,11 +56,137 @@
     "text": "Alumni\n\n\n   \n    \n    \n      Order By\n      Default\n      \n      \n      \n        Name\n      \n      \n        Role\n      \n      \n        Started\n      \n      \n        Ended\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nName\n\n\n\nRole\n\n\n\nStarted\n\n\n\nEnded\n\n\n\n\n\n\n\n\n\n\n\nAlice Vidoret\n\n\nMasters Alumni\n\n\n2023-07\n\n\n2025-11\n\n\n\n\n\n\n\n\n\nFederica Zagarese\n\n\nMasters Alumni\n\n\n2021-09\n\n\n2025-11\n\n\n\n\n\n\n\n\n\nSilvia Saccani\n\n\nPhD Alumni\n\n\n2024-01\n\n\n2024-11\n\n\n\n\n\n\n\n\n\nAlessia Simonetto\n\n\nMasters Alumni\n\n\n2023-11\n\n\n2024-07\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "What’s New & Updated",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ONDA Lab website",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHow to Write Terrible Code\n\n\n\npresentation\n\n\n\nA short and humorous guide on good principles of coding, by ONDA Lab and friends.\n\n\n\n\n\nJun 1, 2026\n\n\nGiorgio Arcara\n\n\n\n\n\n\n\n\n\n\n\n\nLa mia esperienza con i dati FAIR\n\n\n\npresentation\n\n\n\nPresentazione in italiano sull’esperienza con i dati FAIR (come utilizzatore e curatore).\n\n\n\n\n\nMay 21, 2026\n\n\nGiorgio Arcara\n\n\n\n\n\n\n\n\n\n\n\n\nONDA Lab website is online!\n\n\n\nnews\n\n\n\nPresentation of ONDA Lab new website\n\n\n\n\n\nApr 26, 2026\n\n\nNews\n\n\n\n\n\nNo matching items"
+    "text": "Lab\n  \n\n  \n  \nWelcome to the website of the ONDA Lab (Open methodologies in Neurorehabilitation and Data Analysis)\nThe Lab is located at IRCCS San Camillo in Venice its research focuses on Neurorehabilitation and in particular on: Neurophysiology, Neuropsychology, and Neuroscience.\n\n\nThe Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research.\n\n\n\n\nWe develop open tools for neuropsychological assessment and rehabilitation\nWe study brain functions and biomarkers using MEEG\nWe create open-source pipelines for neural data analysis\nWe develop/optimize methods for behavioural and brain data analysis"
+  },
+  {
+    "objectID": "index.html#lab-philosophy",
+    "href": "index.html#lab-philosophy",
+    "title": "ONDA Lab website",
+    "section": "",
+    "text": "The Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research."
+  },
+  {
+    "objectID": "index.html#what-we-do",
+    "href": "index.html#what-we-do",
+    "title": "ONDA Lab website",
+    "section": "",
+    "text": "We develop open tools for neuropsychological assessment and rehabilitation\nWe study brain functions and biomarkers using MEEG\nWe create open-source pipelines for neural data analysis\nWe develop/optimize methods for behavioural and brain data analysis"
+  },
+  {
+    "objectID": "index.html#recent-posts",
+    "href": "index.html#recent-posts",
+    "title": "ONDA Lab website",
+    "section": "Recent Posts",
+    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nHow to Write Terrible Code\n\n\n\nJun 1, 2026\n\n\n\n\n\n\n\n\n\n\n\nLa mia esperienza con i dati FAIR\n\n\n\nMay 21, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nONDA Lab website is online!\n\n\n\nApr 26, 2026\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
+  },
+  {
+    "objectID": "posts/presentations/arcara-fair.html",
+    "href": "posts/presentations/arcara-fair.html",
+    "title": "La mia esperienza con i dati FAIR",
+    "section": "",
+    "text": "Presentazione in italiano.\nScarica le slide (PDF)"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Please feel free to contact the Lab’s Principal Investigator at giorgio.arcara [at] unipd.it"
+  },
+  {
+    "objectID": "pub-listing.html",
+    "href": "pub-listing.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Note: * corresponding author;  ESI Highly Cited Paper (top 1%);  ESI Hot Paper (top 0.1%)"
+  },
+  {
+    "objectID": "pub-listing.html#peer-reviewed-journal-papers",
+    "href": "pub-listing.html#peer-reviewed-journal-papers",
+    "title": "Publications",
+    "section": "Peer-reviewed Journal Papers",
+    "text": "Peer-reviewed Journal Papers\n\n\n\nDecoding the neural dynamics of everyday prospective remembering: a hidden Markov model approach Vicentin S,Reschini DB,Santacesaria P,Toffoli L,Zago S,Arcara G,Cona G 2026-01-01\n\n\n\n\nVicentin S,Reschini DB,Santacesaria P,Toffoli L,Zago S,Arcara G,Cona G. 2026. Decoding the neural dynamics of everyday prospective remembering: a hidden Markov model approach. Frontiers in Human Neuroscience 19: 1686657.\n\n\n\n\nEducation shapes the link between EEG aperiodic components and cognitive aging Lago S,Zago S,Montemurro S,Calabrò RS,Maggio MG,Dattola S,Casetta I,Arcara G 2026-01-01\n\n\n\n\nLago S,Zago S,Montemurro S,Calabrò RS,Maggio MG,Dattola S,Casetta I,Arcara G. 2026. Education shapes the link between EEG aperiodic components and cognitive aging. Plos one 21(3): e0328318.\n\n\n\n\nResting-state brain dynamics: insights from oscillatory activity in brain networks Samogin J,Zago S,Tonin A,Seynaeve M,De Beukelaar T,Porcaro C,Marinazzo D,Arcara G,Mantini D 2026-01-01\n\n\n\n\nSamogin J,Zago S,Tonin A,Seynaeve M,De Beukelaar T,Porcaro C,Marinazzo D,Arcara G,Mantini D. 2026. Resting-state brain dynamics: insights from oscillatory activity in brain networks. Reviews in the Neurosciences 37(3): 217-230.\n\n\n\n\nGamma transcranial alternating current stimulation increases segregation in the sensorimotor network Cataneo A,Marino M,Manzo N,Scarpazza C,Arcara G,Mapelli D,Masina F 2026-01-01\n\n\n\n\nCataneo A,Marino M,Manzo N,Scarpazza C,Arcara G,Mapelli D,Masina F. 2026. Gamma transcranial alternating current stimulation increases segregation in the sensorimotor network. Frontiers in Psychology 17: 1746459.\n\n\n\n\nEvidence for Enhanced Backward Connectivity in the Third Visual Pathway Following Cortico-Cortical Paired Associative Stimulation Gabriele P,Antonio C,Silvana P,Marra A,Arcara G,Simone B,Mauro U,Alessio A 2026-01-01\n\n\n\n\nGabriele P,Antonio C,Silvana P,Marra A,Arcara G,Simone B,Mauro U,Alessio A. 2026. Evidence for Enhanced Backward Connectivity in the Third Visual Pathway Following Cortico-Cortical Paired Associative Stimulation. NeuroImage : 121759.\n\n\n\n\nAssessing whole-cortex excitability from electromagnetic brain signals Pellegrino G,Duma GM,Schuler AL,Daub M,Marinazzo D,Arcara G,Soddu A,Rasero J 2026-01-01\n\n\n\n\nPellegrino G,Duma GM,Schuler AL,Daub M,Marinazzo D,Arcara G,Soddu A,Rasero J. 2026. Assessing whole-cortex excitability from electromagnetic brain signals. bioRxiv : 2026-2001.\n\n\n\n\nPredictors of unplanned 30-day hospital readmission: a retrospective cohort study in north-east Italy Sartor G,Fusco M,Milana M,Marcon E,Battagello J,Zardetto A,Ruggieri MG,Grotto G,Rigon L,Arcara G,Others 2026-01-01\n\n\n\n\nSartor G,Fusco M,Milana M,Marcon E,Battagello J,Zardetto A,Ruggieri MG,Grotto G,Rigon L,Arcara G,Others. 2026. Predictors of unplanned 30-day hospital readmission: a retrospective cohort study in north-east Italy. BMJ open 16(2): e103595.\n\n\n\n\nConvolutional Neural Networks and Neuroscience: A Tutorial Introduction for The Rest of Us De Matola M,Arcara G 2026-01-01\n\n\n\n\nDe Matola M,Arcara G. 2026. Convolutional Neural Networks and Neuroscience: A Tutorial Introduction for The Rest of Us. bioRxiv : 2026-2003.\n\n\n\n\nThyroglobulin as a proxy for iodine status in pregnancy Censi S,Messina G,Arcara G,Ruggeri E,Clausi C,Piva I,Manso J,Basso D,Merante-Boschin I,Bertazza L,Others 2026-01-01\n\n\n\n\nCensi S,Messina G,Arcara G,Ruggeri E,Clausi C,Piva I,Manso J,Basso D,Merante-Boschin I,Bertazza L,Others. 2026. Thyroglobulin as a proxy for iodine status in pregnancy. British Journal of Nutrition : 1-27.\n\n\n\n\nRapid rTPJ-driven cortical interactions encode malicious intentions during implicit moral evaluation: a TMS-EEG study Cenka K,Spaccasassi C,Petkovic S,Pezzetta R,Vicario CM,Arcara G,Avenanti A 2026-01-01\n\n\n\n\nCenka K,Spaccasassi C,Petkovic S,Pezzetta R,Vicario CM,Arcara G,Avenanti A. 2026. Rapid rTPJ-driven cortical interactions encode malicious intentions during implicit moral evaluation: a TMS-EEG study. NeuroImage : 121885.\n\n\n\n\nCortico-cortical paired associative stimulation highlights the functional role of the cortical pathway from the right inferior frontal gyrus to the primary motor cortex in motor inhibition Bevacqua N,Turrini S,Cataneo A,Zago S,Arcara G,Candidi M,Mirabella G,Avenanti A 2026-01-01\n\n\n\n\nBevacqua N,Turrini S,Cataneo A,Zago S,Arcara G,Candidi M,Mirabella G,Avenanti A. 2026. Cortico-cortical paired associative stimulation highlights the functional role of the cortical pathway from the right inferior frontal gyrus to the primary motor cortex in motor inhibition. NeuroImage : 121933.\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Fall 2024,   Fall 2023\nClass 1 introduction."
+  },
+  {
+    "objectID": "teaching.html#class-1",
+    "href": "teaching.html#class-1",
+    "title": "Teaching",
+    "section": "",
+    "text": "Fall 2024,   Fall 2023\nClass 1 introduction."
+  },
+  {
+    "objectID": "teaching.html#class-2",
+    "href": "teaching.html#class-2",
+    "title": "Teaching",
+    "section": "Class 2",
+    "text": "Class 2\n\n\n\n\n\nSpring 2025,   Fall 2023\nClass 2 introduction."
+  },
+  {
+    "objectID": "teaching.html#class-3",
+    "href": "teaching.html#class-3",
+    "title": "Teaching",
+    "section": "Class 3",
+    "text": "Class 3\n\n\n\n\n\nSpring 2025,   Spring 2024\nClass 3 introduction."
+  },
+  {
+    "objectID": "posts/presentations/how-to-write-terrible-code.html",
+    "href": "posts/presentations/how-to-write-terrible-code.html",
+    "title": "How to Write Terrible Code",
+    "section": "",
+    "text": "Open the presentation"
+  },
+  {
+    "objectID": "posts/news-title/post1.html",
+    "href": "posts/news-title/post1.html",
+    "title": "ONDA Lab website is online!",
+    "section": "",
+    "text": "ONDA Lab website is online! Thanks to the Academic website template, shared by Dr. Gang He on github, we are able now to share our activities and projects. Stay tuned!"
+  },
+  {
+    "objectID": "posts/news-title/post1.html#summary",
+    "href": "posts/news-title/post1.html#summary",
+    "title": "ONDA Lab website is online!",
+    "section": "",
+    "text": "ONDA Lab website is online! Thanks to the Academic website template, shared by Dr. Gang He on github, we are able now to share our activities and projects. Stay tuned!"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Order By\n      Default\n      \n      \n      \n        Title\n      \n      \n        Team\n      \n      \n        Funder\n      \n      \n        Description\n      \n      \n        Start\n      \n      \n        End\n      \n      \n        Funding\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nTitle\n\n\n\nTeam\n\n\n\nFunder\n\n\n\nDescription\n\n\n\nFunding\n\n\n\nStart\n\n\n\nEnd\n\n\n\n\n\n\n\n\n\n\n\nExploring \n\n\nAcademic Website\n\n\nFunder\n\n\nThe goal of this project is to investigate .\n\n\n$0\n\n\n2024\n\n\n2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Notes: * corresponding author; GS graduate student advisee; VS visiting scholar;  ESI Highly Cited Paper (top 1%);  ESI Hot Paper (top 0.1%)\nTotal citations as of January 2025:"
+  },
+  {
+    "objectID": "publications.html#selected-work",
+    "href": "publications.html#selected-work",
+    "title": "Publications",
+    "section": "Selected Work",
+    "text": "Selected Work\nEinstein, A., Podolsky, B., & Rosen, N. (1935). Can quantum-mechanical description of physical reality be considered complete?. Physical review, 47(10), 777. [pdf] [code and data]   \n\n\n\n\n\n\nEinstein, A. (1965). Concerning an heuristic point of view toward the emission and transformation of light. American Journal of Physics, 33(5), 367. [pdf]"
+  },
+  {
+    "objectID": "lab-manual.html",
+    "href": "lab-manual.html",
+    "title": "Lab manual",
+    "section": "",
+    "text": "Here you can download the Lab Manual, which explains some organizational aspects and the philosphy of the Lab."
   },
   {
     "objectID": "resources.html",
