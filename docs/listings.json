@@ -1,14 +1,10 @@
 [
   {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/presentations/how-to-write-terrible-code.html",
-      "/posts/presentations/arcara-fair.html",
-      "/posts/news-title/post1.html"
-    ]
+    "listing": "/projects.html",
+    "items": []
   },
   {
-    "listing": "/people.html",
+    "listing": "/pub-listing.html",
     "items": []
   },
   {
@@ -20,11 +16,15 @@
     ]
   },
   {
-    "listing": "/pub-listing.html",
+    "listing": "/people.html",
     "items": []
   },
   {
-    "listing": "/projects.html",
-    "items": []
+    "listing": "/posts.html",
+    "items": [
+      "/posts/presentations/how-to-write-terrible-code.html",
+      "/posts/presentations/arcara-fair.html",
+      "/posts/news-title/post1.html"
+    ]
   }
 ]
