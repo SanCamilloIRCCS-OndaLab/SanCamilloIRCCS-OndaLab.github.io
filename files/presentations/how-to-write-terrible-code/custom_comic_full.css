@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Courier+Prime&display=swap');
+
+/* --- Full-page Backgrounds --- */
+.reveal-viewport {
+  background: linear-gradient(135deg, #ffeb3b, #ffcc80); /* default background */
+}
+
+.reveal {
+  background: none; /* remove inner white box */
+}
+
+/* Alt background mode (apply with data-background="alt") */
+.reveal section[data-background="alt"] {
+  background: #000000 !important; /* override slide default */
+  color: #39ff14; /* neon green text */
+}
+
+/* --- Fonts --- */
+.reveal {
+  font-family: 'Courier Prime', monospace;
+  color: #222;
+  font-size: 34x;
+  line-height: 1.6;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  color: #ff6f00; /* loud orange */
+  text-shadow: 2px 2px #00000033;
+  letter-spacing: 1px;
+}
+
+/* --- Code blocks --- */
+.reveal pre code {
+  background-color: #000;
+  color: #39ff14; /* matrix green */
+  border-radius: 0;
+  padding: 0.8em;
+  font-size: 0.9em;
+  font-family: 'Courier Prime', monospace;
+}
+
+/* --- Links & highlights --- */
+.reveal a {
+  color: #d500f9; /* neon purple */
+  text-decoration: underline;
+}
+
+.reveal strong {
+  color: #ff1744; /* screaming red */
+  text-shadow: 1px 1px #fff;
+}

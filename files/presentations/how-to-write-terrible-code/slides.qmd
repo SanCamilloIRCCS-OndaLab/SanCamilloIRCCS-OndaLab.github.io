@@ -1,0 +1,138 @@
+---
+title: "How to Write<br> Terrible Code"
+subtitle: "A beginner guide to bad programming"
+format: revealjs
+css: custom_courier.css
+keep-tex: true
+title-slide-attributes:
+  data-background-image: Figures/ONDA_logo_v12a.png
+  data-background-size: 300px
+  data-background-position: center 85%
+---
+
+## Introduction (1/2)
+
+
+This guide, written by the Coding Group of the ONDA Lab, is **a humorous collection of bad programming habits**.
+While many guides explain how to write good code, we realized that another way to learn is by looking at what not to do. 
+
+
+## Introduction (2/2)
+After all, most of us (certainly we, at least) are naturally prone to becoming bad programmers.
+So instead of only focusing on the “right” way, this guide highlights the habits you really shouldn’t have (but probably already do).
+
+<br>
+
+**Enjoy!**
+
+<br>
+
+_P.S. If you think we’re writing this because we’re excellent programmers, you couldn’t be more wrong. But we’re trying to unlearn these bad habits!_
+
+<br>
+<div class="download-button">
+<em> P.P.S. Click here to </em> <a href="?print-pdf" target="_blank"> download the PDF version 📄</a>
+</div>
+
+## 1. Write your code as a single long script
+
+<br>
+
+_The truth: unless you have a very short task, a very long script is often difficult to work on, to reuse, to mantain, and to share._
+
+<br>
+
+__When you write long script you tend to think in a less modular way and you don't break down you problem.__
+
+## 2. Create numerous versions of your code using v1, v2, v3, etc.
+
+<br>
+
+_The truth: manually versioning files leads to chaos. You end up with `analysis_v1.R`, `analysis_v2_final.R`, `analysis_v2_final_REAL.R`, and no idea which one is actually current — or what changed between them._
+
+<br>
+
+__Use version control (e.g. Git) instead. Every change is tracked, timestamped, and reversible — without a graveyard of files cluttering your folder.__
+
+## 3. Don’t think before coding—just jump in and write lines of code based on instinct.
+
+<br>
+
+_The truth: coding without a plan often means solving the wrong problem, or building something that needs to be completely rewritten once the real structure becomes clear._
+
+<br>
+
+__A few minutes spent thinking about inputs, outputs, and the steps in between saves hours of untangling spaghetti code later.__
+
+## 4. Spend days and days in designing how you would code, before actually coding.
+
+<br>
+
+_The truth: over-planning is just procrastination in disguise. You can’t anticipate every problem until you start writing real code, and a perfect design on paper rarely survives contact with reality._
+
+<br>
+
+__Design just enough to start, then iterate. The code itself will show you what you didn’t think of.__
+
+## 5. If you need to reuse code throughout your analysis, copy and paste as much as possible.
+
+<br>
+
+_The truth: copy-pasted code means that when you find a bug — and you will — you have to hunt it down in every single copy. You will always miss at least one._
+
+<br>
+
+__Write a function instead. Fix the logic once, and every caller benefits automatically. Your future self will thank you.__
+
+## 6. Do not waste time on writing comments in your code.
+
+<br>
+
+_The truth: code you wrote six months ago might as well have been written by a stranger. Without any comments, you’ll spend more time re-understanding your own work than writing new code._
+
+<br>
+
+__But don’t explain *what* the code does — explain *why*. A good comment captures intent and hidden constraints, not mechanics that the code already shows.__
+
+## 7. Use the shortest possible names for your objects and functions.
+
+<br>
+
+_The truth: `x`, `tmp`, `df2`, `f` — these names say absolutely nothing. The next time you open the file (or someone else does), you’ll have no idea what any of it means._
+
+<br>
+
+__Names are free documentation. `patient_age_at_baseline` is always better than `pab`. If the name needs a comment to explain it, the name is wrong.__
+
+## 8. Always write functions that are absolutely generalizable.
+
+<br>
+
+_The truth: building a perfectly general-purpose function for a one-off task is over-engineering. It takes longer to write, harder to test, and more often than not, it never gets reused._
+
+<br>
+
+__Write for the problem in front of you. You can generalize later, if and when you actually need to. "You Aren’t Gonna Need It" is a principle, not an excuse to be lazy.__
+
+## 9. When using comments, comment in detail every single step.
+
+<br>
+
+_The truth: over-commenting clutters the code and makes it harder to read. A comment that just restates what the code obviously does adds noise, not signal._
+
+<br>
+
+__`# add 1 to i` above `i <- i + 1` is not a comment — it’s pollution. Save your comments for the non-obvious parts: the edge case, the workaround, the invariant that isn’t obvious from the code alone.__
+
+## 10. Don’t use AI, but solve every problem by hand
+
+<br>
+
+_The truth: refusing to use AI tools when they’re available is like refusing to use a calculator. It slows you down on routine tasks and leaves less mental energy for the parts that actually require thinking._
+
+<br>
+
+__But don’t outsource your thinking entirely either. If you can’t read, understand, and explain the code AI wrote for you, you don’t own it — and you won’t be able to fix it when it breaks.__
+
+
+

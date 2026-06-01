@@ -1,0 +1,14 @@
+---
+title: "How to Write Terrible Code"
+description: "A short and humorous guide on good principles of coding, by ONDA Lab and friends."
+author: "Giorgio Arcara"
+date: "2026-06-01"
+categories: [presentation]
+image: "/files/images/ONDA_waves.png"
+---
+
+[Open the presentation](/files/presentations/how-to-write-terrible-code/slides.html){target="_blank"}
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
