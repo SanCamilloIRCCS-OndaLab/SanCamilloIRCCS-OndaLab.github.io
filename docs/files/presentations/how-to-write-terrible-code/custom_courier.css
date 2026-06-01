@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Consolas&display=swap');
+
+/* --- Fonts --- */
+.reveal {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  color: #2e2e2e;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: 'Consolas', cursive;
+  font-weight: 700;
+  color: #b34700; /* loud orange */
+  /*text-shadow: 2px 2px #00000033; /* tacky shadow */
+  letter-spacing: 1px;
+}
+
+/* --- Slide Backgrounds
+.reveal section {
+  background: linear-gradient(135deg, #ffeb3b, #ffcc80); /* bright & clashing */
+} --- */
+
+/* --- background
+
+.reveal section[data-background="alt"] {
+  background: #000000; /* hacker-vibes dark mode */
+  color: #39ff14; /* neon green text */
+}
+
+--- */ 
+
+/* --- Code blocks --- */
+.reveal pre code {
+  background-color: #000;
+  color: #39ff14; /* matrix green */
+  border-radius: 0;
+  padding: 0.8em;
+  font-size: 0.9em;
+  font-family: 'Courier Prime', monospace;
+}
+
+
+
+/* --- Links & highlights --- */
+.reveal a {
+  color: #d500f9; /* neon purple */
+  text-decoration: underline;
+}
+
+.reveal strong {
+  color: #ff1744; /* screaming red */
+  text-shadow: 1px 1px #fff;
+}
