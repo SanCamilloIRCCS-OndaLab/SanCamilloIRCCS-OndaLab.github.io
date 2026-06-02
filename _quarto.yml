@@ -59,7 +59,7 @@ website:
       #- text: CV
       #  href: files/nsf-biosketch.pdf
       - icon: github
-        href: https://sancamilloirccs-ondalab.github.io/
+        href: https://github.com/SanCamilloIRCCS-OndaLab
         target: _blank
       #- text: "{{< fa brands bluesky >}}"
       #  href: https://bsky.app
