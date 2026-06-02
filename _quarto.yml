@@ -100,7 +100,7 @@ website:
   twitter-card: true 
 #  card-style: summary      
   
-  site-url: "https://drganghe.github.io/quarto-academic-website-template"
+  site-url: "https://sancamilloirccs-ondalab.github.io"
   
   google-analytics:
     tracking-id: ""  # Please delete or replace with your own tracking ID
