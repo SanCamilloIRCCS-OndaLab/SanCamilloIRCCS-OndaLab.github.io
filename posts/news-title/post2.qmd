@@ -1,0 +1,18 @@
+---
+title: "Congrats to Sara Zago for her successful PhD defense!"
+description: "Congratulations to Sara Zago for successfully defending her PhD thesis!"
+author: "News"
+date: "2026-05-27"
+categories: [news]
+image: "/files/profiles/Sara-Zago.jpg"
+#css: /custom.css
+#draft: true
+---
+
+
+## Summary
+
+We warmly congratulate Sara Zago for successfully defending her PhD thesis! The journay has been a roller coaster (exactly expected for a PhD), but with great results, lot of travels, and lot of learning. Sincere congratulations to Sara for everything. Ad Maiora!
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

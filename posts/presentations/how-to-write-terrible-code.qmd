@@ -4,11 +4,14 @@ description: "A short and humorous guide on good principles of coding, by ONDA L
 author: "Giorgio Arcara"
 date: "2026-06-01"
 categories: [presentation]
-image: "/files/images/ONDA_waves.png"
+image: "/files/images/terrible_code.png"
 ---
 
 [Open the presentation](/files/presentations/how-to-write-terrible-code/slides.html){target="_blank"}
 
 <!--Include social share buttons-->
+
+Check here for a short guide that explains the essentials to write terrible code (but also why you shouldn't do that, and how to write better code). This short guide was born after some Lab discussions about good practices in coding.
+
 
 {{< include /files/includes/_socialshare.qmd >}}

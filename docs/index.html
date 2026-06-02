@@ -80,7 +80,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 3,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -161,13 +162,13 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="ONDA Lab website – Onda Lab">
 <meta property="og:description" content="Open methodologies in Neurorehabilitation and Data Analysis">
-<meta property="og:image" content="https://drganghe.github.io/quarto-academic-website-template/files/images/ONDA_logo_v12.png">
+<meta property="og:image" content="https://sancamilloirccs-ondalab.github.io/files/images/ONDA_logo_v12.png">
 <meta property="og:site_name" content="Onda Lab">
 <meta property="og:image:height" content="325">
 <meta property="og:image:width" content="784">
 <meta name="twitter:title" content="ONDA Lab website – Onda Lab">
 <meta name="twitter:description" content="Open methodologies in Neurorehabilitation and Data Analysis">
-<meta name="twitter:image" content="https://drganghe.github.io/quarto-academic-website-template/files/images/ONDA_logo_v12.png">
+<meta name="twitter:image" content="https://sancamilloirccs-ondalab.github.io/files/images/ONDA_logo_v12.png">
 <meta name="twitter:image-height" content="325">
 <meta name="twitter:image-width" content="784">
 <meta name="twitter:card" content="summary_large_image">
@@ -333,11 +334,11 @@ Check [README.md](https://github.com/drganghe/quarto-academic-website-template/b
 <p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
 <div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cHJlc2VudGF0aW9u" data-listing-date-sort="1780264800000" data-listing-file-modified-sort="1780345377210" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="g-col-1" data-index="0" data-categories="cHJlc2VudGF0aW9u" data-listing-date-sort="1780264800000" data-listing-file-modified-sort="1780412314625" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
 <a href="./posts/presentations/how-to-write-terrible-code.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./files/images/ONDA_waves.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./files/images/terrible_code.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -351,10 +352,30 @@ Jun 1, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="cHJlc2VudGF0aW9u" data-listing-date-sort="1779314400000" data-listing-file-modified-sort="1780218987599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<div class="g-col-1" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1779832800000" data-listing-file-modified-sort="1780391321348" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
+<a href="./posts/news-title/post2.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./files/profiles/Sara-Zago.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Congrats to Sara Zago for her successful PhD defense!
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+May 27, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="cHJlc2VudGF0aW9u" data-listing-date-sort="1779314400000" data-listing-file-modified-sort="1780391215647" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
 <a href="./posts/presentations/arcara-fair.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="./files/images/fair.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 La mia esperienza con i dati FAIR
@@ -362,24 +383,6 @@ La mia esperienza con i dati FAIR
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
 May 21, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="bmV3cw==" data-listing-date-sort="1777154400000" data-listing-file-modified-sort="1777182090739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
-<a href="./posts/news-title/post1.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/ONDA_logo_v12_small.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-ONDA Lab website is online!
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 26, 2026
 </div>
 </div>
 </div>

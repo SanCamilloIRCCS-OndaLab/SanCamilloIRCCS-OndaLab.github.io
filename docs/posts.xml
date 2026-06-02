@@ -6,20 +6,20 @@
       version="2.0">
 <channel>
 <title>Onda Lab</title>
-<link>https://drganghe.github.io/quarto-academic-website-template/posts.html</link>
-<atom:link href="https://drganghe.github.io/quarto-academic-website-template/posts.xml" rel="self" type="application/rss+xml"/>
+<link>https://sancamilloirccs-ondalab.github.io/posts.html</link>
+<atom:link href="https://sancamilloirccs-ondalab.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>Open methodologies in Neurorehabilitation and Data Analysis</description>
 <image>
 <url>https://quarto.org/quarto.png</url>
 <title>Onda Lab</title>
-<link>https://drganghe.github.io/quarto-academic-website-template/posts.html</link>
+<link>https://sancamilloirccs-ondalab.github.io/posts.html</link>
 </image>
 <generator>quarto-1.7.31</generator>
 <lastBuildDate>Sun, 31 May 2026 22:00:00 GMT</lastBuildDate>
 <item>
   <title>How to Write Terrible Code</title>
   <dc:creator>Giorgio Arcara</dc:creator>
-  <link>https://drganghe.github.io/quarto-academic-website-template/posts/presentations/how-to-write-terrible-code.html</link>
+  <link>https://sancamilloirccs-ondalab.github.io/posts/presentations/how-to-write-terrible-code.html</link>
   <description><![CDATA[ 
 
 
@@ -27,6 +27,7 @@
 
 <p><a href="../../files/presentations/how-to-write-terrible-code/slides.html" target="_blank">Open the presentation</a></p>
 <!--Include social share buttons-->
+<p>Check here for a short guide that explains the essentials to write terrible code (but also why you shouldn’t do that, and how to write better code). This short guide was born after some Lab discussions about good practices in coding.</p>
 <!-- 
 AddToAny check more: https://www.addtoany.com/buttons/for/website 
 Using includes will make edits easier, will only need to add or remove button here if needed.
@@ -41,14 +42,45 @@ https://quarto.org/docs/authoring/includes.html
 
  ]]></description>
   <category>presentation</category>
-  <guid>https://drganghe.github.io/quarto-academic-website-template/posts/presentations/how-to-write-terrible-code.html</guid>
+  <guid>https://sancamilloirccs-ondalab.github.io/posts/presentations/how-to-write-terrible-code.html</guid>
   <pubDate>Sun, 31 May 2026 22:00:00 GMT</pubDate>
-  <media:content url="https://drganghe.github.io/quarto-academic-website-template/files/images/ONDA_waves.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="https://sancamilloirccs-ondalab.github.io/files/images/terrible_code.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Congrats to Sara Zago for her successful PhD defense!</title>
+  <dc:creator>News </dc:creator>
+  <link>https://sancamilloirccs-ondalab.github.io/posts/news-title/post2.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>We warmly congratulate Sara Zago for successfully defending her PhD thesis! The journay has been a roller coaster (exactly expected for a PhD), but with great results, lot of travels, and lot of learning. Sincere congratulations to Sara for everything. Ad Maiora! <!--Include social share buttons--></p>
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://sancamilloirccs-ondalab.github.io/posts/news-title/post2.html</guid>
+  <pubDate>Tue, 26 May 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://sancamilloirccs-ondalab.github.io/files/profiles/Sara-Zago.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>La mia esperienza con i dati FAIR</title>
   <dc:creator>Giorgio Arcara</dc:creator>
-  <link>https://drganghe.github.io/quarto-academic-website-template/posts/presentations/arcara-fair.html</link>
+  <link>https://sancamilloirccs-ondalab.github.io/posts/presentations/arcara-fair.html</link>
   <description><![CDATA[ 
 
 
@@ -71,13 +103,14 @@ https://quarto.org/docs/authoring/includes.html
 
  ]]></description>
   <category>presentation</category>
-  <guid>https://drganghe.github.io/quarto-academic-website-template/posts/presentations/arcara-fair.html</guid>
+  <guid>https://sancamilloirccs-ondalab.github.io/posts/presentations/arcara-fair.html</guid>
   <pubDate>Wed, 20 May 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://sancamilloirccs-ondalab.github.io/files/images/fair.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>ONDA Lab website is online!</title>
   <dc:creator>News </dc:creator>
-  <link>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/post1.html</link>
+  <link>https://sancamilloirccs-ondalab.github.io/posts/news-title/post1.html</link>
   <description><![CDATA[ 
 
 
@@ -102,9 +135,9 @@ https://quarto.org/docs/authoring/includes.html
 
  ]]></description>
   <category>news</category>
-  <guid>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/post1.html</guid>
+  <guid>https://sancamilloirccs-ondalab.github.io/posts/news-title/post1.html</guid>
   <pubDate>Sat, 25 Apr 2026 22:00:00 GMT</pubDate>
-  <media:content url="https://drganghe.github.io/quarto-academic-website-template/files/images/ONDA_logo_v12_small.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://sancamilloirccs-ondalab.github.io/files/images/ONDA_logo_v12_small.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

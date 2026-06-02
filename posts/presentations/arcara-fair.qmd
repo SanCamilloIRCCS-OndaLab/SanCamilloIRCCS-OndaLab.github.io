@@ -4,7 +4,7 @@ description: "Presentazione in italiano sull'esperienza con i dati FAIR (come ut
 author: "Giorgio Arcara"
 date: "2026-05-21"
 categories: [presentation]
-#image: ""
+image: "/files/images/fair.jpg"
 #draft: true
 ---
 
