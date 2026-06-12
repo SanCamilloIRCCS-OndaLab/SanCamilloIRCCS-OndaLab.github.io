@@ -15,7 +15,36 @@
 <link>https://sancamilloirccs-ondalab.github.io/posts.html</link>
 </image>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Sun, 31 May 2026 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 04 Jun 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Good Practices for AI-assisted coding</title>
+  <dc:creator>Giorgio Arcara</dc:creator>
+  <link>https://sancamilloirccs-ondalab.github.io/posts/presentations/ai-assisted-coding.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="../../files/presentations/AI_assisted_coding.pdf">Scarica le slide (PDF)</a></p>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+
+ ]]></description>
+  <category>presentation</category>
+  <guid>https://sancamilloirccs-ondalab.github.io/posts/presentations/ai-assisted-coding.html</guid>
+  <pubDate>Thu, 04 Jun 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://sancamilloirccs-ondalab.github.io/files/images/ONDA_waves.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
 <item>
   <title>How to Write Terrible Code</title>
   <dc:creator>Giorgio Arcara</dc:creator>
@@ -138,35 +167,6 @@ https://quarto.org/docs/authoring/includes.html
   <guid>https://sancamilloirccs-ondalab.github.io/posts/news-title/post1.html</guid>
   <pubDate>Sat, 25 Apr 2026 22:00:00 GMT</pubDate>
   <media:content url="https://sancamilloirccs-ondalab.github.io/files/images/ONDA_logo_v12_small.png" medium="image" type="image/png" height="144" width="144"/>
-</item>
-<item>
-  <title>Good Practices for AI-assisted coding</title>
-  <dc:creator>Giorgio Arcara</dc:creator>
-  <link>https://sancamilloirccs-ondalab.github.io/posts/presentations/ai-assisted-coding.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><a href="../../files/presentations/AI_assisted_coding.pdf">Scarica le slide (PDF)</a></p>
-<!--Include social share buttons-->
-<!-- 
-AddToAny check more: https://www.addtoany.com/buttons/for/website 
-Using includes will make edits easier, will only need to add or remove button here if needed.
-https://quarto.org/docs/authoring/includes.html
--->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
-</div>
-<script async="" src="https://static.addtoany.com/menu/page.js"></script>
-
-
-
- ]]></description>
-  <category>presentation</category>
-  <guid>https://sancamilloirccs-ondalab.github.io/posts/presentations/ai-assisted-coding.html</guid>
-  <pubDate>Wed, 04 Jun 2025 22:00:00 GMT</pubDate>
-  <media:content url="https://sancamilloirccs-ondalab.github.io/files/images/ONDA_waves.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 </channel>
 </rss>

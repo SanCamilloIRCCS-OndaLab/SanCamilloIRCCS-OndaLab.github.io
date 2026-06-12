@@ -2,7 +2,7 @@
 title: "Good Practices for AI-assisted coding"
 description: "A presentation describing on the opportunities and pitfalls of using AI tools for coding in scientific research. The presentation contains personal and Lab views on the issue (probably it will be updated often)"
 author: "Giorgio Arcara"
-date: "2025-06-05"
+date: "2026-06-05"
 categories: [presentation]
 image: "/files/images/ONDA_waves.png"
 ---

@@ -6,21 +6,21 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/presentations/ai-assisted-coding.html",
       "/posts/presentations/how-to-write-terrible-code.html",
       "/posts/news-title/post2.html",
       "/posts/presentations/arcara-fair.html",
-      "/posts/news-title/post1.html",
-      "/posts/presentations/ai-assisted-coding.html"
+      "/posts/news-title/post1.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
+      "/posts/presentations/ai-assisted-coding.html",
       "/posts/presentations/how-to-write-terrible-code.html",
       "/posts/news-title/post2.html",
       "/posts/presentations/arcara-fair.html",
-      "/posts/news-title/post1.html",
-      "/posts/presentations/ai-assisted-coding.html"
+      "/posts/news-title/post1.html"
     ]
   },
   {
