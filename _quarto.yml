@@ -31,8 +31,8 @@ website:
             href: posts.qmd#category=event      
           - text: Contact
             href: contact.qmd
-          - text: Lab Manual
-            href: lab-manual.qmd             
+          - text: Lab guides
+            href: lab-guides.qmd
       - text: Research
         menu:
           - text: Publications Listing  # Automatically generated from publications.xlsx

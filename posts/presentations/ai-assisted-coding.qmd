@@ -1,0 +1,14 @@
+---
+title: "Good Practices for AI-assisted coding"
+description: "A presentation describing on the opportunities and pitfalls of using AI tools for coding in scientific research. The presentation contains personal and Lab views on the issue (probably it will be updated many times)"
+author: "Giorgio Arcara"
+date: "2025-05-01"
+categories: [presentation]
+image: "/files/images/ONDA_waves.png"
+---
+
+[Scarica le slide (PDF)](/files/presentations/AI_assisted_coding.pdf)
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
