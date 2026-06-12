@@ -4,8 +4,14 @@
     "items": []
   },
   {
-    "listing": "/people.html",
-    "items": []
+    "listing": "/posts.html",
+    "items": [
+      "/posts/presentations/how-to-write-terrible-code.html",
+      "/posts/news-title/post2.html",
+      "/posts/presentations/arcara-fair.html",
+      "/posts/news-title/post1.html",
+      "/posts/presentations/ai-assisted-coding.html"
+    ]
   },
   {
     "listing": "/index.html",
@@ -13,17 +19,13 @@
       "/posts/presentations/how-to-write-terrible-code.html",
       "/posts/news-title/post2.html",
       "/posts/presentations/arcara-fair.html",
-      "/posts/news-title/post1.html"
+      "/posts/news-title/post1.html",
+      "/posts/presentations/ai-assisted-coding.html"
     ]
   },
   {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/presentations/how-to-write-terrible-code.html",
-      "/posts/news-title/post2.html",
-      "/posts/presentations/arcara-fair.html",
-      "/posts/news-title/post1.html"
-    ]
+    "listing": "/people.html",
+    "items": []
   },
   {
     "listing": "/pub-listing.html",
