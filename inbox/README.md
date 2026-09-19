@@ -14,5 +14,10 @@ Then, in Claude Code:
 
     /publish-news inbox/lago-sip-2026
 
+The post goes to posts/news-title/ (About -> News), as a draft.
 Images arriving later? Add them to the folder and run the same command again.
+To see which folders still have no post:
+
+    /publish-news pending
+
 See ../../NEWS-WORKFLOW.md (outside the repo) for the whole workflow.

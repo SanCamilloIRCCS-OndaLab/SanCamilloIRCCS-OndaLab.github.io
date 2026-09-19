@@ -8,14 +8,14 @@ Google Calendar event**, both private to Giorgio.
 
 - Edit, commit or push files; open PRs or issues; post anything anywhere
   public. The repo is public and nothing about unverified papers belongs there.
-- Add papers to the site. That happens later, locally, with `/publish-news monthly`.
+- Add papers to the site. That happens later, locally, with `/update-publications monthly`.
 
 ## Steps
 
 1. `pip install openpyxl` if it is missing, then run
    `python scripts/fetch_new_pubs.py --since <first day of the previous month>`
    and read `.lab-site-updates/new_pubs.json`.
-2. Judge the candidates following [reference.md](reference.md) ("Judge them").
+2. Judge the candidates following [site-rules.md](../../site-rules.md) (Publications -> "Judge them").
    For `review` items, open the DOI / PubMed record and read the affiliations.
    Sort every candidate into: **ready to add**, **published version of a
    preprint**, **needs Giorgio's decision** (with the reason), or **not ours**
@@ -47,8 +47,8 @@ Google Calendar event**, both private to Giorgio.
    ## Search problems
    (any source that failed - or "none")
    ## To do
-   - [ ] Add this month's talks / posters / conferences to inbox/ (see NEWS-WORKFLOW.md)
-   - [ ] Run /publish-news monthly in VS Code
+   - [ ] Run /update-publications monthly in VS Code (papers)
+   - [ ] Add this month's talks / posters / conferences to inbox/, then run /publish-news pending (news)
    - [ ] Review, finalize, commit & push
    ```
 

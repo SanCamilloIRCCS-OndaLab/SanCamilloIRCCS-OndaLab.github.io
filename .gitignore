@@ -13,3 +13,7 @@ CLAUDE.md
 inbox/*
 !inbox/README.md
 !inbox/_template/
+
+# editor / tool artifacts
+.kilo/
+.Rhistory
