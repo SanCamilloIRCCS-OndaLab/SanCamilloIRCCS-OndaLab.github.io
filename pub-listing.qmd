@@ -22,6 +22,14 @@ listing:
     template: pub-listing.ejs
     include:
       section: "Peer-reviewed Journal Paper"
+  - id: preprints
+    contents: publications.yml
+    type: custom
+    page-size: 100
+    categories: numbered
+    template: pub-listing.ejs
+    include:
+      section: "Preprint"
 css: pub-listing.css
 filters: [remove-stray-divfence.lua]  # This filter is used to remove stray ":::" strings that leak into the HTML output when Quarto's listing wrapper fenced divs are interrupted by raw HTML blocks from the EJS template.
 ---
@@ -40,6 +48,11 @@ Note: \* corresponding author; ![](https://drganghe.github.io/files/images/highl
 ## Peer-reviewed Journal Papers
 
 ::: {#peer-reviewed}
+:::
+
+## Preprints
+
+::: {#preprints}
 :::
 
 

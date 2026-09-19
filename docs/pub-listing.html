@@ -80,13 +80,41 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-section','listing-authors','listing-year','listing-title','listing-journal','listing-volume','listing-pages','listing-issue',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-section','listing-authors','listing-year','listing-title','listing-journal','listing-volume','listing-pages','listing-doi','listing-issue',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-section","listing-authors","listing-year","listing-title","listing-journal","listing-volume","listing-pages","listing-issue"],
+      searchColumns: ["listing-section","listing-authors","listing-year","listing-title","listing-journal","listing-volume","listing-pages","listing-doi","listing-issue"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-peer-reviewed'] = new List('listing-peer-reviewed', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-preprints .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-preprints'] = new List('listing-preprints', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -275,6 +303,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#peer-reviewed-journal-papers" id="toc-peer-reviewed-journal-papers" class="nav-link active" data-scroll-target="#peer-reviewed-journal-papers">Peer-reviewed Journal Papers</a></li>
+  <li><a href="#preprints" id="toc-preprints" class="nav-link" data-scroll-target="#preprints">Preprints</a></li>
   </ul>
 </nav>
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(11)</span></div></div></div>
@@ -328,7 +357,10 @@ https://badge.dimensions.ai/
 
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Vicentin S,Reschini DB,Santacesaria P,Toffoli L,Zago S,Arcara G,Cona G</span>. <span class="pub-year">2026</span>. <span class="pub-title">Decoding the neural dynamics of everyday prospective remembering: a hidden Markov model approach</span>. <em class="pub-journal">Frontiers in Human Neuroscience</em> 19: 1686657.
+<span class="pub-authors">Vicentin S,Reschini DB,Santacesaria P,Toffoli L,Zago S,Arcara G,Cona G</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.3389/fnhum.2025.1686657" class="pub-title">Decoding the neural dynamics of everyday prospective remembering: a hidden Markov model approach</a>. <em class="pub-journal">Frontiers in Human Neuroscience</em> 19: 1686657. doi: <a href="https://doi.org/10.3389/fnhum.2025.1686657" target="_blank" rel="noopener" class="pub-doi">10.3389/fnhum.2025.1686657</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.3389/fnhum.2025.1686657" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.3389/fnhum.2025.1686657" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
@@ -338,7 +370,10 @@ https://badge.dimensions.ai/
 
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Lago S,Zago S,Montemurro S,Calabrò RS,Maggio MG,Dattola S,Casetta I,Arcara G</span>. <span class="pub-year">2026</span>. <span class="pub-title">Education shapes the link between EEG aperiodic components and cognitive aging</span>. <em class="pub-journal">Plos one</em> 21(3): e0328318.
+<span class="pub-authors">Lago S,Zago S,Montemurro S,Calabrò RS,Maggio MG,Dattola S,Casetta I,Arcara G</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.1371/journal.pone.0328318" class="pub-title">Education shapes the link between EEG aperiodic components and cognitive aging</a>. <em class="pub-journal">Plos one</em> 21(3): e0328318. doi: <a href="https://doi.org/10.1371/journal.pone.0328318" target="_blank" rel="noopener" class="pub-doi">10.1371/journal.pone.0328318</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1371/journal.pone.0328318" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1371/journal.pone.0328318" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
@@ -348,7 +383,10 @@ https://badge.dimensions.ai/
 
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Samogin J,Zago S,Tonin A,Seynaeve M,De Beukelaar T,Porcaro C,Marinazzo D,Arcara G,Mantini D</span>. <span class="pub-year">2026</span>. <span class="pub-title">Resting-state brain dynamics: insights from oscillatory activity in brain networks</span>. <em class="pub-journal">Reviews in the Neurosciences</em> 37(3): 217-230.
+<span class="pub-authors">Samogin J,Zago S,Tonin A,Seynaeve M,De Beukelaar T,Porcaro C,Marinazzo D,Arcara G,Mantini D</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.1515/revneuro-2025-0094" class="pub-title">Resting-state brain dynamics: insights from oscillatory activity in brain networks</a>. <em class="pub-journal">Reviews in the Neurosciences</em> 37(3): 217-230. doi: <a href="https://doi.org/10.1515/revneuro-2025-0094" target="_blank" rel="noopener" class="pub-doi">10.1515/revneuro-2025-0094</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1515/revneuro-2025-0094" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1515/revneuro-2025-0094" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
@@ -358,7 +396,10 @@ https://badge.dimensions.ai/
 
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Cataneo A,Marino M,Manzo N,Scarpazza C,Arcara G,Mapelli D,Masina F</span>. <span class="pub-year">2026</span>. <span class="pub-title">Gamma transcranial alternating current stimulation increases segregation in the sensorimotor network</span>. <em class="pub-journal">Frontiers in Psychology</em> 17: 1746459.
+<span class="pub-authors">Cataneo A,Marino M,Manzo N,Scarpazza C,Arcara G,Mapelli D,Masina F</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.3389/fpsyg.2026.1746459" class="pub-title">Gamma transcranial alternating current stimulation increases segregation in the sensorimotor network</a>. <em class="pub-journal">Frontiers in Psychology</em> 17: 1746459. doi: <a href="https://doi.org/10.3389/fpsyg.2026.1746459" target="_blank" rel="noopener" class="pub-doi">10.3389/fpsyg.2026.1746459</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.3389/fpsyg.2026.1746459" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.3389/fpsyg.2026.1746459" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
@@ -368,7 +409,10 @@ https://badge.dimensions.ai/
 
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Gabriele P,Antonio C,Silvana P,Marra A,Arcara G,Simone B,Mauro U,Alessio A</span>. <span class="pub-year">2026</span>. <span class="pub-title">Evidence for Enhanced Backward Connectivity in the Third Visual Pathway Following Cortico-Cortical Paired Associative Stimulation</span>. <em class="pub-journal">NeuroImage</em> : 121759.
+<span class="pub-authors">Gabriele P,Antonio C,Silvana P,Marra A,Arcara G,Simone B,Mauro U,Alessio A</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.1016/j.neuroimage.2026.121759" class="pub-title">Evidence for Enhanced Backward Connectivity in the Third Visual Pathway Following Cortico-Cortical Paired Associative Stimulation</a>. <em class="pub-journal">NeuroImage</em> : 121759. doi: <a href="https://doi.org/10.1016/j.neuroimage.2026.121759" target="_blank" rel="noopener" class="pub-doi">10.1016/j.neuroimage.2026.121759</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.neuroimage.2026.121759" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.neuroimage.2026.121759" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
@@ -378,7 +422,10 @@ https://badge.dimensions.ai/
 
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Pellegrino G,Duma GM,Schuler AL,Daub M,Marinazzo D,Arcara G,Soddu A,Rasero J</span>. <span class="pub-year">2026</span>. <span class="pub-title">Assessing whole-cortex excitability from electromagnetic brain signals</span>. <em class="pub-journal">bioRxiv</em> : 2026-2001.
+<span class="pub-authors">Pellegrino G,Duma GM,Schuler AL,Daub M,Marinazzo D,Arcara G,Soddu A,Rasero J</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.64898/2026.01.31.703018" class="pub-title">Assessing whole-cortex excitability from electromagnetic brain signals</a>. <em class="pub-journal">bioRxiv</em> : 2026-2001. doi: <a href="https://doi.org/10.64898/2026.01.31.703018" target="_blank" rel="noopener" class="pub-doi">10.64898/2026.01.31.703018</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.64898/2026.01.31.703018" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.64898/2026.01.31.703018" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
@@ -388,7 +435,10 @@ https://badge.dimensions.ai/
 
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Sartor G,Fusco M,Milana M,Marcon E,Battagello J,Zardetto A,Ruggieri MG,Grotto G,Rigon L,Arcara G,Others</span>. <span class="pub-year">2026</span>. <span class="pub-title">Predictors of unplanned 30-day hospital readmission: a retrospective cohort study in north-east Italy</span>. <em class="pub-journal">BMJ open</em> 16(2): e103595.
+<span class="pub-authors">Sartor G,Fusco M,Milana M,Marcon E,Battagello J,Zardetto A,Ruggieri MG,Grotto G,Rigon L,Arcara G,Others</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.1136/bmjopen-2025-103595" class="pub-title">Predictors of unplanned 30-day hospital readmission: a retrospective cohort study in north-east Italy</a>. <em class="pub-journal">BMJ open</em> 16(2): e103595. doi: <a href="https://doi.org/10.1136/bmjopen-2025-103595" target="_blank" rel="noopener" class="pub-doi">10.1136/bmjopen-2025-103595</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1136/bmjopen-2025-103595" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1136/bmjopen-2025-103595" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
@@ -398,7 +448,10 @@ https://badge.dimensions.ai/
 
 </div>
 <p class="pub-citation">
-<span class="pub-authors">De Matola M,Arcara G</span>. <span class="pub-year">2026</span>. <span class="pub-title">Convolutional Neural Networks and Neuroscience: A Tutorial Introduction for The Rest of Us</span>. <em class="pub-journal">bioRxiv</em> : 2026-2003.
+<span class="pub-authors">De Matola M,Arcara G</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.64898/2026.03.09.710521" class="pub-title">Convolutional Neural Networks and Neuroscience: A Tutorial Introduction for The Rest of Us</a>. <em class="pub-journal">bioRxiv</em> : 2026-2003. doi: <a href="https://doi.org/10.64898/2026.03.09.710521" target="_blank" rel="noopener" class="pub-doi">10.64898/2026.03.09.710521</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.64898/2026.03.09.710521" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.64898/2026.03.09.710521" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
@@ -408,7 +461,10 @@ https://badge.dimensions.ai/
 
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Censi S,Messina G,Arcara G,Ruggeri E,Clausi C,Piva I,Manso J,Basso D,Merante-Boschin I,Bertazza L,Others</span>. <span class="pub-year">2026</span>. <span class="pub-title">Thyroglobulin as a proxy for iodine status in pregnancy</span>. <em class="pub-journal">British Journal of Nutrition</em> : 1-27.
+<span class="pub-authors">Censi S,Messina G,Arcara G,Ruggeri E,Clausi C,Piva I,Manso J,Basso D,Merante-Boschin I,Bertazza L,Others</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.1017/s0007114526106989" class="pub-title">Thyroglobulin as a proxy for iodine status in pregnancy</a>. <em class="pub-journal">British Journal of Nutrition</em> : 1-27. doi: <a href="https://doi.org/10.1017/s0007114526106989" target="_blank" rel="noopener" class="pub-doi">10.1017/s0007114526106989</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1017/s0007114526106989" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1017/s0007114526106989" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
@@ -418,7 +474,10 @@ https://badge.dimensions.ai/
 
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Cenka K,Spaccasassi C,Petkovic S,Pezzetta R,Vicario CM,Arcara G,Avenanti A</span>. <span class="pub-year">2026</span>. <span class="pub-title">Rapid rTPJ-driven cortical interactions encode malicious intentions during implicit moral evaluation: a TMS-EEG study</span>. <em class="pub-journal">NeuroImage</em> : 121885.
+<span class="pub-authors">Cenka K,Spaccasassi C,Petkovic S,Pezzetta R,Vicario CM,Arcara G,Avenanti A</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.1016/j.neuroimage.2026.121885" class="pub-title">Rapid rTPJ-driven cortical interactions encode malicious intentions during implicit moral evaluation: a TMS-EEG study</a>. <em class="pub-journal">NeuroImage</em> : 121885. doi: <a href="https://doi.org/10.1016/j.neuroimage.2026.121885" target="_blank" rel="noopener" class="pub-doi">10.1016/j.neuroimage.2026.121885</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.neuroimage.2026.121885" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.neuroimage.2026.121885" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
@@ -428,13 +487,31 @@ https://badge.dimensions.ai/
 
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Bevacqua N,Turrini S,Cataneo A,Zago S,Arcara G,Candidi M,Mirabella G,Avenanti A</span>. <span class="pub-year">2026</span>. <span class="pub-title">Cortico-cortical paired associative stimulation highlights the functional role of the cortical pathway from the right inferior frontal gyrus to the primary motor cortex in motor inhibition</span>. <em class="pub-journal">NeuroImage</em> : 121933.
+<span class="pub-authors">Bevacqua N,Turrini S,Cataneo A,Zago S,Arcara G,Candidi M,Mirabella G,Avenanti A</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.1016/j.neuroimage.2026.121933" class="pub-title">Cortico-cortical paired associative stimulation highlights the functional role of the cortical pathway from the right inferior frontal gyrus to the primary motor cortex in motor inhibition</a>. <em class="pub-journal">NeuroImage</em> : 121933. doi: <a href="https://doi.org/10.1016/j.neuroimage.2026.121933" target="_blank" rel="noopener" class="pub-doi">10.1016/j.neuroimage.2026.121933</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.neuroimage.2026.121933" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.neuroimage.2026.121933" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
+<div class="hidden quarto-markdown-envelope-contents" data-render-id="cGlwZWxpbmUtbGlzdGluZy1wcmVwcmludHM=">
+<div class="pub-listing list">
 
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+</div>
+</section>
+<section id="preprints" class="level2">
+<h2 class="anchored" data-anchor-id="preprints">Preprints</h2>
+<div id="listing-preprints" class="quarto-listing quarto-listing-container-custom">
+<div class="pub-listing list">
+
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 <!-- 
 AddToAny check more: https://www.addtoany.com/buttons/for/website 

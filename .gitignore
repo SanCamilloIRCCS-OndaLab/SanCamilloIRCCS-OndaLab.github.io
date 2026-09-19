@@ -8,3 +8,8 @@
 .DS_Store
 
 CLAUDE.md
+# /publish-news workflow
+.lab-site-updates/
+inbox/*
+!inbox/README.md
+!inbox/_template/
