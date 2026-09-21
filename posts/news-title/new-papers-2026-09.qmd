@@ -1,0 +1,32 @@
+---
+title: "New publications from the ONDA Lab"
+description: "A new paper in Clinical Neurophysiology on state-dependent brain plasticity and a new bioRxiv preprint on pragmatic deficits after stroke."
+author: "News"
+date: "2026-09-21"
+categories: [news]
+image: "/files/images/news-papers.png"
+announced-dois:
+  - 10.1016/j.clinph.2026.2112352
+  - 10.64898/2026.08.06.742887
+draft: false
+---
+
+
+## Summary
+
+### Brain state shapes paired associative stimulation
+
+In this collaboration with Alessio Avenanti (Unibo) group we studied how Premotor-motor paired associative stimulation (ccPAS) induced selective, lasting plasticity only when delivered during movement execution: when you stimulate matters as much as where.
+
+Turrini S, Amadori A, Zago S, Arcara G, Avenanti A (2026). Timing and circuit engagement shape state-dependent plasticity in the ventral premotor-motor pathway. *Clinical Neurophysiology*, 191, 2112352. DOI: [10.1016/j.clinph.2026.2112352](https://doi.org/10.1016/j.clinph.2026.2112352)
+
+### Pragmatic deficits after stroke are not just a right-hemisphere matter (preprint)
+
+In 99 stroke patients, left- and right-hemisphere lesions led to largely comparable pragmatic impairments, challenging the view of pragmatics as a right-hemisphere function.
+This work is part of a long-term collaboration with the group of [Valentina Bambini] and [NEP Lab](https://www.neplab.it/) (IUSS Pavia), wonderfully led by [S. Gastaldon](https://sites.google.com/view/simone-gastaldon-phd/?pli=1&authuser=0).
+
+Gastaldon S, Romeo F, Barattieri di San Pietro C, Chumakova N, D'Imperio D, Lago S, Nordio S, Parrotta I, Rigoni M, Bambini V, Arcara G (2026). Challenging the right-hemisphere assumption in post-stroke pragmatics: largely comparable impairment profiles across lesion sides. *bioRxiv*. DOI: [10.64898/2026.08.06.742887](https://doi.org/10.64898/2026.08.06.742887)
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
