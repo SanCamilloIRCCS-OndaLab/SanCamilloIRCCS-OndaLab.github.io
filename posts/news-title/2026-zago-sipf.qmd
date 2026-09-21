@@ -1,0 +1,20 @@
+---
+title: "Sara Zago talks about aperiodic EEG at the SIPF congress"
+description: "Sara Zago presented a clinical perspective on aperiodic EEG across aging and neurological disorders at the SIPF congress in Noto."
+author: "News"
+date: "2026-09-18"
+categories: [news]
+image: "/files/images/2026-zago-sipf1.png"
+draft: false
+---
+
+
+## Summary
+
+On 18 September 2026, Sara Zago gave the talk *Aperiodic EEG Across Aging and Neurological Disorders: A Clinical Perspective* at the congress of the SIPF (Società Italiana di Psicofisiologia e Neuroscienze) in Noto, dedicated to the aging brain.
+
+The talk was part of the symposium *The Aperiodic Component of EEG: Promise, Pitfalls, and Perspectives in Aging and Neuropathology*.
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
