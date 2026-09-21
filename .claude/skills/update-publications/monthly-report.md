@@ -47,8 +47,9 @@ Google Calendar event**, both private to Giorgio.
    ## Search problems
    (any source that failed - or "none")
    ## To do
-   - [ ] Run /update-publications monthly in VS Code (papers)
-   - [ ] Add this month's talks / posters / conferences to inbox/, then run /publish-news pending (news)
+   - [ ] Run /update-publications monthly in VS Code (papers -> publication list)
+   - [ ] Run /pub-2-news (posts about the new papers)
+   - [ ] Add this month's talks / posters / conferences to inbox/, then run /draft-2-news (news)
    - [ ] Review, finalize, commit & push
    ```
 

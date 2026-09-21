@@ -1,23 +1,27 @@
-# inbox/
+# inbox/ - your input for news posts
 
-Drop material for a news item here, one folder per item. Everything in this
-folder except this README and `_template/` is git-ignored: nothing you put here
-is published until `/publish-news` turns it into a post and you commit.
+This folder is how you hand material to the site agent. The agent never goes
+looking for talks, posters or conferences: **if it is not in `inbox/`, no post
+is made.** Everything here except this README and `_template/` is git-ignored,
+so nothing you put here is committed or published - only the post that
+`/draft-2-news` makes from it, once you commit that post.
 
     inbox/
       _template/brief.md       <- copy this
-      lago-sip-2026/           <- one folder per item, short slug: surname-event-year
-        brief.md
-        poster.jpg             <- images, any names, listed in brief.md
+      zago-2026-sipf/          <- one folder per item: surname-year-event
+        brief.md               <- template or plain text: who, what, where, when
+        photo1.jpg             <- images, any names; the first is the thumbnail
 
-Then, in Claude Code:
+Then, in Claude Code (session opened on the site repo):
 
-    /publish-news inbox/lago-sip-2026
+    /draft-2-news inbox/zago-2026-sipf     # draft this one
+    /draft-2-news                          # list folders with no post yet
 
-The post goes to posts/news-title/ (About -> News), as a draft.
-Images arriving later? Add them to the folder and run the same command again.
-To see which folders still have no post:
+The post goes to posts/news-title/ (About -> News) as a draft. Images arriving
+later? Add them to the folder and run `/draft-2-news inbox/<slug>` again - the
+same post is updated.
 
-    /publish-news pending
+Posts about papers come from `publications.xlsx` via `/pub-2-news`; an inbox
+folder named after the paper can add extra text or a figure to that post.
 
-See ../../NEWS-WORKFLOW.md (outside the repo) for the whole workflow.
+Full workflow: ../.claude/WORKFLOW.md

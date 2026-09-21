@@ -1,0 +1,3 @@
+# Papers in publications.xlsx that should NOT get a news post.
+# Used by /pub-2-news: one DOI (or exact title, if the paper has no DOI) per line.
+# Anything after "#" is a comment. /pub-2-news appends here when you answer "skip".

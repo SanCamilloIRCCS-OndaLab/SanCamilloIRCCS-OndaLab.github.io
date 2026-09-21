@@ -1,9 +1,14 @@
 # ONDA Lab site - shared rules
 
-Used by two skills: `/update-publications` (reads **Common** + **Publications**)
-and `/publish-news` (reads **Common** + **News posts**, and **Publications ->
-Add them** for paper news). Originally ported from the Cowork `update-lab-site`
-skill.
+Used by three skills:
+
+| Skill | Job | Reads |
+|---|---|---|
+| `/update-publications` | search for papers -> `publications.xlsx` | Common + Publications |
+| `/pub-2-news` | unannounced xlsx papers -> news posts | Common + News posts (+ Publications -> Add them) |
+| `/draft-2-news` | `inbox/` briefs -> news posts | Common + News posts |
+
+Workflow guide for Giorgio: [WORKFLOW.md](WORKFLOW.md).
 
 # Common
 
@@ -31,7 +36,8 @@ skill.
 | `posts/presentations/` | Giorgio's own slide decks (Outreach -> Presentations). **Never write here.** |
 | `files/images/` | Post images |
 | `files/profiles/` | Team photos, fallback thumbnails |
-| `inbox/<slug>/` | Giorgio's briefs + images (git-ignored) |
+| `inbox/<slug>/` | Giorgio's briefs + images (git-ignored) - the only input for `/draft-2-news` |
+| `.claude/pub-news-skip.txt` | Papers Giorgio chose not to announce (used by `/pub-2-news`) |
 | `docs/` | Rendered site, published from `main` |
 
 ## Finalize
@@ -58,6 +64,7 @@ Waiting for you:     <image missing for X / field missing in brief Y>  (or "noth
 Preview:             http://localhost:<port>/posts/news-title/lago-sip-2026.html
                      Drafts are NOT listed on the News page until you say "finalize".
 Next step:           quarto preview -> check -> "finalize" -> commit & push
+                     (+ any follow-up: e.g. "/pub-2-news to announce the 2 new papers")
 ```
 
 Get the file list from `git status --short`, not from memory. Include the
@@ -172,9 +179,16 @@ in italics. Link the event site or slides if the brief gives a URL.
 - Re-running on the same slug: update the existing post in place (replace the
   fallback thumbnail, add images), never create a second post.
 
-## Paper announcements
+## Paper announcements (`/pub-2-news`)
 
-Title = headline about the paper (e.g. "New paper in NeuroImage on ...");
-body = short plain-language summary from the abstract (fetch it via DOI /
-PubMed), the full reference, a DOI link. The paper must also be in the xlsx
-(Publications -> Add them).
+- Title: a headline about the paper - "New paper in NeuroImage on ...".
+- Frontmatter: add **`doi: <DOI>`** (bare DOI, no URL) - this is how
+  `/pub-2-news` knows the paper has been announced. `date:` = publication date
+  (xlsx `Date`, else today).
+- `## Summary`: two to four plain-language sentences from the abstract (fetch
+  it via the DOI / PubMed - do not write from the title alone), then the full
+  reference in the site's style (`Authors (Year). Title. *Journal*, vol(issue),
+  pages.`) and a DOI link.
+- Thumbnail: the first lab author's profile photo (Images rules for fallback),
+  unless an inbox folder for the paper provides an image.
+- The paper must be in the xlsx (Publications -> Add them).

@@ -7,7 +7,8 @@ argument-hint: "[monthly | doi:<DOI> | finalize]"
 # /update-publications
 
 Keeps the publication list (`publications.xlsx` -> Publications page) up to
-date. It does not make news posts - that is `/publish-news`.
+date. It does not make news posts - that is `/pub-2-news` (papers) and
+`/draft-2-news` (inbox briefs).
 
 Read **Common** and **Publications** in [site-rules.md](../../site-rules.md)
 before doing anything. The hard rules there apply: never commit or push.
@@ -31,12 +32,12 @@ before doing anything. The hard rules there apply: never commit or push.
    you rejected.
 3. **Wait for Giorgio's confirmation**, then add the approved papers
    (Publications -> Add them) and run `python xlsx_to_yml.py --force`.
-4. Summary (site-rules.md). Then remind him: talks, posters and conferences of
-   the month are done with `/publish-news pending`.
+4. Summary (site-rules.md). Then remind him: `/pub-2-news` drafts posts about
+   the new papers; talks and conferences go through `inbox/` + `/draft-2-news`.
 
 ### Add one paper
 
 1. `python scripts/pubs_xlsx.py add --doi <DOI>` (skips it if already present).
 2. Check the new row: journal casing, author format, Section. Fix via the
    JSON route if needed. `python xlsx_to_yml.py --force`.
-3. Summary. If Giorgio also wants a news post about it: `/publish-news doi:<DOI>`.
+3. Summary. If Giorgio also wants a news post about it: `/pub-2-news <DOI>`.
