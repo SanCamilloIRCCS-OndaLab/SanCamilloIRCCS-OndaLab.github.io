@@ -6,6 +6,8 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/news-title/new-papers-2026-09.html",
+      "/posts/news-title/2026-zago-sipf.html",
       "/posts/presentations/ai-assisted-coding.html",
       "/posts/presentations/how-to-write-terrible-code.html",
       "/posts/news-title/post2.html",
@@ -16,6 +18,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/news-title/new-papers-2026-09.html",
+      "/posts/news-title/2026-zago-sipf.html",
       "/posts/presentations/ai-assisted-coding.html",
       "/posts/presentations/how-to-write-terrible-code.html",
       "/posts/news-title/post2.html",

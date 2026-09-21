@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Gang He">
+<meta name="dcterms.date" content="2026-09-21">
 <meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
 
-<title>ONDA Lab website – Onda Lab</title>
+<title>New publications from the ONDA Lab – Onda Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,24 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,36 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 3,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -129,48 +99,19 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="ONDA Lab website – Onda Lab">
-<meta property="og:description" content="Open methodologies in Neurorehabilitation and Data Analysis">
-<meta property="og:image" content="https://sancamilloirccs-ondalab.github.io/files/images/ONDA_logo_v12.png">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="New publications from the ONDA Lab – Onda Lab">
+<meta property="og:description" content="A new paper in Clinical Neurophysiology on state-dependent brain plasticity and a new bioRxiv preprint on pragmatic deficits after stroke.">
+<meta property="og:image" content="https://sancamilloirccs-ondalab.github.io/files/images/news-papers.png">
 <meta property="og:site_name" content="Onda Lab">
-<meta property="og:image:height" content="325">
-<meta property="og:image:width" content="784">
-<meta name="twitter:title" content="ONDA Lab website – Onda Lab">
-<meta name="twitter:description" content="Open methodologies in Neurorehabilitation and Data Analysis">
-<meta name="twitter:image" content="https://sancamilloirccs-ondalab.github.io/files/images/ONDA_logo_v12.png">
-<meta name="twitter:image-height" content="325">
-<meta name="twitter:image-width" content="784">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:width" content="1536">
+<meta name="twitter:title" content="New publications from the ONDA Lab – Onda Lab">
+<meta name="twitter:description" content="A new paper in Clinical Neurophysiology on state-dependent brain plasticity and a new bioRxiv preprint on pragmatic deficits after stroke.">
+<meta name="twitter:image" content="https://sancamilloirccs-ondalab.github.io/files/images/news-papers.png">
+<meta name="twitter:image-height" content="1024">
+<meta name="twitter:image-width" content="1536">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -181,7 +122,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Onda Lab</span>
     </a>
   </div>
@@ -197,19 +138,19 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=news">
+    <a class="dropdown-item" href="../../posts.html#category=news">
  <span class="dropdown-text">News</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts.html#category=event">
+    <a class="dropdown-item" href="../../posts.html#category=event">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./contact.html">
+    <a class="dropdown-item" href="../../contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lab-guides.html">
+    <a class="dropdown-item" href="../../lab-guides.html">
  <span class="dropdown-text">Lab guides</span></a>
   </li>  
     </ul>
@@ -220,13 +161,13 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
         <li>
-    <a class="dropdown-item" href="./pub-listing.html">
+    <a class="dropdown-item" href="../../pub-listing.html">
  <span class="dropdown-text">Publications Listing</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -235,13 +176,13 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-outreach">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=presentation">
+    <a class="dropdown-item" href="../../posts.html#category=presentation">
  <span class="dropdown-text">Presentations</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link" href="../../people.html"> 
 <span class="menu-text">Group</span></a>
   </li>  
 </ul>
@@ -252,7 +193,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -269,140 +210,100 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
+  <li><a href="#brain-state-shapes-paired-associative-stimulation" id="toc-brain-state-shapes-paired-associative-stimulation" class="nav-link" data-scroll-target="#brain-state-shapes-paired-associative-stimulation">Brain state shapes paired associative stimulation</a></li>
+  <li><a href="#pragmatic-deficits-after-stroke-are-not-just-a-right-hemisphere-matter-preprint" id="toc-pragmatic-deficits-after-stroke-are-not-just-a-right-hemisphere-matter-preprint" class="nav-link" data-scroll-target="#pragmatic-deficits-after-stroke-are-not-just-a-right-hemisphere-matter-preprint">Pragmatic deficits after stroke are not just a right-hemisphere matter (preprint)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="files/images/ONDA_logo_v12.png" class="about-image
-  rounded " style="width: 100%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ONDA Lab website</h1>
-</div>
-<div class="quarto-title-meta column-page">
+<h1 class="title">New publications from the ONDA Lab</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">news</div>
   </div>
+  </div>
+
+<div>
+  <div class="description">
+    A new paper in Clinical Neurophysiology on state-dependent brain plasticity and a new bioRxiv preprint on pragmatic deficits after stroke.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>News </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 21, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://github.com/SanCamilloIRCCS-OndaLab" class="about-link" rel="" target="_blank">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Lab</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="hero-heading" style="font-size: 1.1em;">
-<p>Welcome to the website of the <strong>ONDA</strong> Lab (<strong>O</strong>pen methodologies in <strong>N</strong>eurorehabilitation and <strong>D</strong>ata <strong>A</strong>nalysis)</p>
-<p>The Lab is located at <a href="https://hsancamillo.it">IRCCS San Camillo in Venice</a> its research focuses on <span style="color:#1b4f72; font-weight:bold;">N</span>eurorehabilitation and in particular on: <span style="color:#8fc2d7; font-weight:bold;">N</span>europhysiology, <span style="color:#98cae6; font-weight:bold;">N</span>europsychology, and <span style="color:#acd6ec; font-weight:bold;">N</span>euroscience.</p>
-<section id="lab-philosophy" class="level2">
-<h2 data-anchor-id="lab-philosophy">Lab philosophy</h2>
-<p>The Lab philosophy is focused on rigour and <strong>Open Science</strong> principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research.</p>
+
+
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<section id="brain-state-shapes-paired-associative-stimulation" class="level3">
+<h3 class="anchored" data-anchor-id="brain-state-shapes-paired-associative-stimulation">Brain state shapes paired associative stimulation</h3>
+<p>In this collaboration with Alessio Avenanti (Unibo) group we studied how Premotor-motor paired associative stimulation (ccPAS) induced selective, lasting plasticity only when delivered during movement execution: when you stimulate matters as much as where.</p>
+<p>Turrini S, Amadori A, Zago S, Arcara G, Avenanti A (2026). Timing and circuit engagement shape state-dependent plasticity in the ventral premotor-motor pathway. <em>Clinical Neurophysiology</em>, 191, 2112352. DOI: <a href="https://doi.org/10.1016/j.clinph.2026.2112352">10.1016/j.clinph.2026.2112352</a></p>
 </section>
-<section id="what-we-do" class="level2">
-<h2 data-anchor-id="what-we-do">What we do</h2>
-<ul>
-<li>We develop open tools for neuropsychological assessment and rehabilitation</li>
-<li>We study brain functions and biomarkers using MEEG</li>
-<li>We create open-source pipelines for neural data analysis</li>
-<li>We develop/optimize methods for behavioural and brain data analysis</li>
-</ul>
-<!--
-I'm a [Quarto Academeic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io).
-I'm a template that you can fork to build your own website with easy adaptation and deployment.
-I can automatically generate a neat publication list from an Excel file and enabling categories and filters.
-Check [README.md](https://github.com/drganghe/quarto-academic-website-template/blob/main/README.md) for more detailed instructions.
+<section id="pragmatic-deficits-after-stroke-are-not-just-a-right-hemisphere-matter-preprint" class="level3">
+<h3 class="anchored" data-anchor-id="pragmatic-deficits-after-stroke-are-not-just-a-right-hemisphere-matter-preprint">Pragmatic deficits after stroke are not just a right-hemisphere matter (preprint)</h3>
+<p>In 99 stroke patients, left- and right-hemisphere lesions led to largely comparable pragmatic impairments, challenging the view of pragmatics as a right-hemisphere function. This work is part of a long-term collaboration with the group of [Valentina Bambini] and <a href="https://www.neplab.it/">NEP Lab</a> (IUSS Pavia), wonderfully led by <a href="https://sites.google.com/view/simone-gastaldon-phd/?pli=1&amp;authuser=0">S. Gastaldon</a>.</p>
+<p>Gastaldon S, Romeo F, Barattieri di San Pietro C, Chumakova N, D’Imperio D, Lago S, Nordio S, Parrotta I, Rigoni M, Bambini V, Arcara G (2026). Challenging the right-hemisphere assumption in post-stroke pragmatics: largely comparable impairment profiles across lesion sides. <em>bioRxiv</em>. DOI: <a href="https://doi.org/10.64898/2026.08.06.742887">10.64898/2026.08.06.742887</a></p>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
 -->
-<!--
-## Experience
-- Researcher, Univerisity
-## Education
-- PhD, Univerisity
--->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
 </section>
-</div></div>
-</div>
-
-<!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
-<section id="recent-posts" class="level2">
-<h2 data-anchor-id="recent-posts">Recent Posts</h2>
-<p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1789941600000" data-listing-file-modified-sort="1789988258441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="172">
-<a href="./posts/news-title/new-papers-2026-09.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/news-papers.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-New publications from the ONDA Lab
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Sep 21, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1789682400000" data-listing-file-modified-sort="1789973325709" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
-<a href="./posts/news-title/2026-zago-sipf.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/2026-zago-sipf1.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Sara Zago talks about aperiodic EEG at the SIPF congress
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Sep 18, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cHJlc2VudGF0aW9u" data-listing-date-sort="1780610400000" data-listing-file-modified-sort="1781251859950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
-<a href="./posts/presentations/ai-assisted-coding.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/ONDA_waves.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Good Practices for AI-assisted coding
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jun 5, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p align="right">
-<a href="./posts.html">All Posts »</a>
-</p>
-
-
-
-
 </section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -817,7 +718,7 @@ Jun 5, 2026
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank">
+    <a class="nav-link" href="../../posts.xml" target="_blank">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>
