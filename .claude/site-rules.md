@@ -28,6 +28,7 @@ Workflow guide for Giorgio: [WORKFLOW.md](WORKFLOW.md).
 | Path | What it is |
 |---|---|
 | `publications.xlsx` | Source of truth for the publication list. Never hand-edit the yml. |
+| `need-revision-pubs.csv` | Papers added and not yet checked by Giorgio (git-ignored). `pubs_xlsx.py add` appends to it; Giorgio deletes it after review. Never edit or delete it yourself. |
 | `scripts/pubs_xlsx.py` | The only way to edit the xlsx: writes by column name, skips duplicates. |
 | `scripts/fetch_new_pubs.py` | Finds candidate papers (PubMed, Europe PMC, Crossref preprints). |
 | `xlsx_to_yml.py` | xlsx -> `publications.yml`. Also runs as Quarto pre-render. |
@@ -59,6 +60,7 @@ Changed files (uncommitted):
   A posts/news-title/lago-sip-2026.qmd         (draft)
   A files/images/lago-sip-2026-1.jpg
 Papers added:        <titles>                  (or "none")
+To review:           need-revision-pubs.csv - <N> rows   (omit if the file does not exist)
 Left out:            <title - reason>          (or "none")
 Waiting for you:     <image missing for X / field missing in brief Y>  (or "nothing")
 Preview:             http://localhost:<port>/posts/news-title/lago-sip-2026.html
@@ -181,14 +183,22 @@ in italics. Link the event site or slides if the brief gives a URL.
 
 ## Paper announcements (`/pub-2-news`)
 
-- Title: a headline about the paper - "New paper in NeuroImage on ...".
-- Frontmatter: add **`doi: <DOI>`** (bare DOI, no URL) - this is how
-  `/pub-2-news` knows the paper has been announced. `date:` = publication date
-  (xlsx `Date`, else today).
-- `## Summary`: two to four plain-language sentences from the abstract (fetch
-  it via the DOI / PubMed - do not write from the title alone), then the full
-  reference in the site's style (`Authors (Year). Title. *Journal*, vol(issue),
-  pages.`) and a DOI link.
-- Thumbnail: the first lab author's profile photo (Images rules for fallback),
-  unless an inbox folder for the paper provides an image.
-- The paper must be in the xlsx (Publications -> Add them).
+- **One post for all the papers of a run**, never one post per paper:
+  `posts/news-title/new-papers-<YYYY-MM>.qmd`.
+- Title: `"New publications from the ONDA Lab"`. `description:` one sentence
+  naming the venues and topics ("A new paper in X on ... and a new bioRxiv
+  preprint on ...").
+- Frontmatter: add **`announced-dois:`** as a YAML list of bare DOIs (no URL;
+  exact title for a paper without DOI) - this is how `/pub-2-news` knows the
+  papers have been announced. Do not use Quarto's `doi:` key (it is scholarly
+  metadata for the page itself). `date:` = today.
+- `image: "/files/images/news-papers.png"` - always, for every paper post.
+- `## Summary`, then one `###` section per paper, newest first:
+  - a short headline about the finding (add "(preprint)" for preprints);
+  - **one sentence** with the main result - fetch the abstract via the DOI /
+    PubMed (do not write from the title alone), keep only the key finding and
+    why it matters, no methods detail beyond a sample size;
+  - the full reference in the site's style (`Authors (Year). Title.
+    *Journal*, vol(issue), pages.`) followed on the same paragraph by
+    `DOI: [<DOI>](https://doi.org/<DOI>)`.
+- Every paper must be in the xlsx (Publications -> Add them).

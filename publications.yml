@@ -104,3 +104,23 @@
   journal: NeuroImage
   pages: 121933
   doi: 10.1016/j.neuroimage.2026.121933
+
+- section: Preprint
+  authors: "Gastaldon S,Romeo F,Barattieri di San Pietro C,Chumakova N,D'Imperio D,Lago S,Nordio S,Parrotta I,Rigoni M,Bambini V,Arcara G"
+  year: 2026
+  date: 2026-08-10
+  title: "Challenging the right-hemisphere assumption in post-stroke pragmatics: largely comparable impairment profiles across lesion sides"
+  path: "https://doi.org/10.64898/2026.08.06.742887"
+  journal: bioRxiv
+  doi: 10.64898/2026.08.06.742887
+
+- section: Peer-reviewed Journal Paper
+  authors: "Turrini S,Amadori A,Zago S,Arcara G,Avenanti A"
+  year: 2026
+  date: 2026 Nov
+  title: Timing and circuit engagement shape state-dependent plasticity in the ventral premotor-motor pathway
+  path: "https://doi.org/10.1016/j.clinph.2026.2112352"
+  journal: Clinical Neurophysiology
+  volume: 191
+  pages: 2112352
+  doi: 10.1016/j.clinph.2026.2112352

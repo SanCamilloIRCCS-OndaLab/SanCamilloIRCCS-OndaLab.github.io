@@ -10,6 +10,7 @@
 CLAUDE.md
 # /publish-news workflow
 .lab-site-updates/
+need-revision-pubs.csv
 inbox/*
 !inbox/README.md
 !inbox/_template/

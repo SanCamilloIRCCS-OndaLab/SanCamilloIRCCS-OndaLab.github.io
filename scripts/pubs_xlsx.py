@@ -24,6 +24,8 @@ Usage
 from __future__ import annotations
 
 import argparse
+import csv
+import datetime
 import html
 import json
 import re
@@ -35,6 +37,9 @@ from pathlib import Path
 import openpyxl
 
 XLSX = Path(__file__).resolve().parent.parent / "publications.xlsx"
+# Papers added but not yet checked by Giorgio (git-ignored). He deletes it after review;
+# the next `add` recreates it.
+REVIEW_CSV = XLSX.parent / "need-revision-pubs.csv"
 
 # Column order from the README; existing columns keep their place, missing ones are appended.
 README_COLUMNS = [
@@ -178,6 +183,21 @@ def record_from_crossref(doi: str) -> dict:
     }
 
 
+def log_for_review(rows: list[tuple[str, str, str]]) -> None:
+    """Append (first author, title, section) rows to need-revision-pubs.csv."""
+    if not rows:
+        return
+    new = not REVIEW_CSV.exists()
+    # utf-8-sig on creation so Excel shows accented names correctly
+    with REVIEW_CSV.open("a", newline="", encoding="utf-8-sig" if new else "utf-8") as f:
+        w = csv.writer(f)
+        if new:
+            w.writerow(["date_added", "first_author", "title", "section"])
+        today = datetime.date.today().isoformat()
+        w.writerows([today, *row] for row in rows)
+    print(f"Logged for review: {len(rows)} -> {REVIEW_CSV.name}")
+
+
 def cmd_add(args) -> int:
     if args.doi:
         records = [record_from_crossref(norm_doi(args.doi))]
@@ -192,7 +212,7 @@ def cmd_add(args) -> int:
     if missing:
         raise SystemExit(f"publications.xlsx lacks {missing} - run `upgrade` first.")
 
-    added, skipped = [], []
+    added, skipped, to_review = [], [], []
     for rec in records:
         title, doi = rec.get("title", "").strip(), norm_doi(rec.get("doi"))
         existing = (doi and sh.find(doi)) or sh.find(title)
@@ -225,8 +245,10 @@ def cmd_add(args) -> int:
             if value is not None and sh.col(name):
                 sh.set(r, name, value)
         added.append(f"row {r}: [{section}] {title[:70]}")
+        to_review.append((authors.split(",")[0], title, section))
 
     sh.save()
+    log_for_review(to_review)
     print(f"Added ({len(added)}):")
     print("\n".join(f"  {x}" for x in added) or "  -")
     if skipped:

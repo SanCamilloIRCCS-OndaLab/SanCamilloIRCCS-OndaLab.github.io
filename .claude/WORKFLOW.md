@@ -24,7 +24,7 @@ An agent keeps the lab website up to date: the publication list, and news posts 
 | Command | Input | Output | Page on the site |
 |---|---|---|---|
 | `/update-publications` | Online search (PubMed, Europe PMC, Crossref) | New rows in `publications.xlsx` | Research → Publications |
-| `/pub-2-news` | Papers in `publications.xlsx` not yet announced | A draft news post per paper you pick | About → News |
+| `/pub-2-news` | Papers in `publications.xlsx` not yet announced | One draft news post covering all the papers you pick | About → News |
 | `/draft-2-news` | A folder in `inbox/` | A draft news post | About → News |
 
 **`/update-publications`**
@@ -33,7 +33,7 @@ An agent keeps the lab website up to date: the publication list, and news posts 
 
 **`/pub-2-news`**
 - With no argument, it lists every paper in the xlsx that has no news post yet. That includes papers you typed into the Excel file by hand. For each one you answer:
-  - **post**: it drafts the post;
+  - **post**: the paper goes into the post (all picked papers share one post, `posts/news-title/new-papers-<YYYY-MM>.qmd`, with a one-sentence result per paper and the `news-papers.png` thumbnail);
   - **skip**: the paper is never offered again (it's recorded in `.claude/pub-news-skip.txt`);
   - **later**: it's offered again next time.
 - `<DOI>`: announces that specific paper.
@@ -110,7 +110,7 @@ A Calendar event, "Revisione aggiornamento sito ONDA", is set for Oct 2 at 09:00
 
 **2. Papers into the list.** Run `/update-publications monthly` and say "add the first two, skip the Cortex one". Two rows go into `publications.xlsx`.
 
-**3. Posts about papers.** Run `/pub-2-news`. It lists the two new papers. You answer "post the Clinical Neurophysiology one, skip the preprint". The agent drafts `posts/news-title/lago-2026-aperiodic.qmd`, with a summary from the abstract, the reference and a DOI link. The preprint is recorded as skipped.
+**3. Posts about papers.** Run `/pub-2-news`. It lists the two new papers. You answer "post the Clinical Neurophysiology one, skip the preprint". The agent drafts `posts/news-title/new-papers-2026-10.qmd`, with a one-sentence result from the abstract, the reference and a DOI link for each paper. The preprint is recorded as skipped.
 
 **4. Talks.** Sara gave a talk at the SIPF congress. You create `inbox/zago-2026-sipf/` with:
 
