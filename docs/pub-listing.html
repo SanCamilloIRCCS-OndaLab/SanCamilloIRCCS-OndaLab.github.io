@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-section','listing-authors','listing-year','listing-title','listing-journal','listing-volume','listing-pages','listing-doi','listing-issue','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-section','listing-authors','listing-year','listing-date','listing-title','listing-journal','listing-volume','listing-pages','listing-doi','listing-issue',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-section","listing-authors","listing-year","listing-title","listing-journal","listing-volume","listing-pages","listing-doi","listing-issue","listing-date"],
+      searchColumns: ["listing-section","listing-authors","listing-year","listing-date","listing-title","listing-journal","listing-volume","listing-pages","listing-doi","listing-issue"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -342,7 +342,9 @@ https://badge.dimensions.ai/
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 <script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
-<p>Note: * corresponding author; <img src="https://drganghe.github.io/files/images/highly-cited-paper-badge.png" title="ESI Highly Cited Paper" class="img-fluid" alt="Highly cited paper" width="20"> ESI <a href="https://webofscience.help.clarivate.com/en-us/Content/esi-highly-cited-papers.html">Highly Cited Paper</a> (top 1%); <img src="https://drganghe.github.io/files/images/hot-paper-badge.png" title="ESI Hot Paper" class="img-fluid" alt="Hot paper" width="20"> ESI <a href="https://webofscience.help.clarivate.com/en-us/Content/esi-hot-papers.html">Hot Paper</a> (top 0.1%)</p>
+<p>Note: * corresponding author</p>
+<!-- [RESTORE ESI legend] To show the ESI badge legend again, replace the Note line above with the line below (uncommented). Badges on single papers are shown anyway when "Highly Cited" / "Hot Paper" is set in publications.xlsx -->
+<!-- Note: \* corresponding author; ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ESI [Highly Cited Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-highly-cited-papers.html) (top 1%); ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} ESI [Hot Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-hot-papers.html) (top 0.1%) -->
 <!-- [RESTORE Selected Work 2/2] Uncomment this section AND also restore the listing block in the YAML frontmatter above (search: RESTORE Selected Work 1/2) -->
 <!-- ## Selected Work -->
 <!-- ::: {#selected-work} -->
@@ -351,7 +353,20 @@ https://badge.dimensions.ai/
 <h2 class="anchored" data-anchor-id="peer-reviewed-journal-papers">Peer-reviewed Journal Papers</h2>
 <div id="listing-peer-reviewed" class="quarto-listing quarto-listing-container-custom">
 <div class="pub-listing list">
-<div class="pub-item" data-index="0">
+<div class="pub-item" data-index="0" data-listing-date-sort="1793487600000">
+<p><span class="listing-title d-none">Timing and circuit engagement shape state-dependent plasticity in the ventral premotor-motor pathway</span> <span class="listing-author d-none">Turrini S,Amadori A,Zago S,Arcara G,Avenanti A</span> <span class="listing-date d-none">Nov 1, 2026</span></p>
+<div class="listing-categories d-none">
+
+</div>
+<p class="pub-citation">
+<span class="pub-authors">Turrini S,Amadori A,Zago S,Arcara G,Avenanti A</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.1016/j.clinph.2026.2112352" class="pub-title">Timing and circuit engagement shape state-dependent plasticity in the ventral premotor-motor pathway</a>. <em class="pub-journal">Clinical Neurophysiology</em> 191: 2112352. doi: <a href="https://doi.org/10.1016/j.clinph.2026.2112352" target="_blank" rel="noopener" class="pub-doi">10.1016/j.clinph.2026.2112352</a>.
+</p>
+<p class="pub-links">
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.clinph.2026.2112352" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.clinph.2026.2112352" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
+</p>
+<hr class="pub-divider">
+</div>
+<div class="pub-item" data-index="1">
 <p><span class="listing-title d-none">Decoding the neural dynamics of everyday prospective remembering: a hidden Markov model approach</span> <span class="listing-author d-none">Vicentin S,Reschini DB,Santacesaria P,Toffoli L,Zago S,Arcara G,Cona G</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
 
@@ -364,7 +379,7 @@ https://badge.dimensions.ai/
 </p>
 <hr class="pub-divider">
 </div>
-<div class="pub-item" data-index="1">
+<div class="pub-item" data-index="2">
 <p><span class="listing-title d-none">Education shapes the link between EEG aperiodic components and cognitive aging</span> <span class="listing-author d-none">Lago S,Zago S,Montemurro S,Calabrò RS,Maggio MG,Dattola S,Casetta I,Arcara G</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
 
@@ -377,7 +392,7 @@ https://badge.dimensions.ai/
 </p>
 <hr class="pub-divider">
 </div>
-<div class="pub-item" data-index="2">
+<div class="pub-item" data-index="3">
 <p><span class="listing-title d-none">Resting-state brain dynamics: insights from oscillatory activity in brain networks</span> <span class="listing-author d-none">Samogin J,Zago S,Tonin A,Seynaeve M,De Beukelaar T,Porcaro C,Marinazzo D,Arcara G,Mantini D</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
 
@@ -390,7 +405,7 @@ https://badge.dimensions.ai/
 </p>
 <hr class="pub-divider">
 </div>
-<div class="pub-item" data-index="3">
+<div class="pub-item" data-index="4">
 <p><span class="listing-title d-none">Gamma transcranial alternating current stimulation increases segregation in the sensorimotor network</span> <span class="listing-author d-none">Cataneo A,Marino M,Manzo N,Scarpazza C,Arcara G,Mapelli D,Masina F</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
 
@@ -403,7 +418,7 @@ https://badge.dimensions.ai/
 </p>
 <hr class="pub-divider">
 </div>
-<div class="pub-item" data-index="4">
+<div class="pub-item" data-index="5">
 <p><span class="listing-title d-none">Evidence for Enhanced Backward Connectivity in the Third Visual Pathway Following Cortico-Cortical Paired Associative Stimulation</span> <span class="listing-author d-none">Gabriele P,Antonio C,Silvana P,Marra A,Arcara G,Simone B,Mauro U,Alessio A</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
 
@@ -416,7 +431,7 @@ https://badge.dimensions.ai/
 </p>
 <hr class="pub-divider">
 </div>
-<div class="pub-item" data-index="5">
+<div class="pub-item" data-index="6">
 <p><span class="listing-title d-none">Assessing whole-cortex excitability from electromagnetic brain signals</span> <span class="listing-author d-none">Pellegrino G,Duma GM,Schuler AL,Daub M,Marinazzo D,Arcara G,Soddu A,Rasero J</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
 
@@ -429,7 +444,7 @@ https://badge.dimensions.ai/
 </p>
 <hr class="pub-divider">
 </div>
-<div class="pub-item" data-index="6">
+<div class="pub-item" data-index="7">
 <p><span class="listing-title d-none">Predictors of unplanned 30-day hospital readmission: a retrospective cohort study in north-east Italy</span> <span class="listing-author d-none">Sartor G,Fusco M,Milana M,Marcon E,Battagello J,Zardetto A,Ruggieri MG,Grotto G,Rigon L,Arcara G,Others</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
 
@@ -442,7 +457,7 @@ https://badge.dimensions.ai/
 </p>
 <hr class="pub-divider">
 </div>
-<div class="pub-item" data-index="7">
+<div class="pub-item" data-index="8">
 <p><span class="listing-title d-none">Convolutional Neural Networks and Neuroscience: A Tutorial Introduction for The Rest of Us</span> <span class="listing-author d-none">De Matola M,Arcara G</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
 
@@ -455,7 +470,7 @@ https://badge.dimensions.ai/
 </p>
 <hr class="pub-divider">
 </div>
-<div class="pub-item" data-index="8">
+<div class="pub-item" data-index="9">
 <p><span class="listing-title d-none">Thyroglobulin as a proxy for iodine status in pregnancy</span> <span class="listing-author d-none">Censi S,Messina G,Arcara G,Ruggeri E,Clausi C,Piva I,Manso J,Basso D,Merante-Boschin I,Bertazza L,Others</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
 
@@ -468,7 +483,7 @@ https://badge.dimensions.ai/
 </p>
 <hr class="pub-divider">
 </div>
-<div class="pub-item" data-index="9">
+<div class="pub-item" data-index="10">
 <p><span class="listing-title d-none">Rapid rTPJ-driven cortical interactions encode malicious intentions during implicit moral evaluation: a TMS-EEG study</span> <span class="listing-author d-none">Cenka K,Spaccasassi C,Petkovic S,Pezzetta R,Vicario CM,Arcara G,Avenanti A</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
 
@@ -481,7 +496,7 @@ https://badge.dimensions.ai/
 </p>
 <hr class="pub-divider">
 </div>
-<div class="pub-item" data-index="10">
+<div class="pub-item" data-index="11">
 <p><span class="listing-title d-none">Cortico-cortical paired associative stimulation highlights the functional role of the cortical pathway from the right inferior frontal gyrus to the primary motor cortex in motor inhibition</span> <span class="listing-author d-none">Bevacqua N,Turrini S,Cataneo A,Zago S,Arcara G,Candidi M,Mirabella G,Avenanti A</span> <span class="listing-date d-none">2026-01-01</span></p>
 <div class="listing-categories d-none">
 
@@ -491,19 +506,6 @@ https://badge.dimensions.ai/
 </p>
 <p class="pub-links">
 <span class="__dimensions_badge_embed__" data-doi="10.1016/j.neuroimage.2026.121933" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.neuroimage.2026.121933" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
-</p>
-<hr class="pub-divider">
-</div>
-<div class="pub-item" data-index="11" data-listing-date-sort="1793487600000">
-<p><span class="listing-title d-none">Timing and circuit engagement shape state-dependent plasticity in the ventral premotor-motor pathway</span> <span class="listing-author d-none">Turrini S,Amadori A,Zago S,Arcara G,Avenanti A</span> <span class="listing-date d-none">Nov 1, 2026</span></p>
-<div class="listing-categories d-none">
-
-</div>
-<p class="pub-citation">
-<span class="pub-authors">Turrini S,Amadori A,Zago S,Arcara G,Avenanti A</span>. <span class="pub-year">2026</span>. <a href="https://doi.org/10.1016/j.clinph.2026.2112352" class="pub-title">Timing and circuit engagement shape state-dependent plasticity in the ventral premotor-motor pathway</a>. <em class="pub-journal">Clinical Neurophysiology</em> 191: 2112352. doi: <a href="https://doi.org/10.1016/j.clinph.2026.2112352" target="_blank" rel="noopener" class="pub-doi">10.1016/j.clinph.2026.2112352</a>.
-</p>
-<p class="pub-links">
-<span class="__dimensions_badge_embed__" data-doi="10.1016/j.clinph.2026.2112352" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1016/j.clinph.2026.2112352" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
