@@ -36,7 +36,10 @@ filters: [remove-stray-divfence.lua]  # This filter is used to remove stray ":::
 
 {{< include /files/includes/_academic.qmd >}}
 
-Note: \* corresponding author; ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ESI [Highly Cited Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-highly-cited-papers.html) (top 1%); ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} ESI [Hot Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-hot-papers.html) (top 0.1%)
+Note: \* corresponding author
+
+<!-- [RESTORE ESI legend] To show the ESI badge legend again, replace the Note line above with the line below (uncommented). Badges on single papers are shown anyway when "Highly Cited" / "Hot Paper" is set in publications.xlsx -->
+<!-- Note: \* corresponding author; ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ESI [Highly Cited Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-highly-cited-papers.html) (top 1%); ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} ESI [Hot Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-hot-papers.html) (top 0.1%) -->
 
 
 
