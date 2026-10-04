@@ -1,0 +1,98 @@
+---
+# PREVIEW VARIANT C - "Content + news sidebar". Temporary: delete after choosing a homepage.
+title: "ONDA Lab"
+pagetitle: "ONDA Lab - Variant C"
+image: "files/images/ONDA_logo_v12.png"
+page-navigation: false
+toc: false
+page-layout: full
+title-block-style: none
+
+listing:
+  - id: recent-posts
+    contents:
+      - posts
+    exclude:
+      title: ""
+    type: default
+    image-align: left
+    image-height: 64px
+    fields: [image, date, title]
+    max-items: 5
+    page-size: 5
+    sort-ui: false
+    filter-ui: false
+    sort:
+      - "date desc"
+      - "title asc"
+---
+
+```{=html}
+<style>
+  #title-block-header { display: none; }
+  #home-c { max-width: 1140px; margin: 0 auto; }
+  #home-c .hero { text-align: center; padding: 2rem 1rem 1.5rem; border-bottom: 1px solid #e3ebf1; margin-bottom: 2rem; }
+  #home-c .hero img { width: 100%; max-width: 460px; height: auto; }
+  #home-c .hero .tagline { font-size: 1.25rem; color: #1b4f72; margin: .75rem 0 0; font-weight: 500; }
+  #home-c .main-text { font-size: 1.05em; }
+  #home-c .main-text h2 { border: 0; margin-top: 1.75rem; }
+  #home-c .news-panel { background: #f4f8fb; border-radius: 8px; padding: 1rem 1.1rem; }
+  #home-c .news-panel h2 { border: 0; font-size: 1.2rem; margin: 0 0 .5rem; color: #1b4f72; }
+  /* compact listing rows: thumbnail left, title + date stacked right */
+  #home-c #listing-recent-posts .quarto-post { display: grid; grid-template-columns: 64px 1fr; grid-template-areas: none;
+    column-gap: .75rem; row-gap: .15rem; padding: .65rem 0; margin: 0; border-bottom: 1px solid #dde7ee; }
+  #home-c #listing-recent-posts .quarto-post:last-child { border-bottom: 0; }
+  #home-c #listing-recent-posts .thumbnail { grid-column: 1; grid-row: 1 / span 2; margin: 0; }
+  #home-c #listing-recent-posts .thumbnail img { width: 64px; height: 64px !important; object-fit: cover; border-radius: 6px; }
+  #home-c #listing-recent-posts .body { grid-column: 2; grid-row: 1; }
+  #home-c #listing-recent-posts .metadata { grid-column: 2; grid-row: 2; display: block; text-align: left; }
+  #home-c #listing-recent-posts .listing-title { font-size: .95rem; line-height: 1.3; margin: 0; font-weight: 500; }
+  #home-c #listing-recent-posts .listing-date { font-size: .75rem; color: #6c757d; }
+  #home-c .all-posts { text-align: right; margin-top: .5rem; font-size: .95rem; }
+</style>
+```
+
+::::::{#home-c}
+
+```{=html}
+<div class="hero">
+  <img src="files/images/ONDA_logo_v12.png" alt="ONDA Lab logo">
+  <p class="tagline">Open methodologies in Neurorehabilitation and Data Analysis</p>
+</div>
+```
+
+:::::{.grid}
+::::{.g-col-12 .g-col-md-8 .main-text}
+Welcome to the website of the **ONDA** Lab (**O**pen methodologies in **N**eurorehabilitation and **D**ata **A**nalysis)
+
+The Lab is located at [IRCCS San Camillo in Venice](https://hsancamillo.it) its research focuses on
+<span style="color:#1b4f72; font-weight:bold;">N</span>eurorehabilitation and in particular on:
+<span style="color:#8fc2d7; font-weight:bold;">N</span>europhysiology,
+<span style="color:#98cae6; font-weight:bold;">N</span>europsychology, and
+<span style="color:#acd6ec; font-weight:bold;">N</span>euroscience.
+
+## Lab philosophy
+
+The Lab philosophy is focused on rigour and **Open Science** principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research.
+
+## What we do
+
+- We develop open tools for neuropsychological assessment and rehabilitation
+- We study brain functions and biomarkers using MEEG
+- We create open-source pipelines for neural data analysis
+- We develop/optimize methods for behavioural and brain data analysis
+::::
+
+::::{.g-col-12 .g-col-md-4}
+:::{.news-panel}
+## Latest news
+
+:::{#recent-posts}
+:::
+
+[All posts »](posts.qmd){.all-posts style="display:block"}
+:::
+::::
+:::::
+
+::::::

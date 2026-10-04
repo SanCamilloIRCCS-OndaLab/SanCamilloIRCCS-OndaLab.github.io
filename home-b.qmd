@@ -1,0 +1,118 @@
+---
+# PREVIEW VARIANT B - "Hero banner + feature row". Temporary: delete after choosing a homepage.
+title: "ONDA Lab"
+pagetitle: "ONDA Lab - Variant B"
+image: "files/images/ONDA_logo_v12.png"
+page-navigation: false
+toc: false
+page-layout: full
+title-block-style: none
+
+listing:
+  - id: recent-posts
+    contents:
+      - posts
+    exclude:
+      title: ""
+    type: table
+    fields: [date, title, categories]
+    field-display-names:
+      date: "Date"
+      title: "Post"
+      categories: "Type"
+    max-items: 5
+    page-size: 5
+    sort-ui: false
+    filter-ui: false
+    table-hover: true
+    date-format: "MMM D, YYYY"
+    sort:
+      - "date desc"
+      - "title asc"
+---
+
+```{=html}
+<style>
+  #title-block-header { display: none; }
+  #home-b { max-width: 1100px; margin: 0 auto; }
+  #home-b .hero { text-align: center; padding: 2.5rem 1rem 2rem; }
+  #home-b .hero img { width: 100%; max-width: 520px; height: auto; }
+  #home-b .hero .tagline { font-size: 1.35rem; color: #1b4f72; margin: 1rem 0 .5rem; font-weight: 500; }
+  #home-b .hero .lead-text { font-size: 1.05rem; color: #555; max-width: 640px; margin: 0 auto 1.5rem; }
+  #home-b .hero .btn { margin: .25rem; padding: .5rem 1.25rem; }
+  #home-b .btn-onda { background: #1b4f72; color: #fff; border: 1px solid #1b4f72; }
+  #home-b .btn-onda:hover { background: #143b56; color: #fff; }
+  #home-b .btn-onda-outline { color: #1b4f72; border: 1px solid #1b4f72; background: transparent; }
+  #home-b .btn-onda-outline:hover { background: #1b4f72; color: #fff; }
+  #home-b h2 { border: 0; text-align: center; margin: 2.5rem 0 1.25rem; }
+  #home-b .feature { border: 1px solid #e3ebf1; border-radius: 8px; padding: 1.25rem; height: 100%; background: #fff; }
+  #home-b .feature i { font-size: 1.75rem; color: #5a9bbf; display: block; margin-bottom: .5rem; }
+  #home-b .feature p { margin: 0; font-size: .97rem; }
+  #home-b .philosophy { background: #f4f8fb; border-left: 4px solid #1b4f72; padding: 1.25rem 1.5rem;
+    margin: 2.5rem 0 0; border-radius: 0 8px 8px 0; }
+  #home-b .philosophy h3 { margin-top: 0; font-size: 1.15rem; color: #1b4f72; }
+  #home-b .philosophy p { margin: 0; }
+  #home-b #listing-recent-posts table { font-size: .97rem; }
+  #home-b .all-posts { text-align: right; }
+</style>
+```
+
+::::::{#home-b}
+
+```{=html}
+<div class="hero">
+  <img src="files/images/ONDA_logo_v12.png" alt="ONDA Lab logo">
+  <p class="tagline">Open methodologies in Neurorehabilitation and Data Analysis</p>
+  <p class="lead-text">We are a research lab at <a href="https://hsancamillo.it">IRCCS San Camillo, Venice</a>,
+  working on neurophysiology, neuropsychology and neuroscience for neurorehabilitation.</p>
+  <a class="btn btn-onda" href="pub-listing.html">Publications</a>
+  <a class="btn btn-onda-outline" href="people.html">Meet the group</a>
+  <a class="btn btn-onda-outline" href="https://github.com/SanCamilloIRCCS-OndaLab" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+</div>
+```
+
+## What we do
+
+:::::{.grid}
+::::{.g-col-12 .g-col-md-6 .g-col-lg-3}
+:::{.feature}
+<i class="bi bi-clipboard2-pulse"></i>
+We develop open tools for neuropsychological assessment and rehabilitation
+:::
+::::
+::::{.g-col-12 .g-col-md-6 .g-col-lg-3}
+:::{.feature}
+<i class="bi bi-activity"></i>
+We study brain functions and biomarkers using MEEG
+:::
+::::
+::::{.g-col-12 .g-col-md-6 .g-col-lg-3}
+:::{.feature}
+<i class="bi bi-diagram-3"></i>
+We create open-source pipelines for neural data analysis
+:::
+::::
+::::{.g-col-12 .g-col-md-6 .g-col-lg-3}
+:::{.feature}
+<i class="bi bi-graph-up"></i>
+We develop/optimize methods for behavioural and brain data analysis
+:::
+::::
+:::::
+
+:::{.philosophy}
+### Lab philosophy
+
+The Lab philosophy is focused on rigour and **Open Science** principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research.
+:::
+
+## Latest from the Lab
+
+:::{#recent-posts}
+:::
+
+:::{.all-posts}
+[All posts »](posts.qmd)
+:::
+
+::::::
