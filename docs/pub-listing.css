@@ -218,3 +218,12 @@ hr.pub-divider {
   }
 }
 
+
+/* ── Dark mode overrides (light/dark theme toggle) ───────────── */
+body.quarto-dark hr.pub-divider { border-color: #495057; }
+body.quarto-dark .pub-doi { color: #adb5bd; }
+body.quarto-dark .pub-awards { color: #f0b354; }
+body.quarto-dark .pub-awards .bi-trophy { color: #f59e0b; }
+body.quarto-dark .pub-coverage,
+body.quarto-dark .pub-presentations { color: #ced4da; }
+body.quarto-dark .pub-label { color: #f8f9fa; }

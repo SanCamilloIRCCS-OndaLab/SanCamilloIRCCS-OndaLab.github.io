@@ -25,6 +25,7 @@
 
 
 
+
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <section id="brain-state-shapes-paired-associative-stimulation" class="level3">
@@ -66,6 +67,7 @@ https://quarto.org/docs/authoring/includes.html
 
 
 
+
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>On 18 September 2026, Sara Zago gave the talk <em>Aperiodic EEG Across Aging and Neurological Disorders: A Clinical Perspective</em> at the congress of the SIPF (Società Italiana di Psicofisiologia e Neuroscienze) in Noto, dedicated to the aging brain.</p>
@@ -99,6 +101,7 @@ https://quarto.org/docs/authoring/includes.html
 
 
 
+
 <p><a href="../../files/presentations/AI_assisted_coding.pdf">Scarica le slide (PDF)</a></p>
 <!--Include social share buttons-->
 <!-- 
@@ -124,6 +127,7 @@ https://quarto.org/docs/authoring/includes.html
   <dc:creator>Giorgio Arcara</dc:creator>
   <link>https://sancamilloirccs-ondalab.github.io/posts/presentations/how-to-write-terrible-code.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -154,6 +158,7 @@ https://quarto.org/docs/authoring/includes.html
   <dc:creator>News </dc:creator>
   <link>https://sancamilloirccs-ondalab.github.io/posts/news-title/post2.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -189,6 +194,7 @@ https://quarto.org/docs/authoring/includes.html
 
 
 
+
 <p><em>Presentazione in italiano.</em></p>
 <p><a href="../../files/documents/Arcara-FAIR.pdf">Scarica le slide (PDF)</a></p>
 <!--Include social share buttons-->
@@ -215,6 +221,7 @@ https://quarto.org/docs/authoring/includes.html
   <dc:creator>News </dc:creator>
   <link>https://sancamilloirccs-ondalab.github.io/posts/news-title/post1.html</link>
   <description><![CDATA[ 
+
 
 
 

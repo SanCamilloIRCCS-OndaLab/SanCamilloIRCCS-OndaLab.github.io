@@ -1,3 +1,7 @@
 .navbar {
   font-size: 1.1rem;
 }
+/* Dark mode: lighten the dark-blue "N" of the homepage acronym (inline style in index.qmd) */
+body.quarto-dark span[style*="#1b4f72"] {
+  color: #5dade2 !important;
+}

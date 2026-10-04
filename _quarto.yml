@@ -65,8 +65,8 @@ website:
       #  href: https://bsky.app
       #  target: _blank      
       - icon: rss
-        href: posts.xml
-        target: _blank
+        href: feed.html
+        aria-label: "Subscribe via RSS"
   
   page-navigation: true
   
@@ -81,15 +81,13 @@ website:
       #  href: https://bsky.app
       #  target: _blank
       - icon: rss
-        href: posts.xml
-        target: _blank  
+        href: feed.html
+        aria-label: "Subscribe via RSS"
   
   search:
     location: navbar
     type: textbox
   
-  reader-mode: true
-
   draft-mode: unlinked
   
   repo-url: https://github.com/drganghe/quarto-academic-website-template
@@ -110,7 +108,10 @@ bibliography: references.bib  # Add references.bib to the root folder to enable 
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: cosmo
+      dark: darkly
+    respect-user-color-scheme: true
     css: styles.css
     toc: true
     footnotes-hover: true

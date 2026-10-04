@@ -1,0 +1,18 @@
+---
+title: "Subscribe (RSS)"
+description-meta: "Follow ONDA Lab news, events and presentations via RSS"
+toc: false
+page-navigation: false
+---
+
+Follow the ONDA Lab news, events and presentations with an **RSS feed**: a feed reader checks the site for you and shows every new post as soon as it is published, with no account or email needed.
+
+To subscribe, copy this address and paste it into your feed reader:
+
+```
+https://sancamilloirccs-ondalab.github.io/posts.xml
+```
+
+Don't have a feed reader yet? Free options include [Feedly](https://feedly.com), [Inoreader](https://www.inoreader.com), [NetNewsWire](https://netnewswire.com) (Mac/iOS) and [Thunderbird](https://www.thunderbird.net).
+
+You can also [view the raw feed](posts.xml){.no-external} or browse all posts on the [News](posts.qmd#category=news) page.

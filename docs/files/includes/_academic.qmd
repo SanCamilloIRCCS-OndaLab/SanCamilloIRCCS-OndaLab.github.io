@@ -1,4 +1,7 @@
 
+<!-- RSS feed auto-discovery for browsers and feed readers -->
+<link rel="alternate" type="application/rss+xml" title="Onda Lab" href="https://sancamilloirccs-ondalab.github.io/posts.xml">
+
 <!-- 
 Load Academicons v1: https://jpswalsh.github.io/academicons/
 -->
