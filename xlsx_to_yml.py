@@ -11,6 +11,7 @@ Requirements:
     pip install openpyxl
 """
 
+import re
 import sys
 from pathlib import Path
 import openpyxl
@@ -78,6 +79,32 @@ def parse_categories(value: str) -> list[str]:
 
     items = [x.strip() for x in s.split(",")]
     return [x for x in items if x]
+
+
+MONTHS = {m: i for i, m in enumerate(
+    ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], start=1)}
+
+
+def sort_key(rec: dict) -> tuple:
+    """Return (year, month, day) for sorting; missing parts count as 0.
+
+    Handles dates like "2026-08-10", "2026 Nov" and "2026 Nov 5".
+    """
+    date = str(rec.get("date", "")).strip()
+    parts = re.findall(r"\d+|[A-Za-z]+", date)
+    nums = [int(p) for p in parts if p.isdigit()]
+    month = next((MONTHS[p[:3].lower()] for p in parts if p[:3].lower() in MONTHS), 0)
+
+    year = rec.get("year")
+    if not isinstance(year, int):
+        year = next((n for n in nums if n > 999), 0)
+    day = 0
+    if re.match(r"^\d{4}-\d{1,2}", date):          # ISO: 2026-08-10
+        month = nums[1]
+        day = nums[2] if len(nums) > 2 else 0
+    elif month:                                     # 2026 Nov 5
+        day = next((n for n in nums if n <= 31), 0)
+    return (year, month, day)
 
 
 def parse_row(headers: list, row: tuple) -> dict:
@@ -163,6 +190,9 @@ def convert(input_path: str, output_path: str) -> None:
             records.append(rec)
 
     print(f"Records  : {len(records)}")
+
+    # Most recent first; stable sort keeps xlsx order for ties
+    records.sort(key=sort_key, reverse=True)
 
     yaml_blocks = [record_to_yaml(r) for r in records]
     output_text = "\n\n".join(yaml_blocks) + "\n"

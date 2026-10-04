@@ -10,6 +10,7 @@ listing:
   #   contents: publications.yml
   #   type: custom
   #   page-size: 100
+  #   sort: false
   #   categories: numbered
   #   template: pub-listing.ejs
   #   include:
@@ -18,6 +19,7 @@ listing:
     contents: publications.yml
     type: custom
     page-size: 100
+    sort: false
     categories: numbered
     template: pub-listing.ejs
     include:
@@ -26,6 +28,7 @@ listing:
     contents: publications.yml
     type: custom
     page-size: 100
+    sort: false
     categories: numbered
     template: pub-listing.ejs
     include:
