@@ -1,3 +1,15 @@
 # Papers in publications.xlsx that should NOT get a news post.
 # Used by /pub-2-news: one DOI (or exact title, if the paper has no DOI) per line.
 # Anything after "#" is a comment. /pub-2-news appends here when you answer "skip".
+# Baseline: papers already on the site before /pub-2-news was first used (2026-09-21).
+10.3389/fnhum.2025.1686657  # baseline 2026-09-21 - Decoding the neural dynamics of everyday prospective remembe
+10.1371/journal.pone.0328318  # baseline 2026-09-21 - Education shapes the link between EEG aperiodic components a
+10.1515/revneuro-2025-0094  # baseline 2026-09-21 - Resting-state brain dynamics: insights from oscillatory acti
+10.3389/fpsyg.2026.1746459  # baseline 2026-09-21 - Gamma transcranial alternating current stimulation increases
+10.1016/j.neuroimage.2026.121759  # baseline 2026-09-21 - Evidence for Enhanced Backward Connectivity in the Third Vis
+10.64898/2026.01.31.703018  # baseline 2026-09-21 - Assessing whole-cortex excitability from electromagnetic bra
+10.1136/bmjopen-2025-103595  # baseline 2026-09-21 - Predictors of unplanned 30-day hospital readmission: a retro
+10.64898/2026.03.09.710521  # baseline 2026-09-21 - Convolutional Neural Networks and Neuroscience: A Tutorial I
+10.1017/s0007114526106989  # baseline 2026-09-21 - Thyroglobulin as a proxy for iodine status in pregnancy
+10.1016/j.neuroimage.2026.121885  # baseline 2026-09-21 - Rapid rTPJ-driven cortical interactions encode malicious int
+10.1016/j.neuroimage.2026.121933  # baseline 2026-09-21 - Cortico-cortical paired associative stimulation highlights t

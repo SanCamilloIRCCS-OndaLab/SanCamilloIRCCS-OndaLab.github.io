@@ -1,0 +1,24 @@
+---
+title: "New publications from the ONDA Lab"
+description: "A new paper in PLOS ONE on how the brain signals prediction errors about facial features within the first 140 ms."
+author: "News"
+date: "2026-10-04"
+categories: [news]
+image: "/files/images/news-papers.png"
+announced-dois:
+  - 10.1371/journal.pone.0357956
+draft: true
+---
+
+
+## Summary
+
+### The brain flags unexpected facial features within 140 ms
+
+In this study, led by Cristiano Costa, we showed that EEG activity tracked precision-weighted prediction errors about facial features, peaking around 140 ms after the face appeared: predictions about what a face will do are checked and updated early in visual processing.
+
+Costa C, Ward EK, Pezzetta R, Masina F, Arcara G, Press C, Scarpazza C (2026). Early electrophysiological responses reflect precision-weighted prediction errors to face features. *PLOS ONE*, 21(9), e0357956. DOI: [10.1371/journal.pone.0357956](https://doi.org/10.1371/journal.pone.0357956)
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
