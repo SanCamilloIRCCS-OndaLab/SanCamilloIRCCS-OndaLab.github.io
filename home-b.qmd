@@ -54,6 +54,14 @@ listing:
   #home-b .philosophy p { margin: 0; }
   #home-b #listing-recent-posts table { font-size: .97rem; }
   #home-b .all-posts { text-align: right; }
+  /* Dark mode (light/dark toggle): the light block backgrounds above would hide the light text */
+  body.quarto-dark #home-b .feature { background: #2b3035; border-color: #495057; }
+  body.quarto-dark #home-b .philosophy { background: #26323c; border-left-color: #5dade2; }
+  body.quarto-dark #home-b .philosophy h3 { color: #5dade2; }
+  body.quarto-dark #home-b .hero .tagline { color: #5dade2; }
+  body.quarto-dark #home-b .hero .lead-text { color: #ced4da; }
+  body.quarto-dark #home-b .btn-onda-outline { color: #5dade2; border-color: #5dade2; }
+  body.quarto-dark #home-b .btn-onda-outline:hover { background: #1b4f72; border-color: #1b4f72; color: #fff; }
 </style>
 ```
 
