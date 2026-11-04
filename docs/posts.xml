@@ -15,7 +15,142 @@
 <link>https://sancamilloirccs-ondalab.github.io/posts.html</link>
 </image>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Sun, 20 Sep 2026 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>🎉 AURORA: a Regione Veneto grant to build a new cognitive assessment for oncology</title>
+  <dc:creator>News </dc:creator>
+  <link>https://sancamilloirccs-ondalab.github.io/posts/news-title/aurora-grant.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Good news: the lab has been awarded funding for <strong>AURORA</strong> — <em>Accessible User-centered platform for Regional Oncology Related cognitive Assessment</em>. The project is funded by Regione del Veneto under the call in DGR n.&nbsp;946 of 12 August 2025 (L.R. 33/2024, art. 14), on the MCnT2 line for diagnostic innovation in chronic non-communicable diseases, with a regional contribution of 380,000 EUR over 36 months. IRCCS San Camillo coordinates the project, with Giorgio Arcara as scientific lead.</p>
+<section id="a-new-battery-for-cognitive-difficulties-after-cancer-treatment" class="level3">
+<h3 class="anchored" data-anchor-id="a-new-battery-for-cognitive-difficulties-after-cancer-treatment">A new battery for cognitive difficulties after cancer treatment</h3>
+<p>At the heart of AURORA is test development. Many people treated for cancer report difficulties with memory, attention or concentration, known as cancer-related cognitive impairment (CRCI), yet no Italian battery of neuropsychological tests is dedicated to oncology, which leaves these difficulties hard to recognise and to quantify. AURORA will build and validate one, covering memory and learning, attention, executive functions, processing speed and lexical access, with internal consistency, test-retest and inter-rater reliability, equivalence between remote and in-person administration, and Italian normative cut-offs adjusted for age, education and sex.</p>
+</section>
+<section id="in-close-collaboration-with-the-university-of-padova" class="level3">
+<h3 class="anchored" data-anchor-id="in-close-collaboration-with-the-university-of-padova">In close collaboration with the University of Padova</h3>
+<p>The partner is the Quantitative Psychology Laboratory (QPLab) of the Department of General Psychology, University of Padova, led by Andrea Spoto, which takes responsibility for the psychometric validation and the statistical analyses. IRCCS San Camillo brings the clinical and methodological know-how, the recruitment and the co-design of the platform. From the lab, Sara Lago works on test selection and the choice of cognitive domains, and Giulia Oliva on test administration and data collection; Pier Franco Conte is the clinical lead for the recruitment of patients.</p>
+</section>
+<section id="what-the-project-involves" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-project-involves">What the project involves</h3>
+<ul>
+<li>About 350 healthy adults, to collect the Italian normative data.</li>
+<li>About 120 patients treated for breast cancer, assessed before and after treatment, within the already approved WOV_01 protocol.</li>
+<li>The AURORA web app, co-designed with clinicians and citizens: guided administration of the battery, automatic scoring, clinical reports and secure data storage, interoperable with regional health information systems through open standards (HL7 FHIR).</li>
+<li>Five work packages over 36 months, from recruitment to psychometric validation, platform development and dissemination.</li>
+<li>At least four open-access papers, de-identified datasets, clinical guidelines for adoption in the regional health service, and regional workshops.</li>
+</ul>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://sancamilloirccs-ondalab.github.io/posts/news-title/aurora-grant.html</guid>
+  <pubDate>Mon, 02 Nov 2026 23:00:00 GMT</pubDate>
+  <media:content url="https://sancamilloirccs-ondalab.github.io/files/images/onda-fundings.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>New publications from the ONDA Lab</title>
+  <dc:creator>News </dc:creator>
+  <link>https://sancamilloirccs-ondalab.github.io/posts/news-title/new-papers-2026-11.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<section id="percentile-ranks-as-an-alternative-to-equivalent-scores" class="level3">
+<h3 class="anchored" data-anchor-id="percentile-ranks-as-an-alternative-to-equivalent-scores">Percentile ranks as an alternative to Equivalent Scores</h3>
+<p>In this papwer we show how Percentile ranks with confidence intervals, computed here on the Italian MoCA 8.1 norms, give a finer reading of a patient’s score as compared to the “Equivalent Scores”, the five categories of system widely used in Italy.</p>
+<p>Facchin A, Arcara G, Priftis K (2026). Moving from equivalent scores to percentile ranks in clinical neuropsychology: Benefits, computation with confidence intervals, and application on MoCA 8.1 Italian norms. <em>Neurological Sciences</em>, 47(11), 866. DOI: <a href="https://doi.org/10.1007/s10072-026-09477-4">10.1007/s10072-026-09477-4</a></p>
+</section>
+<section id="only-the-dorsal-premotor-cortex-stabilises-what-was-just-learned" class="level3">
+<h3 class="anchored" data-anchor-id="only-the-dorsal-premotor-cortex-stabilises-what-was-just-learned">Only the dorsal premotor cortex stabilises what was just learned</h3>
+<p>Disrupting either premotor area with continuous theta-burst stimulation (cTBS) slowed the learning of new visuomotor associations, but only dorsal premotor disruption impaired recall a day later: the two areas share early learning, while stabilisation rests on Premotor dorsal regions (PMd) alone.</p>
+<p>Turrini S, Amadori A, Arcara G, di Pellegrino G, Avenanti A (2026). Stage-specific contributions of dorsal and ventral premotor cortices to the acquisition of arbitrary visuomotor associations. <em>Cortex</em>, 205, 441-455. DOI: <a href="https://doi.org/10.1016/j.cortex.2026.09.018">10.1016/j.cortex.2026.09.018</a></p>
+</section>
+<section id="cognitive-performance-relates-to-flexible-views-of-ageing" class="level3">
+<h3 class="anchored" data-anchor-id="cognitive-performance-relates-to-flexible-views-of-ageing">Cognitive performance relates to flexible views of ageing</h3>
+<p>In this collaboration with Erika Borella’s group we show, that among 237 older adults, better working memory and greater psychological well-being went with seeing age-related cognitive change as malleable rather than fixed, especially after 75.</p>
+<p>Sella E, Carbone E, Domenicucci R, Signori D, Arcara G, Borella E (2026). Essentialist and Nonessentialist Views of Cognitive Aging in Older Age: The Role of Working Memory, Cognitive Inhibition and Psychological Well-Being. <em>Journal of Intelligence</em>, 14(10), 238. DOI: <a href="https://doi.org/10.3390/jintelligence14100238">10.3390/jintelligence14100238</a></p>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://sancamilloirccs-ondalab.github.io/posts/news-title/new-papers-2026-11.html</guid>
+  <pubDate>Mon, 02 Nov 2026 23:00:00 GMT</pubDate>
+  <media:content url="https://sancamilloirccs-ondalab.github.io/files/images/news-papers.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>New publications from the ONDA Lab</title>
+  <dc:creator>News </dc:creator>
+  <link>https://sancamilloirccs-ondalab.github.io/posts/news-title/new-papers-2026-10.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<section id="the-brain-flags-unexpected-facial-features-within-140-ms" class="level3">
+<h3 class="anchored" data-anchor-id="the-brain-flags-unexpected-facial-features-within-140-ms">The brain flags unexpected facial features within 140 ms</h3>
+<p>In this study, led by Cristiano Costa, we showed that EEG activity tracked precision-weighted prediction errors about facial features, peaking around 140 ms after the face appeared: predictions about what a face will do are checked and updated early in visual processing.</p>
+<p>Costa C, Ward EK, Pezzetta R, Masina F, Arcara G, Press C, Scarpazza C (2026). Early electrophysiological responses reflect precision-weighted prediction errors to face features. <em>PLOS ONE</em>, 21(9), e0357956. DOI: <a href="https://doi.org/10.1371/journal.pone.0357956">10.1371/journal.pone.0357956</a></p>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://sancamilloirccs-ondalab.github.io/posts/news-title/new-papers-2026-10.html</guid>
+  <pubDate>Sat, 03 Oct 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://sancamilloirccs-ondalab.github.io/files/images/news-papers.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
 <item>
   <title>New publications from the ONDA Lab</title>
   <dc:creator>News </dc:creator>

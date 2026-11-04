@@ -7,7 +7,7 @@ categories: [news]
 image: "/files/images/news-papers.png"
 announced-dois:
   - 10.1371/journal.pone.0357956
-draft: true
+draft: false
 ---
 
 

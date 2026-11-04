@@ -1,0 +1,38 @@
+---
+title: "New publications from the ONDA Lab"
+description: "Three new papers: percentile ranks for Italian neuropsychological norms, the role of the premotor cortices in visuomotor learning, and how older adults view cognitive aging."
+author: "News"
+date: "2026-11-03"
+categories: [news]
+image: "/files/images/news-papers.png"
+announced-dois:
+  - 10.1007/s10072-026-09477-4
+  - 10.1016/j.cortex.2026.09.018
+  - 10.3390/jintelligence14100238
+draft: false
+---
+
+
+## Summary
+
+### Percentile ranks as an alternative to Equivalent Scores
+
+In this papwer we show how Percentile ranks with confidence intervals, computed here on the Italian MoCA 8.1 norms, give a finer reading of a patient's score as compared to the "Equivalent Scores", the five categories of  system widely used in Italy.
+
+Facchin A, Arcara G, Priftis K (2026). Moving from equivalent scores to percentile ranks in clinical neuropsychology: Benefits, computation with confidence intervals, and application on MoCA 8.1 Italian norms. *Neurological Sciences*, 47(11), 866. DOI: [10.1007/s10072-026-09477-4](https://doi.org/10.1007/s10072-026-09477-4)
+
+### Only the dorsal premotor cortex stabilises what was just learned
+
+Disrupting either premotor area with continuous theta-burst stimulation (cTBS) slowed the learning of new visuomotor associations, but only dorsal premotor disruption impaired recall a day later: the two areas share early learning, while stabilisation rests on Premotor dorsal regions (PMd) alone.
+
+Turrini S, Amadori A, Arcara G, di Pellegrino G, Avenanti A (2026). Stage-specific contributions of dorsal and ventral premotor cortices to the acquisition of arbitrary visuomotor associations. *Cortex*, 205, 441-455. DOI: [10.1016/j.cortex.2026.09.018](https://doi.org/10.1016/j.cortex.2026.09.018)
+
+### Cognitive performance relates to flexible views of ageing
+
+In this collaboration with Erika Borella's group we show, that among 237 older adults, better working memory and greater psychological well-being went with seeing age-related cognitive change as malleable rather than fixed, especially after 75.
+
+Sella E, Carbone E, Domenicucci R, Signori D, Arcara G, Borella E (2026). Essentialist and Nonessentialist Views of Cognitive Aging in Older Age: The Role of Working Memory, Cognitive Inhibition and Psychological Well-Being. *Journal of Intelligence*, 14(10), 238. DOI: [10.3390/jintelligence14100238](https://doi.org/10.3390/jintelligence14100238)
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

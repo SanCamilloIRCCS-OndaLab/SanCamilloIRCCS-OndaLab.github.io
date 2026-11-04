@@ -1,0 +1,34 @@
+---
+title: "🎉 AURORA: a Regione Veneto grant to build a new cognitive assessment for oncology"
+description: "Regione del Veneto funds AURORA, coordinated by IRCCS San Camillo with the University of Padova, to develop and validate a digital cognitive assessment for people treated for cancer."
+author: "News"
+date: "2026-11-03"
+categories: [news]
+image: "/files/images/onda-fundings.png"
+draft: false
+---
+
+
+## Summary
+
+Good news: the lab has been awarded funding for **AURORA** — *Accessible User-centered platform for Regional Oncology Related cognitive Assessment*. The project is funded by Regione del Veneto under the call in DGR n. 946 of 12 August 2025 (L.R. 33/2024, art. 14), on the MCnT2 line for diagnostic innovation in chronic non-communicable diseases, with a regional contribution of 380,000 EUR over 36 months. IRCCS San Camillo coordinates the project, with Giorgio Arcara as scientific lead.
+
+### A new battery for cognitive difficulties after cancer treatment
+
+At the heart of AURORA is test development. Many people treated for cancer report difficulties with memory, attention or concentration, known as cancer-related cognitive impairment (CRCI), yet no Italian battery of neuropsychological tests is dedicated to oncology, which leaves these difficulties hard to recognise and to quantify. AURORA will build and validate one, covering memory and learning, attention, executive functions, processing speed and lexical access, with internal consistency, test-retest and inter-rater reliability, equivalence between remote and in-person administration, and Italian normative cut-offs adjusted for age, education and sex.
+
+### In close collaboration with the University of Padova
+
+The partner is the Quantitative Psychology Laboratory (QPLab) of the Department of General Psychology, University of Padova, led by Andrea Spoto, which takes responsibility for the psychometric validation and the statistical analyses. IRCCS San Camillo brings the clinical and methodological know-how, the recruitment and the co-design of the platform. From the lab, Sara Lago works on test selection and the choice of cognitive domains, and Giulia Oliva on test administration and data collection; Pier Franco Conte is the clinical lead for the recruitment of patients.
+
+### What the project involves
+
+- About 350 healthy adults, to collect the Italian normative data.
+- About 120 patients treated for breast cancer, assessed before and after treatment, within the already approved WOV_01 protocol.
+- The AURORA web app, co-designed with clinicians and citizens: guided administration of the battery, automatic scoring, clinical reports and secure data storage, interoperable with regional health information systems through open standards (HL7 FHIR).
+- Five work packages over 36 months, from recruitment to psychometric validation, platform development and dissemination.
+- At least four open-access papers, de-identified datasets, clinical guidelines for adoption in the regional health service, and regional workshops.
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
