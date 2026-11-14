@@ -1,0 +1,71 @@
+---
+# PREVIEW VARIANT G3 - "F3 with Lab philosophy as a one-line motto". Temporary: delete after choosing a homepage.
+title: "ONDA Lab"
+pagetitle: "ONDA Lab - Variant G3"
+image: "files/images/ONDA_logo_v12.png"
+page-navigation: false
+toc: false
+page-layout: full
+title-block-style: none
+---
+
+```{=html}
+<style>
+  #title-block-header { display: none; }
+  /* break out of Quarto's page column: 88% of the window, max 1500px */
+  #home-g { position: relative; left: 50%; transform: translateX(-50%);
+    width: min(1500px, 88vw); font-size: 1.18rem; }
+  /* hero: big logo + tagline + intro */
+  #home-g .hero { text-align: center; padding: 0 1rem .25rem; }
+  #home-g .hero img { height: min(260px, 26vh); width: auto; max-width: 100%; }
+  #home-g .hero .tagline { font-size: 1.6rem; color: #1b4f72; margin: .4rem 0 .3rem; font-weight: 500; }
+  #home-g .hero .lead-text { font-size: 1.05em; color: #444; max-width: 980px; margin: 0 auto; }
+  #home-g h2 { border: 0; font-size: 1.6rem; margin: 1.5rem 0 .75rem; }
+  #home-g .what-we-do > h2 { text-align: center; }
+  /* "What we do": 4 cards in one row, icon on top */
+  #home-g .features { row-gap: .9rem; column-gap: .9rem; }
+  #home-g .feature { border: 1px solid #e3ebf1; border-radius: 8px; padding: .9rem 1rem; height: 100%; background: #fff; }
+  #home-g .feature p { margin: 0; text-align: center; line-height: 1.35; }
+  #home-g .feature i { display: block; font-size: 1.9rem; color: #5a9bbf; margin-bottom: .3rem; }
+  /* Lab philosophy condensed into a one-line motto under the intro */
+  #home-g .hero .motto { font-size: 1em; font-style: italic; color: #5b6b78; max-width: 980px; margin: .6rem auto 0; }
+  /* Dark mode (light/dark toggle) */
+  body.quarto-dark #home-g .hero .tagline { color: #5dade2; }
+  body.quarto-dark #home-g .hero .lead-text { color: #ced4da; }
+  body.quarto-dark #home-g .feature { background: #2b3035; border-color: #495057; }
+  body.quarto-dark #home-g .hero .motto { color: #adb5bd; }
+</style>
+```
+
+::::::::{#home-g}
+
+```{=html}
+<div class="hero">
+  <img src="files/images/ONDA_logo_v12.png" alt="ONDA Lab logo">
+  <p class="tagline">Open methodologies in Neurorehabilitation and Data Analysis</p>
+  <p class="lead-text">We are a research lab at <a href="https://hsancamillo.it">IRCCS San Camillo, Venice</a>,
+  working on neurophysiology, neuropsychology and neuroscience for neurorehabilitation.</p>
+  <p class="motto"><i class="bi bi-lightbulb"></i> Rigour and <strong>Open Science</strong>: we share our code, methods, data, results and teaching materials.</p>
+</div>
+```
+
+:::::{.what-we-do}
+## What we do
+
+::::{.grid .features}
+:::{.g-col-12 .g-col-md-6 .g-col-xl-3 .feature}
+<i class="bi bi-clipboard2-pulse"></i> We develop open tools for neuropsychological assessment and rehabilitation
+:::
+:::{.g-col-12 .g-col-md-6 .g-col-xl-3 .feature}
+<i class="bi bi-activity"></i> We study brain functions and biomarkers using MEEG
+:::
+:::{.g-col-12 .g-col-md-6 .g-col-xl-3 .feature}
+<i class="bi bi-diagram-3"></i> We create open-source pipelines for neural data analysis
+:::
+:::{.g-col-12 .g-col-md-6 .g-col-xl-3 .feature}
+<i class="bi bi-graph-up"></i> We develop/optimize methods for behavioural and brain data analysis
+:::
+::::
+:::::
+
+::::::::

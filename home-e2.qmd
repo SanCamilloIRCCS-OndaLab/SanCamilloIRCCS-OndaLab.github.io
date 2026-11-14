@@ -1,0 +1,135 @@
+---
+# PREVIEW VARIANT E2 - "D + big logo, wide page; hero + news on top, full-width cards row below". Temporary: delete after choosing a homepage.
+title: "ONDA Lab"
+pagetitle: "ONDA Lab - Variant E2"
+image: "files/images/ONDA_logo_v12.png"
+page-navigation: false
+toc: false
+page-layout: full
+title-block-style: none
+
+listing:
+  - id: recent-posts
+    contents:
+      - posts
+    exclude:
+      title: ""
+    type: default
+    image-align: left
+    image-height: 64px
+    fields: [image, date, title]
+    max-items: 3
+    page-size: 3
+    sort-ui: false
+    filter-ui: false
+    date-format: "MMM D, YYYY"
+    sort:
+      - "date desc"
+      - "title asc"
+---
+
+```{=html}
+<style>
+  #title-block-header { display: none; }
+  /* break out of Quarto's page column to use (almost) the full window width */
+  #home-e { position: relative; left: 50%; transform: translateX(-50%);
+    width: min(1760px, calc(100vw - 3rem)); font-size: 1.18rem; }
+  #home-e .grid { row-gap: 1.25rem; column-gap: 1.75rem; }
+  /* hero: big logo + tagline + intro */
+  #home-e .hero { text-align: center; padding: 0 1rem .25rem; }
+  #home-e .hero img { height: min(210px, 20vh); width: auto; max-width: 100%; }
+  #home-e .hero .tagline { font-size: 1.6rem; color: #1b4f72; margin: .4rem 0 .3rem; font-weight: 500; }
+  #home-e .hero .lead-text { font-size: 1.05em; color: #444; max-width: 980px; margin: 0 auto; }
+  #home-e h2 { border: 0; font-size: 1.6rem; margin: .5rem 0 .5rem; }
+  #home-e .what-we-do > h2 { text-align: center; }
+  /* "What we do": 4 cards in one row, icon on top */
+  #home-e .features { row-gap: .9rem; column-gap: .9rem; }
+  #home-e .feature { border: 1px solid #e3ebf1; border-radius: 8px; padding: .6rem 1rem; height: 100%; background: #fff; }
+  #home-e .feature p { margin: 0; text-align: center; line-height: 1.35; }
+  #home-e .feature i { display: block; font-size: 1.9rem; color: #5a9bbf; margin-bottom: .2rem; }
+  #home-e .philosophy { background: #f4f8fb; border-left: 4px solid #1b4f72; padding: .75rem 1.25rem;
+    margin: .8rem 0 0; border-radius: 0 8px 8px 0; }
+  #home-e .philosophy h3 { margin: 0 0 .35rem; font-size: 1.3rem; color: #1b4f72; }
+  #home-e .philosophy p { margin: 0; line-height: 1.4; }
+  /* news band (as in variant C), full height of the row */
+  #home-e .news-panel { background: #e8f1f7; border-radius: 8px; padding: 1rem 1.2rem; height: 100%; }
+  #home-e .news-panel h2 { margin: 0 0 .4rem; font-size: 1.45rem; color: #1b4f72; }
+  #home-e #listing-recent-posts { margin-right: 0; }
+  #home-e #listing-recent-posts .quarto-post { display: grid; grid-template-columns: 64px 1fr; grid-template-areas: none;
+    column-gap: .8rem; row-gap: .1rem; padding: .55rem 0; margin: 0; border-bottom: 1px solid #cfdfea; }
+  #home-e #listing-recent-posts .quarto-post:last-child { border-bottom: 0; }
+  #home-e #listing-recent-posts .thumbnail { grid-column: 1; grid-row: 1 / span 2; margin: 0; }
+  #home-e #listing-recent-posts .thumbnail img { width: 64px; height: 64px !important; object-fit: cover; border-radius: 6px; }
+  #home-e #listing-recent-posts .body { grid-column: 2; grid-row: 1; }
+  #home-e #listing-recent-posts .metadata { grid-column: 2; grid-row: 2; display: block; text-align: left; }
+  #home-e #listing-recent-posts .listing-title { font-size: 1.05rem; line-height: 1.3; margin: 0; font-weight: 500; }
+  #home-e #listing-recent-posts .listing-date { font-size: .9rem; color: #5b6b78; }
+  #home-e .all-posts { display: block; text-align: right; margin-top: .4rem; font-size: 1rem; }
+  #home-e .hero-col { display: flex; flex-direction: column; justify-content: center; }
+  #home-e .what-we-do { margin-top: .25rem; }
+  /* Dark mode (light/dark toggle) */
+  body.quarto-dark #home-e .hero .tagline,
+  body.quarto-dark #home-e .philosophy h3,
+  body.quarto-dark #home-e .news-panel h2 { color: #5dade2; }
+  body.quarto-dark #home-e .hero .lead-text { color: #ced4da; }
+  body.quarto-dark #home-e .feature { background: #2b3035; border-color: #495057; }
+  body.quarto-dark #home-e .philosophy { background: #26323c; border-left-color: #5dade2; }
+  body.quarto-dark #home-e .news-panel { background: #26323c; }
+  body.quarto-dark #home-e #listing-recent-posts .quarto-post { border-bottom-color: #3d4b57; }
+  body.quarto-dark #home-e #listing-recent-posts .quarto-post:last-child { border-bottom: 0; }
+  body.quarto-dark #home-e #listing-recent-posts .listing-date { color: #adb5bd; }
+</style>
+```
+
+::::::::{#home-e}
+
+:::::::{.grid}
+::::::{.g-col-12 .g-col-lg-8 .hero-col}
+```{=html}
+<div class="hero">
+  <img src="files/images/ONDA_logo_v12.png" alt="ONDA Lab logo">
+  <p class="tagline">Open methodologies in Neurorehabilitation and Data Analysis</p>
+  <p class="lead-text">We are a research lab at <a href="https://hsancamillo.it">IRCCS San Camillo, Venice</a>,
+  working on neurophysiology, neuropsychology and neuroscience for neurorehabilitation.</p>
+</div>
+```
+::::::
+
+::::::{.g-col-12 .g-col-lg-4}
+:::::{.news-panel}
+## Latest news
+
+:::{#recent-posts}
+:::
+
+[All posts »](posts.qmd){.all-posts}
+:::::
+::::::
+:::::::
+
+:::::{.what-we-do}
+## What we do
+
+::::{.grid .features}
+:::{.g-col-12 .g-col-md-6 .g-col-xl-3 .feature}
+<i class="bi bi-clipboard2-pulse"></i> We develop open tools for neuropsychological assessment and rehabilitation
+:::
+:::{.g-col-12 .g-col-md-6 .g-col-xl-3 .feature}
+<i class="bi bi-activity"></i> We study brain functions and biomarkers using MEEG
+:::
+:::{.g-col-12 .g-col-md-6 .g-col-xl-3 .feature}
+<i class="bi bi-diagram-3"></i> We create open-source pipelines for neural data analysis
+:::
+:::{.g-col-12 .g-col-md-6 .g-col-xl-3 .feature}
+<i class="bi bi-graph-up"></i> We develop/optimize methods for behavioural and brain data analysis
+:::
+::::
+:::::
+
+:::::{.philosophy}
+### Lab philosophy
+
+The Lab philosophy is focused on rigour and **Open Science** principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research.
+:::::
+
+::::::::

@@ -1,0 +1,135 @@
+---
+# PREVIEW VARIANT H - "redesign from Giorgio's mock-up: gradient hero band + titled cards". Temporary: delete after choosing a homepage.
+title: "ONDA Lab"
+pagetitle: "ONDA Lab - Variant H"
+image: "files/images/ONDA_logo_v12.png"
+page-navigation: false
+toc: false
+page-layout: full
+title-block-style: none
+---
+
+```{=html}
+<style>
+  #title-block-header { display: none; }
+  body { overflow-x: hidden; }
+  /* bold navy brand in the navbar (this page only) */
+  body.quarto-light .navbar-brand .navbar-title { font-weight: 700; color: #0f3b5f; }
+
+  /* ── Top section: full-width hero band with a soft gradient ───────── */
+  #home-h .hero-band { position: relative; left: 50%; transform: translateX(-50%); width: 100vw;
+    margin-top: -1.875rem; padding: 1.5rem 1.5rem 2rem; text-align: center; z-index: 2;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.75) 0%, rgba(255,255,255,0) 60%),
+      linear-gradient(160deg, #dcebf7 0%, #eaf3fa 45%, #f6f9fc 100%);
+    border-bottom: 1px solid #dbe7f0; }
+  #home-h .hero-band .waves { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  #home-h .hero-band .waves path { fill: none; stroke: #1b4f72; stroke-width: 1.5; opacity: .08; }
+  #home-h .hero-inner { position: relative; max-width: 1100px; margin: 0 auto; }
+  #home-h .hero-inner img { height: min(150px, 15vh); width: auto; max-width: 100%; }
+  #home-h .headline { font-size: 2.2rem; font-weight: 700; line-height: 1.2; color: #0f3b5f;
+    max-width: 900px; margin: .5rem auto .5rem; text-wrap: balance; }
+  #home-h .intro { font-size: 1.25rem; color: #3d4a56; max-width: 900px; margin: 0 auto 1rem; text-wrap: balance; }
+  #home-h .intro a { color: #0f3b5f; font-weight: 500; }
+
+  /* "Our Lab philosophy": small outlined pill; full text pops up on hover / tap / focus */
+  #home-h .philo-trigger { position: relative; display: inline-flex; align-items: center; gap: .5rem;
+    padding: .45rem 1.3rem; font-size: 1.15rem; font-weight: 500; color: #0f3b5f; cursor: help;
+    background: rgba(255,255,255,.7); border: 1.5px solid #0f3b5f; border-radius: 10px; outline: none;
+    transition: background .2s ease; }
+  #home-h .philo-trigger:hover, #home-h .philo-trigger:focus { background: #fff; }
+  #home-h .philo-pop { position: absolute; top: calc(100% + .7rem); left: 50%; transform: translate(-50%, -6px);
+    width: min(640px, 84vw); padding: 1rem 1.25rem; text-align: left; font-size: 1.1rem; font-weight: 400;
+    line-height: 1.45; color: #333; background: #fff; border: 1px solid #d5e2ec; border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(15,59,95,.18); opacity: 0; visibility: hidden;
+    transition: opacity .2s ease, transform .2s ease, visibility .2s; z-index: 20; cursor: auto; }
+  #home-h .philo-trigger:hover .philo-pop,
+  #home-h .philo-trigger:focus .philo-pop,
+  #home-h .philo-trigger:focus-within .philo-pop { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+
+  /* ── Bottom section: "What we do" cards ───────────────────────────── */
+  #home-h .lower { position: relative; z-index: 1; left: 50%; transform: translateX(-50%); width: min(1500px, 88vw);
+    padding: 1.25rem 0 .5rem; }
+  #home-h .lower h2 { border: 0; text-align: center; font-size: 2.1rem; font-weight: 700; color: #0f3b5f;
+    margin: 0 0 1rem; }
+  #home-h .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; }
+  @media (max-width: 1199.98px) { #home-h .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 575.98px) { #home-h .cards { grid-template-columns: 1fr; } }
+  #home-h .card-x { background: #fff; border: 1px solid #d9e4ec; border-top: 4px solid #0f3b5f; border-radius: 10px;
+    padding: .9rem 1.4rem 1.1rem; transition: box-shadow .2s ease, transform .2s ease; }
+  #home-h .card-x:hover { box-shadow: 0 10px 24px rgba(15,59,95,.12); transform: translateY(-2px); }
+  #home-h .card-x .icon { display: inline-flex; align-items: center; justify-content: center; width: 3rem; height: 3rem;
+    border-radius: 50%; background: #e3eff8; color: #1b5f8c; font-size: 1.45rem; margin-bottom: .45rem; }
+  #home-h .card-x h3 { font-size: 1.45rem; font-weight: 700; color: #0f3b5f; margin: 0 0 .35rem; }
+  #home-h .card-x p { margin: 0; font-size: 1.1rem; line-height: 1.45; color: #3d4a56; }
+
+  /* ── Dark mode (light/dark toggle) ───────────────────────────────── */
+  body.quarto-dark #home-h .hero-band { border-bottom-color: #33414d;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(93,173,226,.12) 0%, rgba(93,173,226,0) 60%),
+      linear-gradient(160deg, #1e3242 0%, #1f2a34 50%, #222 100%); }
+  body.quarto-dark #home-h .hero-band .waves path { stroke: #5dade2; opacity: .12; }
+  body.quarto-dark #home-h .headline,
+  body.quarto-dark #home-h .lower h2,
+  body.quarto-dark #home-h .card-x h3 { color: #e9ecef; }
+  body.quarto-dark #home-h .intro,
+  body.quarto-dark #home-h .card-x p { color: #ced4da; }
+  body.quarto-dark #home-h .intro a { color: #5dade2; }
+  body.quarto-dark #home-h .philo-trigger { color: #5dade2; border-color: #5dade2; background: rgba(0,0,0,.2); }
+  body.quarto-dark #home-h .philo-trigger:hover, body.quarto-dark #home-h .philo-trigger:focus { background: rgba(0,0,0,.35); }
+  body.quarto-dark #home-h .philo-pop { color: #e9ecef; background: #2b3035; border-color: #495057;
+    box-shadow: 0 12px 32px rgba(0,0,0,.5); }
+  body.quarto-dark #home-h .card-x { background: #2b3035; border-color: #495057; border-top-color: #5dade2; }
+  body.quarto-dark #home-h .card-x .icon { background: rgba(93,173,226,.15); color: #5dade2; }
+</style>
+
+<div id="home-h">
+
+<section class="hero-band">
+  <svg class="waves" viewBox="0 0 1440 420" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,140 C240,60 420,240 720,170 S1200,40 1440,120"/>
+    <path d="M0,300 C300,220 520,380 820,300 S1260,200 1440,280"/>
+    <path d="M0,220 C200,180 460,300 760,240 S1180,150 1440,200"/>
+  </svg>
+  <div class="hero-inner">
+    <img src="files/images/ONDA_logo_v12.png" alt="ONDA Lab logo">
+    <h1 class="headline">Open methodologies in Neurorehabilitation and Data Analysis</h1>
+    <p class="intro">We are a research lab at <a href="https://hsancamillo.it">IRCCS San Camillo, Venice</a>,
+    working on neurophysiology, neuropsychology and neuroscience for neurorehabilitation.</p>
+    <span class="philo-trigger" tabindex="0"><i class="bi bi-lightbulb"></i>Our Lab philosophy
+      <span class="philo-pop" role="tooltip">The Lab philosophy is focused on rigour and <strong>Open Science</strong>
+      principles. We are committed to sharing our code, methods, data, results but also teaching materials and
+      educational resources to the scientific community, to promote transparency, reproducibility and collaboration
+      in research.</span>
+    </span>
+  </div>
+</section>
+
+<section class="lower">
+  <h2>What we do</h2>
+  <div class="cards">
+    <div class="card-x">
+      <span class="icon"><i class="bi bi-clipboard2-pulse"></i></span>
+      <h3>Clinical tools</h3>
+      <p>We develop open tools for neuropsychological assessment and rehabilitation</p>
+    </div>
+    <div class="card-x">
+      <span class="icon"><i class="bi bi-activity"></i></span>
+      <h3>Brain &amp; MEEG</h3>
+      <p>We study brain functions and biomarkers using MEEG</p>
+    </div>
+    <div class="card-x">
+      <span class="icon"><i class="bi bi-diagram-3"></i></span>
+      <h3>Open pipelines</h3>
+      <p>We create open-source pipelines for neural data analysis</p>
+    </div>
+    <div class="card-x">
+      <span class="icon"><i class="bi bi-graph-up"></i></span>
+      <h3>Analysis methods</h3>
+      <p>We develop/optimize methods for behavioural and brain data analysis</p>
+    </div>
+  </div>
+</section>
+
+</div>
+```
