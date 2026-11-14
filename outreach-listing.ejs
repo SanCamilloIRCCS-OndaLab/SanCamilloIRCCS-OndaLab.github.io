@@ -1,0 +1,100 @@
+<%
+/*
+  outreach-listing.ejs  —  Quarto custom listing template for outreach.qmd
+  Data: outreach.yml (see the field list at the top of that file).
+
+  Renders three blocks from the same items:
+    1. Featured row     (items with featured: true)
+    2. Filter toolbar   (type chips with counts, language chips, search box)
+    3. Card grid        (all items; filtering is done by the small script in outreach.qmd)
+
+  Notes
+  - Quarto templates use lodash syntax: the '=' tag prints RAW, the '-' tag prints ESCAPED.
+  - Every card is built as a single HTML string and printed on one line, because indented
+    lines in the template output would be read as Markdown code blocks by Pandoc.
+  - The grid wrapper keeps class="list" and metadataAttrs(item) for Quarto/List.js compatibility.
+*/
+var TYPES = ["Talk", "Guide", "Tutorial"];
+var LANGS = { "English": "EN", "Italiano": "IT" };
+
+function esc(s) {
+  return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+function cats(item) {
+  return Array.isArray(item.categories)
+    ? item.categories
+    : (item.categories ? String(item.categories).split(",").map(function (s) { return s.trim(); }) : []);
+}
+function typeOf(item) {
+  var t = cats(item).filter(function (c) { return TYPES.indexOf(c) !== -1; });
+  return t.length ? t[0] : "Talk";
+}
+function langsOf(item) { return cats(item).filter(function (c) { return LANGS[c]; }); }
+function year(item) { var m = String(item.date || "").match(/(\d{4})/); return m ? m[1] : ""; }
+function count(t) { return items.filter(function (i) { return typeOf(i) === t; }).length; }
+/* external links and files (PDF / HTML decks under /files/) open in a new tab; site pages (posts) do not */
+function newTab(url) { var u = String(url || ""); return /^https?:\/\//.test(u) || /(^|\/)files\//.test(u) || /\.pdf$/i.test(u); }
+function link(url, cls, inner, extra) {
+  return '<a' + (cls ? ' class="' + cls + '"' : '') + ' href="' + esc(url) + '"' +
+         (newTab(url) ? ' target="_blank" rel="noopener"' : '') + (extra || '') + '>' + inner + '</a>';
+}
+
+function card(item, feat, attrs) {
+  var t = typeOf(item);
+  var langs = langsOf(item);
+  var isSlides = t === "Talk" || /slides/i.test(String(item.path || ""));
+  var main = isSlides ? '<i class="bi bi-easel"></i> Slides' : '<i class="bi bi-file-earmark-text"></i> Open';
+  var h = '';
+  h += '<article class="ol-card' + (feat ? ' ol-card--feat' : '') + '" data-type="' + t + '" data-lang="' + langs.join(' ') + '"' + (attrs ? ' ' + attrs : '') + '>';
+  h += link(item.path, 'ol-thumb',
+        '<img src="' + esc(item.image) + '" alt="" loading="lazy">' +
+        '<span class="ol-type ol-type--' + t.toLowerCase() + '">' + t + '</span>' +
+        (feat ? '<span class="ol-star"><i class="bi bi-star-fill"></i> Featured</span>' : ''),
+        ' aria-label="Open: ' + esc(item.title) + '" tabindex="-1"');
+  h += '<div class="ol-body">';
+  h += '<div class="ol-meta"><span class="ol-year">' + year(item) + '</span>' +
+       langs.map(function (l) { return '<span class="ol-lang" title="' + l + '">' + LANGS[l] + '</span>'; }).join('') + '</div>';
+  h += '<h3 class="ol-title">' + link(item.path, '', esc(item.title)) + '</h3>';
+  h += '<p class="ol-desc">' + esc(item.description) + '</p>';
+  h += '<div class="ol-actions">';
+  h += link(item.path, 'ol-btn ol-btn--main', main);
+  if (item.extra) h += link(item.extra, 'ol-btn', '<i class="bi bi-translate"></i> ' + esc(item.extralabel || 'Other version'));
+  if (item.repo)  h += link(item.repo, 'ol-btn', '<i class="bi bi-github"></i> Repo');
+  if (item.post)  h += link(item.post, 'ol-btn', '<i class="bi bi-chat-square-text"></i> Post');
+  h += '</div></div></article>';
+  return h;
+}
+
+var featured = items.filter(function (i) { return i.featured === true || i.featured === "true"; });
+
+var chipsType = '<button type="button" class="ol-chip is-active" aria-pressed="true" data-value="">All <span class="ol-n">' + items.length + '</span></button>' +
+  TYPES.filter(count).map(function (t) {
+    return '<button type="button" class="ol-chip ol-chip--' + t.toLowerCase() + '" aria-pressed="false" data-value="' + t + '">' + t + 's <span class="ol-n">' + count(t) + '</span></button>';
+  }).join('');
+var chipsLang = '<button type="button" class="ol-chip is-active" aria-pressed="true" data-value="">Any language</button>' +
+  Object.keys(LANGS).map(function (l) { return '<button type="button" class="ol-chip" aria-pressed="false" data-value="' + l + '">' + l + '</button>'; }).join('');
+%>
+<div class="ol-wrap">
+<% if (featured.length) { %>
+<section class="ol-section ol-featured" aria-labelledby="ol-feat-h">
+<h2 id="ol-feat-h" class="ol-h2">Featured</h2>
+<div class="ol-grid ol-grid--feat">
+<% featured.forEach(function (item) { %><%= card(item, true, '') %>
+<% }); %>
+</div>
+</section>
+<% } %>
+<section class="ol-section" aria-labelledby="ol-all-h">
+<h2 id="ol-all-h" class="ol-h2">All materials</h2>
+<div class="ol-toolbar" role="toolbar" aria-label="Filter materials">
+<div class="ol-chips" data-group="type"><%= chipsType %></div>
+<div class="ol-chips" data-group="lang"><%= chipsLang %></div>
+<label class="ol-search"><i class="bi bi-search" aria-hidden="true"></i><input type="search" placeholder="Search talks, guides, tutorials…" aria-label="Search materials"></label>
+</div>
+<div class="ol-grid ol-all list">
+<% items.forEach(function (item) { %><%= card(item, false, metadataAttrs(item)) %>
+<% }); %>
+</div>
+<p class="ol-empty" hidden>Nothing matches these filters. <button type="button" class="ol-reset">Show everything</button></p>
+</section>
+</div>

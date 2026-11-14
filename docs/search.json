@@ -196,74 +196,102 @@
     "text": "Alumni\n\n\n   \n    \n    \n      Order By\n      Default\n      \n      \n      \n        Name\n      \n      \n        Role\n      \n      \n        Started\n      \n      \n        Ended\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nName\n\n\n\nRole\n\n\n\nStarted\n\n\n\nEnded\n\n\n\n\n\n\n\n\n\n\n\nAlice Vidoret\n\n\nMasters Alumni\n\n\n2023-07\n\n\n2025-11\n\n\n\n\n\n\n\n\n\nFederica Zagarese\n\n\nMasters Alumni\n\n\n2021-09\n\n\n2025-11\n\n\n\n\n\n\n\n\n\nSilvia Saccani\n\n\nPhD Alumni\n\n\n2024-01\n\n\n2024-11\n\n\n\n\n\n\n\n\n\nAlessia Simonetto\n\n\nMasters Alumni\n\n\n2023-11\n\n\n2024-07\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "lab-guides.html",
+    "href": "lab-guides.html",
+    "title": "Lab guides",
+    "section": "",
+    "text": "Here you can download the Lab Manual, which explains some organizational aspects and the philosophy of the Lab.\nYou can also download our guide on Good Practices for AI-assisted Coding (given the topic, check for updates, it is expected to change often)."
+  },
+  {
+    "objectID": "home-h.html",
+    "href": "home-h.html",
     "title": "ONDA Lab",
     "section": "",
     "text": "Open methodologies in Neurorehabilitation and Data Analysis\n    We are a research lab at IRCCS San Camillo, Venice,\n    working on neurophysiology, neuropsychology and neuroscience for neurorehabilitation.\n    Our Lab philosophy\n      The Lab philosophy is focused on rigour and Open Science\n      principles. We are committed to sharing our code, methods, data, results but also teaching materials and\n      educational resources to the scientific community, to promote transparency, reproducibility and collaboration\n      in research.\n    \n  \n\n\n\n  What we do\n  \n    \n      \n      Clinical tools\n      We develop open tools for neuropsychological assessment and rehabilitation\n    \n    \n      \n      Brain & MEEG\n      We study brain functions and biomarkers using MEEG\n    \n    \n      \n      Open pipelines\n      We create open-source pipelines for neural data analysis\n    \n    \n      \n      Analysis methods\n      We develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "home-g3.html#what-we-do",
-    "href": "home-g3.html#what-we-do",
+    "objectID": "home-g2.html#what-we-do",
+    "href": "home-g2.html#what-we-do",
     "title": "ONDA Lab",
     "section": "What we do",
     "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "home-g1a.html#what-we-do",
-    "href": "home-g1a.html#what-we-do",
+    "objectID": "home-g1.html#what-we-do",
+    "href": "home-g1.html#what-we-do",
     "title": "ONDA Lab",
     "section": "What we do",
     "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "home-f3.html#what-we-do",
-    "href": "home-f3.html#what-we-do",
+    "objectID": "home-f2.html#what-we-do",
+    "href": "home-f2.html#what-we-do",
     "title": "ONDA Lab",
     "section": "What we do",
     "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "home-f1.html#what-we-do",
-    "href": "home-f1.html#what-we-do",
+    "objectID": "home-f2.html#latest-news",
+    "href": "home-f2.html#latest-news",
+    "title": "ONDA Lab",
+    "section": "Latest news",
+    "text": "Latest news\nAll posts »"
+  },
+  {
+    "objectID": "home-e2.html#latest-news",
+    "href": "home-e2.html#latest-news",
+    "title": "ONDA Lab",
+    "section": "Latest news",
+    "text": "Latest news\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n🎉 AURORA: a Regione Veneto grant to build a new cognitive assessment for oncology\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nOct 4, 2026\n\n\n\n\n\nNo matching items\n\nAll posts »"
+  },
+  {
+    "objectID": "home-e2.html#what-we-do",
+    "href": "home-e2.html#what-we-do",
     "title": "ONDA Lab",
     "section": "What we do",
     "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "home-e1.html#what-we-do",
-    "href": "home-e1.html#what-we-do",
+    "objectID": "home-d.html#what-we-do",
+    "href": "home-d.html#what-we-do",
     "title": "ONDA Lab",
     "section": "What we do",
-    "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis"
+    "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis\n\n\n\nLab philosophy\nThe Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research."
   },
   {
-    "objectID": "home-e1.html#latest-news",
-    "href": "home-e1.html#latest-news",
+    "objectID": "home-d.html#latest-news",
+    "href": "home-d.html#latest-news",
     "title": "ONDA Lab",
     "section": "Latest news",
     "text": "Latest news\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n🎉 AURORA: a Regione Veneto grant to build a new cognitive assessment for oncology\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nOct 4, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nSep 21, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSara Zago talks about aperiodic EEG at the SIPF congress\n\n\n\n\n\nSep 18, 2026\n\n\n\n\n\nNo matching items\n\nAll posts »"
   },
   {
-    "objectID": "home-c.html#lab-philosophy",
-    "href": "home-c.html#lab-philosophy",
-    "title": "ONDA Lab",
-    "section": "Lab philosophy",
-    "text": "Lab philosophy\nThe Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research."
-  },
-  {
-    "objectID": "home-c.html#what-we-do",
-    "href": "home-c.html#what-we-do",
+    "objectID": "home-b.html#what-we-do",
+    "href": "home-b.html#what-we-do",
     "title": "ONDA Lab",
     "section": "What we do",
-    "text": "What we do\n\nWe develop open tools for neuropsychological assessment and rehabilitation\nWe study brain functions and biomarkers using MEEG\nWe create open-source pipelines for neural data analysis\nWe develop/optimize methods for behavioural and brain data analysis"
+    "text": "What we do\n\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n\n\n We study brain functions and biomarkers using MEEG\n\n\n\n\n We create open-source pipelines for neural data analysis\n\n\n\n\n We develop/optimize methods for behavioural and brain data analysis\n\n\n\n\nLab philosophy\nThe Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research."
   },
   {
-    "objectID": "home-c.html#latest-news",
-    "href": "home-c.html#latest-news",
+    "objectID": "home-b.html#latest-from-the-lab",
+    "href": "home-b.html#latest-from-the-lab",
     "title": "ONDA Lab",
-    "section": "Latest news",
-    "text": "Latest news\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n🎉 AURORA: a Regione Veneto grant to build a new cognitive assessment for oncology\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nOct 4, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nSep 21, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSara Zago talks about aperiodic EEG at the SIPF congress\n\n\n\n\n\nSep 18, 2026\n\n\n\n\n\nNo matching items\n\nAll posts »"
+    "section": "Latest from the Lab",
+    "text": "Latest from the Lab\n\n\n\n\n\n\nDate\n\n\n\nPost\n\n\n\nType\n\n\n\n\n\n\n\n\nNov 3, 2026\n\n\nNew publications from the ONDA Lab\n\n\nnews\n\n\n\n\n\n\nNov 3, 2026\n\n\n🎉 AURORA: a Regione Veneto grant to build a new cognitive assessment for oncology\n\n\nnews\n\n\n\n\n\n\nOct 4, 2026\n\n\nNew publications from the ONDA Lab\n\n\nnews\n\n\n\n\n\n\nSep 21, 2026\n\n\nNew publications from the ONDA Lab\n\n\nnews\n\n\n\n\n\n\nSep 18, 2026\n\n\nSara Zago talks about aperiodic EEG at the SIPF congress\n\n\nnews\n\n\n\n\n\n\nNo matching items\n\n\nAll posts »"
+  },
+  {
+    "objectID": "feed.html",
+    "href": "feed.html",
+    "title": "Subscribe (RSS)",
+    "section": "",
+    "text": "Follow the ONDA Lab news, events and presentations with an RSS feed: a feed reader checks the site for you and shows every new post as soon as it is published, with no account or email needed.\nTo subscribe, copy this address and paste it into your feed reader:\nhttps://sancamilloirccs-ondalab.github.io/posts.xml\nDon’t have a feed reader yet? Free options include Feedly, Inoreader, NetNewsWire (Mac/iOS) and Thunderbird.\nYou can also view the raw feed or browse all posts on the News page."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Please feel free to contact the Lab’s Principal Investigator at giorgio.arcara [at] unipd.it"
   },
   {
     "objectID": "home-a.html",
@@ -287,102 +315,81 @@
     "text": "We develop open tools for neuropsychological assessment and rehabilitation\nWe study brain functions and biomarkers using MEEG\nWe create open-source pipelines for neural data analysis\nWe develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Please feel free to contact the Lab’s Principal Investigator at giorgio.arcara [at] unipd.it"
+    "objectID": "home-c.html#lab-philosophy",
+    "href": "home-c.html#lab-philosophy",
+    "title": "ONDA Lab",
+    "section": "Lab philosophy",
+    "text": "Lab philosophy\nThe Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research."
   },
   {
-    "objectID": "feed.html",
-    "href": "feed.html",
-    "title": "Subscribe (RSS)",
-    "section": "",
-    "text": "Follow the ONDA Lab news, events and presentations with an RSS feed: a feed reader checks the site for you and shows every new post as soon as it is published, with no account or email needed.\nTo subscribe, copy this address and paste it into your feed reader:\nhttps://sancamilloirccs-ondalab.github.io/posts.xml\nDon’t have a feed reader yet? Free options include Feedly, Inoreader, NetNewsWire (Mac/iOS) and Thunderbird.\nYou can also view the raw feed or browse all posts on the News page."
-  },
-  {
-    "objectID": "home-b.html#what-we-do",
-    "href": "home-b.html#what-we-do",
+    "objectID": "home-c.html#what-we-do",
+    "href": "home-c.html#what-we-do",
     "title": "ONDA Lab",
     "section": "What we do",
-    "text": "What we do\n\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n\n\n We study brain functions and biomarkers using MEEG\n\n\n\n\n We create open-source pipelines for neural data analysis\n\n\n\n\n We develop/optimize methods for behavioural and brain data analysis\n\n\n\n\nLab philosophy\nThe Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research."
+    "text": "What we do\n\nWe develop open tools for neuropsychological assessment and rehabilitation\nWe study brain functions and biomarkers using MEEG\nWe create open-source pipelines for neural data analysis\nWe develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "home-b.html#latest-from-the-lab",
-    "href": "home-b.html#latest-from-the-lab",
-    "title": "ONDA Lab",
-    "section": "Latest from the Lab",
-    "text": "Latest from the Lab\n\n\n\n\n\n\nDate\n\n\n\nPost\n\n\n\nType\n\n\n\n\n\n\n\n\nNov 3, 2026\n\n\nNew publications from the ONDA Lab\n\n\nnews\n\n\n\n\n\n\nNov 3, 2026\n\n\n🎉 AURORA: a Regione Veneto grant to build a new cognitive assessment for oncology\n\n\nnews\n\n\n\n\n\n\nOct 4, 2026\n\n\nNew publications from the ONDA Lab\n\n\nnews\n\n\n\n\n\n\nSep 21, 2026\n\n\nNew publications from the ONDA Lab\n\n\nnews\n\n\n\n\n\n\nSep 18, 2026\n\n\nSara Zago talks about aperiodic EEG at the SIPF congress\n\n\nnews\n\n\n\n\n\n\nNo matching items\n\n\nAll posts »"
-  },
-  {
-    "objectID": "home-d.html#what-we-do",
-    "href": "home-d.html#what-we-do",
-    "title": "ONDA Lab",
-    "section": "What we do",
-    "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis\n\n\n\nLab philosophy\nThe Lab philosophy is focused on rigour and Open Science principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research."
-  },
-  {
-    "objectID": "home-d.html#latest-news",
-    "href": "home-d.html#latest-news",
+    "objectID": "home-c.html#latest-news",
+    "href": "home-c.html#latest-news",
     "title": "ONDA Lab",
     "section": "Latest news",
     "text": "Latest news\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n🎉 AURORA: a Regione Veneto grant to build a new cognitive assessment for oncology\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nOct 4, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nSep 21, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSara Zago talks about aperiodic EEG at the SIPF congress\n\n\n\n\n\nSep 18, 2026\n\n\n\n\n\nNo matching items\n\nAll posts »"
   },
   {
-    "objectID": "home-e2.html#latest-news",
-    "href": "home-e2.html#latest-news",
+    "objectID": "home-e1.html#what-we-do",
+    "href": "home-e1.html#what-we-do",
+    "title": "ONDA Lab",
+    "section": "What we do",
+    "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis"
+  },
+  {
+    "objectID": "home-e1.html#latest-news",
+    "href": "home-e1.html#latest-news",
     "title": "ONDA Lab",
     "section": "Latest news",
-    "text": "Latest news\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n🎉 AURORA: a Regione Veneto grant to build a new cognitive assessment for oncology\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nOct 4, 2026\n\n\n\n\n\nNo matching items\n\nAll posts »"
+    "text": "Latest news\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n🎉 AURORA: a Regione Veneto grant to build a new cognitive assessment for oncology\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nOct 4, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNew publications from the ONDA Lab\n\n\n\n\n\nSep 21, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSara Zago talks about aperiodic EEG at the SIPF congress\n\n\n\n\n\nSep 18, 2026\n\n\n\n\n\nNo matching items\n\nAll posts »"
   },
   {
-    "objectID": "home-e2.html#what-we-do",
-    "href": "home-e2.html#what-we-do",
+    "objectID": "home-f1.html#what-we-do",
+    "href": "home-f1.html#what-we-do",
     "title": "ONDA Lab",
     "section": "What we do",
     "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "home-f2.html#what-we-do",
-    "href": "home-f2.html#what-we-do",
+    "objectID": "home-f3.html#what-we-do",
+    "href": "home-f3.html#what-we-do",
     "title": "ONDA Lab",
     "section": "What we do",
     "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "home-f2.html#latest-news",
-    "href": "home-f2.html#latest-news",
-    "title": "ONDA Lab",
-    "section": "Latest news",
-    "text": "Latest news\nAll posts »"
-  },
-  {
-    "objectID": "home-g1.html#what-we-do",
-    "href": "home-g1.html#what-we-do",
+    "objectID": "home-g1a.html#what-we-do",
+    "href": "home-g1a.html#what-we-do",
     "title": "ONDA Lab",
     "section": "What we do",
     "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "home-g2.html#what-we-do",
-    "href": "home-g2.html#what-we-do",
+    "objectID": "home-g3.html#what-we-do",
+    "href": "home-g3.html#what-we-do",
     "title": "ONDA Lab",
     "section": "What we do",
     "text": "What we do\n\n\n We develop open tools for neuropsychological assessment and rehabilitation\n\n\n We study brain functions and biomarkers using MEEG\n\n\n We create open-source pipelines for neural data analysis\n\n\n We develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "home-h.html",
-    "href": "home-h.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "ONDA Lab",
     "section": "",
     "text": "Open methodologies in Neurorehabilitation and Data Analysis\n    We are a research lab at IRCCS San Camillo, Venice,\n    working on neurophysiology, neuropsychology and neuroscience for neurorehabilitation.\n    Our Lab philosophy\n      The Lab philosophy is focused on rigour and Open Science\n      principles. We are committed to sharing our code, methods, data, results but also teaching materials and\n      educational resources to the scientific community, to promote transparency, reproducibility and collaboration\n      in research.\n    \n  \n\n\n\n  What we do\n  \n    \n      \n      Clinical tools\n      We develop open tools for neuropsychological assessment and rehabilitation\n    \n    \n      \n      Brain & MEEG\n      We study brain functions and biomarkers using MEEG\n    \n    \n      \n      Open pipelines\n      We create open-source pipelines for neural data analysis\n    \n    \n      \n      Analysis methods\n      We develop/optimize methods for behavioural and brain data analysis"
   },
   {
-    "objectID": "lab-guides.html",
-    "href": "lab-guides.html",
-    "title": "Lab guides",
+    "objectID": "outreach.html",
+    "href": "outreach.html",
+    "title": "Outreach",
     "section": "",
-    "text": "Here you can download the Lab Manual, which explains some organizational aspects and the philosophy of the Lab.\nYou can also download our guide on Good Practices for AI-assisted Coding (given the topic, check for updates, it is expected to change often)."
+    "text": "Open slides & materials\n    Outreach\n    Talks, guides and tutorials from the Lab, on coding, open science, neuropsychology\n      and data analysis. Everything is free to browse, and most of it lives on\n      GitHub.\n    \n      0talks\n      0guides\n      0tutorials\n    \n  \n\n\n\n\n\n\nFeatured\n\n\n\nGuide Featured\n\n\n2026EN\n\n\nGood Practices for AI-Assisted Coding (Lab guide)\n\n\nThe ONDA Lab’s short written guide on how to use AI tools for coding in research: define the problem first, trace before you trust, and keep the human in charge.\n\n\n Open Repo\n\n\n\n\nGuide Featured\n\n\n2026EN\n\n\nHow to Write Terrible Code\n\n\nA short and humorous guide to good coding principles (and why you shouldn’t write terrible code), by ONDA Lab and friends.\n\n\n Slides Repo Post\n\n\n\n\nTalk Featured\n\n\n2025IT\n\n\nErrori comuni nell’utilizzo di test neuropsicologici\n\n\nGli errori più frequenti nell’uso e nell’interpretazione dei test neuropsicologici, e come evitarli.\n\n\n Slides Repo\n\n\n\n\n\n\n\nAll materials\n\n\n\n\nAll 16\n\n\nTalks 5\n\n\nGuides 5\n\n\nTutorials 6\n\n\n\n\nAny language\n\n\nEnglish\n\n\nItaliano\n\n\n\n\n\n\nGuide\n\n\n2026EN\n\n\nGood Practices for AI-Assisted Coding (Lab guide)\n\n\nThe ONDA Lab’s short written guide on how to use AI tools for coding in research: define the problem first, trace before you trust, and keep the human in charge.\n\n\n Open Repo\n\n\n\n\nGuide\n\n\n2026ENIT\n\n\nA Practical Guide to Writing a Thesis\n\n\nPractical, step-by-step advice for students writing their thesis, from structure to figures and slides. Available in English and Italian.\n\n\n Open Versione italiana Repo\n\n\n\n\nTalk\n\n\n2026EN\n\n\nGood Practices for AI-assisted Coding\n\n\nA talk on the opportunities and pitfalls of using AI tools for coding in scientific research, with personal and Lab views on the issue.\n\n\n Slides Post\n\n\n\n\nGuide\n\n\n2026EN\n\n\nHow to Write Terrible Code\n\n\nA short and humorous guide to good coding principles (and why you shouldn’t write terrible code), by ONDA Lab and friends.\n\n\n Slides Repo Post\n\n\n\n\nGuide\n\n\n2026EN\n\n\nBetter Code, Better Science: a summary\n\n\nKey points from Russell Poldrack’s book on software engineering practices for researchers, summarised for the Lab.\n\n\n Open Repo\n\n\n\n\nTalk\n\n\n2026IT\n\n\nLa mia esperienza con i dati FAIR\n\n\nUn racconto dell’esperienza con i dati FAIR, sia come utilizzatore sia come curatore di dataset.\n\n\n Slides Post\n\n\n\n\nGuide\n\n\n2026EN\n\n\nGitHub Short Guide\n\n\nA compass, not an encyclopedia: the minimal GitHub knowledge you need for version control in everyday research in neuroscience and psychology.\n\n\n Open Repo\n\n\n\n\nTalk\n\n\n2025IT\n\n\nErrori comuni nell’utilizzo di test neuropsicologici\n\n\nGli errori più frequenti nell’uso e nell’interpretazione dei test neuropsicologici, e come evitarli.\n\n\n Slides Repo\n\n\n\n\nTalk\n\n\n2025EN\n\n\nCoding Group: improving our coding habits\n\n\nUpdate from the San Camillo / ONDA Lab coding group: what we learned about GitHub, good habits, and using LLMs for programming.\n\n\n Slides Repo\n\n\n\n\nTutorial\n\n\n2025EN\n\n\nEquivalent Scores: regression model selection (tutorial)\n\n\nHands-on R tutorial for the regression-based method for normative data in clinical neuropsychology (Arcara, 2024).\n\n\n Open Repo\n\n\n\n\nTutorial\n\n\n2024EN\n\n\nMixed-Effect Models in R\n\n\nA full course on linear mixed models in R, from linear models to assumptions, model selection and advanced topics. Comes with an R project to practise.\n\n\n Open Repo\n\n\n\n\nTutorial\n\n\n2015EN\n\n\nFieldTrip Tutorial (draft)\n\n\nAn introductory tutorial to EEG/MEG analysis with the FieldTrip toolbox for MATLAB.\n\n\n Open\n\n\n\n\nTalk\n\n\n2015IT\n\n\nRiflessioni sull’analisi statistica di dati linguistici e psicolinguistici\n\n\nSeminario sull’analisi statistica in linguistica e psicolinguistica.\n\n\n Slides\n\n\n\n\nTutorial\n\n\n2013IT\n\n\nBPLOT Tutorial\n\n\nGuida all’uso di BPLOT per creare grafici a partire da file di dati .avr: come ottenerlo, installarlo e utilizzarlo.\n\n\n Open\n\n\n\n\nTutorial\n\n\n2013IT\n\n\nPLSgui Tutorial\n\n\nTutorial sull’analisi PLS (Partial Least Squares) con PLSgui: introduzione teorica, installazione, preparazione dei file e uso del programma.\n\n\n Open\n\n\n\n\nTutorial\n\n\n2009IT\n\n\nGuida introduttiva a DMDX\n\n\nGuida introduttiva a DMDX, il software gratuito per esperimenti di psicologia.\n\n\n Open\n\n\n\n\n\nNothing matches these filters. Show everything\n\n\n\nNo matching items\n\n\n  Want us to give a talk or run a workshop?\n  We are happy to share what we learn on coding practices, open science, psychometrics and data analysis.\n   Get in touch\n   More on GitHub"
   },
   {
     "objectID": "posts.html",
@@ -459,7 +466,7 @@
     "href": "pub-listing.html#peer-reviewed-journal-papers",
     "title": "Publications",
     "section": "Peer-reviewed Journal Papers",
-    "text": "Peer-reviewed Journal Papers\n\n\n\nTiming and circuit engagement shape state-dependent plasticity in the ventral premotor-motor pathway Turrini S,Amadori A,Zago S,Arcara G,Avenanti A Nov 1, 2026\n\n\n\n\nTurrini S,Amadori A,Zago S,Arcara G,Avenanti A. 2026. Timing and circuit engagement shape state-dependent plasticity in the ventral premotor-motor pathway. Clinical Neurophysiology 191: 2112352. doi: 10.1016/j.clinph.2026.2112352.\n\n\n \n\n\n\n\nMoving from equivalent scores to percentile ranks in clinical neuropsychology: Benefits, computation with confidence intervals, and application on MoCA 8.1 Italian norms Facchin A,Arcara G,Priftis K Oct 17, 2026\n\n\n\n\nFacchin A,Arcara G,Priftis K. 2026. Moving from equivalent scores to percentile ranks in clinical neuropsychology: Benefits, computation with confidence intervals, and application on MoCA 8.1 Italian norms. Neurological Sciences 47(11): 866. doi: 10.1007/s10072-026-09477-4.\n\n\n \n\n\n\n\nStage-specific contributions of dorsal and ventral premotor cortices to the acquisition of arbitrary visuomotor associations Turrini S,Amadori A,Arcara G,di Pellegrino G,Avenanti A Oct 5, 2026\n\n\n\n\nTurrini S,Amadori A,Arcara G,di Pellegrino G,Avenanti A. 2026. Stage-specific contributions of dorsal and ventral premotor cortices to the acquisition of arbitrary visuomotor associations. Cortex 205: 441-455. doi: 10.1016/j.cortex.2026.09.018.\n\n\n \n\n\n\n\nEssentialist and Nonessentialist Views of Cognitive Aging in Older Age: The Role of Working Memory, Cognitive Inhibition and Psychological Well-Being Sella E,Carbone E,Domenicucci R,Signori D,Arcara G,Borella E Oct 2, 2026\n\n\n\n\nSella E,Carbone E,Domenicucci R,Signori D,Arcara G,Borella E. 2026. Essentialist and Nonessentialist Views of Cognitive Aging in Older Age: The Role of Working Memory, Cognitive Inhibition and Psychological Well-Being. Journal of Intelligence 14(10): 238. doi: 10.3390/jintelligence14100238.\n\n\n \n\n\n\n\nDecoding the neural dynamics of everyday prospective remembering: a hidden Markov model approach Vicentin S,Reschini DB,Santacesaria P,Toffoli L,Zago S,Arcara G,Cona G 2026-01-01\n\n\n\n\nVicentin S,Reschini DB,Santacesaria P,Toffoli L,Zago S,Arcara G,Cona G. 2026. Decoding the neural dynamics of everyday prospective remembering: a hidden Markov model approach. Frontiers in Human Neuroscience 19: 1686657. doi: 10.3389/fnhum.2025.1686657.\n\n\n \n\n\n\n\nEducation shapes the link between EEG aperiodic components and cognitive aging Lago S,Zago S,Montemurro S,Calabrò RS,Maggio MG,Dattola S,Casetta I,Arcara G 2026-01-01\n\n\n\n\nLago S,Zago S,Montemurro S,Calabrò RS,Maggio MG,Dattola S,Casetta I,Arcara G. 2026. Education shapes the link between EEG aperiodic components and cognitive aging. Plos one 21(3): e0328318. doi: 10.1371/journal.pone.0328318.\n\n\n \n\n\n\n\nResting-state brain dynamics: insights from oscillatory activity in brain networks Samogin J,Zago S,Tonin A,Seynaeve M,De Beukelaar T,Porcaro C,Marinazzo D,Arcara G,Mantini D 2026-01-01\n\n\n\n\nSamogin J,Zago S,Tonin A,Seynaeve M,De Beukelaar T,Porcaro C,Marinazzo D,Arcara G,Mantini D. 2026. Resting-state brain dynamics: insights from oscillatory activity in brain networks. Reviews in the Neurosciences 37(3): 217-230. doi: 10.1515/revneuro-2025-0094.\n\n\n \n\n\n\n\nGamma transcranial alternating current stimulation increases segregation in the sensorimotor network Cataneo A,Marino M,Manzo N,Scarpazza C,Arcara G,Mapelli D,Masina F 2026-01-01\n\n\n\n\nCataneo A,Marino M,Manzo N,Scarpazza C,Arcara G,Mapelli D,Masina F. 2026. Gamma transcranial alternating current stimulation increases segregation in the sensorimotor network. Frontiers in Psychology 17: 1746459. doi: 10.3389/fpsyg.2026.1746459.\n\n\n \n\n\n\n\nEvidence for Enhanced Backward Connectivity in the Third Visual Pathway Following Cortico-Cortical Paired Associative Stimulation Gabriele P,Antonio C,Silvana P,Marra A,Arcara G,Simone B,Mauro U,Alessio A 2026-01-01\n\n\n\n\nGabriele P,Antonio C,Silvana P,Marra A,Arcara G,Simone B,Mauro U,Alessio A. 2026. Evidence for Enhanced Backward Connectivity in the Third Visual Pathway Following Cortico-Cortical Paired Associative Stimulation. NeuroImage : 121759. doi: 10.1016/j.neuroimage.2026.121759.\n\n\n \n\n\n\n\nAssessing whole-cortex excitability from electromagnetic brain signals Pellegrino G,Duma GM,Schuler AL,Daub M,Marinazzo D,Arcara G,Soddu A,Rasero J 2026-01-01\n\n\n\n\nPellegrino G,Duma GM,Schuler AL,Daub M,Marinazzo D,Arcara G,Soddu A,Rasero J. 2026. Assessing whole-cortex excitability from electromagnetic brain signals. bioRxiv : 2026-2001. doi: 10.64898/2026.01.31.703018.\n\n\n \n\n\n\n\nPredictors of unplanned 30-day hospital readmission: a retrospective cohort study in north-east Italy Sartor G,Fusco M,Milana M,Marcon E,Battagello J,Zardetto A,Ruggieri MG,Grotto G,Rigon L,Arcara G,Others 2026-01-01\n\n\n\n\nSartor G,Fusco M,Milana M,Marcon E,Battagello J,Zardetto A,Ruggieri MG,Grotto G,Rigon L,Arcara G,Others. 2026. Predictors of unplanned 30-day hospital readmission: a retrospective cohort study in north-east Italy. BMJ open 16(2): e103595. doi: 10.1136/bmjopen-2025-103595.\n\n\n \n\n\n\n\nConvolutional Neural Networks and Neuroscience: A Tutorial Introduction for The Rest of Us De Matola M,Arcara G 2026-01-01\n\n\n\n\nDe Matola M,Arcara G. 2026. Convolutional Neural Networks and Neuroscience: A Tutorial Introduction for The Rest of Us. bioRxiv : 2026-2003. doi: 10.64898/2026.03.09.710521.\n\n\n \n\n\n\n\nThyroglobulin as a proxy for iodine status in pregnancy Censi S,Messina G,Arcara G,Ruggeri E,Clausi C,Piva I,Manso J,Basso D,Merante-Boschin I,Bertazza L,Others 2026-01-01\n\n\n\n\nCensi S,Messina G,Arcara G,Ruggeri E,Clausi C,Piva I,Manso J,Basso D,Merante-Boschin I,Bertazza L,Others. 2026. Thyroglobulin as a proxy for iodine status in pregnancy. British Journal of Nutrition : 1-27. doi: 10.1017/s0007114526106989.\n\n\n \n\n\n\n\nRapid rTPJ-driven cortical interactions encode malicious intentions during implicit moral evaluation: a TMS-EEG study Cenka K,Spaccasassi C,Petkovic S,Pezzetta R,Vicario CM,Arcara G,Avenanti A 2026-01-01\n\n\n\n\nCenka K,Spaccasassi C,Petkovic S,Pezzetta R,Vicario CM,Arcara G,Avenanti A. 2026. Rapid rTPJ-driven cortical interactions encode malicious intentions during implicit moral evaluation: a TMS-EEG study. NeuroImage : 121885. doi: 10.1016/j.neuroimage.2026.121885.\n\n\n \n\n\n\n\nCortico-cortical paired associative stimulation highlights the functional role of the cortical pathway from the right inferior frontal gyrus to the primary motor cortex in motor inhibition Bevacqua N,Turrini S,Cataneo A,Zago S,Arcara G,Candidi M,Mirabella G,Avenanti A 2026-01-01\n\n\n\n\nBevacqua N,Turrini S,Cataneo A,Zago S,Arcara G,Candidi M,Mirabella G,Avenanti A. 2026. Cortico-cortical paired associative stimulation highlights the functional role of the cortical pathway from the right inferior frontal gyrus to the primary motor cortex in motor inhibition. NeuroImage : 121933. doi: 10.1016/j.neuroimage.2026.121933.\n\n\n \n\n\n\n\nEarly electrophysiological responses reflect precision-weighted prediction errors to face features Costa C,Ward EK,Pezzetta R,Masina F,Arcara G,Press C,Scarpazza C Jan 1, 1970\n\n\n\n\nCosta C,Ward EK,Pezzetta R,Masina F,Arcara G,Press C,Scarpazza C. 2026. Early electrophysiological responses reflect precision-weighted prediction errors to face features. PLOS ONE 21(9): e0357956. doi: 10.1371/journal.pone.0357956.\n\n\n \n\n\n\n\nNo matching items\n\n\n\nChallenging the right-hemisphere assumption in post-stroke pragmatics: largely comparable impairment profiles across lesion sides Gastaldon S,Romeo F,Barattieri di San Pietro C,Chumakova N,D'Imperio D,Lago S,Nordio S,Parrotta I,Rigoni M,Bambini V,Arcara G Aug 10, 2026\n\n\n\n\nGastaldon S,Romeo F,Barattieri di San Pietro C,Chumakova N,D'Imperio D,Lago S,Nordio S,Parrotta I,Rigoni M,Bambini V,Arcara G. 2026. Challenging the right-hemisphere assumption in post-stroke pragmatics: largely comparable impairment profiles across lesion sides. bioRxiv. doi: 10.64898/2026.08.06.742887.\n\n\n \n\n\n\n\nNo matching items"
+    "text": "Peer-reviewed Journal Papers\n\n\n\nTiming and circuit engagement shape state-dependent plasticity in the ventral premotor-motor pathway Turrini S,Amadori A,Zago S,Arcara G,Avenanti A Nov 1, 2026\n\n\n\n\nTurrini S,Amadori A,Zago S,Arcara G,Avenanti A. 2026. Timing and circuit engagement shape state-dependent plasticity in the ventral premotor-motor pathway. Clinical Neurophysiology 191: 2112352. doi: 10.1016/j.clinph.2026.2112352.\n\n\n \n\n\n\n\nCausal Evidence for Emotion-Selective Neural Populations Supporting Emotion Perception in the Human Third Visual Pathway Borgomaneri S,Turrini S,Arcara G,Tamietto M,Battaglia S,Avenanti A Nov 1, 2026\n\n\n\n\nBorgomaneri S,Turrini S,Arcara G,Tamietto M,Battaglia S,Avenanti A. 2026. Causal Evidence for Emotion-Selective Neural Populations Supporting Emotion Perception in the Human Third Visual Pathway. Annals of the New York Academy of Sciences 1565(1): e70450. doi: 10.1111/nyas.70450.\n\n\n \n\n\n\n\nMoving from equivalent scores to percentile ranks in clinical neuropsychology: Benefits, computation with confidence intervals, and application on MoCA 8.1 Italian norms Facchin A,Arcara G,Priftis K Oct 17, 2026\n\n\n\n\nFacchin A,Arcara G,Priftis K. 2026. Moving from equivalent scores to percentile ranks in clinical neuropsychology: Benefits, computation with confidence intervals, and application on MoCA 8.1 Italian norms. Neurological Sciences 47(11): 866. doi: 10.1007/s10072-026-09477-4.\n\n\n \n\n\n\n\nStage-specific contributions of dorsal and ventral premotor cortices to the acquisition of arbitrary visuomotor associations Turrini S,Amadori A,Arcara G,di Pellegrino G,Avenanti A Oct 5, 2026\n\n\n\n\nTurrini S,Amadori A,Arcara G,di Pellegrino G,Avenanti A. 2026. Stage-specific contributions of dorsal and ventral premotor cortices to the acquisition of arbitrary visuomotor associations. Cortex 205: 441-455. doi: 10.1016/j.cortex.2026.09.018.\n\n\n \n\n\n\n\nEssentialist and Nonessentialist Views of Cognitive Aging in Older Age: The Role of Working Memory, Cognitive Inhibition and Psychological Well-Being Sella E,Carbone E,Domenicucci R,Signori D,Arcara G,Borella E Oct 2, 2026\n\n\n\n\nSella E,Carbone E,Domenicucci R,Signori D,Arcara G,Borella E. 2026. Essentialist and Nonessentialist Views of Cognitive Aging in Older Age: The Role of Working Memory, Cognitive Inhibition and Psychological Well-Being. Journal of Intelligence 14(10): 238. doi: 10.3390/jintelligence14100238.\n\n\n \n\n\n\n\nDecoding the neural dynamics of everyday prospective remembering: a hidden Markov model approach Vicentin S,Reschini DB,Santacesaria P,Toffoli L,Zago S,Arcara G,Cona G 2026-01-01\n\n\n\n\nVicentin S,Reschini DB,Santacesaria P,Toffoli L,Zago S,Arcara G,Cona G. 2026. Decoding the neural dynamics of everyday prospective remembering: a hidden Markov model approach. Frontiers in Human Neuroscience 19: 1686657. doi: 10.3389/fnhum.2025.1686657.\n\n\n \n\n\n\n\nEducation shapes the link between EEG aperiodic components and cognitive aging Lago S,Zago S,Montemurro S,Calabrò RS,Maggio MG,Dattola S,Casetta I,Arcara G 2026-01-01\n\n\n\n\nLago S,Zago S,Montemurro S,Calabrò RS,Maggio MG,Dattola S,Casetta I,Arcara G. 2026. Education shapes the link between EEG aperiodic components and cognitive aging. Plos one 21(3): e0328318. doi: 10.1371/journal.pone.0328318.\n\n\n \n\n\n\n\nResting-state brain dynamics: insights from oscillatory activity in brain networks Samogin J,Zago S,Tonin A,Seynaeve M,De Beukelaar T,Porcaro C,Marinazzo D,Arcara G,Mantini D 2026-01-01\n\n\n\n\nSamogin J,Zago S,Tonin A,Seynaeve M,De Beukelaar T,Porcaro C,Marinazzo D,Arcara G,Mantini D. 2026. Resting-state brain dynamics: insights from oscillatory activity in brain networks. Reviews in the Neurosciences 37(3): 217-230. doi: 10.1515/revneuro-2025-0094.\n\n\n \n\n\n\n\nGamma transcranial alternating current stimulation increases segregation in the sensorimotor network Cataneo A,Marino M,Manzo N,Scarpazza C,Arcara G,Mapelli D,Masina F 2026-01-01\n\n\n\n\nCataneo A,Marino M,Manzo N,Scarpazza C,Arcara G,Mapelli D,Masina F. 2026. Gamma transcranial alternating current stimulation increases segregation in the sensorimotor network. Frontiers in Psychology 17: 1746459. doi: 10.3389/fpsyg.2026.1746459.\n\n\n \n\n\n\n\nEvidence for Enhanced Backward Connectivity in the Third Visual Pathway Following Cortico-Cortical Paired Associative Stimulation Gabriele P,Antonio C,Silvana P,Marra A,Arcara G,Simone B,Mauro U,Alessio A 2026-01-01\n\n\n\n\nGabriele P,Antonio C,Silvana P,Marra A,Arcara G,Simone B,Mauro U,Alessio A. 2026. Evidence for Enhanced Backward Connectivity in the Third Visual Pathway Following Cortico-Cortical Paired Associative Stimulation. NeuroImage : 121759. doi: 10.1016/j.neuroimage.2026.121759.\n\n\n \n\n\n\n\nAssessing whole-cortex excitability from electromagnetic brain signals Pellegrino G,Duma GM,Schuler AL,Daub M,Marinazzo D,Arcara G,Soddu A,Rasero J 2026-01-01\n\n\n\n\nPellegrino G,Duma GM,Schuler AL,Daub M,Marinazzo D,Arcara G,Soddu A,Rasero J. 2026. Assessing whole-cortex excitability from electromagnetic brain signals. bioRxiv : 2026-2001. doi: 10.64898/2026.01.31.703018.\n\n\n \n\n\n\n\nPredictors of unplanned 30-day hospital readmission: a retrospective cohort study in north-east Italy Sartor G,Fusco M,Milana M,Marcon E,Battagello J,Zardetto A,Ruggieri MG,Grotto G,Rigon L,Arcara G,Others 2026-01-01\n\n\n\n\nSartor G,Fusco M,Milana M,Marcon E,Battagello J,Zardetto A,Ruggieri MG,Grotto G,Rigon L,Arcara G,Others. 2026. Predictors of unplanned 30-day hospital readmission: a retrospective cohort study in north-east Italy. BMJ open 16(2): e103595. doi: 10.1136/bmjopen-2025-103595.\n\n\n \n\n\n\n\nConvolutional Neural Networks and Neuroscience: A Tutorial Introduction for The Rest of Us De Matola M,Arcara G 2026-01-01\n\n\n\n\nDe Matola M,Arcara G. 2026. Convolutional Neural Networks and Neuroscience: A Tutorial Introduction for The Rest of Us. bioRxiv : 2026-2003. doi: 10.64898/2026.03.09.710521.\n\n\n \n\n\n\n\nThyroglobulin as a proxy for iodine status in pregnancy Censi S,Messina G,Arcara G,Ruggeri E,Clausi C,Piva I,Manso J,Basso D,Merante-Boschin I,Bertazza L,Others 2026-01-01\n\n\n\n\nCensi S,Messina G,Arcara G,Ruggeri E,Clausi C,Piva I,Manso J,Basso D,Merante-Boschin I,Bertazza L,Others. 2026. Thyroglobulin as a proxy for iodine status in pregnancy. British Journal of Nutrition : 1-27. doi: 10.1017/s0007114526106989.\n\n\n \n\n\n\n\nRapid rTPJ-driven cortical interactions encode malicious intentions during implicit moral evaluation: a TMS-EEG study Cenka K,Spaccasassi C,Petkovic S,Pezzetta R,Vicario CM,Arcara G,Avenanti A 2026-01-01\n\n\n\n\nCenka K,Spaccasassi C,Petkovic S,Pezzetta R,Vicario CM,Arcara G,Avenanti A. 2026. Rapid rTPJ-driven cortical interactions encode malicious intentions during implicit moral evaluation: a TMS-EEG study. NeuroImage : 121885. doi: 10.1016/j.neuroimage.2026.121885.\n\n\n \n\n\n\n\nCortico-cortical paired associative stimulation highlights the functional role of the cortical pathway from the right inferior frontal gyrus to the primary motor cortex in motor inhibition Bevacqua N,Turrini S,Cataneo A,Zago S,Arcara G,Candidi M,Mirabella G,Avenanti A 2026-01-01\n\n\n\n\nBevacqua N,Turrini S,Cataneo A,Zago S,Arcara G,Candidi M,Mirabella G,Avenanti A. 2026. Cortico-cortical paired associative stimulation highlights the functional role of the cortical pathway from the right inferior frontal gyrus to the primary motor cortex in motor inhibition. NeuroImage : 121933. doi: 10.1016/j.neuroimage.2026.121933.\n\n\n \n\n\n\n\nEarly electrophysiological responses reflect precision-weighted prediction errors to face features Costa C,Ward EK,Pezzetta R,Masina F,Arcara G,Press C,Scarpazza C Jan 1, 1970\n\n\n\n\nCosta C,Ward EK,Pezzetta R,Masina F,Arcara G,Press C,Scarpazza C. 2026. Early electrophysiological responses reflect precision-weighted prediction errors to face features. PLOS ONE 21(9): e0357956. doi: 10.1371/journal.pone.0357956.\n\n\n \n\n\n\n\nNo matching items\n\n\n\nChallenging the right-hemisphere assumption in post-stroke pragmatics: largely comparable impairment profiles across lesion sides Gastaldon S,Romeo F,Barattieri di San Pietro C,Chumakova N,D'Imperio D,Lago S,Nordio S,Parrotta I,Rigoni M,Bambini V,Arcara G Aug 10, 2026\n\n\n\n\nGastaldon S,Romeo F,Barattieri di San Pietro C,Chumakova N,D'Imperio D,Lago S,Nordio S,Parrotta I,Rigoni M,Bambini V,Arcara G. 2026. Challenging the right-hemisphere assumption in post-stroke pragmatics: largely comparable impairment profiles across lesion sides. bioRxiv. doi: 10.64898/2026.08.06.742887.\n\n\n \n\n\n\n\nNo matching items"
   },
   {
     "objectID": "pub-listing.html#preprints",
@@ -473,7 +480,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "The tools, pipelines and materials of the Lab are grouped in four areas, the same four that describe what we do.\n\n\n \n\nClinical tools\n\n&lt;p&gt;Open tools for neuropsychological assessment and rehabilitation&lt;/p&gt;\n  \n\nBrain & MEEG\n\n&lt;p&gt;Toolboxes and tutorials to study brain functions and biomarkers with MEEG&lt;/p&gt;\n  \n\nOpen pipelines\n\n&lt;p&gt;Open-source pipelines for neural data analysis&lt;/p&gt;\n  \n\nAnalysis methods\n\n&lt;p&gt;Methods for behavioural and brain data analysis&lt;/p&gt;"
+    "text": "The tools, pipelines and materials of the Lab are grouped in four areas, the same four that describe what we do.\n\n\n  \n    \n    Clinical tools\n    Open tools for neuropsychological assessment and rehabilitation\n  \n  \n    \n    Brain & MEEG\n    Toolboxes and tutorials to study brain functions and biomarkers with MEEG\n  \n  \n    \n    Open pipelines\n    Open-source pipelines for neural data analysis\n  \n  \n    \n    Analysis methods\n    Methods for behavioural and brain data analysis"
   },
   {
     "objectID": "resources/brain-meeg.html",

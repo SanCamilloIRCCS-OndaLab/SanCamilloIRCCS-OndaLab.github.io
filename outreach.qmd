@@ -1,0 +1,140 @@
+---
+title: "Outreach"
+pagetitle: "Outreach | ONDA Lab"
+description-meta: "Talks, guides and tutorials by ONDA Lab: open slides and materials on coding, open science, neuropsychology and data analysis."
+page-layout: full
+toc: false
+page-navigation: false
+title-block-banner: false
+listing:
+  id: outreach-list
+  contents: outreach.yml
+  type: custom
+  template: outreach-listing.ejs
+  sort: "date desc"
+  page-size: 200
+  categories: false
+  filter-ui: false
+  sort-ui: false
+css: outreach.css
+filters: [remove-stray-divfence.lua]  # strips stray ":::" left by the EJS listing (same as pub-listing.qmd)
+---
+
+<!--
+  Content lives in outreach.yml (one entry per talk / guide / tutorial).
+  After adding an entry, run:  python scripts/outreach_thumbs.py   to create its thumbnail.
+-->
+
+::: {#outreach}
+
+```{=html}
+<section class="hero-band">
+  <svg class="waves" viewBox="0 0 1440 420" preserveAspectRatio="none" aria-hidden="true">
+    <g><path d="M-80,140 C240,60 420,240 720,170 S1200,40 1520,120"/>
+       <path d="M-80,300 C300,220 520,380 820,300 S1260,200 1520,280"/></g>
+    <g><path d="M-80,220 C200,180 460,300 760,240 S1180,150 1520,200"/></g>
+  </svg>
+  <div class="hero-inner">
+    <span class="hero-kicker">Open slides &amp; materials</span>
+    <h1>Outreach</h1>
+    <p class="intro">Talks, guides and tutorials from the Lab, on coding, open science, neuropsychology
+      and data analysis. Everything is free to browse, and most of it lives on
+      <a href="https://github.com/giorgioarcara" target="_blank" rel="noopener">GitHub</a>.</p>
+    <ul class="stats" aria-label="Materials on this page">
+      <li><b data-stat="Talk">0</b><span>talks</span></li>
+      <li><b data-stat="Guide">0</b><span>guides</span></li>
+      <li><b data-stat="Tutorial">0</b><span>tutorials</span></li>
+    </ul>
+  </div>
+</section>
+```
+
+::: {.ol-main}
+
+::: {#outreach-list}
+:::
+
+```{=html}
+<section class="ol-cta">
+  <h2>Want us to give a talk or run a workshop?</h2>
+  <p>We are happy to share what we learn on coding practices, open science, psychometrics and data analysis.</p>
+  <a href="contact.html"><i class="bi bi-envelope"></i> Get in touch</a>
+  <a class="ghost" href="https://github.com/giorgioarcara" target="_blank" rel="noopener"><i class="bi bi-github"></i> More on GitHub</a>
+</section>
+```
+
+{{< include /files/includes/_socialshare.qmd >}}
+
+:::
+
+:::
+
+```{=html}
+<script>
+(function () {
+  var root = document.getElementById("outreach");
+  if (!root) return;
+  var cards = Array.prototype.slice.call(root.querySelectorAll(".ol-all .ol-card"));
+
+  /* hero counters (count up once) */
+  root.querySelectorAll("[data-stat]").forEach(function (el) {
+    var target = cards.filter(function (c) { return c.dataset.type === el.dataset.stat; }).length;
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) { el.textContent = target; return; }
+    var n = 0, step = Math.max(1, Math.ceil(target / 20));
+    var t = setInterval(function () { n = Math.min(target, n + step); el.textContent = n; if (n >= target) clearInterval(t); }, 45);
+  });
+
+  /* filters: one type chip + one language chip + free-text search */
+  var state = { type: "", lang: "", q: "" };
+  var empty = root.querySelector(".ol-empty");
+  var input = root.querySelector(".ol-search input");
+  function apply() {
+    var shown = 0;
+    cards.forEach(function (c) {
+      var ok = (!state.type || c.dataset.type === state.type) &&
+               (!state.lang || (" " + c.dataset.lang + " ").indexOf(" " + state.lang + " ") !== -1) &&
+               (!state.q || c.textContent.toLowerCase().indexOf(state.q) !== -1);
+      c.hidden = !ok;
+      if (ok) shown++;
+    });
+    if (empty) empty.hidden = shown > 0;
+  }
+  root.querySelectorAll(".ol-chips").forEach(function (group) {
+    group.addEventListener("click", function (e) {
+      var chip = e.target.closest(".ol-chip");
+      if (!chip) return;
+      group.querySelectorAll(".ol-chip").forEach(function (b) { b.classList.remove("is-active"); b.setAttribute("aria-pressed", "false"); });
+      chip.classList.add("is-active"); chip.setAttribute("aria-pressed", "true");
+      state[group.dataset.group] = chip.dataset.value;
+      apply();
+    });
+  });
+  if (input) input.addEventListener("input", function () { state.q = input.value.trim().toLowerCase(); apply(); });
+  var reset = root.querySelector(".ol-reset");
+  if (reset) reset.addEventListener("click", function () {
+    state = { type: "", lang: "", q: "" };
+    if (input) input.value = "";
+    root.querySelectorAll(".ol-chips").forEach(function (g) {
+      g.querySelectorAll(".ol-chip").forEach(function (b, i) { b.classList.toggle("is-active", i === 0); });
+    });
+    apply();
+  });
+
+  /* cards fade up as they scroll into view */
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    root.classList.add("ol-anim");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.remove("ol-pending"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -40px 0px" });
+    root.querySelectorAll(".ol-card").forEach(function (c, i) {
+      c.classList.add("ol-pending");
+      c.style.transitionDelay = (i % 3) * 70 + "ms";
+      io.observe(c);
+    });
+  }
+})();
+</script>
+```

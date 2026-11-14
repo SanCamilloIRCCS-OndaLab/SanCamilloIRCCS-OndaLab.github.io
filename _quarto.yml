@@ -56,10 +56,13 @@ website:
             href: resources/open-pipelines.qmd
           - text: Analysis methods
             href: resources/analysis-methods.qmd
-      - text: Outreach
-        menu:        
-        - text: Presentations
-          href: posts.qmd#category=presentation
+      - text: Outreach   # talks, guides, tutorials (data in outreach.yml)
+        href: outreach.qmd
+      # Old dropdown, restore if needed:
+      # - text: Outreach
+      #   menu:
+      #   - text: Presentations
+      #     href: posts.qmd#category=presentation
       # - text: Teaching # Comment the Teaching part out to remove the Teaching page
       #  href: teaching.qmd
       - text: Group   # Comment the Group part out to remove the Group page

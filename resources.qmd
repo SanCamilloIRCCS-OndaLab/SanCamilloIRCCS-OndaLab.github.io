@@ -8,7 +8,8 @@ The tools, pipelines and materials of the Lab are grouped in four areas, the sam
 four that describe [what we do](index.qmd).
 
 <style>
-  .res-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.1rem; margin-top: 1.6rem; }
+  .res-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; margin-top: 1.6rem; }
+  @media (max-width: 575.98px) { .res-cards { grid-template-columns: 1fr; } }
   .res-card { display: block; padding: 1.2rem 1.3rem; border: 1px solid #dee2e6; border-top: 3px solid #1b5f8c;
     border-radius: .6rem; background: #fff; text-decoration: none; color: inherit; transition: box-shadow .18s ease, transform .18s ease; }
   .res-card:hover { box-shadow: 0 10px 24px rgba(15,59,95,.12); transform: translateY(-2px); text-decoration: none; }
@@ -22,6 +23,7 @@ four that describe [what we do](index.qmd).
   body.quarto-dark .res-card .icon { background: rgba(93,173,226,.15); color: #5dade2; }
 </style>
 
+```{=html}
 <div class="res-cards">
   <a class="res-card" href="resources/clinical-tools.html">
     <span class="icon"><i class="bi bi-clipboard2-pulse"></i></span>
@@ -44,3 +46,4 @@ four that describe [what we do](index.qmd).
     <p>Methods for behavioural and brain data analysis</p>
   </a>
 </div>
+```

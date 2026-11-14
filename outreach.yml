@@ -1,0 +1,162 @@
+# Outreach materials shown on outreach.qmd (talks, guides, tutorials).
+#
+# One entry per deck. Fields:
+#   id           short slug; the thumbnail is files/images/outreach/<id>.png
+#   title        shown on the card
+#   description  one or two sentences
+#   date         YYYY-MM-DD (only the year is shown on the card)
+#   categories   [<Type>, <Language>]   Type: Talk | Guide | Tutorial   Language: English | Italiano
+#   path         main link (the "Slides" button): GitHub blob URL, site path (/files/...) or external URL
+#   image        thumbnail. Leave it at /files/images/outreach/<id>.png and run
+#                `python scripts/outreach_thumbs.py` to generate it from the first page of the PDF.
+#   thumbfrom    (optional) PDF/HTML to make the thumbnail from, when `path` is not a PDF
+#   repo         (optional) GitHub repository ("Repo" button)
+#   post         (optional) post on this site ("Read post" button)
+#   extra / extralabel  (optional) a second link, e.g. another language version
+#   featured     true -> also shown in the "Featured" row at the top (keep it to 3)
+
+- id: ai-coding-guide
+  title: "Good Practices for AI-Assisted Coding (Lab guide)"
+  description: "The ONDA Lab's short written guide on how to use AI tools for coding in research: define the problem first, trace before you trust, and keep the human in charge."
+  date: "2026-09-13"
+  categories: [Guide, English]
+  path: https://github.com/giorgioarcara/ONDALab-AI-guide/blob/main/Good_Practices_AI_Coding.pdf
+  image: /files/images/outreach/ai-coding-guide.png
+  repo: https://github.com/giorgioarcara/ONDALab-AI-guide
+  featured: true
+
+- id: thesis-guide
+  title: "A Practical Guide to Writing a Thesis"
+  description: "Practical, step-by-step advice for students writing their thesis, from structure to figures and slides. Available in English and Italian."
+  date: "2026-09-06"
+  categories: [Guide, English, Italiano]
+  path: https://giorgioarcara.github.io/files/thesis-guide/practical-guide-thesis-writing.html
+  extra: https://giorgioarcara.github.io/files/thesis-guide/guida-pratica-tesi-laurea.html
+  extralabel: "Versione italiana"
+  thumbfrom: https://giorgioarcara.github.io/files/thesis-guide/practical-guide-thesis-writing.pdf
+  image: /files/images/outreach/thesis-guide.png
+  repo: https://github.com/giorgioarcara/tips-for-writing-a-thesis
+
+- id: ai-coding-talk
+  title: "Good Practices for AI-assisted Coding"
+  description: "A talk on the opportunities and pitfalls of using AI tools for coding in scientific research, with personal and Lab views on the issue."
+  date: "2026-06-05"
+  categories: [Talk, English]
+  path: /files/presentations/AI_assisted_coding.pdf
+  image: /files/images/outreach/ai-coding-talk.png
+  post: /posts/presentations/ai-assisted-coding.html
+
+- id: terrible-code
+  title: "How to Write Terrible Code"
+  description: "A short and humorous guide to good coding principles (and why you shouldn't write terrible code), by ONDA Lab and friends."
+  date: "2026-06-01"
+  categories: [Guide, English]
+  path: /files/presentations/how-to-write-terrible-code/slides.html
+  image: /files/images/terrible_code.png
+  repo: https://github.com/giorgioarcara/how-to-write-terrible-code
+  post: /posts/presentations/how-to-write-terrible-code.html
+  featured: true
+
+- id: bettercode-summary
+  title: "Better Code, Better Science: a summary"
+  description: "Key points from Russell Poldrack's book on software engineering practices for researchers, summarised for the Lab."
+  date: "2026-06-01"
+  categories: [Guide, English]
+  path: https://github.com/giorgioarcara/ONDALab-AI-guide/blob/main/BetterCodeBetterScience_Summary.pdf
+  image: /files/images/outreach/bettercode-summary.png
+  repo: https://github.com/giorgioarcara/ONDALab-AI-guide
+
+- id: fair
+  title: "La mia esperienza con i dati FAIR"
+  description: "Un racconto dell'esperienza con i dati FAIR, sia come utilizzatore sia come curatore di dataset."
+  date: "2026-05-21"
+  categories: [Talk, Italiano]
+  path: /files/documents/Arcara-FAIR.pdf
+  image: /files/images/outreach/fair.png
+  post: /posts/presentations/arcara-fair.html
+
+- id: github-guide
+  title: "GitHub Short Guide"
+  description: "A compass, not an encyclopedia: the minimal GitHub knowledge you need for version control in everyday research in neuroscience and psychology."
+  date: "2026-02-14"
+  categories: [Guide, English]
+  path: https://github.com/giorgioarcara/github-short-guide/blob/main/Github_Short_Guide.pdf
+  image: /files/images/outreach/github-guide.png
+  repo: https://github.com/giorgioarcara/github-short-guide
+
+- id: errori-test
+  title: "Errori comuni nell'utilizzo di test neuropsicologici"
+  description: "Gli errori più frequenti nell'uso e nell'interpretazione dei test neuropsicologici, e come evitarli."
+  date: "2025-11-29"
+  categories: [Talk, Italiano]
+  path: https://github.com/giorgioarcara/2025-Errori-Test-Neuropsicologici/blob/main/Errori_Test.pdf
+  image: /files/images/outreach/errori-test.png
+  repo: https://github.com/giorgioarcara/2025-Errori-Test-Neuropsicologici
+  featured: true
+
+- id: coding-group-2025-09
+  title: "Coding Group: improving our coding habits"
+  description: "Update from the San Camillo / ONDA Lab coding group: what we learned about GitHub, good habits, and using LLMs for programming."
+  date: "2025-09-12"
+  categories: [Talk, English]
+  path: /files/presentations/coding-group-2025-09/slides.html
+  image: /files/images/outreach/coding-group-2025-09.png
+  repo: https://github.com/giorgioarcara/coding_group
+
+- id: equiv-scores
+  title: "Equivalent Scores: regression model selection (tutorial)"
+  description: "Hands-on R tutorial for the regression-based method for normative data in clinical neuropsychology (Arcara, 2024)."
+  date: "2025-07-16"
+  categories: [Tutorial, English]
+  path: https://github.com/giorgioarcara/Reg-Method-Norm-Data-CodeApp/blob/main/Tutorial/Tutorial.pdf
+  image: /files/images/outreach/equiv-scores.png
+  repo: https://github.com/giorgioarcara/Reg-Method-Norm-Data-CodeApp
+
+- id: mixed-models
+  title: "Mixed-Effect Models in R"
+  description: "A full course on linear mixed models in R, from linear models to assumptions, model selection and advanced topics. Comes with an R project to practise."
+  date: "2024-07-07"
+  categories: [Tutorial, English]
+  path: https://github.com/giorgioarcara/mixed-effect-models/blob/main/Mixed_effects_models.pdf
+  image: /files/images/outreach/mixed-models.png
+  repo: https://github.com/giorgioarcara/mixed-effect-models
+
+- id: fieldtrip
+  title: "FieldTrip Tutorial (draft)"
+  description: "An introductory tutorial to EEG/MEG analysis with the FieldTrip toolbox for MATLAB."
+  date: "2015-04-25"
+  categories: [Tutorial, English]
+  path: https://giorgioarcara.github.io/files/Fieldtrip%20Tutorial_DRAFT.pdf
+  image: /files/images/outreach/fieldtrip.png
+
+- id: linguistica
+  title: "Riflessioni sull'analisi statistica di dati linguistici e psicolinguistici"
+  description: "Seminario sull'analisi statistica in linguistica e psicolinguistica."
+  date: "2015-03-06"
+  categories: [Talk, Italiano]
+  path: https://giorgioarcara.github.io/files/Arcara%20Seminario%20Linguistica.pdf
+  image: /files/images/outreach/linguistica.png
+
+- id: bplot
+  title: "BPLOT Tutorial"
+  description: "Guida all'uso di BPLOT per creare grafici a partire da file di dati .avr: come ottenerlo, installarlo e utilizzarlo."
+  date: "2013-12-09"
+  categories: [Tutorial, Italiano]
+  path: https://giorgioarcara.github.io/files/BPLOT_tutorial.pdf
+  image: /files/images/outreach/bplot.png
+
+- id: plsgui
+  title: "PLSgui Tutorial"
+  description: "Tutorial sull'analisi PLS (Partial Least Squares) con PLSgui: introduzione teorica, installazione, preparazione dei file e uso del programma."
+  date: "2013-12-09"
+  categories: [Tutorial, Italiano]
+  path: https://giorgioarcara.github.io/files/PLSgui_tutorial.pdf
+  image: /files/images/outreach/plsgui.png
+
+- id: dmdx
+  title: "Guida introduttiva a DMDX"
+  description: "Guida introduttiva a DMDX, il software gratuito per esperimenti di psicologia."
+  date: "2009-01-01"
+  categories: [Tutorial, Italiano]
+  path: https://giorgioarcara.github.io/files/DMDX_tutorial%20(1).pdf
+  image: /files/images/outreach/dmdx.png

@@ -366,17 +366,10 @@ https://badge.dimensions.ai/
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outreach" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Outreach</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-outreach">    
-        <li>
-    <a class="dropdown-item" href="./posts.html#category=presentation">
- <span class="dropdown-text">Presentations</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./outreach.html"> 
+<span class="menu-text">Outreach</span></a>
   </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="./people.html"> 
 <span class="menu-text">Group</span></a>
@@ -434,7 +427,8 @@ https://badge.dimensions.ai/
 
 <p>The tools, pipelines and materials of the Lab are grouped in four areas, the same four that describe <a href="./index.html">what we do</a>.</p>
 <style>
-  .res-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.1rem; margin-top: 1.6rem; }
+  .res-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; margin-top: 1.6rem; }
+  @media (max-width: 575.98px) { .res-cards { grid-template-columns: 1fr; } }
   .res-card { display: block; padding: 1.2rem 1.3rem; border: 1px solid #dee2e6; border-top: 3px solid #1b5f8c;
     border-radius: .6rem; background: #fff; text-decoration: none; color: inherit; transition: box-shadow .18s ease, transform .18s ease; }
   .res-card:hover { box-shadow: 0 10px 24px rgba(15,59,95,.12); transform: translateY(-2px); text-decoration: none; }
@@ -448,27 +442,26 @@ https://badge.dimensions.ai/
   body.quarto-dark .res-card .icon { background: rgba(93,173,226,.15); color: #5dade2; }
 </style>
 <div class="res-cards">
-<a class="res-card" href="resources/clinical-tools.html"> <span class="icon"><i class="bi bi-clipboard2-pulse"></i></span>
-<h3 class="anchored">
-Clinical tools
-</h3>
-<pre><code>&lt;p&gt;Open tools for neuropsychological assessment and rehabilitation&lt;/p&gt;</code></pre>
-</a> <a class="res-card" href="resources/brain-meeg.html"> <span class="icon"><i class="bi bi-activity"></i></span>
-<h3 class="anchored">
-Brain &amp; MEEG
-</h3>
-<pre><code>&lt;p&gt;Toolboxes and tutorials to study brain functions and biomarkers with MEEG&lt;/p&gt;</code></pre>
-</a> <a class="res-card" href="resources/open-pipelines.html"> <span class="icon"><i class="bi bi-diagram-3"></i></span>
-<h3 class="anchored">
-Open pipelines
-</h3>
-<pre><code>&lt;p&gt;Open-source pipelines for neural data analysis&lt;/p&gt;</code></pre>
-</a> <a class="res-card" href="resources/analysis-methods.html"> <span class="icon"><i class="bi bi-graph-up"></i></span>
-<h3 class="anchored">
-Analysis methods
-</h3>
-<pre><code>&lt;p&gt;Methods for behavioural and brain data analysis&lt;/p&gt;</code></pre>
-</a><p><a class="res-card" href="resources/analysis-methods.html"></a></p>
+  <a class="res-card" href="resources/clinical-tools.html">
+    <span class="icon"><i class="bi bi-clipboard2-pulse"></i></span>
+    <h3 class="anchored">Clinical tools</h3>
+    <p>Open tools for neuropsychological assessment and rehabilitation</p>
+  </a>
+  <a class="res-card" href="resources/brain-meeg.html">
+    <span class="icon"><i class="bi bi-activity"></i></span>
+    <h3 class="anchored">Brain &amp; MEEG</h3>
+    <p>Toolboxes and tutorials to study brain functions and biomarkers with MEEG</p>
+  </a>
+  <a class="res-card" href="resources/open-pipelines.html">
+    <span class="icon"><i class="bi bi-diagram-3"></i></span>
+    <h3 class="anchored">Open pipelines</h3>
+    <p>Open-source pipelines for neural data analysis</p>
+  </a>
+  <a class="res-card" href="resources/analysis-methods.html">
+    <span class="icon"><i class="bi bi-graph-up"></i></span>
+    <h3 class="anchored">Analysis methods</h3>
+    <p>Methods for behavioural and brain data analysis</p>
+  </a>
 </div>
 
 
