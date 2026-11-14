@@ -1,0 +1,97 @@
+---
+title: "Open pipelines"
+subtitle: "Open-source pipelines for neural data analysis"
+title-block-banner: false
+---
+
+::: {.callout-note}
+## Work in progress
+
+An ONDA Lab working group is currently preparing the Lab analysis pipelines, and
+will share them here as soon as they are ready. In the meantime, the public
+analysis code listed below is already available.
+:::
+
+
+## ERP Go/No-Go pipeline
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+[![](/files/images/ONDA_waves.png)](https://github.com/giorgioarcara/ERP_Go-Nogo_Pipeline)
+
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[ERP_Go-Nogo_Pipeline](https://github.com/giorgioarcara/ERP_Go-Nogo_Pipeline)
+collects MATLAB scripts to preprocess EEG data from a Go/No-Go task and extract
+the event-related potentials of Go and No-Go trials: cleaning, epoching around
+stimulus events and ERP extraction.
+
+_Development stage:_ work in progress
+
+:::
+
+:::
+
+
+## EEG signal processing
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+[![](/files/images/ONDA_waves.png)](https://github.com/giorgioarcara/EEG_signal_Processing)
+
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[EEG_signal_Processing](https://github.com/giorgioarcara/EEG_signal_Processing)
+is a set of scripts illustrating basic concepts of signal processing applied to
+EEG. Most of the code is inspired by, or adapted from, the code accompanying Mike
+Cohen's book *Analyzing Neural Time Series*.
+
+:::
+
+:::
+
+
+## MEG fingerprinting tutorial
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+[![](/files/images/ONDA_waves.png)](https://github.com/giorgioarcara/fingerprinting_tutorial_omega)
+
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[fingerprinting_tutorial_omega](https://github.com/giorgioarcara/fingerprinting_tutorial_omega)
+contains the Brainstorm scripts accompanying the article *The influence of the
+head model on magnetoencephalography-derived functional connectivity
+fingerprinting*, and reproduces the three approaches compared in the paper.
+
+:::
+
+:::
+
+
+## MEG Lab code
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+[![](/files/images/ONDA_waves.png)](https://github.com/giorgioarcara/MEG-Lab-SC-code)
+
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[MEG-Lab-SC-code](https://github.com/giorgioarcara/MEG-Lab-SC-code) collects the
+code snippets of the MEG Lab of IRCCS San Camillo.
+
+:::
+
+:::
+
+More public code is available on the
+[GitHub profile of Giorgio Arcara](https://github.com/giorgioarcara) and on the
+[ONDA Lab GitHub organisation](https://github.com/SanCamilloIRCCS-OndaLab).

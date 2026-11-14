@@ -8,7 +8,7 @@
     "items": []
   },
   {
-    "listing": "/index.html",
+    "listing": "/home-e1.html",
     "items": [
       "/posts/news-title/new-papers-2026-11.html",
       "/posts/news-title/aurora-grant.html",
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "listing": "/home-b.html",
+    "listing": "/home-c.html",
     "items": [
       "/posts/news-title/new-papers-2026-11.html",
       "/posts/news-title/aurora-grant.html",
@@ -53,7 +53,52 @@
     ]
   },
   {
-    "listing": "/home-c.html",
+    "listing": "/home-b.html",
+    "items": [
+      "/posts/news-title/new-papers-2026-11.html",
+      "/posts/news-title/aurora-grant.html",
+      "/posts/news-title/new-papers-2026-10.html",
+      "/posts/news-title/new-papers-2026-09.html",
+      "/posts/news-title/2026-zago-sipf.html",
+      "/posts/presentations/ai-assisted-coding.html",
+      "/posts/presentations/how-to-write-terrible-code.html",
+      "/posts/news-title/post2.html",
+      "/posts/presentations/arcara-fair.html",
+      "/posts/news-title/post1.html"
+    ]
+  },
+  {
+    "listing": "/home-d.html",
+    "items": [
+      "/posts/news-title/new-papers-2026-11.html",
+      "/posts/news-title/aurora-grant.html",
+      "/posts/news-title/new-papers-2026-10.html",
+      "/posts/news-title/new-papers-2026-09.html",
+      "/posts/news-title/2026-zago-sipf.html",
+      "/posts/presentations/ai-assisted-coding.html",
+      "/posts/presentations/how-to-write-terrible-code.html",
+      "/posts/news-title/post2.html",
+      "/posts/presentations/arcara-fair.html",
+      "/posts/news-title/post1.html"
+    ]
+  },
+  {
+    "listing": "/home-e2.html",
+    "items": [
+      "/posts/news-title/new-papers-2026-11.html",
+      "/posts/news-title/aurora-grant.html",
+      "/posts/news-title/new-papers-2026-10.html",
+      "/posts/news-title/new-papers-2026-09.html",
+      "/posts/news-title/2026-zago-sipf.html",
+      "/posts/presentations/ai-assisted-coding.html",
+      "/posts/presentations/how-to-write-terrible-code.html",
+      "/posts/news-title/post2.html",
+      "/posts/presentations/arcara-fair.html",
+      "/posts/news-title/post1.html"
+    ]
+  },
+  {
+    "listing": "/home-f2.html",
     "items": [
       "/posts/news-title/new-papers-2026-11.html",
       "/posts/news-title/aurora-grant.html",

@@ -45,7 +45,17 @@ website:
           # - text: Grants
           #   href: projects.qmd
       - text: Resources # added by Giorgio
-        href: resources.qmd
+        menu:
+          - text: Overview
+            href: resources.qmd
+          - text: Clinical tools
+            href: resources/clinical-tools.qmd
+          - text: Brain & MEEG
+            href: resources/brain-meeg.qmd
+          - text: Open pipelines
+            href: resources/open-pipelines.qmd
+          - text: Analysis methods
+            href: resources/analysis-methods.qmd
       - text: Outreach
         menu:        
         - text: Presentations

@@ -341,10 +341,33 @@ https://badge.dimensions.ai/
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
-<span class="menu-text">Resources</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="./resources.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./resources/clinical-tools.html">
+ <span class="dropdown-text">Clinical tools</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./resources/brain-meeg.html">
+ <span class="dropdown-text">Brain &amp; MEEG</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./resources/open-pipelines.html">
+ <span class="dropdown-text">Open pipelines</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./resources/analysis-methods.html">
+ <span class="dropdown-text">Analysis methods</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outreach" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Outreach</span>
@@ -442,6 +465,7 @@ https://badge.dimensions.ai/
   @media (max-width: 575.98px) { #home-h .cards { grid-template-columns: 1fr; } }
   #home-h .card-x { background: #fff; border: 1px solid #d9e4ec; border-top: 4px solid #0f3b5f; border-radius: 10px;
     padding: .9rem 1.4rem 1.1rem; transition: box-shadow .2s ease, transform .2s ease; }
+  #home-h a.card-x { text-decoration: none; color: inherit; }
   #home-h .card-x:hover { box-shadow: 0 10px 24px rgba(15,59,95,.12); transform: translateY(-2px); }
   #home-h .card-x .icon { display: inline-flex; align-items: center; justify-content: center; width: 3rem; height: 3rem;
     border-radius: 50%; background: #e3eff8; color: #1b5f8c; font-size: 1.45rem; margin-bottom: .45rem; }
@@ -493,26 +517,26 @@ https://badge.dimensions.ai/
 <section class="lower">
   <h2 class="anchored">What we do</h2>
   <div class="cards">
-    <div class="card-x">
+    <a class="card-x" href="resources/clinical-tools.html">
       <span class="icon"><i class="bi bi-clipboard2-pulse"></i></span>
       <h3 class="anchored">Clinical tools</h3>
       <p>We develop open tools for neuropsychological assessment and rehabilitation</p>
-    </div>
-    <div class="card-x">
+    </a>
+    <a class="card-x" href="resources/brain-meeg.html">
       <span class="icon"><i class="bi bi-activity"></i></span>
       <h3 class="anchored">Brain &amp; MEEG</h3>
       <p>We study brain functions and biomarkers using MEEG</p>
-    </div>
-    <div class="card-x">
+    </a>
+    <a class="card-x" href="resources/open-pipelines.html">
       <span class="icon"><i class="bi bi-diagram-3"></i></span>
       <h3 class="anchored">Open pipelines</h3>
       <p>We create open-source pipelines for neural data analysis</p>
-    </div>
-    <div class="card-x">
+    </a>
+    <a class="card-x" href="resources/analysis-methods.html">
       <span class="icon"><i class="bi bi-graph-up"></i></span>
       <h3 class="anchored">Analysis methods</h3>
       <p>We develop/optimize methods for behavioural and brain data analysis</p>
-    </div>
+    </a>
   </div>
 </section>
 
