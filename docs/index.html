@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Gang He">
-<meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
+<meta name="description" content="ONDA Lab - Open methodologies in Neurorehabilitation and Data Analysis, IRCCS San Camillo, Venice">
 
-<title>ONDA Lab website – Onda Lab</title>
+<title>ONDA Lab – Onda Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,21 +32,20 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-df9cb0ed18efe72821591ad4ee1da3b6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b34de78b212857b77d7bd7843ccb2750.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7015e3eb5f61fa6cbfbf2e483bdd64c1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-b34de78b212857b77d7bd7843ccb2750.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,36 +72,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 3,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -136,45 +105,14 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="ONDA Lab website – Onda Lab">
-<meta property="og:description" content="Open methodologies in Neurorehabilitation and Data Analysis">
+<meta property="og:title" content="ONDA Lab">
 <meta property="og:image" content="https://sancamilloirccs-ondalab.github.io/files/images/ONDA_logo_v12.png">
 <meta property="og:site_name" content="Onda Lab">
 <meta property="og:image:height" content="325">
 <meta property="og:image:width" content="784">
-<meta name="twitter:title" content="ONDA Lab website – Onda Lab">
-<meta name="twitter:description" content="Open methodologies in Neurorehabilitation and Data Analysis">
+<meta name="twitter:title" content="ONDA Lab">
 <meta name="twitter:image" content="https://sancamilloirccs-ondalab.github.io/files/images/ONDA_logo_v12.png">
 <meta name="twitter:image-height" content="325">
 <meta name="twitter:image-width" content="784">
@@ -448,132 +386,139 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">ONDA Lab</h1></header>
 
 
+<header id="title-block-header">
 
 
-
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="files/images/ONDA_logo_v12.png" class="about-image
-  rounded " style="width: 100%;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">ONDA Lab website</h1>
-</div>
-<div class="quarto-title-meta column-page">
-  </div>
 </header>
-    <div class="about-links">
-  <a href="https://github.com/SanCamilloIRCCS-OndaLab" class="about-link" rel="" target="_blank">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Lab</span>
-  </a>
-</div>
+
+
+<style>
+  #title-block-header { display: none; }
+  body { overflow-x: hidden; }
+  /* bold navy brand in the navbar (this page only) */
+  body.quarto-light .navbar-brand .navbar-title { font-weight: 700; color: #0f3b5f; }
+
+  /* ── Top section: full-width hero band with a soft gradient ───────── */
+  #home-h .hero-band { position: relative; left: 50%; transform: translateX(-50%); width: 100vw;
+    margin-top: -1.875rem; padding: 1.5rem 1.5rem 2rem; text-align: center; z-index: 2;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.75) 0%, rgba(255,255,255,0) 60%),
+      linear-gradient(160deg, #dcebf7 0%, #eaf3fa 45%, #f6f9fc 100%);
+    border-bottom: 1px solid #dbe7f0; }
+  #home-h .hero-band .waves { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  #home-h .hero-band .waves path { fill: none; stroke: #1b4f72; stroke-width: 1.5; opacity: .08; }
+  #home-h .hero-inner { position: relative; max-width: 1100px; margin: 0 auto; }
+  #home-h .hero-inner img { height: min(150px, 15vh); width: auto; max-width: 100%; }
+  #home-h .headline { font-size: 2.2rem; font-weight: 700; line-height: 1.2; color: #0f3b5f;
+    max-width: 900px; margin: .5rem auto .5rem; text-wrap: balance; }
+  #home-h .intro { font-size: 1.25rem; color: #3d4a56; max-width: 900px; margin: 0 auto 1rem; text-wrap: balance; }
+  #home-h .intro a { color: #0f3b5f; font-weight: 500; }
+
+  /* "Our Lab philosophy": small outlined pill; full text pops up on hover / tap / focus */
+  #home-h .philo-trigger { position: relative; display: inline-flex; align-items: center; gap: .5rem;
+    padding: .45rem 1.3rem; font-size: 1.15rem; font-weight: 500; color: #0f3b5f; cursor: help;
+    background: rgba(255,255,255,.7); border: 1.5px solid #0f3b5f; border-radius: 10px; outline: none;
+    transition: background .2s ease; }
+  #home-h .philo-trigger:hover, #home-h .philo-trigger:focus { background: #fff; }
+  #home-h .philo-pop { position: absolute; top: calc(100% + .7rem); left: 50%; transform: translate(-50%, -6px);
+    width: min(640px, 84vw); padding: 1rem 1.25rem; text-align: left; font-size: 1.1rem; font-weight: 400;
+    line-height: 1.45; color: #333; background: #fff; border: 1px solid #d5e2ec; border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(15,59,95,.18); opacity: 0; visibility: hidden;
+    transition: opacity .2s ease, transform .2s ease, visibility .2s; z-index: 20; cursor: auto; }
+  #home-h .philo-trigger:hover .philo-pop,
+  #home-h .philo-trigger:focus .philo-pop,
+  #home-h .philo-trigger:focus-within .philo-pop { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+
+  /* ── Bottom section: "What we do" cards ───────────────────────────── */
+  #home-h .lower { position: relative; z-index: 1; left: 50%; transform: translateX(-50%); width: min(1500px, 88vw);
+    padding: 1.25rem 0 .5rem; }
+  #home-h .lower h2 { border: 0; text-align: center; font-size: 2.1rem; font-weight: 700; color: #0f3b5f;
+    margin: 0 0 1rem; }
+  #home-h .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; }
+  @media (max-width: 1199.98px) { #home-h .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 575.98px) { #home-h .cards { grid-template-columns: 1fr; } }
+  #home-h .card-x { background: #fff; border: 1px solid #d9e4ec; border-top: 4px solid #0f3b5f; border-radius: 10px;
+    padding: .9rem 1.4rem 1.1rem; transition: box-shadow .2s ease, transform .2s ease; }
+  #home-h .card-x:hover { box-shadow: 0 10px 24px rgba(15,59,95,.12); transform: translateY(-2px); }
+  #home-h .card-x .icon { display: inline-flex; align-items: center; justify-content: center; width: 3rem; height: 3rem;
+    border-radius: 50%; background: #e3eff8; color: #1b5f8c; font-size: 1.45rem; margin-bottom: .45rem; }
+  #home-h .card-x h3 { font-size: 1.45rem; font-weight: 700; color: #0f3b5f; margin: 0 0 .35rem; }
+  #home-h .card-x p { margin: 0; font-size: 1.1rem; line-height: 1.45; color: #3d4a56; }
+
+  /* ── Dark mode (light/dark toggle) ───────────────────────────────── */
+  body.quarto-dark #home-h .hero-band { border-bottom-color: #33414d;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(93,173,226,.12) 0%, rgba(93,173,226,0) 60%),
+      linear-gradient(160deg, #1e3242 0%, #1f2a34 50%, #222 100%); }
+  body.quarto-dark #home-h .hero-band .waves path { stroke: #5dade2; opacity: .12; }
+  body.quarto-dark #home-h .headline,
+  body.quarto-dark #home-h .lower h2,
+  body.quarto-dark #home-h .card-x h3 { color: #e9ecef; }
+  body.quarto-dark #home-h .intro,
+  body.quarto-dark #home-h .card-x p { color: #ced4da; }
+  body.quarto-dark #home-h .intro a { color: #5dade2; }
+  body.quarto-dark #home-h .philo-trigger { color: #5dade2; border-color: #5dade2; background: rgba(0,0,0,.2); }
+  body.quarto-dark #home-h .philo-trigger:hover, body.quarto-dark #home-h .philo-trigger:focus { background: rgba(0,0,0,.35); }
+  body.quarto-dark #home-h .philo-pop { color: #e9ecef; background: #2b3035; border-color: #495057;
+    box-shadow: 0 12px 32px rgba(0,0,0,.5); }
+  body.quarto-dark #home-h .card-x { background: #2b3035; border-color: #495057; border-top-color: #5dade2; }
+  body.quarto-dark #home-h .card-x .icon { background: rgba(93,173,226,.15); color: #5dade2; }
+</style>
+
+<div id="home-h">
+
+<section class="hero-band">
+  <svg class="waves" viewbox="0 0 1440 420" preserveaspectratio="none" aria-hidden="true">
+    <path d="M0,140 C240,60 420,240 720,170 S1200,40 1440,120"></path>
+    <path d="M0,300 C300,220 520,380 820,300 S1260,200 1440,280"></path>
+    <path d="M0,220 C200,180 460,300 760,240 S1180,150 1440,200"></path>
+  </svg>
+  <div class="hero-inner">
+    <img src="files/images/ONDA_logo_v12.png" alt="ONDA Lab logo">
+    <h1 class="headline">Open methodologies in Neurorehabilitation and Data Analysis</h1>
+    <p class="intro">We are a research lab at <a href="https://hsancamillo.it">IRCCS San Camillo, Venice</a>,
+    working on neurophysiology, neuropsychology and neuroscience for neurorehabilitation.</p>
+    <span class="philo-trigger" tabindex="0"><i class="bi bi-lightbulb"></i>Our Lab philosophy
+      <span class="philo-pop" role="tooltip">The Lab philosophy is focused on rigour and <strong>Open Science</strong>
+      principles. We are committed to sharing our code, methods, data, results but also teaching materials and
+      educational resources to the scientific community, to promote transparency, reproducibility and collaboration
+      in research.</span>
+    </span>
   </div>
-  <div class="about-contents"><div id="hero-heading" style="font-size: 1.1em;">
-<p>Welcome to the website of the <strong>ONDA</strong> Lab (<strong>O</strong>pen methodologies in <strong>N</strong>eurorehabilitation and <strong>D</strong>ata <strong>A</strong>nalysis)</p>
-<p>The Lab is located at <a href="https://hsancamillo.it">IRCCS San Camillo in Venice</a> its research focuses on <span style="color:#1b4f72; font-weight:bold;">N</span>eurorehabilitation and in particular on: <span style="color:#8fc2d7; font-weight:bold;">N</span>europhysiology, <span style="color:#98cae6; font-weight:bold;">N</span>europsychology, and <span style="color:#acd6ec; font-weight:bold;">N</span>euroscience.</p>
-<section id="lab-philosophy" class="level2">
-<h2 data-anchor-id="lab-philosophy">Lab philosophy</h2>
-<p>The Lab philosophy is focused on rigour and <strong>Open Science</strong> principles. We are committed to sharing our code, methods, data, results but also teaching materials and educational resources to the scientific community, to promote transparency, reproducibility and collaboration in research.</p>
 </section>
-<section id="what-we-do" class="level2">
-<h2 data-anchor-id="what-we-do">What we do</h2>
-<ul>
-<li>We develop open tools for neuropsychological assessment and rehabilitation</li>
-<li>We study brain functions and biomarkers using MEEG</li>
-<li>We create open-source pipelines for neural data analysis</li>
-<li>We develop/optimize methods for behavioural and brain data analysis</li>
-</ul>
-<!--
-I'm a [Quarto Academeic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io).
-I'm a template that you can fork to build your own website with easy adaptation and deployment.
-I can automatically generate a neat publication list from an Excel file and enabling categories and filters.
-Check [README.md](https://github.com/drganghe/quarto-academic-website-template/blob/main/README.md) for more detailed instructions.
--->
-<!--
-## Experience
-- Researcher, Univerisity
-## Education
-- PhD, Univerisity
--->
+
+<section class="lower">
+  <h2 class="anchored">What we do</h2>
+  <div class="cards">
+    <div class="card-x">
+      <span class="icon"><i class="bi bi-clipboard2-pulse"></i></span>
+      <h3 class="anchored">Clinical tools</h3>
+      <p>We develop open tools for neuropsychological assessment and rehabilitation</p>
+    </div>
+    <div class="card-x">
+      <span class="icon"><i class="bi bi-activity"></i></span>
+      <h3 class="anchored">Brain &amp; MEEG</h3>
+      <p>We study brain functions and biomarkers using MEEG</p>
+    </div>
+    <div class="card-x">
+      <span class="icon"><i class="bi bi-diagram-3"></i></span>
+      <h3 class="anchored">Open pipelines</h3>
+      <p>We create open-source pipelines for neural data analysis</p>
+    </div>
+    <div class="card-x">
+      <span class="icon"><i class="bi bi-graph-up"></i></span>
+      <h3 class="anchored">Analysis methods</h3>
+      <p>We develop/optimize methods for behavioural and brain data analysis</p>
+    </div>
+  </div>
 </section>
-</div></div>
+
 </div>
 
-<!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
-<section id="recent-posts" class="level2">
-<h2 data-anchor-id="recent-posts">Recent Posts</h2>
-<p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1793660400000" data-listing-file-modified-sort="1793696019561" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="253">
-<a href="./posts/news-title/new-papers-2026-11.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/news-papers.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-New publications from the ONDA Lab
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 3, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1793660400000" data-listing-file-modified-sort="1793718301161" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="369">
-<a href="./posts/news-title/aurora-grant.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/onda-fundings.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-🎉 AURORA: a Regione Veneto grant to build a new cognitive assessment for oncology
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 3, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="bmV3cw==" data-listing-date-sort="1791064800000" data-listing-file-modified-sort="1793694464692" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="87">
-<a href="./posts/news-title/new-papers-2026-10.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/news-papers.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-New publications from the ONDA Lab
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Oct 4, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p align="right">
-<a href="./posts.html">All Posts »</a>
-</p>
 
-
-
-
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -591,6 +536,13 @@ Oct 4, 2026
       window.document.body.appendChild(a);
     }
     setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
