@@ -70,3 +70,6 @@ analyses provided in **Python**, **R** and **Matlab**. The code is on
 :::
 
 :::
+
+
+{{< include _explore.qmd >}}

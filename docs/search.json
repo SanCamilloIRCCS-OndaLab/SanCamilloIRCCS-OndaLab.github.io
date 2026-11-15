@@ -53,7 +53,7 @@
     "href": "resources/clinical-tools.html#cnp",
     "title": "Clinical tools",
     "section": "cnp",
-    "text": "cnp\n\n\n\n\n\ncnp is an R package for test development and norming in clinical neuropsychology, useful when building the normative data of a new test. See Analysis methods for details.\nDevelopment stage: work in progress"
+    "text": "cnp\n\n\n\n\n\ncnp is an R package for test development and norming in clinical neuropsychology, useful when building the normative data of a new test. See Analysis methods for details.\nDevelopment stage: work in progress\n\n\n\n\n\n  Explore other resources\n  \n    \n      \n      Clinical toolsOpen tools for neuropsychological assessment and rehabilitation\n    \n    \n      \n      Brain & MEEGToolboxes and tutorials to study brain functions and biomarkers with MEEG\n    \n    \n      \n      Open pipelinesOpen-source pipelines for neural data analysis\n    \n    \n      \n      Analysis methodsMethods for behavioural and brain data analysis\n    \n  \n  \n    ← All resources\n    Looking for talks, guides and tutorials? See Outreach"
   },
   {
     "objectID": "resources/analysis-methods.html",
@@ -81,7 +81,7 @@
     "href": "resources/analysis-methods.html#code-collections",
     "title": "Analysis methods",
     "section": "Code collections",
-    "text": "Code collections\n\n\n\n\n\nCollections of code snippets developed over the years, kept public so that they can be reused:\n\nR-code-Misc — miscellaneous R code.\nMatlab-code-Misc — the Matlab functions.\nOther-code-misc — snippets in several other languages."
+    "text": "Code collections\n\n\n\n\n\nCollections of code snippets developed over the years, kept public so that they can be reused:\n\nR-code-Misc — miscellaneous R code.\nMatlab-code-Misc — the Matlab functions.\nOther-code-misc — snippets in several other languages.\n\n\n\n\n\n\n  Explore other resources\n  \n    \n      \n      Clinical toolsOpen tools for neuropsychological assessment and rehabilitation\n    \n    \n      \n      Brain & MEEGToolboxes and tutorials to study brain functions and biomarkers with MEEG\n    \n    \n      \n      Open pipelinesOpen-source pipelines for neural data analysis\n    \n    \n      \n      Analysis methodsMethods for behavioural and brain data analysis\n    \n  \n  \n    ← All resources\n    Looking for talks, guides and tutorials? See Outreach"
   },
   {
     "objectID": "publications.html",
@@ -508,7 +508,7 @@
     "href": "resources/brain-meeg.html#eeg-npsy-tutorial",
     "title": "Brain & MEEG",
     "section": "EEG-NPSY tutorial",
-    "text": "EEG-NPSY tutorial\n\n\n\n\n\nThe EEG-NPSY tutorial is a tutorial for EEG data analysis developed by the ONDA Lab, with the same analyses provided in Python, R and Matlab. The code is on GitHub."
+    "text": "EEG-NPSY tutorial\n\n\n\n\n\nThe EEG-NPSY tutorial is a tutorial for EEG data analysis developed by the ONDA Lab, with the same analyses provided in Python, R and Matlab. The code is on GitHub.\n\n\n\n\n\n  Explore other resources\n  \n    \n      \n      Clinical toolsOpen tools for neuropsychological assessment and rehabilitation\n    \n    \n      \n      Brain & MEEGToolboxes and tutorials to study brain functions and biomarkers with MEEG\n    \n    \n      \n      Open pipelinesOpen-source pipelines for neural data analysis\n    \n    \n      \n      Analysis methodsMethods for behavioural and brain data analysis\n    \n  \n  \n    ← All resources\n    Looking for talks, guides and tutorials? See Outreach"
   },
   {
     "objectID": "resources/open-pipelines.html",
@@ -543,6 +543,6 @@
     "href": "resources/open-pipelines.html#meg-lab-code",
     "title": "Open pipelines",
     "section": "MEG Lab code",
-    "text": "MEG Lab code\n\n\n\n\n\nMEG-Lab-SC-code collects the code snippets of the MEG Lab of IRCCS San Camillo.\n\n\nMore public code is available on the GitHub profile of Giorgio Arcara and on the ONDA Lab GitHub organisation."
+    "text": "MEG Lab code\n\n\n\n\n\nMEG-Lab-SC-code collects the code snippets of the MEG Lab of IRCCS San Camillo.\n\n\nMore public code is available on the GitHub profile of Giorgio Arcara and on the ONDA Lab GitHub organisation.\n\n\n\n  Explore other resources\n  \n    \n      \n      Clinical toolsOpen tools for neuropsychological assessment and rehabilitation\n    \n    \n      \n      Brain & MEEGToolboxes and tutorials to study brain functions and biomarkers with MEEG\n    \n    \n      \n      Open pipelinesOpen-source pipelines for neural data analysis\n    \n    \n      \n      Analysis methodsMethods for behavioural and brain data analysis\n    \n  \n  \n    ← All resources\n    Looking for talks, guides and tutorials? See Outreach"
   }
 ]

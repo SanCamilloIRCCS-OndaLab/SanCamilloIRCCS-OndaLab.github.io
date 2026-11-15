@@ -496,6 +496,64 @@ Work in progress
 </div>
 </div>
 <p>More public code is available on the <a href="https://github.com/giorgioarcara">GitHub profile of Giorgio Arcara</a> and on the <a href="https://github.com/SanCamilloIRCCS-OndaLab">ONDA Lab GitHub organisation</a>.</p>
+<!-- Shared "Explore other resources" block, included at the bottom of each
+     resources/*.qmd page with the Quarto "include" shortcode.
+     The card of the current page is removed by the script below. -->
+<style>
+  .res-more { margin-top: 3rem; padding-top: 1.6rem; border-top: 1px solid #dee2e6; }
+  .res-more h2.res-more-title { font-size: 1.3rem; font-weight: 700; color: #0f3b5f; margin: 0 0 1rem; border: 0; padding: 0; }
+  .res-more-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
+  @media (max-width: 767.98px) { .res-more-cards { grid-template-columns: 1fr; } }
+  .res-more-card { display: flex; gap: .75rem; align-items: flex-start; padding: .9rem 1rem; border: 1px solid #dee2e6;
+    border-top: 3px solid #1b5f8c; border-radius: .6rem; background: #fff; text-decoration: none; color: inherit;
+    transition: box-shadow .18s ease, transform .18s ease; }
+  .res-more-card:hover { box-shadow: 0 10px 24px rgba(15,59,95,.12); transform: translateY(-2px); text-decoration: none; }
+  .res-more-card .icon { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 2.2rem; height: 2.2rem;
+    border-radius: 50%; background: #e3eff8; color: #1b5f8c; font-size: 1.05rem; }
+  .res-more-card .txt strong { display: block; font-size: 1.05rem; color: #0f3b5f; margin-bottom: .15rem; }
+  .res-more-card .txt span { display: block; font-size: .92rem; line-height: 1.4; color: #3d4a56; }
+  .res-more-links { margin-top: 1.1rem; font-size: .95rem; display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; }
+  body.quarto-dark .res-more { border-top-color: #495057; }
+  body.quarto-dark .res-more h2.res-more-title { color: #e9ecef; }
+  body.quarto-dark .res-more-card { background: #2b3035; border-color: #495057; border-top-color: #5dade2; }
+  body.quarto-dark .res-more-card .txt strong { color: #e9ecef; }
+  body.quarto-dark .res-more-card .txt span { color: #ced4da; }
+  body.quarto-dark .res-more-card .icon { background: rgba(93,173,226,.15); color: #5dade2; }
+</style>
+<nav class="res-more" aria-label="Other resources">
+  <h2 class="res-more-title anchored">Explore other resources</h2>
+  <div class="res-more-cards">
+    <a class="res-more-card" href="clinical-tools.html">
+      <span class="icon"><i class="bi bi-clipboard2-pulse"></i></span>
+      <span class="txt"><strong>Clinical tools</strong><span>Open tools for neuropsychological assessment and rehabilitation</span></span>
+    </a>
+    <a class="res-more-card" href="brain-meeg.html">
+      <span class="icon"><i class="bi bi-activity"></i></span>
+      <span class="txt"><strong>Brain &amp; MEEG</strong><span>Toolboxes and tutorials to study brain functions and biomarkers with MEEG</span></span>
+    </a>
+    <a class="res-more-card" href="open-pipelines.html">
+      <span class="icon"><i class="bi bi-diagram-3"></i></span>
+      <span class="txt"><strong>Open pipelines</strong><span>Open-source pipelines for neural data analysis</span></span>
+    </a>
+    <a class="res-more-card" href="analysis-methods.html">
+      <span class="icon"><i class="bi bi-graph-up"></i></span>
+      <span class="txt"><strong>Analysis methods</strong><span>Methods for behavioural and brain data analysis</span></span>
+    </a>
+  </div>
+  <div class="res-more-links">
+    <a href="../resources.html">← All resources</a>
+    <span>Looking for talks, guides and tutorials? See <a href="../outreach.html">Outreach</a></span>
+  </div>
+</nav>
+<script>
+  (function () {
+    var here = location.pathname.replace(/\.html$/, "").replace(/\/$/, "");
+    document.querySelectorAll(".res-more-card").forEach(function (a) {
+      var stem = a.getAttribute("href").replace(/\.html$/, "");
+      if (here.endsWith("/" + stem)) a.remove();
+    });
+  })();
+</script>
 
 
 </section>

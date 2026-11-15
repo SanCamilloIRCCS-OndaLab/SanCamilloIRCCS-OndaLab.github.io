@@ -95,3 +95,6 @@ code snippets of the MEG Lab of IRCCS San Camillo.
 More public code is available on the
 [GitHub profile of Giorgio Arcara](https://github.com/giorgioarcara) and on the
 [ONDA Lab GitHub organisation](https://github.com/SanCamilloIRCCS-OndaLab).
+
+
+{{< include _explore.qmd >}}

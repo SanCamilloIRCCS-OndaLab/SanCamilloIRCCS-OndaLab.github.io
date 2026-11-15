@@ -78,3 +78,6 @@ _Development stage:_ work in progress
 :::
 
 :::
+
+
+{{< include _explore.qmd >}}
