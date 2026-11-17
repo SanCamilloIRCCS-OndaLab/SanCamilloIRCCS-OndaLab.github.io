@@ -31,6 +31,13 @@ title-block-style: none
     max-width: 900px; margin: .5rem auto .5rem; text-wrap: balance; }
   #home-h .intro { font-size: 1.25rem; color: #3d4a56; max-width: 900px; margin: 0 auto 1rem; text-wrap: balance; }
   #home-h .intro a { color: #0f3b5f; font-weight: 500; }
+  /* coloured "n" initials, echoing the ONDA logo (navy = neurorehabilitation) */
+  #home-h .n-init { font-weight: 700; }
+  #home-h .n-rehab  { color: #1b4f72; }
+  #home-h .n-physio { color: #8fc2d7; }
+  #home-h .n-psycho { color: #98cae6; }
+  #home-h .n-sci    { color: #acd6ec; }
+  body.quarto-dark #home-h .n-rehab { color: #5dade2; }
 
   /* "Our Lab philosophy": small outlined pill; full text pops up on hover / tap / focus */
   #home-h .philo-trigger { position: relative; display: inline-flex; align-items: center; gap: .5rem;
@@ -96,7 +103,8 @@ title-block-style: none
     <img src="files/images/ONDA_logo_v12.png" alt="ONDA Lab logo">
     <h1 class="headline">Open methodologies in Neurorehabilitation and Data Analysis</h1>
     <p class="intro">We are a research lab at <a href="https://hsancamillo.it">IRCCS San Camillo, Venice</a>,
-    working on neurophysiology, neuropsychology and neuroscience for neurorehabilitation.</p>
+    working on <span class="n-init n-physio">n</span>europhysiology, <span class="n-init n-psycho">n</span>europsychology
+    and <span class="n-init n-sci">n</span>euroscience for <span class="n-init n-rehab">n</span>eurorehabilitation.</p>
     <span class="philo-trigger" tabindex="0"><i class="bi bi-lightbulb"></i>Our Lab philosophy
       <span class="philo-pop" role="tooltip">The Lab philosophy is focused on rigour and <strong>Open Science</strong>
       principles. We are committed to sharing our code, methods, data, results but also teaching materials and
