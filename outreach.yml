@@ -6,7 +6,10 @@
 #   description  one or two sentences
 #   date         YYYY-MM-DD (only the year is shown on the card)
 #   categories   [<Type>, <Language>]   Type: Talk | Guide | Tutorial   Language: English | Italiano
-#   path         main link (the "Slides" button): GitHub blob URL, site path (/files/...) or external URL
+#   path         main link (the "Slides" button): a URL outside this repo, never /files/...:
+#                  PDF -> GitHub release asset, https://github.com/<u>/<repo>/releases/latest/download/<file>.pdf
+#                         (or a GitHub blob URL if the PDF is tracked in its repo)
+#                  HTML deck -> GitHub Pages of its repo, https://<u>.github.io/<repo>/<path>.html
 #   image        thumbnail. Leave it at /files/images/outreach/<id>.png and run
 #                `python scripts/outreach_thumbs.py` to generate it from the first page of the PDF.
 #   thumbfrom    (optional) PDF/HTML to make the thumbnail from, when `path` is not a PDF
@@ -42,7 +45,8 @@
   description: "A talk on the opportunities and pitfalls of using AI tools for coding in scientific research, with personal and Lab views on the issue."
   date: "2026-06-05"
   categories: [Talk, English]
-  path: /files/presentations/AI_assisted_coding.pdf
+  path: https://github.com/giorgioarcara/2026-AI-assisted-coding/releases/latest/download/AI_assisted_coding.pdf
+  repo: https://github.com/giorgioarcara/2026-AI-assisted-coding
   image: /files/images/outreach/ai-coding-talk.png
   post: /posts/presentations/ai-assisted-coding.html
 
@@ -51,7 +55,7 @@
   description: "A short and humorous guide to good coding principles (and why you shouldn't write terrible code), by ONDA Lab and friends."
   date: "2026-06-01"
   categories: [Guide, English]
-  path: /files/presentations/how-to-write-terrible-code/slides.html
+  path: https://giorgioarcara.github.io/how-to-write-terrible-code/Slides/slides.html
   image: /files/images/terrible_code.png
   repo: https://github.com/giorgioarcara/how-to-write-terrible-code
   post: /posts/presentations/how-to-write-terrible-code.html
@@ -71,7 +75,8 @@
   description: "Un racconto dell'esperienza con i dati FAIR, sia come utilizzatore sia come curatore di dataset."
   date: "2026-05-21"
   categories: [Talk, Italiano]
-  path: /files/documents/Arcara-FAIR.pdf
+  path: https://github.com/giorgioarcara/2026-Unipd-Fair/releases/latest/download/Arcara-FAIR.pdf
+  repo: https://github.com/giorgioarcara/2026-Unipd-Fair
   image: /files/images/outreach/fair.png
   post: /posts/presentations/arcara-fair.html
 
@@ -99,7 +104,7 @@
   description: "Update from the San Camillo / ONDA Lab coding group: what we learned about GitHub, good habits, and using LLMs for programming."
   date: "2025-09-12"
   categories: [Talk, English]
-  path: /files/presentations/coding-group-2025-09/slides.html
+  path: https://giorgioarcara.github.io/coding_group/Updates_2025_09_12/Slides/Slides_2025_09_12.html
   image: /files/images/outreach/coding-group-2025-09.png
   repo: https://github.com/giorgioarcara/coding_group
 

@@ -10,7 +10,7 @@ image: "/files/images/fair.jpg"
 
 *Presentazione in italiano.*
 
-[Scarica le slide (PDF)](/files/documents/Arcara-FAIR.pdf)
+[Scarica le slide (PDF)](https://github.com/giorgioarcara/2026-Unipd-Fair/releases/latest/download/Arcara-FAIR.pdf)
 
 <!--Include social share buttons-->
 

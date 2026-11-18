@@ -7,7 +7,7 @@ categories: [presentation]
 image: "/files/images/ONDA_waves.png"
 ---
 
-[Scarica le slide (PDF)](/files/presentations/AI_assisted_coding.pdf)
+[Scarica le slide (PDF)](https://github.com/giorgioarcara/2026-AI-assisted-coding/releases/latest/download/AI_assisted_coding.pdf)
 
 <!--Include social share buttons-->
 

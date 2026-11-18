@@ -18,3 +18,10 @@ inbox/*
 # editor / tool artifacts
 .kilo/
 .Rhistory
+
+# Downloadable files live in their own repos (GitHub releases / Pages), never here.
+# See "Downloadable files" in CLAUDE.md.
+files/**/*.pdf
+docs/files/**/*.pdf
+files/presentations/
+files/documents/

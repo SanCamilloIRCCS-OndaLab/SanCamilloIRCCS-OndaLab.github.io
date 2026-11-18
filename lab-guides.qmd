@@ -4,7 +4,6 @@ description-meta: "Lab guides"
 title-block-banner: false
 ---
 
-Here you can download the [Lab Manual](files/documents/ONDA_Lab_Manual.pdf), which explains some organizational aspects and the philosophy of the Lab.
+Here you can download the [Lab Manual](https://github.com/SanCamilloIRCCS-OndaLab/ONDALab-manual/releases/latest/download/ONDA_Lab_Manual.pdf), which explains some organizational aspects and the philosophy of the Lab ([previous versions](https://github.com/SanCamilloIRCCS-OndaLab/ONDALab-manual/releases)).
 
-You can also download our guide on [Good Practices for AI-assisted Coding](files/documents/Good_Practices_AI_Coding.pdf) (given the topic, check for updates, it is expected to change often).
-
+You can also download our guide on [Good Practices for AI-assisted Coding](https://github.com/giorgioarcara/ONDALab-AI-guide/blob/main/Good_Practices_AI_Coding.pdf) (given the topic, check for updates, it is expected to change often).

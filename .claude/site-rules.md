@@ -37,6 +37,7 @@ Workflow guide for Giorgio: [WORKFLOW.md](WORKFLOW.md).
 | `posts/presentations/` | Giorgio's own slide decks (Outreach -> Presentations). **Never write here.** |
 | `files/images/` | Post images |
 | `files/profiles/` | Team photos, fallback thumbnails |
+| PDFs / slide decks | **Never** in `files/`. Release asset or Pages in their own repo; link from there (see "Downloadable files" in `CLAUDE.md`). |
 | `inbox/<slug>/` | Giorgio's briefs + images (git-ignored) - the only input for `/draft-2-news` |
 | `.claude/pub-news-skip.txt` | Papers Giorgio chose not to announce (used by `/pub-2-news`) |
 | `docs/` | Rendered site, published from `main` |

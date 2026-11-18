@@ -69,8 +69,6 @@ website:
         href: people.qmd
 
     right: 
-      #- text: CV
-      #  href: files/nsf-biosketch.pdf
       - icon: github
         href: https://github.com/SanCamilloIRCCS-OndaLab
         target: _blank

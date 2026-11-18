@@ -7,7 +7,7 @@ categories: [presentation]
 image: "/files/images/terrible_code.png"
 ---
 
-[Open the presentation](/files/presentations/how-to-write-terrible-code/slides.html){target="_blank"}
+[Open the presentation](https://giorgioarcara.github.io/how-to-write-terrible-code/Slides/slides.html){target="_blank"}
 
 <!--Include social share buttons-->
 
