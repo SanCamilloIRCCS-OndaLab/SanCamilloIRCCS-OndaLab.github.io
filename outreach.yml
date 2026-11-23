@@ -22,7 +22,7 @@
 
 - id: oip-book
   title: "Oltre i punteggi: elementi di psicometria e statistica per la neuropsicologia clinica"
-  description: "Libro online e gratuito, in italiano: le basi di psicometria e statistica per la pratica neuropsicologica clinica (misurazione, validità e affidabilità, dati normativi, deficit e peggioramento). Un libro in sviluppo, scaricabile anche in PDF ed ePub."
+  description: "A free online book (in Italian) on the psychometrics and statistics behind clinical neuropsychological practice: measurement, validity and reliability, normative data, deficits and decline. A work in progress, also available as PDF and ePub."
   date: "2026-11-13"
   categories: [Book, Italiano]
   path: https://giorgioarcara.github.io/oip-book/
@@ -32,11 +32,12 @@
 
 - id: behds-book
   title: "Introduction to Behavioural Data Science"
-  description: "A behavioural-science adaptation of Rafael A. Irizarry's Introduction to Data Science, written for the Behavioural Data Science course (University of Padua): R, data wrangling and visualisation with reaction times, accuracy scores and survey data."
+  description: "A behavioural-science adaptation of Rafael A. Irizarry's Introduction to Data Science, written for the Behavioural Data Science course (University of Padua), in two parts (Introduction and Advanced): R, data wrangling and visualisation with reaction times, accuracy scores and survey data."
   date: "2026-09-14"
   categories: [Book, English]
   path: https://intro-to-behds.github.io/
   image: /files/images/outreach/behds-book.png
+  repo: https://github.com/intro-to-behds
   featured: true
 
 - id: ai-coding-guide
