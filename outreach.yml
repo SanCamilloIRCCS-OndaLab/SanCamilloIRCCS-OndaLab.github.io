@@ -13,6 +13,8 @@
 #   image        thumbnail. Leave it at /files/images/outreach/<id>.png and run
 #                `python scripts/outreach_thumbs.py` to generate it from the first page of the PDF.
 #   thumbfrom    (optional) PDF/HTML to make the thumbnail from, when `path` is not a PDF
+#   mainlabel    (optional) text of the main button (default: "Slides" for talks, otherwise "Open")
+#   videos       (optional) link to recorded videos ("Videos" button)
 #   repo         (optional) GitHub repository ("Repo" button)
 #   post         (optional) post on this site ("Read post" button)
 #   extra / extralabel  (optional) a second link, e.g. another language version
@@ -125,6 +127,17 @@
   path: https://github.com/giorgioarcara/mixed-effect-models/blob/main/Mixed_effects_models.pdf
   image: /files/images/outreach/mixed-models.png
   repo: https://github.com/giorgioarcara/mixed-effect-models
+
+- id: eeg-course
+  title: "Human Electrophysiology: analysing EEG/MEG data (course)"
+  description: "A full university course on EEG and MEG data analysis, with recorded lessons and slides: artifacts, filters and ICA, ERPs, time-frequency, MEG source estimation, connectivity and networks, plus practical recommendations. Comes with code examples on signal processing."
+  date: "2020-01-01"
+  categories: [Tutorial, English]
+  path: https://drive.google.com/drive/folders/1DaWSZOFCPsbKHtQVnJeNfAXik8pNHl6B
+  mainlabel: "Slides"
+  videos: https://drive.google.com/drive/folders/1CvtG6w-T3CO94-Iu_Dp0lzC91gkSIkRZ
+  image: /files/images/outreach/eeg-course.png
+  repo: https://github.com/giorgioarcara/EEG_signal_Processing
 
 - id: fieldtrip
   title: "FieldTrip Tutorial (draft)"

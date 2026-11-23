@@ -84,9 +84,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-id','listing-title','listing-description','listing-date','listing-categories','listing-image','listing-repo','listing-featured','listing-extra','listing-extralabel','listing-thumbfrom','listing-post',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-id','listing-title','listing-description','listing-date','listing-categories','listing-image','listing-repo','listing-featured','listing-extra','listing-extralabel','listing-thumbfrom','listing-post','listing-mainlabel','listing-videos',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-id","listing-title","listing-description","listing-date","listing-categories","listing-image","listing-repo","listing-featured","listing-extra","listing-extralabel","listing-thumbfrom","listing-post"],
+      searchColumns: ["listing-id","listing-title","listing-description","listing-date","listing-categories","listing-image","listing-repo","listing-featured","listing-extra","listing-extralabel","listing-thumbfrom","listing-post","listing-mainlabel","listing-videos"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -579,7 +579,7 @@ All materials
 <div class="ol-toolbar" role="toolbar" aria-label="Filter materials">
 <div class="ol-chips" data-group="type">
 <button type="button" class="ol-chip is-active" aria-pressed="true" data-value="">
-All <span class="ol-n">16</span>
+All <span class="ol-n">17</span>
 </button>
 <button type="button" class="ol-chip ol-chip--talk" aria-pressed="false" data-value="Talk">
 Talks <span class="ol-n">5</span>
@@ -588,7 +588,7 @@ Talks <span class="ol-n">5</span>
 Guides <span class="ol-n">5</span>
 </button>
 <button type="button" class="ol-chip ol-chip--tutorial" aria-pressed="false" data-value="Tutorial">
-Tutorials <span class="ol-n">6</span>
+Tutorials <span class="ol-n">7</span>
 </button>
 </div>
 <div class="ol-chips" data-group="lang">
@@ -792,7 +792,24 @@ A full course on linear mixed models in R, from linear models to assumptions, mo
 </div>
 </div>
 </article>
-<article class="ol-card" data-type="Tutorial" data-lang="English" data-index="11" data-categories="VHV0b3JpYWwlMkNFbmdsaXNo" data-listing-date-sort="1429912800000">
+<article class="ol-card" data-type="Tutorial" data-lang="English" data-index="11" data-categories="VHV0b3JpYWwlMkNFbmdsaXNo" data-listing-date-sort="1577833200000">
+<a class="ol-thumb" href="https://drive.google.com/drive/folders/1DaWSZOFCPsbKHtQVnJeNfAXik8pNHl6B" target="_blank" rel="noopener" aria-label="Open: Human Electrophysiology: analysing EEG/MEG data (course)" tabindex="-1"><img src="./files/images/outreach/eeg-course.png" alt="" loading="lazy"><span class="ol-type ol-type--tutorial">Tutorial</span></a>
+<div class="ol-body">
+<div class="ol-meta">
+<span class="ol-year">2020</span><span class="ol-lang" title="English">EN</span>
+</div>
+<h3 class="ol-title anchored">
+<a href="https://drive.google.com/drive/folders/1DaWSZOFCPsbKHtQVnJeNfAXik8pNHl6B" target="_blank" rel="noopener">Human Electrophysiology: analysing EEG/MEG data (course)</a>
+</h3>
+<p class="ol-desc">
+A full university course on EEG and MEG data analysis, with recorded lessons and slides: artifacts, filters and ICA, ERPs, time-frequency, MEG source estimation, connectivity and networks, plus practical recommendations. Comes with code examples on signal processing.
+</p>
+<div class="ol-actions">
+<a class="ol-btn ol-btn--main" href="https://drive.google.com/drive/folders/1DaWSZOFCPsbKHtQVnJeNfAXik8pNHl6B" target="_blank" rel="noopener"><i class="bi bi-easel"></i> Slides</a><a class="ol-btn" href="https://drive.google.com/drive/folders/1CvtG6w-T3CO94-Iu_Dp0lzC91gkSIkRZ" target="_blank" rel="noopener"><i class="bi bi-play-btn"></i> Videos</a><a class="ol-btn" href="https://github.com/giorgioarcara/EEG_signal_Processing" target="_blank" rel="noopener"><i class="bi bi-github"></i> Repo</a>
+</div>
+</div>
+</article>
+<article class="ol-card" data-type="Tutorial" data-lang="English" data-index="12" data-categories="VHV0b3JpYWwlMkNFbmdsaXNo" data-listing-date-sort="1429912800000">
 <a class="ol-thumb" href="https://giorgioarcara.github.io/files/Fieldtrip%20Tutorial_DRAFT.pdf" target="_blank" rel="noopener" aria-label="Open: FieldTrip Tutorial (draft)" tabindex="-1"><img src="./files/images/outreach/fieldtrip.png" alt="" loading="lazy"><span class="ol-type ol-type--tutorial">Tutorial</span></a>
 <div class="ol-body">
 <div class="ol-meta">
@@ -809,7 +826,7 @@ An introductory tutorial to EEG/MEG analysis with the FieldTrip toolbox for MATL
 </div>
 </div>
 </article>
-<article class="ol-card" data-type="Talk" data-lang="Italiano" data-index="12" data-categories="VGFsayUyQ0l0YWxpYW5v" data-listing-date-sort="1425596400000">
+<article class="ol-card" data-type="Talk" data-lang="Italiano" data-index="13" data-categories="VGFsayUyQ0l0YWxpYW5v" data-listing-date-sort="1425596400000">
 <a class="ol-thumb" href="https://giorgioarcara.github.io/files/Arcara%20Seminario%20Linguistica.pdf" target="_blank" rel="noopener" aria-label="Open: Riflessioni sull'analisi statistica di dati linguistici e psicolinguistici" tabindex="-1"><img src="./files/images/outreach/linguistica.png" alt="" loading="lazy"><span class="ol-type ol-type--talk">Talk</span></a>
 <div class="ol-body">
 <div class="ol-meta">
@@ -826,7 +843,7 @@ Seminario sull’analisi statistica in linguistica e psicolinguistica.
 </div>
 </div>
 </article>
-<article class="ol-card" data-type="Tutorial" data-lang="Italiano" data-index="13" data-categories="VHV0b3JpYWwlMkNJdGFsaWFubw==" data-listing-date-sort="1386543600000">
+<article class="ol-card" data-type="Tutorial" data-lang="Italiano" data-index="14" data-categories="VHV0b3JpYWwlMkNJdGFsaWFubw==" data-listing-date-sort="1386543600000">
 <a class="ol-thumb" href="https://giorgioarcara.github.io/files/BPLOT_tutorial.pdf" target="_blank" rel="noopener" aria-label="Open: BPLOT Tutorial" tabindex="-1"><img src="./files/images/outreach/bplot.png" alt="" loading="lazy"><span class="ol-type ol-type--tutorial">Tutorial</span></a>
 <div class="ol-body">
 <div class="ol-meta">
@@ -843,7 +860,7 @@ Guida all’uso di BPLOT per creare grafici a partire da file di dati .avr: come
 </div>
 </div>
 </article>
-<article class="ol-card" data-type="Tutorial" data-lang="Italiano" data-index="14" data-categories="VHV0b3JpYWwlMkNJdGFsaWFubw==" data-listing-date-sort="1386543600000">
+<article class="ol-card" data-type="Tutorial" data-lang="Italiano" data-index="15" data-categories="VHV0b3JpYWwlMkNJdGFsaWFubw==" data-listing-date-sort="1386543600000">
 <a class="ol-thumb" href="https://giorgioarcara.github.io/files/PLSgui_tutorial.pdf" target="_blank" rel="noopener" aria-label="Open: PLSgui Tutorial" tabindex="-1"><img src="./files/images/outreach/plsgui.png" alt="" loading="lazy"><span class="ol-type ol-type--tutorial">Tutorial</span></a>
 <div class="ol-body">
 <div class="ol-meta">
@@ -860,7 +877,7 @@ Tutorial sull’analisi PLS (Partial Least Squares) con PLSgui: introduzione teo
 </div>
 </div>
 </article>
-<article class="ol-card" data-type="Tutorial" data-lang="Italiano" data-index="15" data-categories="VHV0b3JpYWwlMkNJdGFsaWFubw==" data-listing-date-sort="1230764400000">
+<article class="ol-card" data-type="Tutorial" data-lang="Italiano" data-index="16" data-categories="VHV0b3JpYWwlMkNJdGFsaWFubw==" data-listing-date-sort="1230764400000">
 <a class="ol-thumb" href="https://giorgioarcara.github.io/files/DMDX_tutorial%20(1).pdf" target="_blank" rel="noopener" aria-label="Open: Guida introduttiva a DMDX" tabindex="-1"><img src="./files/images/outreach/dmdx.png" alt="" loading="lazy"><span class="ol-type ol-type--tutorial">Tutorial</span></a>
 <div class="ol-body">
 <div class="ol-meta">

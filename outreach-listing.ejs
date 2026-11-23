@@ -43,7 +43,8 @@ function card(item, feat, attrs) {
   var t = typeOf(item);
   var langs = langsOf(item);
   var isSlides = t === "Talk" || /slides/i.test(String(item.path || ""));
-  var main = isSlides ? '<i class="bi bi-easel"></i> Slides' : '<i class="bi bi-file-earmark-text"></i> Open';
+  var label = item.mainlabel || (isSlides ? 'Slides' : 'Open');
+  var main = (/slides/i.test(label) ? '<i class="bi bi-easel"></i> ' : '<i class="bi bi-file-earmark-text"></i> ') + esc(label);
   var h = '';
   h += '<article class="ol-card' + (feat ? ' ol-card--feat' : '') + '" data-type="' + t + '" data-lang="' + langs.join(' ') + '"' + (attrs ? ' ' + attrs : '') + '>';
   h += link(item.path, 'ol-thumb',
@@ -58,6 +59,7 @@ function card(item, feat, attrs) {
   h += '<p class="ol-desc">' + esc(item.description) + '</p>';
   h += '<div class="ol-actions">';
   h += link(item.path, 'ol-btn ol-btn--main', main);
+  if (item.videos) h += link(item.videos, 'ol-btn', '<i class="bi bi-play-btn"></i> Videos');
   if (item.extra) h += link(item.extra, 'ol-btn', '<i class="bi bi-translate"></i> ' + esc(item.extralabel || 'Other version'));
   if (item.repo)  h += link(item.repo, 'ol-btn', '<i class="bi bi-github"></i> Repo');
   if (item.post)  h += link(item.post, 'ol-btn', '<i class="bi bi-chat-square-text"></i> Post');
