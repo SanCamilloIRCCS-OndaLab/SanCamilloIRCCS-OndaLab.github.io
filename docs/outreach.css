@@ -11,6 +11,7 @@
   --ol-talk: #1b5f8c;
   --ol-guide: #17806d;
   --ol-tutorial: #a8620a;
+  --ol-book: #7b3f9e;
   --ol-chip-bg: #fff;
 }
 body.quarto-dark #outreach {
@@ -23,6 +24,7 @@ body.quarto-dark #outreach {
   --ol-talk: #5dade2;
   --ol-guide: #48c9b0;
   --ol-tutorial: #f0b25a;
+  --ol-book: #c39bd3;
   --ol-chip-bg: #2b3035;
 }
 
@@ -89,6 +91,7 @@ body.quarto-dark #outreach .ol-card:hover { box-shadow: 0 12px 28px rgba(0,0,0,.
 #outreach .ol-card--feat { border-top: 4px solid var(--ol-talk); }
 #outreach .ol-card--feat[data-type="Guide"] { border-top-color: var(--ol-guide); }
 #outreach .ol-card--feat[data-type="Tutorial"] { border-top-color: var(--ol-tutorial); }
+#outreach .ol-card--feat[data-type="Book"] { border-top-color: var(--ol-book); }
 
 /* thumbnail: the first page "lying" on a tinted desk, never cropped */
 #outreach .ol-thumb { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden;
@@ -103,6 +106,7 @@ body.quarto-dark #outreach .ol-thumb { background: radial-gradient(circle at 30%
   font-size: .78rem; font-weight: 600; letter-spacing: .02em; color: #fff; background: var(--ol-talk); }
 #outreach .ol-type--guide { background: var(--ol-guide); }
 #outreach .ol-type--tutorial { background: var(--ol-tutorial); }
+#outreach .ol-type--book { background: var(--ol-book); }
 body.quarto-dark #outreach .ol-type { color: #1b1f23; }
 #outreach .ol-star { position: absolute; top: .6rem; right: .6rem; padding: .15rem .6rem; border-radius: 999px;
   font-size: .78rem; font-weight: 600; color: #7a5200; background: #ffe7a3; }
@@ -138,6 +142,7 @@ body.quarto-dark #outreach .ol-btn--main:hover { background: #85c1e9; border-col
 #outreach .ol-chip--talk.is-active { background: var(--ol-talk); border-color: var(--ol-talk); }
 #outreach .ol-chip--guide.is-active { background: var(--ol-guide); border-color: var(--ol-guide); }
 #outreach .ol-chip--tutorial.is-active { background: var(--ol-tutorial); border-color: var(--ol-tutorial); }
+#outreach .ol-chip--book.is-active { background: var(--ol-book); border-color: var(--ol-book); }
 #outreach .ol-n { display: inline-block; min-width: 1.4em; margin-left: .2rem; font-size: .78rem; font-weight: 600; opacity: .75; }
 #outreach .ol-search { position: relative; flex: 1 1 220px; max-width: 340px; margin: 0 0 0 auto; }
 #outreach .ol-search i { position: absolute; left: .7rem; top: 50%; transform: translateY(-50%); color: var(--ol-muted); }

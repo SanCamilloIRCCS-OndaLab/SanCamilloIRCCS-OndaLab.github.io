@@ -1,11 +1,11 @@
-# Outreach materials shown on outreach.qmd (talks, guides, tutorials).
+# Outreach materials shown on outreach.qmd (talks, guides, tutorials, books).
 #
 # One entry per deck. Fields:
 #   id           short slug; the thumbnail is files/images/outreach/<id>.png
 #   title        shown on the card
 #   description  one or two sentences
 #   date         YYYY-MM-DD (only the year is shown on the card)
-#   categories   [<Type>, <Language>]   Type: Talk | Guide | Tutorial   Language: English | Italiano
+#   categories   [<Type>, <Language>]   Type: Talk | Guide | Tutorial | Book   Language: English | Italiano
 #   path         main link (the "Slides" button): a URL outside this repo, never /files/...:
 #                  PDF -> GitHub release asset, https://github.com/<u>/<repo>/releases/latest/download/<file>.pdf
 #                         (or a GitHub blob URL if the PDF is tracked in its repo)
@@ -13,12 +13,31 @@
 #   image        thumbnail. Leave it at /files/images/outreach/<id>.png and run
 #                `python scripts/outreach_thumbs.py` to generate it from the first page of the PDF.
 #   thumbfrom    (optional) PDF/HTML to make the thumbnail from, when `path` is not a PDF
-#   mainlabel    (optional) text of the main button (default: "Slides" for talks, otherwise "Open")
+#   mainlabel    (optional) text of the main button (default: "Slides" for talks, "Read" for books, otherwise "Open")
 #   videos       (optional) link to recorded videos ("Videos" button)
 #   repo         (optional) GitHub repository ("Repo" button)
 #   post         (optional) post on this site ("Read post" button)
 #   extra / extralabel  (optional) a second link, e.g. another language version
 #   featured     true -> also shown in the "Featured" row at the top (keep it to 3)
+
+- id: oip-book
+  title: "Oltre i punteggi: elementi di psicometria e statistica per la neuropsicologia clinica"
+  description: "Libro online e gratuito, in italiano: le basi di psicometria e statistica per la pratica neuropsicologica clinica (misurazione, validità e affidabilità, dati normativi, deficit e peggioramento). Un libro in sviluppo, scaricabile anche in PDF ed ePub."
+  date: "2026-11-13"
+  categories: [Book, Italiano]
+  path: https://giorgioarcara.github.io/oip-book/
+  image: /files/images/outreach/oip-book.png
+  repo: https://github.com/giorgioarcara/oltre-i-punteggi-elementi
+  featured: true
+
+- id: behds-book
+  title: "Introduction to Behavioural Data Science"
+  description: "A behavioural-science adaptation of Rafael A. Irizarry's Introduction to Data Science, written for the Behavioural Data Science course (University of Padua): R, data wrangling and visualisation with reaction times, accuracy scores and survey data."
+  date: "2026-09-14"
+  categories: [Book, English]
+  path: https://intro-to-behds.github.io/
+  image: /files/images/outreach/behds-book.png
+  featured: true
 
 - id: ai-coding-guide
   title: "Good Practices for AI-Assisted Coding (Lab guide)"
@@ -28,7 +47,6 @@
   path: https://github.com/giorgioarcara/ONDALab-AI-guide/blob/main/Good_Practices_AI_Coding.pdf
   image: /files/images/outreach/ai-coding-guide.png
   repo: https://github.com/giorgioarcara/ONDALab-AI-guide
-  featured: true
 
 - id: thesis-guide
   title: "A Practical Guide to Writing a Thesis"
@@ -99,7 +117,6 @@
   path: https://github.com/giorgioarcara/2025-Errori-Test-Neuropsicologici/blob/main/Errori_Test.pdf
   image: /files/images/outreach/errori-test.png
   repo: https://github.com/giorgioarcara/2025-Errori-Test-Neuropsicologici
-  featured: true
 
 - id: coding-group-2025-09
   title: "Coding Group: improving our coding habits"

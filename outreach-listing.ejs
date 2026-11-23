@@ -14,7 +14,7 @@
     lines in the template output would be read as Markdown code blocks by Pandoc.
   - The grid wrapper keeps class="list" and metadataAttrs(item) for Quarto/List.js compatibility.
 */
-var TYPES = ["Talk", "Guide", "Tutorial"];
+var TYPES = ["Talk", "Guide", "Tutorial", "Book"];
 var LANGS = { "English": "EN", "Italiano": "IT" };
 
 function esc(s) {
@@ -43,8 +43,9 @@ function card(item, feat, attrs) {
   var t = typeOf(item);
   var langs = langsOf(item);
   var isSlides = t === "Talk" || /slides/i.test(String(item.path || ""));
-  var label = item.mainlabel || (isSlides ? 'Slides' : 'Open');
-  var main = (/slides/i.test(label) ? '<i class="bi bi-easel"></i> ' : '<i class="bi bi-file-earmark-text"></i> ') + esc(label);
+  var label = item.mainlabel || (t === "Book" ? 'Read' : isSlides ? 'Slides' : 'Open');
+  var icon = /slides/i.test(label) ? 'bi-easel' : t === "Book" ? 'bi-book' : 'bi-file-earmark-text';
+  var main = '<i class="bi ' + icon + '"></i> ' + esc(label);
   var h = '';
   h += '<article class="ol-card' + (feat ? ' ol-card--feat' : '') + '" data-type="' + t + '" data-lang="' + langs.join(' ') + '"' + (attrs ? ' ' + attrs : '') + '>';
   h += link(item.path, 'ol-thumb',
