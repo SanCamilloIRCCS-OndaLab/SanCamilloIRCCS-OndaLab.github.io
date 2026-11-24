@@ -1,13 +1,127 @@
+# Research lines and ongoing projects shown on projects.qmd (Research -> Projects).
+# Rendered by projects-listing.ejs with styles in projects.css.
+#
+# Two kinds of entries:
+#
+#   kind: line       one band on the page
+#     id           short slug, used as the page anchor and by projects (line: <id>)
+#     number       "01", "02", ... (sets the order of the bands; keep the quotes)
+#     title        line title
+#     icon         Bootstrap icon name without "bi-" (https://icons.getbootstrap.com)
+#     description  a short paragraph
+#     areas        homepage "What we do" areas to link: clinical-tools | brain-meeg | open-pipelines | analysis-methods
+#
+#   kind: project    one card under "What we are doing" in its line
+#     line         id of the line it belongs to
+#     order        position inside the line (1, 2, ...)
+#     title        project name
+#     description  one sentence
+#     link         (optional) main link: a URL, or a page of this site such as /posts/news-title/<post>.html
+#     linklabel    (optional) button text: Repo | Website | App | Book | News | Tutorial | Paper (default "Open")
+#     status       (optional) small badge, e.g. "in progress" (useful when there is no link yet)
+#
+# A line with no projects shows only its description.
 
-    - path: https://www.nsf.gov/ 
-      image: https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/2023-10/NSF_Official_logo_Med_Res_600ppi_rectangle.png
-      title: "Exploring "
-      author: Academic Website
-      subtitle: "Funder"
-      description: "The goal of this project is to investigate ."
-      started: "2024"
-      ended: "2025"
-      funding: "$0"
-#      date: "2022-10-26"
-#      categories: [] 
+# ── Research lines ─────────────────────────────────────────────────────
 
+- kind: line
+  id: measurement
+  number: "01"
+  title: "Better measurement in clinical neuropsychology"
+  icon: rulers
+  description: "Neuropsychological tests drive decisions about real patients, so their scores must be trustworthy. We develop new psychometric tests and improve how existing ones are built, normed and interpreted. We work side by side with clinicians to understand the problems they meet in everyday practice and to design solutions they can actually use, and we share what we learn beyond scientific papers, for example in an open book. Our current work focuses on tools to derive clinical cut-offs, methods to track change over time in individual patients (for example in neurodegenerative diseases), and better standards for reporting test results. We are also developing an R package that makes psychometric and statistical methods easier to apply in clinical neuropsychology."
+  areas: [clinical-tools, analysis-methods]
+
+- kind: line
+  id: lab-to-ward
+  number: "02"
+  title: "Neurophysiology from the Lab to the ward"
+  icon: activity
+  description: "EEG and MEG measure brain activity directly, non-invasively and with millisecond precision, and EEG is inexpensive and portable enough to reach the bedside. We believe these techniques can do much more for patients than they do today. While we study how the brain supports cognition and behaviour, we ask which neurophysiological markers are reliable enough to support diagnosis, prognosis and rehabilitation, and we test them in clinical populations. For this to work, analyses must be robust and transparent: we build open pipelines, use multiverse analyses to show how results depend on analytic choices, and write tutorials so that other labs and clinicians can reproduce and use our methods."
+  areas: [brain-meeg, open-pipelines]
+
+- kind: line
+  id: metascience
+  number: "03"
+  title: "Meta-science for neurorehabilitation"
+  icon: diagram-3
+  description: "Rehabilitation is crucial for patients, and its evidence comes from trials. To really improve rehabilitation we need to improve that evidence: shared research plans, adequately powered studies, better reporting standards, and close collaboration with clinicians from design to interpretation. It also takes policies, for example on data sharing, so that individual participant data (IPD) can be pooled across studies. In turn, sound statistical methods and alternative designs, such as observational studies of clinical data, can become part of routine clinical practice."
+  areas: [analysis-methods]
+
+# ── Projects: 01 Better measurement ────────────────────────────────────
+
+- kind: project
+  line: measurement
+  order: 1
+  title: "AURORA"
+  description: "A digital cognitive assessment for people treated for cancer, with Italian norms and cut-offs (Regione Veneto grant)."
+  link: /posts/news-title/aurora-grant.html
+  linklabel: News
+
+- kind: project
+  line: measurement
+  order: 2
+  title: "cnp"
+  description: "An R package for normative data and psychometric methods in clinical neuropsychology."
+  link: https://github.com/giorgioarcara/cnp
+  linklabel: Repo
+
+- kind: project
+  line: measurement
+  order: 3
+  title: "Improving Equivalent Scores"
+  description: "Regression-based normative data and model selection, with an online app; recently extended to percentile ranks."
+  link: https://giorgioarcara.shinyapps.io/Reg-Method-App/
+  linklabel: App
+
+- kind: project
+  line: measurement
+  order: 4
+  title: "Oltre i punteggi"
+  description: "An open book (in Italian) on psychometrics and statistics for clinical neuropsychology."
+  link: https://giorgioarcara.github.io/oip-book/
+  linklabel: Book
+
+- kind: project
+  line: measurement
+  order: 5
+  title: "Reliable change in individual patients"
+  description: "Simulations comparing Reliable Change Index methods, including ICC-based variants, to detect cognitive change over time."
+  status: in progress
+
+# ── Projects: 02 Neurophysiology from the Lab to the ward ──────────────
+
+- kind: project
+  line: lab-to-ward
+  order: 1
+  title: "Herbert"
+  description: "An open-source toolbox for modular, multiverse pipelines of resting-state M/EEG connectivity and network analysis."
+  link: https://sancamilloirccs-ondalab.github.io/Herbert/
+  linklabel: Website
+
+- kind: project
+  line: lab-to-ward
+  order: 2
+  title: "Gondola"
+  description: "A Matlab toolbox for brain network analysis."
+  link: https://github.com/giorgioarcara/Gondola
+  linklabel: Repo
+
+- kind: project
+  line: lab-to-ward
+  order: 3
+  title: "EEG-NPSY tutorial"
+  description: "A tutorial on EEG analysis with code in Python, R and Matlab."
+  link: https://sancamilloirccs-ondalab.github.io/tutorial_EEG-NPSY/
+  linklabel: Tutorial
+
+- kind: project
+  line: lab-to-ward
+  order: 4
+  title: "MEG fingerprinting tutorial"
+  description: "Code to reproduce how the head model affects MEG-derived functional connectivity fingerprinting."
+  link: https://github.com/giorgioarcara/fingerprinting_tutorial_omega
+  linklabel: Repo
+
+# ── Projects: 03 Meta-science for neurorehabilitation ──────────────────
+# (none listed yet)

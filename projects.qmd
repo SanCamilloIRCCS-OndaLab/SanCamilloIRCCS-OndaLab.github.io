@@ -1,35 +1,91 @@
 ---
 title: "Projects"
-subtitle: "Funded projects"
+pagetitle: "Projects | ONDA Lab"
+description-meta: "ONDA Lab research lines and ongoing projects: measurement in clinical neuropsychology, neurophysiology from the Lab to the ward, and meta-science for neurorehabilitation."
 page-layout: full
-listing: 
-- id: projects
-  sort: "started desc"
-  type: table
-  fields: [image, title, author, subtitle, description, funding, started, ended]
-  grid-item-align: left
-  grid-columns: 3
-  image-height: 30px
-  field-display-names: 
-      title: "Title"
-      author: "Team"
-      subtitle: "Funder"
-      started: "Start"
-      ended: "End"
-      funding: "Funding"
-#  categories: true
-#  sort-ui: true
-#  filter-ui: true
-  contents: 
-#    - projects/ 
-    - projects.yml 
+toc: false
+page-navigation: false
+title-block-banner: false
+listing:
+  id: projects-list
+  contents: projects.yml
+  type: custom
+  template: projects-listing.ejs
+  sort: false
+  page-size: 200
+  categories: false
+  filter-ui: false
+  sort-ui: false
+css: projects.css
+filters: [remove-stray-divfence.lua]  # strips stray ":::" left by the EJS listing (same as outreach.qmd)
 ---
 
+<!--
+  Content lives in projects.yml (research lines + their ongoing projects).
+  The jump links in the hero are built from the bands by the script below.
+-->
 
-:::{#projects}
+::: {#projects}
+
+```{=html}
+<section class="hero-band">
+  <svg class="waves" viewBox="0 0 1440 420" preserveAspectRatio="none" aria-hidden="true">
+    <g><path d="M-80,140 C240,60 420,240 720,170 S1200,40 1520,120"/>
+       <path d="M-80,300 C300,220 520,380 820,300 S1260,200 1520,280"/></g>
+    <g><path d="M-80,220 C200,180 460,300 760,240 S1180,150 1520,200"/></g>
+  </svg>
+  <div class="hero-inner">
+    <span class="hero-kicker">Research lines</span>
+    <h1>Projects</h1>
+    <p class="intro">Three research lines connect our studies, tools and collaborations.
+      Each one lists the projects we are working on now.</p>
+    <nav class="pj-jump" aria-label="Research lines"></nav>
+  </div>
+</section>
+```
+
+::: {#projects-list}
 :::
 
-
-<!--Include social share buttons-->
-
+::: {.pj-share}
 {{< include /files/includes/_socialshare.qmd >}}
+:::
+
+:::
+
+```{=html}
+<script>
+(function () {
+  var root = document.getElementById("projects");
+  if (!root) return;
+  var bands = Array.prototype.slice.call(root.querySelectorAll(".pj-band"));
+
+  /* hero jump links, one per research line */
+  var nav = root.querySelector(".pj-jump");
+  if (nav) bands.forEach(function (b) {
+    var a = document.createElement("a");
+    a.href = "#" + b.id;
+    var num = b.querySelector(".pj-num"), title = b.querySelector(".pj-title");
+    a.innerHTML = '<span class="n"></span> ';
+    a.querySelector(".n").textContent = num ? num.textContent : "";
+    a.appendChild(document.createTextNode(title ? title.textContent : b.id));
+    nav.appendChild(a);
+  });
+
+  /* bands and project cards fade up as they scroll into view */
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    root.classList.add("pj-anim");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.remove("pj-pending"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -40px 0px" });
+    root.querySelectorAll(".pj-inner, .pj-card").forEach(function (el, i) {
+      el.classList.add("pj-pending");
+      if (el.classList.contains("pj-card")) el.style.transitionDelay = (i % 4) * 70 + "ms";
+      io.observe(el);
+    });
+  }
+})();
+</script>
+```

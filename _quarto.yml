@@ -35,6 +35,8 @@ website:
             href: lab-guides.qmd
       - text: Research
         menu:
+          - text: Projects  # research lines + ongoing projects (data in projects.yml)
+            href: projects.qmd
           - text: Publications Listing  # Automatically generated from publications.xlsx
             href: pub-listing.qmd
           # [RESTORE Publications] This is the only location to change — uncomment to restore the Publications navbar entry (links to publications.qmd)
@@ -42,8 +44,6 @@ website:
           #   href: publications.qmd
           # - text: Selected Papers  # Uncomment to restore the Selected Papers navbar entry
           #   href: posts.qmd#category=paper
-          # - text: Grants
-          #   href: projects.qmd
       - text: Resources # added by Giorgio
         menu:
           - text: Overview

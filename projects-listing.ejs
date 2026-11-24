@@ -1,0 +1,84 @@
+<%
+/*
+  projects-listing.ejs  —  Quarto custom listing template for projects.qmd
+  Data: projects.yml (field list at the top of that file).
+
+  Renders one full-width band per research line (kind: line, ordered by `number`),
+  each with its projects (kind: project, same `line` id, ordered by `order`)
+  and chips to the homepage "What we do" areas.
+
+  Notes (same conventions as outreach-listing.ejs)
+  - The '=' tag prints RAW, the '-' tag prints ESCAPED; all text goes through esc().
+  - Every band is built as a single HTML string printed on one line, because indented
+    lines in the template output would be read as Markdown code blocks by Pandoc.
+*/
+var AREAS = {
+  "clinical-tools":   { label: "Clinical tools",   icon: "bi-clipboard2-pulse", href: "resources/clinical-tools.html" },
+  "brain-meeg":       { label: "Brain & MEEG",     icon: "bi-activity",         href: "resources/brain-meeg.html" },
+  "open-pipelines":   { label: "Open pipelines",   icon: "bi-diagram-3",        href: "resources/open-pipelines.html" },
+  "analysis-methods": { label: "Analysis methods", icon: "bi-graph-up",         href: "resources/analysis-methods.html" }
+};
+var LINK_ICONS = { Repo: "bi-github", Website: "bi-globe2", App: "bi-window", Book: "bi-book",
+                   News: "bi-megaphone", Tutorial: "bi-mortarboard", Paper: "bi-file-earmark-text" };
+
+function esc(s) {
+  return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+function list(v) {
+  return Array.isArray(v) ? v : (v ? String(v).split(",").map(function (s) { return s.trim(); }) : []);
+}
+function newTab(url) { return /^https?:\/\//.test(String(url || "")); }
+function link(url, cls, inner) {
+  return '<a class="' + cls + '" href="' + esc(url) + '"' + (newTab(url) ? ' target="_blank" rel="noopener"' : '') + '>' + inner + '</a>';
+}
+function waves() {
+  return '<svg class="pj-waves" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">' +
+    '<g><path d="M-80,110 C240,40 420,200 720,140 S1200,30 1520,100"/>' +
+    '<path d="M-80,250 C300,180 520,320 820,250 S1260,160 1520,230"/></g>' +
+    '<g><path d="M-80,180 C200,150 460,250 760,200 S1180,120 1520,170"/></g></svg>';
+}
+
+function project(p) {
+  var label = p.linklabel || "Open";
+  var h = '<article class="pj-card">';
+  h += '<h4 class="pj-card-title">' + (p.link ? link(p.link, '', esc(p.title)) : esc(p.title)) + '</h4>';
+  h += '<p class="pj-card-desc">' + esc(p.description) + '</p>';
+  h += '<div class="pj-card-foot">';
+  if (p.link) h += link(p.link, 'pj-btn', '<i class="bi ' + (LINK_ICONS[label] || 'bi-box-arrow-up-right') + '"></i> ' + esc(label));
+  if (p.status) h += '<span class="pj-status">' + esc(p.status) + '</span>';
+  h += '</div></article>';
+  return h;
+}
+
+function band(line, i) {
+  var projs = items.filter(function (p) { return p.kind === "project" && p.line === line.id; })
+                   .sort(function (a, b) { return (Number(a.order) || 0) - (Number(b.order) || 0); });
+  var h = '<section class="pj-band pj-band--' + (i % 3 + 1) + '" id="' + esc(line.id) + '" aria-labelledby="' + esc(line.id) + '-h">';
+  h += waves();
+  h += '<div class="pj-inner">';
+  h += '<header class="pj-head"><span class="pj-num" aria-hidden="true">' + esc(line.number) + '</span>' +
+       '<span class="pj-icon" aria-hidden="true"><i class="bi bi-' + esc(line.icon) + '"></i></span>' +
+       '<div><span class="pj-kicker">Research line</span><h2 class="pj-title" id="' + esc(line.id) + '-h">' + esc(line.title) + '</h2></div></header>';
+  h += '<p class="pj-desc">' + esc(line.description) + '</p>';
+  if (projs.length) {
+    h += '<h3 class="pj-sub">What we are doing</h3>';
+    h += '<div class="pj-grid">' + projs.map(project).join('') + '</div>';
+  }
+  var areas = list(line.areas).filter(function (a) { return AREAS[a]; });
+  if (areas.length) {
+    h += '<div class="pj-areas"><span class="pj-areas-label">Related resources</span>' +
+         areas.map(function (a) {
+           return '<a class="pj-area" href="' + AREAS[a].href + '"><i class="bi ' + AREAS[a].icon + '"></i> ' + esc(AREAS[a].label) + '</a>';
+         }).join('') + '</div>';
+  }
+  h += '</div></section>';
+  return h;
+}
+
+var lines = items.filter(function (i) { return i.kind === "line"; })
+                 .sort(function (a, b) { return String(a.number).localeCompare(String(b.number)); });
+%>
+<div class="pj-lines list">
+<% lines.forEach(function (line, i) { %><%= band(line, i) %>
+<% }); %>
+</div>

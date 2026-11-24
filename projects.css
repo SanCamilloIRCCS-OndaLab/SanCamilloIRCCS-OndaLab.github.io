@@ -1,0 +1,160 @@
+/* projects.css — styles for projects.qmd + projects-listing.ejs
+   Hero band is the same as outreach.css (homepage look); one full-width band per research line. */
+
+#projects {
+  --pj-navy: #0f3b5f;
+  --pj-ink: #3d4a56;
+  --pj-muted: #6c7a86;
+  --pj-line: #d9e4ec;
+  --pj-card: #fff;
+  --pj-tint: #eef4f9;
+  --pj-accent: #1b5f8c;
+  --pj-band-1: #1b5f8c;   /* measurement */
+  --pj-band-2: #17806d;   /* lab to ward */
+  --pj-band-3: #7b3f9e;   /* meta-science */
+}
+body.quarto-dark #projects {
+  --pj-navy: #e9ecef;
+  --pj-ink: #ced4da;
+  --pj-muted: #9aa7b2;
+  --pj-line: #495057;
+  --pj-card: #2b3035;
+  --pj-tint: #23292f;
+  --pj-band-1: #5dade2;
+  --pj-band-2: #48c9b0;
+  --pj-band-3: #c39bd3;
+}
+
+body { overflow-x: hidden; }
+#title-block-header { display: none; }
+#projects .anchorjs-link, #projects .quarto-anchor { display: none !important; }
+
+/* ── Hero (as in outreach.css) ─────────────────────────────────────── */
+#projects .hero-band {
+  position: relative; left: 50%; transform: translateX(-50%); width: 100vw;
+  margin-top: -1.875rem; padding: 2.25rem 1rem 2.25rem; text-align: center; overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.75) 0%, rgba(255,255,255,0) 60%),
+    linear-gradient(160deg, #dcebf7 0%, #eaf3fa 45%, #f6f9fc 100%);
+  border-bottom: 1px solid #dbe7f0;
+}
+#projects .hero-band .waves { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+#projects .hero-band .waves path { fill: none; stroke: #1b4f72; stroke-width: 1.5; opacity: .09; }
+#projects .hero-band .waves g { animation: pj-drift 18s ease-in-out infinite alternate; }
+#projects .hero-band .waves g + g { animation-duration: 24s; animation-direction: alternate-reverse; }
+@keyframes pj-drift { from { transform: translateX(-3%); } to { transform: translateX(3%); } }
+
+#projects .hero-inner { position: relative; max-width: 900px; margin: 0 auto; }
+#projects .hero-kicker { display: inline-block; font-size: .85rem; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: #1b5f8c; margin-bottom: .35rem; }
+#projects .hero-band h1 { font-size: clamp(2rem, 4.5vw, 2.8rem); font-weight: 700; color: #0f3b5f;
+  margin: 0 0 .5rem; border: 0; }
+#projects .hero-band .intro { font-size: 1.2rem; color: #3d4a56; margin: 0 auto 1.25rem; text-wrap: balance; }
+
+#projects .pj-jump { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; }
+#projects .pj-jump a { display: inline-flex; align-items: center; gap: .45rem; padding: .45rem 1rem;
+  background: rgba(255,255,255,.75); border: 1px solid #d5e2ec; border-radius: 999px;
+  color: #0f3b5f; font-weight: 500; text-decoration: none; transition: background .15s ease, transform .15s ease; }
+#projects .pj-jump a:hover { background: #fff; transform: translateY(-2px); }
+#projects .pj-jump .n { font-weight: 700; font-variant-numeric: tabular-nums; color: #1b5f8c; }
+
+body.quarto-dark #projects .hero-band { border-bottom-color: #33414d;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(93,173,226,.12) 0%, rgba(93,173,226,0) 60%),
+    linear-gradient(160deg, #1e3242 0%, #1f2a34 50%, #222 100%); }
+body.quarto-dark #projects .hero-band .waves path { stroke: #5dade2; opacity: .14; }
+body.quarto-dark #projects .hero-band h1 { color: #e9ecef; }
+body.quarto-dark #projects .hero-kicker { color: #5dade2; }
+body.quarto-dark #projects .hero-band .intro { color: #ced4da; }
+body.quarto-dark #projects .pj-jump a { background: rgba(0,0,0,.25); border-color: #495057; color: #e9ecef; }
+body.quarto-dark #projects .pj-jump .n { color: #5dade2; }
+
+/* ── Research line bands ───────────────────────────────────────────── */
+#projects .pj-band {
+  --acc: var(--pj-band-1);
+  position: relative; left: 50%; transform: translateX(-50%); width: 100vw; overflow: hidden;
+  padding: 2.75rem 1rem 2.5rem; scroll-margin-top: 4.5rem;
+  background: var(--pj-card); border-bottom: 1px solid var(--pj-line);
+}
+#projects .pj-band:nth-child(even) { background: var(--pj-tint); }
+#projects .pj-band--2 { --acc: var(--pj-band-2); }
+#projects .pj-band--3 { --acc: var(--pj-band-3); }
+#projects .pj-band::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--acc); }
+
+/* background waves: drift slowly, grow stronger while the band is hovered or focused */
+#projects .pj-waves { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+#projects .pj-waves path { fill: none; stroke: var(--acc); stroke-width: 1.5; opacity: .1;
+  transition: opacity .4s ease, stroke-width .4s ease; }
+#projects .pj-waves g { animation: pj-drift 20s ease-in-out infinite alternate; transition: transform .6s ease; }
+#projects .pj-waves g + g { animation-duration: 26s; animation-direction: alternate-reverse; }
+#projects .pj-band:hover .pj-waves path,
+#projects .pj-band:focus-within .pj-waves path { opacity: .24; stroke-width: 2.2; }
+#projects .pj-band:hover .pj-waves g { animation-duration: 9s; }
+
+#projects .pj-inner { position: relative; width: min(1200px, 100%); margin: 0 auto;
+  transition: opacity .5s ease, translate .5s ease; }
+
+#projects .pj-head { display: flex; align-items: center; gap: 1rem; margin-bottom: .9rem; }
+#projects .pj-num { font-size: clamp(2.4rem, 5vw, 3.4rem); font-weight: 800; line-height: 1; color: var(--acc);
+  opacity: .35; font-variant-numeric: tabular-nums; transition: opacity .3s ease; }
+#projects .pj-band:hover .pj-num { opacity: .7; }
+#projects .pj-icon { flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 3rem; height: 3rem; border-radius: 50%; font-size: 1.4rem; color: var(--acc);
+  background: color-mix(in srgb, var(--acc) 14%, transparent); transition: transform .3s ease; }
+#projects .pj-band:hover .pj-icon { transform: scale(1.08) rotate(-6deg); }
+#projects .pj-kicker { display: block; font-size: .78rem; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--acc); }
+#projects .pj-title { font-size: clamp(1.45rem, 3vw, 1.95rem); font-weight: 700; color: var(--pj-navy);
+  margin: 0; border: 0; padding: 0; }
+#projects .pj-desc { max-width: 62rem; font-size: 1.1rem; line-height: 1.6; color: var(--pj-ink); margin: 0 0 1.5rem; }
+
+/* ── "What we are doing": project cards ────────────────────────────── */
+#projects .pj-sub { font-size: 1rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--pj-muted); margin: 0 0 .8rem; border: 0; }
+#projects .pj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+#projects .pj-card { display: flex; flex-direction: column; padding: 1rem 1.1rem; background: var(--pj-card);
+  border: 1px solid var(--pj-line); border-top: 3px solid var(--acc); border-radius: 10px;
+  transition: box-shadow .2s ease, transform .2s ease, opacity .45s ease, translate .45s ease; }
+#projects .pj-band:nth-child(even) .pj-card { background: var(--pj-card); }
+#projects .pj-card:hover { box-shadow: 0 10px 24px rgba(15,59,95,.13); transform: translateY(-3px); }
+body.quarto-dark #projects .pj-card:hover { box-shadow: 0 10px 24px rgba(0,0,0,.45); }
+#projects .pj-card-title { font-size: 1.1rem; font-weight: 700; margin: 0 0 .35rem; color: var(--pj-navy); }
+#projects .pj-card-title a { color: var(--pj-navy); font-weight: 700; text-decoration: none; }
+#projects .pj-card-title a:hover { text-decoration: underline; }
+#projects .pj-card-desc { font-size: .95rem; line-height: 1.45; color: var(--pj-ink); margin: 0 0 .8rem; }
+#projects .pj-card-foot { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin-top: auto; }
+#projects .pj-btn { display: inline-flex; align-items: center; gap: .3rem; padding: .25rem .75rem; font-size: .85rem;
+  border: 1px solid var(--acc); border-radius: 8px; color: var(--acc); text-decoration: none;
+  transition: background .15s ease, color .15s ease; }
+#projects .pj-btn:hover { background: var(--acc); color: #fff; }
+body.quarto-dark #projects .pj-btn:hover { color: #1b1f23; }
+#projects .pj-status { padding: .1rem .55rem; font-size: .78rem; font-weight: 600; border-radius: 999px;
+  color: #7a5200; background: #ffe7a3; }
+body.quarto-dark #projects .pj-status { color: #1b1f23; background: #f0b25a; }
+
+/* ── Related areas (homepage "What we do" cards) ───────────────────── */
+#projects .pj-areas { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; }
+#projects .pj-areas-label { font-size: .85rem; color: var(--pj-muted); margin-right: .2rem; }
+#projects .pj-area { display: inline-flex; align-items: center; gap: .35rem; padding: .3rem .85rem; font-size: .9rem;
+  border: 1px solid var(--pj-line); border-radius: 999px; background: var(--pj-card); color: var(--pj-navy);
+  text-decoration: none; transition: border-color .15s ease, transform .15s ease; }
+#projects .pj-area i { color: var(--acc); }
+#projects .pj-area:hover { border-color: var(--acc); transform: translateY(-1px); }
+
+#projects .pj-share { width: min(1200px, 100%); margin: 1.5rem auto 0; }
+
+/* ── Entrance animation ────────────────────────────────────────────── */
+#projects.pj-anim .pj-pending { opacity: 0; translate: 0 14px; }
+
+@media (max-width: 575.98px) {
+  #projects .pj-band { padding: 2rem 16px 1.75rem; }
+  #projects .pj-head { gap: .7rem; }
+  #projects .pj-num { display: none; }
+  #projects .pj-desc { font-size: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #projects .hero-band .waves g, #projects .pj-waves g { animation: none; }
+  #projects .pj-card, #projects .pj-inner, #projects .pj-icon, #projects .pj-jump a { transition: none; }
+  #projects.pj-anim .pj-pending { opacity: 1; translate: none; }
+}

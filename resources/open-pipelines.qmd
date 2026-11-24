@@ -13,28 +13,6 @@ analysis code listed below is already available.
 :::
 
 
-## ERP Go/No-Go pipeline
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-2}
-[![](/files/images/ONDA_waves.png)](https://github.com/giorgioarcara/ERP_Go-Nogo_Pipeline)
-
-:::
-
-::: {.g-col-12 .g-col-md-10}
-[ERP_Go-Nogo_Pipeline](https://github.com/giorgioarcara/ERP_Go-Nogo_Pipeline)
-collects MATLAB scripts to preprocess EEG data from a Go/No-Go task and extract
-the event-related potentials of Go and No-Go trials: cleaning, epoching around
-stimulus events and ERP extraction.
-
-_Development stage:_ work in progress
-
-:::
-
-:::
-
-
 ## EEG signal processing
 
 ::: {.grid}

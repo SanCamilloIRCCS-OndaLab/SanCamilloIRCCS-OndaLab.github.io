@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Gang He">
-<meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
+<meta name="description" content="ONDA Lab research lines and ongoing projects: measurement in clinical neuropsychology, neurophysiology from the Lab to the ward, and meta-science for neurorehabilitation.">
 
-<title>Projects – Onda Lab</title>
+<title>Projects | ONDA Lab – Onda Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,20 +77,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-projects .list');
+    const listingTargetEl = window.document.querySelector('#listing-projects-list .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-author','listing-subtitle','listing-description','listing-funding','listing-started','listing-ended',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-kind','listing-id','listing-number','listing-title','listing-icon','listing-description','listing-areas','listing-line','listing-order','listing-link','listing-linklabel','listing-status',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-image","listing-title","listing-author","listing-subtitle","listing-description","listing-started","listing-ended","listing-funding"],
+      searchColumns: ["listing-kind","listing-id","listing-number","listing-title","listing-icon","listing-description","listing-areas","listing-line","listing-order","listing-link","listing-linklabel","listing-status"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
+    window['quarto-listings']['listing-projects-list'] = new List('listing-projects-list', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -167,13 +167,12 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Projects – Onda Lab">
-<meta property="og:description" content="Funded projects">
-<meta property="og:image" content="https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/2023-10/NSF_Official_logo_Med_Res_600ppi_rectangle.png">
+<link rel="stylesheet" href="projects.css">
+<meta property="og:title" content="Projects | ONDA Lab">
+<meta property="og:image" content="https://quarto.org/quarto.png">
 <meta property="og:site_name" content="Onda Lab">
-<meta name="twitter:title" content="Projects – Onda Lab">
-<meta name="twitter:description" content="Funded projects">
-<meta name="twitter:image" content="https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/2023-10/NSF_Official_logo_Med_Res_600ppi_rectangle.png">
+<meta name="twitter:title" content="Projects | ONDA Lab">
+<meta name="twitter:image" content="https://quarto.org/quarto.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -394,6 +393,10 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
         <li>
+    <a class="dropdown-item" href="./projects.html">
+ <span class="dropdown-text">Projects</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./pub-listing.html">
  <span class="dropdown-text">Publications Listing</span></a>
   </li>  
@@ -458,9 +461,7 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
@@ -468,7 +469,6 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Projects</h1>
-<p class="subtitle lead">Funded projects</p>
 </div>
 
 
@@ -485,116 +485,206 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-projects" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-projects-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-projects'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-image" data-direction="asc">
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Team
-      </option>
-      <option value="listing-subtitle" data-direction="asc">
-        Funder
-      </option>
-      <option value="listing-description" data-direction="asc">
-        Description
-      </option>
-      <option value="listing-started" data-direction="asc">
-        Start
-      </option>
-      <option value="listing-ended" data-direction="asc">
-        End
-      </option>
-      <option value="listing-funding" data-direction="asc">
-        Funding
-      </option>
-    </select>
+<!--
+  Content lives in projects.yml (research lines + their ongoing projects).
+  The jump links in the hero are built from the bands by the script below.
+-->
+<div id="projects">
+<section class="hero-band">
+  <svg class="waves" viewbox="0 0 1440 420" preserveaspectratio="none" aria-hidden="true">
+    <g><path d="M-80,140 C240,60 420,240 720,170 S1200,40 1520,120"></path>
+       <path d="M-80,300 C300,220 520,380 820,300 S1260,200 1520,280"></path></g>
+    <g><path d="M-80,220 C200,180 460,300 760,240 S1180,150 1520,200"></path></g>
+  </svg>
+  <div class="hero-inner">
+    <span class="hero-kicker">Research lines</span>
+    <h1>Projects</h1>
+    <p class="intro">Three research lines connect our studies, tools and collaborations.
+      Each one lists the projects we are working on now.</p>
+    <nav class="pj-jump" aria-label="Research lines"></nav>
   </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+</section>
+<div id="listing-projects-list" class="quarto-listing quarto-listing-container-custom">
+<div class="pj-lines list">
+<section class="pj-band pj-band--1" id="measurement" aria-labelledby="measurement-h">
+<svg class="pj-waves" viewbox="0 0 1440 320" preserveaspectratio="none" aria-hidden="true">
+<g><path d="M-80,110 C240,40 420,200 720,140 S1200,30 1520,100"></path><path d="M-80,250 C300,180 520,320 820,250 S1260,160 1520,230"></path></g><g><path d="M-80,180 C200,150 460,250 760,200 S1180,120 1520,170"></path></g>
+</svg>
+<div class="pj-inner">
+<header class="pj-head">
+<span class="pj-num" aria-hidden="true">01</span><span class="pj-icon" aria-hidden="true"><i class="bi bi-rulers"></i></span>
+<div>
+<span class="pj-kicker">Research line</span>
+<h2 class="pj-title anchored" id="measurement-h">
+Better measurement in clinical neuropsychology
+</h2>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-image" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;"> </a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Team</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-subtitle" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Funder</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-description" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Description</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-funding" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Funding</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-started" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Start</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-ended" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">End</a>
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-title-sort="Exploring ">
-<td>
-<span class="listing-image"><img loading="lazy" src="https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/2023-10/NSF_Official_logo_Med_Res_600ppi_rectangle.png" style="height: 30px;"></span>
-</td>
-<td>
-<a href="https://www.nsf.gov/" class="title listing-title">Exploring </a>
-</td>
-<td>
-<span class="listing-author">Academic Website</span>
-</td>
-<td>
-<span class="listing-subtitle">Funder</span>
-</td>
-<td>
-<span class="listing-description">The goal of this project is to investigate .</span>
-</td>
-<td>
-<span class="listing-funding">$0</span>
-</td>
-<td>
-<span class="listing-started">2024</span>
-</td>
-<td>
-<span class="listing-ended">2025</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
+</header>
+<p class="pj-desc">
+Neuropsychological tests drive decisions about real patients, so their scores must be trustworthy. We develop new psychometric tests and improve how existing ones are built, normed and interpreted. We work side by side with clinicians to understand the problems they meet in everyday practice and to design solutions they can actually use, and we share what we learn beyond scientific papers, for example in an open book. Our current work focuses on tools to derive clinical cut-offs, methods to track change over time in individual patients (for example in neurodegenerative diseases), and better standards for reporting test results. We are also developing an R package that makes psychometric and statistical methods easier to apply in clinical neuropsychology.
+</p>
+<h3 class="pj-sub anchored">
+What we are doing
+</h3>
+<div class="pj-grid">
+<article class="pj-card">
+<h4 class="pj-card-title anchored">
+<a class="" href="./posts/news-title/aurora-grant.html">AURORA</a>
+</h4>
+<p class="pj-card-desc">
+A digital cognitive assessment for people treated for cancer, with Italian norms and cut-offs (Regione Veneto grant).
+</p>
+<div class="pj-card-foot">
+<a class="pj-btn" href="./posts/news-title/aurora-grant.html"><i class="bi bi-megaphone"></i> News</a>
+</div>
+</article>
+<article class="pj-card">
+<h4 class="pj-card-title anchored">
+<a class="" href="https://github.com/giorgioarcara/cnp" target="_blank" rel="noopener">cnp</a>
+</h4>
+<p class="pj-card-desc">
+An R package for normative data and psychometric methods in clinical neuropsychology.
+</p>
+<div class="pj-card-foot">
+<a class="pj-btn" href="https://github.com/giorgioarcara/cnp" target="_blank" rel="noopener"><i class="bi bi-github"></i> Repo</a>
+</div>
+</article>
+<article class="pj-card">
+<h4 class="pj-card-title anchored">
+<a class="" href="https://giorgioarcara.shinyapps.io/Reg-Method-App/" target="_blank" rel="noopener">Improving Equivalent Scores</a>
+</h4>
+<p class="pj-card-desc">
+Regression-based normative data and model selection, with an online app; recently extended to percentile ranks.
+</p>
+<div class="pj-card-foot">
+<a class="pj-btn" href="https://giorgioarcara.shinyapps.io/Reg-Method-App/" target="_blank" rel="noopener"><i class="bi bi-window"></i> App</a>
+</div>
+</article>
+<article class="pj-card">
+<h4 class="pj-card-title anchored">
+<a class="" href="https://giorgioarcara.github.io/oip-book/" target="_blank" rel="noopener">Oltre i punteggi</a>
+</h4>
+<p class="pj-card-desc">
+An open book (in Italian) on psychometrics and statistics for clinical neuropsychology.
+</p>
+<div class="pj-card-foot">
+<a class="pj-btn" href="https://giorgioarcara.github.io/oip-book/" target="_blank" rel="noopener"><i class="bi bi-book"></i> Book</a>
+</div>
+</article>
+<article class="pj-card">
+<h4 class="pj-card-title anchored">
+Reliable change in individual patients
+</h4>
+<p class="pj-card-desc">
+Simulations comparing Reliable Change Index methods, including ICC-based variants, to detect cognitive change over time.
+</p>
+<div class="pj-card-foot">
+<span class="pj-status">in progress</span>
+</div>
+</article>
+</div>
+<div class="pj-areas">
+<span class="pj-areas-label">Related resources</span><a class="pj-area" href="resources/clinical-tools.html"><i class="bi bi-clipboard2-pulse"></i> Clinical tools</a><a class="pj-area" href="resources/analysis-methods.html"><i class="bi bi-graph-up"></i> Analysis methods</a>
+</div>
+</div>
+</section>
+<section class="pj-band pj-band--2" id="lab-to-ward" aria-labelledby="lab-to-ward-h">
+<svg class="pj-waves" viewbox="0 0 1440 320" preserveaspectratio="none" aria-hidden="true">
+<g><path d="M-80,110 C240,40 420,200 720,140 S1200,30 1520,100"></path><path d="M-80,250 C300,180 520,320 820,250 S1260,160 1520,230"></path></g><g><path d="M-80,180 C200,150 460,250 760,200 S1180,120 1520,170"></path></g>
+</svg>
+<div class="pj-inner">
+<header class="pj-head">
+<span class="pj-num" aria-hidden="true">02</span><span class="pj-icon" aria-hidden="true"><i class="bi bi-activity"></i></span>
+<div>
+<span class="pj-kicker">Research line</span>
+<h2 class="pj-title anchored" id="lab-to-ward-h">
+Neurophysiology from the Lab to the ward
+</h2>
+</div>
+</header>
+<p class="pj-desc">
+EEG and MEG measure brain activity directly, non-invasively and with millisecond precision, and EEG is inexpensive and portable enough to reach the bedside. We believe these techniques can do much more for patients than they do today. While we study how the brain supports cognition and behaviour, we ask which neurophysiological markers are reliable enough to support diagnosis, prognosis and rehabilitation, and we test them in clinical populations. For this to work, analyses must be robust and transparent: we build open pipelines, use multiverse analyses to show how results depend on analytic choices, and write tutorials so that other labs and clinicians can reproduce and use our methods.
+</p>
+<h3 class="pj-sub anchored">
+What we are doing
+</h3>
+<div class="pj-grid">
+<article class="pj-card">
+<h4 class="pj-card-title anchored">
+<a class="" href="https://sancamilloirccs-ondalab.github.io/Herbert/" target="_blank" rel="noopener">Herbert</a>
+</h4>
+<p class="pj-card-desc">
+An open-source toolbox for modular, multiverse pipelines of resting-state M/EEG connectivity and network analysis.
+</p>
+<div class="pj-card-foot">
+<a class="pj-btn" href="https://sancamilloirccs-ondalab.github.io/Herbert/" target="_blank" rel="noopener"><i class="bi bi-globe2"></i> Website</a>
+</div>
+</article>
+<article class="pj-card">
+<h4 class="pj-card-title anchored">
+<a class="" href="https://github.com/giorgioarcara/Gondola" target="_blank" rel="noopener">Gondola</a>
+</h4>
+<p class="pj-card-desc">
+A Matlab toolbox for brain network analysis.
+</p>
+<div class="pj-card-foot">
+<a class="pj-btn" href="https://github.com/giorgioarcara/Gondola" target="_blank" rel="noopener"><i class="bi bi-github"></i> Repo</a>
+</div>
+</article>
+<article class="pj-card">
+<h4 class="pj-card-title anchored">
+<a class="" href="https://sancamilloirccs-ondalab.github.io/tutorial_EEG-NPSY/" target="_blank" rel="noopener">EEG-NPSY tutorial</a>
+</h4>
+<p class="pj-card-desc">
+A tutorial on EEG analysis with code in Python, R and Matlab.
+</p>
+<div class="pj-card-foot">
+<a class="pj-btn" href="https://sancamilloirccs-ondalab.github.io/tutorial_EEG-NPSY/" target="_blank" rel="noopener"><i class="bi bi-mortarboard"></i> Tutorial</a>
+</div>
+</article>
+<article class="pj-card">
+<h4 class="pj-card-title anchored">
+<a class="" href="https://github.com/giorgioarcara/fingerprinting_tutorial_omega" target="_blank" rel="noopener">MEG fingerprinting tutorial</a>
+</h4>
+<p class="pj-card-desc">
+Code to reproduce how the head model affects MEG-derived functional connectivity fingerprinting.
+</p>
+<div class="pj-card-foot">
+<a class="pj-btn" href="https://github.com/giorgioarcara/fingerprinting_tutorial_omega" target="_blank" rel="noopener"><i class="bi bi-github"></i> Repo</a>
+</div>
+</article>
+</div>
+<div class="pj-areas">
+<span class="pj-areas-label">Related resources</span><a class="pj-area" href="resources/brain-meeg.html"><i class="bi bi-activity"></i> Brain &amp; MEEG</a><a class="pj-area" href="resources/open-pipelines.html"><i class="bi bi-diagram-3"></i> Open pipelines</a>
+</div>
+</div>
+</section>
+<section class="pj-band pj-band--3" id="metascience" aria-labelledby="metascience-h">
+<svg class="pj-waves" viewbox="0 0 1440 320" preserveaspectratio="none" aria-hidden="true">
+<g><path d="M-80,110 C240,40 420,200 720,140 S1200,30 1520,100"></path><path d="M-80,250 C300,180 520,320 820,250 S1260,160 1520,230"></path></g><g><path d="M-80,180 C200,150 460,250 760,200 S1180,120 1520,170"></path></g>
+</svg>
+<div class="pj-inner">
+<header class="pj-head">
+<span class="pj-num" aria-hidden="true">03</span><span class="pj-icon" aria-hidden="true"><i class="bi bi-diagram-3"></i></span>
+<div>
+<span class="pj-kicker">Research line</span>
+<h2 class="pj-title anchored" id="metascience-h">
+Meta-science for neurorehabilitation
+</h2>
+</div>
+</header>
+<p class="pj-desc">
+Rehabilitation is crucial for patients, and its evidence comes from trials. To really improve rehabilitation we need to improve that evidence: shared research plans, adequately powered studies, better reporting standards, and close collaboration with clinicians from design to interpretation. It also takes policies, for example on data sharing, so that individual participant data (IPD) can be pooled across studies. In turn, sound statistical methods and alternative designs, such as observational studies of clinical data, can become part of routine clinical practice.
+</p>
+<div class="pj-areas">
+<span class="pj-areas-label">Related resources</span><a class="pj-area" href="resources/analysis-methods.html"><i class="bi bi-graph-up"></i> Analysis methods</a>
+</div>
+</div>
+</section>
+</div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-<!--Include social share buttons-->
+<div class="pj-share">
 <!-- 
 AddToAny check more: https://www.addtoany.com/buttons/for/website 
 Using includes will make edits easier, will only need to add or remove button here if needed.
@@ -604,6 +694,42 @@ https://quarto.org/docs/authoring/includes.html
 <p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
 </div>
 <script async="" src="https://static.addtoany.com/menu/page.js"></script>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById("projects");
+  if (!root) return;
+  var bands = Array.prototype.slice.call(root.querySelectorAll(".pj-band"));
+
+  /* hero jump links, one per research line */
+  var nav = root.querySelector(".pj-jump");
+  if (nav) bands.forEach(function (b) {
+    var a = document.createElement("a");
+    a.href = "#" + b.id;
+    var num = b.querySelector(".pj-num"), title = b.querySelector(".pj-title");
+    a.innerHTML = '<span class="n"></span> ';
+    a.querySelector(".n").textContent = num ? num.textContent : "";
+    a.appendChild(document.createTextNode(title ? title.textContent : b.id));
+    nav.appendChild(a);
+  });
+
+  /* bands and project cards fade up as they scroll into view */
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    root.classList.add("pj-anim");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.remove("pj-pending"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -40px 0px" });
+    root.querySelectorAll(".pj-inner, .pj-card").forEach(function (el, i) {
+      el.classList.add("pj-pending");
+      if (el.classList.contains("pj-card")) el.style.transitionDelay = (i % 4) * 70 + "ms";
+      io.observe(el);
+    });
+  }
+})();
+</script>
 
 
 
