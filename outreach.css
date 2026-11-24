@@ -9,6 +9,7 @@
   --ol-card: #fff;
   --ol-tint: #eef4f9;
   --ol-talk: #1b5f8c;
+  --ol-course: #b03a48;
   --ol-guide: #17806d;
   --ol-tutorial: #a8620a;
   --ol-book: #7b3f9e;
@@ -22,6 +23,7 @@ body.quarto-dark #outreach {
   --ol-card: #2b3035;
   --ol-tint: #23292f;
   --ol-talk: #5dade2;
+  --ol-course: #f1948a;
   --ol-guide: #48c9b0;
   --ol-tutorial: #f0b25a;
   --ol-book: #c39bd3;
@@ -90,6 +92,7 @@ body.quarto-dark #outreach .stats span { color: #adb5bd; }
 body.quarto-dark #outreach .ol-card:hover { box-shadow: 0 12px 28px rgba(0,0,0,.45); }
 #outreach .ol-card--feat { border-top: 4px solid var(--ol-talk); }
 #outreach .ol-card--feat[data-type="Guide"] { border-top-color: var(--ol-guide); }
+#outreach .ol-card--feat[data-type="Course"] { border-top-color: var(--ol-course); }
 #outreach .ol-card--feat[data-type="Tutorial"] { border-top-color: var(--ol-tutorial); }
 #outreach .ol-card--feat[data-type="Book"] { border-top-color: var(--ol-book); }
 
@@ -105,6 +108,7 @@ body.quarto-dark #outreach .ol-thumb { background: radial-gradient(circle at 30%
 #outreach .ol-type { position: absolute; top: .6rem; left: .6rem; padding: .15rem .6rem; border-radius: 999px;
   font-size: .78rem; font-weight: 600; letter-spacing: .02em; color: #fff; background: var(--ol-talk); }
 #outreach .ol-type--guide { background: var(--ol-guide); }
+#outreach .ol-type--course { background: var(--ol-course); }
 #outreach .ol-type--tutorial { background: var(--ol-tutorial); }
 #outreach .ol-type--book { background: var(--ol-book); }
 body.quarto-dark #outreach .ol-type { color: #1b1f23; }
@@ -141,6 +145,7 @@ body.quarto-dark #outreach .ol-btn--main:hover { background: #85c1e9; border-col
 #outreach .ol-chip.is-active { background: var(--ol-navy); border-color: var(--ol-navy); color: var(--ol-card); }
 #outreach .ol-chip--talk.is-active { background: var(--ol-talk); border-color: var(--ol-talk); }
 #outreach .ol-chip--guide.is-active { background: var(--ol-guide); border-color: var(--ol-guide); }
+#outreach .ol-chip--course.is-active { background: var(--ol-course); border-color: var(--ol-course); }
 #outreach .ol-chip--tutorial.is-active { background: var(--ol-tutorial); border-color: var(--ol-tutorial); }
 #outreach .ol-chip--book.is-active { background: var(--ol-book); border-color: var(--ol-book); }
 #outreach .ol-n { display: inline-block; min-width: 1.4em; margin-left: .2rem; font-size: .78rem; font-weight: 600; opacity: .75; }

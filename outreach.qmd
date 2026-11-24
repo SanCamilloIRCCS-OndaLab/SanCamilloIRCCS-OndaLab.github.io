@@ -1,7 +1,7 @@
 ---
 title: "Outreach"
 pagetitle: "Outreach | ONDA Lab"
-description-meta: "Talks, guides, tutorials and books by ONDA Lab: open slides and materials on coding, open science, neuropsychology and data analysis."
+description-meta: "Talks, courses, guides, tutorials and books by ONDA Lab: open slides and materials on coding, open science, neuropsychology and data analysis."
 page-layout: full
 toc: false
 page-navigation: false
@@ -21,7 +21,7 @@ filters: [remove-stray-divfence.lua]  # strips stray ":::" left by the EJS listi
 ---
 
 <!--
-  Content lives in outreach.yml (one entry per talk / guide / tutorial).
+  Content lives in outreach.yml (one entry per talk / course / guide / tutorial / book).
   After adding an entry, run:  python scripts/outreach_thumbs.py   to create its thumbnail.
 -->
 
@@ -37,11 +37,12 @@ filters: [remove-stray-divfence.lua]  # strips stray ":::" left by the EJS listi
   <div class="hero-inner">
     <span class="hero-kicker">Open slides &amp; materials</span>
     <h1>Outreach</h1>
-    <p class="intro">Talks, guides, tutorials and books from the Lab, on coding, open science, neuropsychology
+    <p class="intro">Talks, courses, guides, tutorials and books from the Lab, on coding, open science, neuropsychology
       and data analysis. Everything is free to browse, and most of it lives on
       <a href="https://github.com/giorgioarcara" target="_blank" rel="noopener">GitHub</a>.</p>
     <ul class="stats" aria-label="Materials on this page">
       <li><b data-stat="Talk">0</b><span>talks</span></li>
+      <li><b data-stat="Course">0</b><span>courses</span></li>
       <li><b data-stat="Guide">0</b><span>guides</span></li>
       <li><b data-stat="Tutorial">0</b><span>tutorials</span></li>
       <li><b data-stat="Book">0</b><span>books</span></li>

@@ -14,7 +14,7 @@
     lines in the template output would be read as Markdown code blocks by Pandoc.
   - The grid wrapper keeps class="list" and metadataAttrs(item) for Quarto/List.js compatibility.
 */
-var TYPES = ["Talk", "Guide", "Tutorial", "Book"];
+var TYPES = ["Talk", "Course", "Guide", "Tutorial", "Book"];
 var LANGS = { "English": "EN", "Italiano": "IT" };
 
 function esc(s) {
@@ -42,7 +42,7 @@ function link(url, cls, inner, extra) {
 function card(item, feat, attrs) {
   var t = typeOf(item);
   var langs = langsOf(item);
-  var isSlides = t === "Talk" || /slides/i.test(String(item.path || ""));
+  var isSlides = t === "Talk" || t === "Course" || /slides/i.test(String(item.path || ""));
   var label = item.mainlabel || (t === "Book" ? 'Read' : isSlides ? 'Slides' : 'Open');
   var icon = /slides/i.test(label) ? 'bi-easel' : t === "Book" ? 'bi-book' : 'bi-file-earmark-text';
   var main = '<i class="bi ' + icon + '"></i> ' + esc(label);
@@ -92,7 +92,7 @@ var chipsLang = '<button type="button" class="ol-chip is-active" aria-pressed="t
 <div class="ol-toolbar" role="toolbar" aria-label="Filter materials">
 <div class="ol-chips" data-group="type"><%= chipsType %></div>
 <div class="ol-chips" data-group="lang"><%= chipsLang %></div>
-<label class="ol-search"><i class="bi bi-search" aria-hidden="true"></i><input type="search" placeholder="Search talks, guides, tutorials, books…" aria-label="Search materials"></label>
+<label class="ol-search"><i class="bi bi-search" aria-hidden="true"></i><input type="search" placeholder="Search talks, courses, guides, tutorials, books…" aria-label="Search materials"></label>
 </div>
 <div class="ol-grid ol-all list">
 <% items.forEach(function (item) { %><%= card(item, false, metadataAttrs(item)) %>

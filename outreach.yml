@@ -5,7 +5,7 @@
 #   title        shown on the card
 #   description  one or two sentences
 #   date         YYYY-MM-DD (only the year is shown on the card)
-#   categories   [<Type>, <Language>]   Type: Talk | Guide | Tutorial | Book   Language: English | Italiano
+#   categories   [<Type>, <Language>]   Type: Talk | Course | Guide | Tutorial | Book   Language: English | Italiano
 #   path         main link (the "Slides" button): a URL outside this repo, never /files/...:
 #                  PDF -> GitHub release asset, https://github.com/<u>/<repo>/releases/latest/download/<file>.pdf
 #                         (or a GitHub blob URL if the PDF is tracked in its repo)
@@ -150,7 +150,7 @@
   title: "Human Electrophysiology: analysing EEG/MEG data (course)"
   description: "A full university course on EEG and MEG data analysis, with recorded lessons and slides: artifacts, filters and ICA, ERPs, time-frequency, MEG source estimation, connectivity and networks, plus practical recommendations. Comes with code examples on signal processing."
   date: "2020-01-01"
-  categories: [Tutorial, English]
+  categories: [Course, English]
   path: https://drive.google.com/drive/folders/1DaWSZOFCPsbKHtQVnJeNfAXik8pNHl6B
   mainlabel: "Slides"
   videos: https://drive.google.com/drive/folders/1CvtG6w-T3CO94-Iu_Dp0lzC91gkSIkRZ
@@ -196,3 +196,123 @@
   categories: [Tutorial, Italiano]
   path: https://giorgioarcara.github.io/files/DMDX_tutorial%20(1).pdf
   image: /files/images/outreach/dmdx.png
+
+# --- Courses (slide series; PDFs attached to each repo's latest release) ---
+
+- id: applied-psychometrics
+  title: "Applied Psychometrics (course)"
+  description: "Slides of a university course (University of Padua) on psychometrics for studying subclinical psychopathologies: tests and measurement, classical test theory and IRT, validity, reliability, factor analysis, normative data and thresholds, ROC analysis, Bayesian reasoning, detecting change and test interpretation."
+  date: "2026-05-08"
+  categories: [Course, English]
+  path: https://github.com/giorgioarcara/Slides-Applied-Psychometrics/releases/latest
+  mainlabel: "Slides"
+  thumbfrom: https://github.com/giorgioarcara/Slides-Applied-Psychometrics/releases/latest/download/00_Introduction.pdf
+  image: /files/images/outreach/applied-psychometrics.png
+  repo: https://github.com/giorgioarcara/Slides-Applied-Psychometrics
+
+- id: metodologia-ricerca-clinica
+  title: "Metodologia della ricerca clinica (corso)"
+  description: "Le slides del corso per la Scuola di Specializzazione in Neuropsicologia (Università di Padova): test e misurazione, scelta dei test, validità e affidabilità, valutare deficit e danni, simulazione e validità di performance, interpretazione, disegni di ricerca clinica, studi correlazionali e causalità, review e meta-analisi."
+  date: "2026-05-16"
+  categories: [Course, Italiano]
+  path: https://github.com/giorgioarcara/Slides-Metodologia-Ricerca-Clinica/releases/latest
+  mainlabel: "Slides"
+  thumbfrom: https://github.com/giorgioarcara/Slides-Metodologia-Ricerca-Clinica/releases/latest/download/01-Introduzione.pdf
+  image: /files/images/outreach/metodologia-ricerca-clinica.png
+  repo: https://github.com/giorgioarcara/Slides-Metodologia-Ricerca-Clinica
+
+- id: misurazioni-neuropsicologiche
+  title: "Misurazioni neuropsicologiche (corso)"
+  description: "Le slides di un modulo di Master (Università di Padova) sulla misurazione in neuropsicologia: dati normativi, percentili e soglie, punteggi equivalenti, con esempi in R."
+  date: "2026-07-24"
+  categories: [Course, Italiano]
+  path: https://github.com/giorgioarcara/slides-misurazioni-neuropsicologiche/releases/latest
+  mainlabel: "Slides"
+  thumbfrom: https://github.com/giorgioarcara/slides-misurazioni-neuropsicologiche/releases/latest/download/01-Misurazione_in_neuropsicologia.pdf
+  image: /files/images/outreach/misurazioni-neuropsicologiche.png
+  repo: https://github.com/giorgioarcara/slides-misurazioni-neuropsicologiche
+
+- id: forense
+  title: "Metodi statistici per la neuropsicologia forense (corso)"
+  description: "Le slides del corso universitario (Università di Padova) sui metodi statistici alla base della valutazione neuropsicologica forense: validità e affidabilità, confronto con i dati normativi, identificare condizioni di interesse, simulazione e validità di performance, scelta dei test e interpretazione. Con lezioni di Sara Lago."
+  date: "2026-11-07"
+  categories: [Course, Italiano]
+  path: https://github.com/giorgioarcara/Slides-Metodi-Statistici-Neuropsi-Forense/releases/latest
+  mainlabel: "Slides"
+  thumbfrom: https://github.com/giorgioarcara/Slides-Metodi-Statistici-Neuropsi-Forense/releases/latest/download/01-Introduzione.pdf
+  image: /files/images/outreach/forense.png
+  repo: https://github.com/giorgioarcara/Slides-Metodi-Statistici-Neuropsi-Forense
+
+- id: psicometria-pratica-clinica
+  title: "Psicometria per la pratica clinica (corso)"
+  description: "Un corso (Spazio Iris, 2025) su come valutare le qualità psicometriche dei test, leggere in modo critico standardizzazioni e tavole normative italiane e integrare i risultati ai test con le altre informazioni cliniche."
+  date: "2025-11-29"
+  categories: [Course, Italiano]
+  path: https://github.com/giorgioarcara/Slides-Spazio-Iris-2025/releases/latest/download/01-Spazio-Iris-Arcara-2025-Psicometria-per-la-pratica-clinica_nopause.pdf
+  image: /files/images/outreach/psicometria-pratica-clinica.png
+  repo: https://github.com/giorgioarcara/Slides-Spazio-Iris-2025
+
+# --- Talks ---
+
+- id: stiamo-misurando
+  title: "Stiamo veramente misurando quello che ci interessa? Riflessioni sul testing neuropsicologico"
+  description: "Riflessioni sulla validità dei test neuropsicologici usati in Italia, a partire da casi concreti come il MoCA: perché le proprietà di misura sono spesso trascurate e come muoversi da qui."
+  date: "2025-10-09"
+  categories: [Talk, Italiano]
+  path: https://github.com/giorgioarcara/2025-Spazio-Iris-Misurazione/releases/latest/download/2025-Spazio-Iris-Misurazione.pdf
+  image: /files/images/outreach/stiamo-misurando.png
+  repo: https://github.com/giorgioarcara/2025-Spazio-Iris-Misurazione
+
+- id: soglie-cutoff
+  title: "Soglie e cut-off nella clinica neuropsicologica"
+  description: "Perché usiamo soglie e categorie, come si ottengono (dati normativi o confronto tra gruppi noti) e cosa comportano per l'interpretazione dei test."
+  date: "2026-05-12"
+  categories: [Talk, Italiano]
+  path: https://github.com/giorgioarcara/2026-NICLA-Soglie-Cutoff/releases/latest/download/Arcara-Soglie-Cutoff-NICLA-2026.pdf
+  image: /files/images/outreach/soglie-cutoff.png
+  repo: https://github.com/giorgioarcara/2026-NICLA-Soglie-Cutoff
+
+- id: open-data
+  title: "Open Data (?)"
+  description: "A short talk on sharing data as a researcher in a clinical research hospital: can you really share health data? With a worked example."
+  date: "2026-05-26"
+  categories: [Talk, English]
+  path: https://github.com/giorgioarcara/2026-Open-Data/releases/latest/download/Arcara-OpenData.pdf
+  image: /files/images/outreach/open-data.png
+  repo: https://github.com/giorgioarcara/2026-Open-Data
+
+- id: cognitive-reserve
+  title: "Building resilience through experience: the concept of cognitive reserve"
+  description: "What cognitive reserve is, how it is measured and why it matters, with a critical look at its open questions (measurement, direction of effects, other factors). Invited talk at the 21st International Workshop on Neonatology, Cagliari."
+  date: "2025-10-22"
+  categories: [Talk, English]
+  path: https://github.com/giorgioarcara/2025-Cognitive-Reserve-Neonatology/releases/latest/download/Arcara-Cognitive-Reserve-Neonatology-2025.pdf
+  image: /files/images/outreach/cognitive-reserve.png
+  repo: https://github.com/giorgioarcara/2025-Cognitive-Reserve-Neonatology
+
+- id: rediscovering-overlooked
+  title: "Rediscovering the overlooked in neuropsychology: how better methods can enhance clinical practice"
+  description: "A PhD seminar (Università della Campania Luigi Vanvitelli) on neglected methodological aspects of neuropsychological tests in Italy: normative data, validity, demographic adjustments and how better methods improve clinical practice."
+  date: "2025-02-18"
+  categories: [Talk, English]
+  path: https://github.com/giorgioarcara/2025-Unicampania-Rediscovering-Overlooked/releases/latest/download/Arcara-Rediscovering-the-Overlooked-2025.pdf
+  image: /files/images/outreach/rediscovering-overlooked.png
+  repo: https://github.com/giorgioarcara/2025-Unicampania-Rediscovering-Overlooked
+
+- id: source-estimation
+  title: "Introduction to source estimation (EEG/MEG)"
+  description: "A webinar on EEG/MEG source estimation: the main concepts, recommendations and practical tips (and issues) for analysing your data."
+  date: "2023-05-01"
+  categories: [Talk, English]
+  path: https://github.com/giorgioarcara/2023-Source-Estimation-Webinar/releases/latest/download/Arcara-Introduction-to-Source-Estimation.pdf
+  image: /files/images/outreach/source-estimation.png
+  repo: https://github.com/giorgioarcara/2023-Source-Estimation-Webinar
+
+- id: grants-tips
+  title: "Grants: tips and tricks"
+  description: "Practical advice on writing grant applications: the right mindset, choosing the right call, preparing early, finding partners, understanding the evaluation criteria and the reviewers."
+  date: "2026-03-01"
+  categories: [Talk, English]
+  path: https://github.com/giorgioarcara/2026-Grants-Tips-and-Tricks/releases/latest/download/Arcara-Grants-Tips-and-Tricks.pdf
+  image: /files/images/outreach/grants-tips.png
+  repo: https://github.com/giorgioarcara/2026-Grants-Tips-and-Tricks
