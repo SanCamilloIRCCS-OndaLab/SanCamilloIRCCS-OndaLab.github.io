@@ -58,6 +58,7 @@ function card(item, feat, attrs) {
        langs.map(function (l) { return '<span class="ol-lang" title="' + l + '">' + LANGS[l] + '</span>'; }).join('') +
        (item.license ? '<span class="ol-license" title="License">' + esc(item.license) + '</span>' : '') + '</div>';
   h += '<h3 class="ol-title">' + link(item.path, '', esc(item.title)) + '</h3>';
+  if (item.authors) h += '<p class="ol-authors">' + esc(item.authors) + '</p>';
   h += '<p class="ol-desc">' + esc(item.description) + '</p>';
   h += '<div class="ol-actions">';
   h += link(item.path, 'ol-btn ol-btn--main', main);

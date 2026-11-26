@@ -3,6 +3,7 @@
 # One entry per deck. Fields:
 #   id           short slug; the thumbnail is files/images/outreach/<id>.png
 #   title        shown on the card
+#   authors      who made it, as N. Surname (several: comma-separated); shown under the title
 #   description  one or two sentences
 #   date         YYYY-MM-DD (only the year is shown on the card)
 #   categories   [<Type>, <Language>]   Type: Talk | Course | Guide | Tutorial | Book   Language: English | Italiano
@@ -24,6 +25,7 @@
 
 - id: oip-book
   title: "Oltre i punteggi: elementi di psicometria e statistica per la neuropsicologia clinica"
+  authors: "G. Arcara"
   description: "A free online book (in Italian) on the psychometrics and statistics behind clinical neuropsychological practice: measurement, validity and reliability, normative data, deficits and decline. A work in progress, also available as PDF and ePub."
   date: "2026-11-13"
   categories: [Book, Italiano]
@@ -34,6 +36,7 @@
 
 - id: behds-book
   title: "Introduction to Behavioural Data Science"
+  authors: "Adaptation by G. Arcara and C. Costa, book by R. Irizarry"
   description: "A behavioural-science adaptation of Rafael A. Irizarry's Introduction to Data Science, written for the Behavioural Data Science course (University of Padua), in two parts (Introduction and Advanced): R, data wrangling and visualisation with reaction times, accuracy scores and survey data."
   date: "2026-09-14"
   categories: [Book, English]
@@ -44,6 +47,7 @@
 
 - id: ai-coding-guide
   title: "Good Practices for AI-Assisted Coding (Lab guide)"
+  authors: "G. Arcara"
   description: "The ONDA Lab's short written guide on how to use AI tools for coding in research: define the problem first, trace before you trust, and keep the human in charge."
   date: "2026-09-13"
   categories: [Guide, English]
@@ -53,6 +57,7 @@
 
 - id: thesis-guide
   title: "A Practical Guide to Writing a Thesis"
+  authors: "G. Arcara"
   description: "Practical, step-by-step advice for students writing their thesis, from structure to figures and slides. Available in English and Italian."
   date: "2026-09-06"
   categories: [Guide, English, Italiano]
@@ -65,6 +70,7 @@
 
 - id: ai-coding-talk
   title: "Good Practices for AI-assisted Coding"
+  authors: "G. Arcara"
   description: "A talk on the opportunities and pitfalls of using AI tools for coding in scientific research, with personal and Lab views on the issue."
   date: "2026-06-05"
   categories: [Talk, English]
@@ -75,6 +81,7 @@
 
 - id: terrible-code
   title: "How to Write Terrible Code"
+  authors: "ONDA Lab"
   description: "A short and humorous guide to good coding principles (and why you shouldn't write terrible code), by ONDA Lab and friends."
   date: "2026-06-01"
   categories: [Guide, English]
@@ -86,6 +93,7 @@
 
 - id: bettercode-summary
   title: "Better Code, Better Science: a summary"
+  authors: "G. Arcara"
   description: "Key points from Russell Poldrack's book on software engineering practices for researchers, summarised for the Lab."
   date: "2026-06-01"
   categories: [Guide, English]
@@ -95,6 +103,7 @@
 
 - id: fair
   title: "La mia esperienza con i dati FAIR"
+  authors: "G. Arcara"
   description: "Un racconto dell'esperienza con i dati FAIR, sia come utilizzatore sia come curatore di dataset."
   date: "2026-05-21"
   categories: [Talk, Italiano]
@@ -105,6 +114,7 @@
 
 - id: github-guide
   title: "GitHub Short Guide"
+  authors: "G. Arcara"
   description: "A compass, not an encyclopedia: the minimal GitHub knowledge you need for version control in everyday research in neuroscience and psychology."
   date: "2026-02-14"
   categories: [Guide, English]
@@ -114,6 +124,7 @@
 
 - id: errori-test
   title: "Errori comuni nell'utilizzo di test neuropsicologici"
+  authors: "G. Arcara"
   description: "Gli errori più frequenti nell'uso e nell'interpretazione dei test neuropsicologici, e come evitarli."
   date: "2025-11-29"
   categories: [Talk, Italiano]
@@ -123,6 +134,7 @@
 
 - id: coding-group-2025-09
   title: "Coding Group: improving our coding habits"
+  authors: "G. Arcara"
   description: "Update from the San Camillo / ONDA Lab coding group: what we learned about GitHub, good habits, and using LLMs for programming."
   date: "2025-09-12"
   categories: [Talk, English]
@@ -132,6 +144,7 @@
 
 - id: equiv-scores
   title: "Equivalent Scores: regression model selection (tutorial)"
+  authors: "G. Arcara"
   description: "Hands-on R tutorial for the regression-based method for normative data in clinical neuropsychology (Arcara, 2024)."
   date: "2025-07-16"
   categories: [Tutorial, English]
@@ -142,6 +155,7 @@
 
 - id: mixed-models
   title: "Mixed-Effect Models in R"
+  authors: "G. Arcara"
   description: "A full course on linear mixed models in R, from linear models to assumptions, model selection and advanced topics. Comes with an R project to practise."
   date: "2024-07-07"
   categories: [Tutorial, English]
@@ -152,6 +166,7 @@
 
 - id: eeg-course
   title: "Human Electrophysiology: analysing EEG/MEG data (course)"
+  authors: "G. Arcara"
   description: "A full university course on EEG and MEG data analysis, with recorded lessons and slides: artifacts, filters and ICA, ERPs, time-frequency, MEG source estimation, connectivity and networks, plus practical recommendations. Comes with code examples on signal processing."
   date: "2020-01-01"
   categories: [Course, English]
@@ -164,6 +179,7 @@
 
 - id: fieldtrip
   title: "FieldTrip Tutorial (draft)"
+  authors: "G. Arcara"
   description: "An introductory tutorial to EEG/MEG analysis with the FieldTrip toolbox for MATLAB."
   date: "2015-04-25"
   categories: [Tutorial, English]
@@ -172,6 +188,7 @@
 
 - id: linguistica
   title: "Riflessioni sull'analisi statistica di dati linguistici e psicolinguistici"
+  authors: "G. Arcara"
   description: "Seminario sull'analisi statistica in linguistica e psicolinguistica."
   date: "2015-03-06"
   categories: [Talk, Italiano]
@@ -180,6 +197,7 @@
 
 - id: bplot
   title: "BPLOT Tutorial"
+  authors: "G. Arcara"
   description: "Guida all'uso di BPLOT per creare grafici a partire da file di dati .avr: come ottenerlo, installarlo e utilizzarlo."
   date: "2013-12-09"
   categories: [Tutorial, Italiano]
@@ -188,6 +206,7 @@
 
 - id: plsgui
   title: "PLSgui Tutorial"
+  authors: "G. Arcara"
   description: "Tutorial sull'analisi PLS (Partial Least Squares) con PLSgui: introduzione teorica, installazione, preparazione dei file e uso del programma."
   date: "2013-12-09"
   categories: [Tutorial, Italiano]
@@ -196,6 +215,7 @@
 
 - id: dmdx
   title: "Guida introduttiva a DMDX"
+  authors: "G. Arcara"
   description: "Guida introduttiva a DMDX, il software gratuito per esperimenti di psicologia."
   date: "2009-01-01"
   categories: [Tutorial, Italiano]
@@ -206,6 +226,7 @@
 
 - id: applied-psychometrics
   title: "Applied Psychometrics (course)"
+  authors: "G. Arcara"
   description: "Slides of a university course (University of Padua) on psychometrics for studying subclinical psychopathologies: tests and measurement, classical test theory and IRT, validity, reliability, factor analysis, normative data and thresholds, ROC analysis, Bayesian reasoning, detecting change and test interpretation."
   date: "2026-05-08"
   categories: [Course, English]
@@ -217,6 +238,7 @@
 
 - id: metodologia-ricerca-clinica
   title: "Metodologia della ricerca clinica (corso)"
+  authors: "G. Arcara"
   description: "Le slides del corso per la Scuola di Specializzazione in Neuropsicologia (Università di Padova): test e misurazione, scelta dei test, validità e affidabilità, valutare deficit e danni, simulazione e validità di performance, interpretazione, disegni di ricerca clinica, studi correlazionali e causalità, review e meta-analisi."
   date: "2026-05-16"
   categories: [Course, Italiano]
@@ -228,6 +250,7 @@
 
 - id: misurazioni-neuropsicologiche
   title: "Misurazioni neuropsicologiche (corso)"
+  authors: "G. Arcara"
   description: "Le slides di un modulo di Master (Università di Padova) sulla misurazione in neuropsicologia: dati normativi, percentili e soglie, punteggi equivalenti, con esempi in R."
   date: "2026-07-24"
   categories: [Course, Italiano]
@@ -239,6 +262,7 @@
 
 - id: forense
   title: "Metodi statistici per la neuropsicologia forense (corso)"
+  authors: "G. Arcara"
   description: "Le slides del corso universitario (Università di Padova) sui metodi statistici alla base della valutazione neuropsicologica forense: validità e affidabilità, confronto con i dati normativi, identificare condizioni di interesse, simulazione e validità di performance, scelta dei test e interpretazione. Con lezioni di Sara Lago."
   date: "2026-11-07"
   categories: [Course, Italiano]
@@ -250,6 +274,7 @@
 
 - id: psicometria-pratica-clinica
   title: "Psicometria per la pratica clinica (corso)"
+  authors: "G. Arcara"
   description: "Un corso (Spazio Iris, 2025) su come valutare le qualità psicometriche dei test, leggere in modo critico standardizzazioni e tavole normative italiane e integrare i risultati ai test con le altre informazioni cliniche."
   date: "2025-11-29"
   categories: [Course, Italiano]
@@ -261,6 +286,7 @@
 
 - id: stiamo-misurando
   title: "Stiamo veramente misurando quello che ci interessa? Riflessioni sul testing neuropsicologico"
+  authors: "G. Arcara"
   description: "Riflessioni sulla validità dei test neuropsicologici usati in Italia, a partire da casi concreti come il MoCA: perché le proprietà di misura sono spesso trascurate e come muoversi da qui."
   date: "2025-10-09"
   categories: [Talk, Italiano]
@@ -270,6 +296,7 @@
 
 - id: soglie-cutoff
   title: "Soglie e cut-off nella clinica neuropsicologica"
+  authors: "G. Arcara"
   description: "Perché usiamo soglie e categorie, come si ottengono (dati normativi o confronto tra gruppi noti) e cosa comportano per l'interpretazione dei test."
   date: "2026-05-12"
   categories: [Talk, Italiano]
@@ -279,6 +306,7 @@
 
 - id: open-data
   title: "Open Data (?)"
+  authors: "G. Arcara"
   description: "A short talk on sharing data as a researcher in a clinical research hospital: can you really share health data? With a worked example."
   date: "2026-05-26"
   categories: [Talk, English]
@@ -288,6 +316,7 @@
 
 - id: cognitive-reserve
   title: "Building resilience through experience: the concept of cognitive reserve"
+  authors: "G. Arcara"
   description: "What cognitive reserve is, how it is measured and why it matters, with a critical look at its open questions (measurement, direction of effects, other factors). Invited talk at the 21st International Workshop on Neonatology, Cagliari."
   date: "2025-10-22"
   categories: [Talk, English]
@@ -297,6 +326,7 @@
 
 - id: rediscovering-overlooked
   title: "Rediscovering the overlooked in neuropsychology: how better methods can enhance clinical practice"
+  authors: "G. Arcara"
   description: "A PhD seminar (Università della Campania Luigi Vanvitelli) on neglected methodological aspects of neuropsychological tests in Italy: normative data, validity, demographic adjustments and how better methods improve clinical practice."
   date: "2025-02-18"
   categories: [Talk, English]
@@ -306,6 +336,7 @@
 
 - id: source-estimation
   title: "Introduction to source estimation (EEG/MEG)"
+  authors: "G. Arcara"
   description: "A webinar on EEG/MEG source estimation: the main concepts, recommendations and practical tips (and issues) for analysing your data."
   date: "2023-05-01"
   categories: [Talk, English]
@@ -315,6 +346,7 @@
 
 - id: grants-tips
   title: "Grants: tips and tricks"
+  authors: "G. Arcara"
   description: "Practical advice on writing grant applications: the right mindset, choosing the right call, preparing early, finding partners, understanding the evaluation criteria and the reviewers."
   date: "2026-03-01"
   categories: [Talk, English]
