@@ -19,6 +19,8 @@
 #   post         (optional) post on this site ("Read post" button)
 #   extra / extralabel  (optional) a second link, e.g. another language version
 #   featured     true -> also shown in the "Featured" row at the top (keep it to 3)
+#   license      (optional) only when it differs from the page default (CC BY-NC-SA 4.0), shown as a small tag
+#                on the card, e.g. "Code: MIT" when the code in the repo is MIT and the slides follow the default
 
 - id: oip-book
   title: "Oltre i punteggi: elementi di psicometria e statistica per la neuropsicologia clinica"
@@ -136,6 +138,7 @@
   path: https://github.com/giorgioarcara/Reg-Method-Norm-Data-CodeApp/blob/main/Tutorial/Tutorial.pdf
   image: /files/images/outreach/equiv-scores.png
   repo: https://github.com/giorgioarcara/Reg-Method-Norm-Data-CodeApp
+  license: "Code: MIT"
 
 - id: mixed-models
   title: "Mixed-Effect Models in R"
@@ -145,6 +148,7 @@
   path: https://github.com/giorgioarcara/mixed-effect-models/blob/main/Mixed_effects_models.pdf
   image: /files/images/outreach/mixed-models.png
   repo: https://github.com/giorgioarcara/mixed-effect-models
+  license: "Code: MIT"
 
 - id: eeg-course
   title: "Human Electrophysiology: analysing EEG/MEG data (course)"
@@ -156,6 +160,7 @@
   videos: https://drive.google.com/drive/folders/1CvtG6w-T3CO94-Iu_Dp0lzC91gkSIkRZ
   image: /files/images/outreach/eeg-course.png
   repo: https://github.com/giorgioarcara/EEG_signal_Processing
+  license: "Code: MIT"
 
 - id: fieldtrip
   title: "FieldTrip Tutorial (draft)"

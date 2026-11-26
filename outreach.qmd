@@ -57,6 +57,14 @@ filters: [remove-stray-divfence.lua]  # strips stray ":::" left by the EJS listi
 :::
 
 ```{=html}
+<div class="ol-license-note" role="note" aria-label="License">
+  <i class="bi bi-c-circle" aria-hidden="true"></i>
+  <p><strong>License.</strong> Unless stated otherwise, the materials on this page are shared under
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>:
+    you are welcome to use and adapt them for non-commercial purposes, including teaching in universities and
+    schools and the training of clinicians, as long as you credit the source and share adaptations under the same
+    license. Where an item is tagged “Code: MIT”, the code in its repository is released under the MIT License.</p>
+</div>
 <section class="ol-cta">
   <h2>Want us to give a talk or run a workshop?</h2>
   <p>We are happy to share what we learn on coding practices, open science, psychometrics and data analysis.</p>

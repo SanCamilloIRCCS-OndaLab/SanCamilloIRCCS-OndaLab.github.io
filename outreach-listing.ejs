@@ -55,7 +55,8 @@ function card(item, feat, attrs) {
         ' aria-label="Open: ' + esc(item.title) + '" tabindex="-1"');
   h += '<div class="ol-body">';
   h += '<div class="ol-meta"><span class="ol-year">' + year(item) + '</span>' +
-       langs.map(function (l) { return '<span class="ol-lang" title="' + l + '">' + LANGS[l] + '</span>'; }).join('') + '</div>';
+       langs.map(function (l) { return '<span class="ol-lang" title="' + l + '">' + LANGS[l] + '</span>'; }).join('') +
+       (item.license ? '<span class="ol-license" title="License">' + esc(item.license) + '</span>' : '') + '</div>';
   h += '<h3 class="ol-title">' + link(item.path, '', esc(item.title)) + '</h3>';
   h += '<p class="ol-desc">' + esc(item.description) + '</p>';
   h += '<div class="ol-actions">';

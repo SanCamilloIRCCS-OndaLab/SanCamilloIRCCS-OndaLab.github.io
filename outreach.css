@@ -120,6 +120,8 @@ body.quarto-dark #outreach .ol-type { color: #1b1f23; }
 #outreach .ol-year { font-weight: 600; margin-right: .2rem; }
 #outreach .ol-lang { padding: 0 .4rem; border: 1px solid var(--ol-line); border-radius: 5px; font-size: .72rem;
   font-weight: 600; letter-spacing: .04em; }
+#outreach .ol-license { margin-left: auto; padding: 0 .45rem; border: 1px solid var(--ol-line); border-radius: 5px;
+  font-size: .72rem; font-weight: 600; color: var(--ol-muted); white-space: nowrap; }
 #outreach .ol-title { font-size: 1.15rem; font-weight: 700; line-height: 1.3; margin: 0 0 .35rem; }
 #outreach .ol-title a { color: var(--ol-navy); font-weight: 700; text-decoration: none; }
 #outreach .anchorjs-link, #outreach .quarto-anchor { display: none !important; } /* hidden anchor icons made titles wrap */
@@ -157,6 +159,14 @@ body.quarto-dark #outreach .ol-btn--main:hover { background: #85c1e9; border-col
 @media (max-width: 767.98px) { #outreach .ol-search { max-width: none; margin-left: 0; } }
 #outreach .ol-empty { text-align: center; color: var(--ol-muted); padding: 2rem 0; }
 #outreach .ol-reset { border: 0; background: none; color: var(--ol-talk); text-decoration: underline; cursor: pointer; }
+
+/* ── License note ──────────────────────────────────────────────────── */
+#outreach .ol-license-note { display: flex; gap: .75rem; align-items: flex-start; margin: 2.5rem 0 0; padding: 1rem 1.2rem;
+  border: 1px solid var(--ol-line); border-left: 4px solid var(--ol-talk); border-radius: 10px; background: var(--ol-tint); }
+#outreach .ol-license-note i { font-size: 1.3rem; color: var(--ol-talk); line-height: 1.4; }
+#outreach .ol-license-note p { margin: 0; font-size: .95rem; line-height: 1.5; color: var(--ol-ink); }
+#outreach .ol-license-note strong { color: var(--ol-navy); }
+#outreach .ol-license-note a { color: var(--ol-talk); font-weight: 600; }
 
 /* ── Call to action ────────────────────────────────────────────────── */
 #outreach .ol-cta { margin: 3rem 0 1rem; padding: 1.6rem 1.5rem; text-align: center; border-radius: 14px;
